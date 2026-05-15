@@ -1,0 +1,40 @@
+{
+ "9": {
+  "aut_group_generators": [
+   "(2,3)",
+   "(1,2)",
+   "S0S1S2S3",
+   "(0,1)",
+   "H0H1H2H3"
+  ],
+  "aut_group_size": 144,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 9,
+  "is_css": 1,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 1,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "Z0Z1Z2Z3",
+   "X0X1X2X3"
+  ],
+  "k": 2,
+  "logical_ops": [
+   "X1X2",
+   "X1X3",
+   "Z0Z2",
+   "Z0Z3"
+  ],
+  "n": 4,
+  "uuid": "373b856e-a5af-4e9f-8524-997f1ccfe77e",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   0,
+   3
+  ]
+ }
+}

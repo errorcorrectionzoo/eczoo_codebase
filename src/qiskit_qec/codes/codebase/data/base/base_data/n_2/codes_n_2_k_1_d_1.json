@@ -1,0 +1,64 @@
+{
+ "0": {
+  "aut_group_generators": [
+   "V1",
+   "V0",
+   "(0,1)"
+  ],
+  "aut_group_size": 8,
+  "code_type": "StabSubSystemCode",
+  "d": 1,
+  "index": 0,
+  "is_css": 1,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X0X1"
+  ],
+  "k": 1,
+  "logical_ops": [
+   "X1",
+   "Z0Z1"
+  ],
+  "n": 2,
+  "uuid": "7c554aa2-5d49-4bd8-ad61-815607c683a2",
+  "weight_enumerator": [
+   1,
+   0,
+   1
+  ]
+ },
+ "1": {
+  "aut_group_generators": [
+   "V0",
+   "H0",
+   "V1"
+  ],
+  "aut_group_size": 12,
+  "code_type": "StabSubSystemCode",
+  "d": 1,
+  "index": 1,
+  "is_css": 1,
+  "is_decomposable": 1,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X1"
+  ],
+  "k": 1,
+  "logical_ops": [
+   "X0",
+   "Z0"
+  ],
+  "n": 2,
+  "uuid": "6bb4ee57-b3b7-4e2a-93b4-e5eccec8809a",
+  "weight_enumerator": [
+   1,
+   1,
+   0
+  ]
+ }
+}

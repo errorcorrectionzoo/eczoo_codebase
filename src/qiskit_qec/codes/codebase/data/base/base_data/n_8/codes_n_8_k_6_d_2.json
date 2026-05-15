@@ -1,0 +1,56 @@
+{
+ "67": {
+  "aut_group_generators": [
+   "(6,7)",
+   "(5,6)",
+   "(4,5)",
+   "(3,4)",
+   "(2,3)",
+   "(1,2)",
+   "S0S1S2S3S4S5S6S7",
+   "(0,1)",
+   "H0H1H2H3H4H5H6H7"
+  ],
+  "aut_group_size": 241920,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 67,
+  "is_css": 1,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 1,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "Z0Z1Z2Z3Z4Z5Z6Z7",
+   "X0X1X2X3X4X5X6X7"
+  ],
+  "k": 6,
+  "logical_ops": [
+   "X1X2",
+   "X1X3",
+   "X1X4",
+   "X1X5",
+   "X1X6",
+   "X1X7",
+   "Z0Z2",
+   "Z0Z3",
+   "Z0Z4",
+   "Z0Z5",
+   "Z0Z6",
+   "Z0Z7"
+  ],
+  "n": 8,
+  "uuid": "d2812e9a-0222-40d3-8748-ff4fe98603cf",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3
+  ]
+ }
+}

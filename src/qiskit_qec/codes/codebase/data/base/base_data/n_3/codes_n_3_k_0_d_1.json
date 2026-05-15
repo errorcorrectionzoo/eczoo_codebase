@@ -1,0 +1,67 @@
+{
+ "0": {
+  "aut_group_generators": [
+   "V2",
+   "V1",
+   "V0",
+   "(1,2)",
+   "(0,1)"
+  ],
+  "aut_group_size": 48,
+  "code_type": "StabSubSystemCode",
+  "d": 1,
+  "index": 0,
+  "is_css": 1,
+  "is_decomposable": 1,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X0",
+   "X1",
+   "X2"
+  ],
+  "k": 0,
+  "logical_ops": [],
+  "n": 3,
+  "uuid": "23a5da68-e2d0-46d4-949a-c2e039549a31",
+  "weight_enumerator": [
+   1,
+   3,
+   3,
+   1
+  ]
+ },
+ "2": {
+  "aut_group_generators": [
+   "V2",
+   "V0V1",
+   "H0H1",
+   "(0,1)"
+  ],
+  "aut_group_size": 24,
+  "code_type": "StabSubSystemCode",
+  "d": 1,
+  "index": 2,
+  "is_css": 1,
+  "is_decomposable": 1,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X2",
+   "Z0Z1",
+   "X0X1"
+  ],
+  "k": 0,
+  "logical_ops": [],
+  "n": 3,
+  "uuid": "2113e247-5bc7-4eef-a032-5f44f60a291c",
+  "weight_enumerator": [
+   1,
+   1,
+   3,
+   3
+  ]
+ }
+}

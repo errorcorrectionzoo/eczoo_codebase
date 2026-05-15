@@ -1,0 +1,328 @@
+{
+ "176": {
+  "aut_group_generators": [
+   "S2S3^(2,3)",
+   "S0V1S2S3^(4,5)",
+   "H0H1^(0,1)",
+   "r1R3V4V5^(0,2)(1,3)"
+  ],
+  "aut_group_size": 16,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 176,
+  "is_css": 0,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "Z0X1Z4Z5X6",
+   "Z2Z3Y4Y5X6",
+   "X0Z1X2Y3X4Y6"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "X3Z4",
+   "Z0X2Z4",
+   "Z0Z1Z4X5",
+   "Z0X6",
+   "Z0Z3",
+   "Z0Z2",
+   "Z0Z4Z5",
+   "Z1Z4Z6"
+  ],
+  "n": 7,
+  "uuid": "d42d7251-33a6-44f8-b427-2aed54228bed",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   2,
+   3,
+   2
+  ]
+ },
+ "198": {
+  "aut_group_generators": [
+   "H4H5^(4,5)",
+   "(1,2)",
+   "(0,1)",
+   "H3S4V5H6^(3,6)"
+  ],
+  "aut_group_size": 24,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 198,
+  "is_css": 0,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X3Z4X5Z6",
+   "Z0Z1Z2Z3X6",
+   "X0X1X2X4Z5Z6"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "X1Z6",
+   "Z3X4",
+   "Z0X5",
+   "X2Z6",
+   "Z0Z1",
+   "Z0Z4",
+   "Z3Z5",
+   "Z0Z2"
+  ],
+  "n": 7,
+  "uuid": "c9389d5a-7c08-4d27-ae17-3bb3125762c9",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   2,
+   3
+  ]
+ },
+ "219": {
+  "aut_group_generators": [
+   "(1,2)",
+   "(4,5)",
+   "(3,4)",
+   "(0,1)",
+   "(0,3)(1,4)(2,5)",
+   "S0S1S2S6"
+  ],
+  "aut_group_size": 288,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 219,
+  "is_css": 1,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "Z0Z1Z2Z6",
+   "Z3Z4Z5Z6",
+   "X0X1X2X3X4X5X6"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "X1X2",
+   "X3X4",
+   "X3X5",
+   "X1X3X6",
+   "Z0Z2",
+   "Z0Z4",
+   "Z0Z5",
+   "Z0Z6"
+  ],
+  "n": 7,
+  "uuid": "49593b13-9f0d-42c3-8e60-3f0d3d10b367",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   0,
+   2,
+   0,
+   1,
+   4
+  ]
+ },
+ "220": {
+  "aut_group_generators": [
+   "(4,5)",
+   "(2,4)",
+   "(1,2)",
+   "(0,1)",
+   "(3,6)",
+   "S3S6",
+   "S0S1S2S4S5S6"
+  ],
+  "aut_group_size": 960,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 220,
+  "is_css": 1,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "Z3Z6",
+   "Z0Z1Z2Z4Z5Z6",
+   "X0X1X2X3X4X5X6"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "X1X2",
+   "X1X4",
+   "X1X5",
+   "X1X3X6",
+   "Z0Z2",
+   "Z0Z4",
+   "Z0Z5",
+   "Z0Z6"
+  ],
+  "n": 7,
+  "uuid": "87fc7fb5-22aa-4029-ade0-607829e213cd",
+  "weight_enumerator": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   2,
+   4
+  ]
+ },
+ "221": {
+  "aut_group_generators": [
+   "S2S3^(2,3)",
+   "r1R2^(1,2)",
+   "H0H1^(0,1)",
+   "H0H1V2H3R4r6^(4,6)",
+   "S0V1S2S3^(4,5)"
+  ],
+  "aut_group_size": 144,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 221,
+  "is_css": 0,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "Z4Z5X6",
+   "Z0X1Z2Z3X4X5",
+   "Y0Y1X2Y3X4Y6"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "Z1X3",
+   "Z0X4Z6",
+   "Z0X5Z6",
+   "Z0Z1X2",
+   "Z0Z3",
+   "Z1Z4",
+   "Z0Z1Z5",
+   "Z0Z2"
+  ],
+  "n": 7,
+  "uuid": "c5ff926d-3356-43ab-aa3e-b34a15c577ee",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   3,
+   3
+  ]
+ },
+ "222": {
+  "aut_group_generators": [
+   "r0H2V3R4H5S6^(0,4)(2,5)",
+   "H1S4S5S6^(0,2)(4,5)",
+   "H0V2H3H4S5H6^(0,4)(3,6)",
+   "V1S4^(2,3)(5,6)",
+   "S1H2S3V4^(0,5)(1,3)"
+  ],
+  "aut_group_size": 168,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 222,
+  "is_css": 0,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X0X2X3Z4Z5Z6",
+   "Z0Y1Z2Y4X5Z6",
+   "Z0Z1Z3X4Z5X6"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "Z1X3Z4",
+   "Z1X2",
+   "Z0Z1Z4X5",
+   "Z0Z1X6",
+   "Z0Z3",
+   "Z0Z2",
+   "Z1Z5",
+   "Z1Z4Z6"
+  ],
+  "n": 7,
+  "uuid": "ab7fb4d3-ca84-40c5-ab0e-8bbf5bcc8d33",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   7,
+   0
+  ]
+ },
+ "238": {
+  "aut_group_generators": [
+   "V6",
+   "(4,5)",
+   "(3,4)",
+   "(2,3)",
+   "V0V1V2V3V4V5",
+   "(1,2)",
+   "H0H1H2H3H4H5",
+   "(0,1)"
+  ],
+  "aut_group_size": 8640,
+  "code_type": "StabSubSystemCode",
+  "d": 2,
+  "index": 238,
+  "is_css": 1,
+  "is_decomposable": 1,
+  "is_degenerate": 1,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X6",
+   "Z0Z1Z2Z3Z4Z5",
+   "Y0Y1Y2Y3Y4Y5"
+  ],
+  "k": 4,
+  "logical_ops": [
+   "X2X3",
+   "X2X4",
+   "X2X5",
+   "X1X2",
+   "Z0Z3",
+   "Z0Z4",
+   "Z0Z5",
+   "Z0Z1"
+  ],
+  "n": 7,
+  "uuid": "4df1245d-819f-484b-8728-00b0dcc0ea7a",
+  "weight_enumerator": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   3,
+   3
+  ]
+ }
+}

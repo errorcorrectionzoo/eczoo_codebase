@@ -1,0 +1,39 @@
+{
+ "7": {
+  "aut_group_generators": [
+   "V0S1S2H3H4^(3,4)",
+   "(1,2)(3,4)",
+   "V0V1V2V3V4^(1,4,2,3)",
+   "H0H1S2S3V4^(2,3)",
+   "(0,1)(2,3)"
+  ],
+  "aut_group_size": 120,
+  "code_type": "StabSubSystemCode",
+  "d": 3,
+  "index": 7,
+  "is_css": 0,
+  "is_decomposable": 0,
+  "is_degenerate": 0,
+  "is_gf4linear": 0,
+  "is_subsystem": 1,
+  "isotropic_generators": [
+   "X0Z1Z2",
+   "Z0X1Z3",
+   "Z0X2Z4",
+   "Z1X3Z4",
+   "Z2Z3X4"
+  ],
+  "k": 0,
+  "logical_ops": [],
+  "n": 5,
+  "uuid": "0e38d1b0-7c70-4d2a-af65-24497281d0c1",
+  "weight_enumerator": [
+   1,
+   0,
+   0,
+   10,
+   15,
+   6
+  ]
+ }
+}
