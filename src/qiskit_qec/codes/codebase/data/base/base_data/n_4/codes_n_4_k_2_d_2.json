@@ -8,14 +8,12 @@
    "H0H1H2H3"
   ],
   "aut_group_size": 144,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 9,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 1,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z1Z2Z3",
    "X0X1X2X3"

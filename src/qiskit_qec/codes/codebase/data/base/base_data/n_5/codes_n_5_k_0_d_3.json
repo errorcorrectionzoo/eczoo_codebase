@@ -8,14 +8,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 120,
-  "code_type": "StabSubSystemCode",
   "d": 3,
   "index": 7,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1Z2",
    "Z0X1Z3",

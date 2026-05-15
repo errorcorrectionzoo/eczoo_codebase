@@ -6,14 +6,12 @@
    "H0H1"
   ],
   "aut_group_size": 12,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 1,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z1",
    "X0X1"

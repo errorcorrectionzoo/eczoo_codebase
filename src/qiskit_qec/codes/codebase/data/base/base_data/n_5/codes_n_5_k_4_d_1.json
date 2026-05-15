@@ -14,14 +14,12 @@
    "(2,3)"
   ],
   "aut_group_size": 10368,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 0,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X2X3"
   ],
@@ -61,14 +59,12 @@
    "(0,1)"
   ],
   "aut_group_size": 3456,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 1,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X4"
   ],
@@ -107,14 +103,12 @@
    "(1,2)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 2,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z2Z3Z4"
   ],
@@ -153,14 +147,12 @@
    "(0,1)"
   ],
   "aut_group_size": 3840,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 3,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4"
   ],
@@ -202,14 +194,12 @@
    "V4"
   ],
   "aut_group_size": 62208,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 4,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4"
   ],

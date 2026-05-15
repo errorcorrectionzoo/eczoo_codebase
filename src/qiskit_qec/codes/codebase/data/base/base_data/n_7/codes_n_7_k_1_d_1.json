@@ -12,14 +12,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 0,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z1",
@@ -61,14 +59,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 4608,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 1,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z1",
@@ -110,14 +106,12 @@
    "(0,1)"
   ],
   "aut_group_size": 9216,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 2,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z1",
@@ -158,14 +152,12 @@
    "(2,3)"
   ],
   "aut_group_size": 3072,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 3,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z1",
@@ -205,14 +197,12 @@
    "H0H1H2H3^(0,1)(2,3)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 6,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -254,14 +244,12 @@
    "(5,6)"
   ],
   "aut_group_size": 9216,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 8,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -300,14 +288,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 9,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -347,14 +333,12 @@
    "(2,3)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 10,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -391,14 +375,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 11,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -438,14 +420,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 12,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -486,14 +466,12 @@
    "(5,6)"
   ],
   "aut_group_size": 3072,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 13,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -532,14 +510,12 @@
    "(5,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 14,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -578,14 +554,12 @@
    "(1,2)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 15,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -622,14 +596,12 @@
    "(1,3)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 16,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -672,14 +644,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 13824,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 18,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -719,14 +689,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 19,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -768,14 +736,12 @@
    "(2,3)"
   ],
   "aut_group_size": 4608,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 21,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -816,14 +782,12 @@
    "(2,3)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 22,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -866,14 +830,12 @@
    "(0,1)"
   ],
   "aut_group_size": 30720,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 23,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -911,14 +873,12 @@
    "(1,5)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 25,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z5",
@@ -958,14 +918,12 @@
    "(2,5)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 47,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -1005,14 +963,12 @@
    "(0,1)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 48,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -1050,14 +1006,12 @@
    "(0,1)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 49,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -1098,14 +1052,12 @@
    "(4,5)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 50,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -1145,14 +1097,12 @@
    "(0,1)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 51,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z4",
@@ -1192,14 +1142,12 @@
    "(1,2)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 52,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z6",
@@ -1237,14 +1185,12 @@
    "(0,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 53,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z1Z5",
@@ -1282,14 +1228,12 @@
    "(2,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 54,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z5",
@@ -1328,14 +1272,12 @@
    "(1,2)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 55,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z2",
@@ -1372,14 +1314,12 @@
    "H0H5^(0,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 56,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -1419,14 +1359,12 @@
    "(0,1)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 57,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -1466,14 +1404,12 @@
    "(1,2)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 58,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z6",
@@ -1514,14 +1450,12 @@
    "(3,4)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 59,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -1561,14 +1495,12 @@
    "(0,1)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 60,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -1604,14 +1536,12 @@
    "H1H6^(1,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 61,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -1649,14 +1579,12 @@
    "(0,3)(4,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 62,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "X1X2",
@@ -1694,14 +1622,12 @@
    "(1,3)(4,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 63,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z6",
@@ -1739,14 +1665,12 @@
    "(1,2)(5,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 64,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z1Z5",
@@ -1784,14 +1708,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 65,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -1830,14 +1752,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 66,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "X1X3",
@@ -1873,14 +1793,12 @@
    "(1,4)(2,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 67,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z4Z6",
@@ -1918,14 +1836,12 @@
    "(1,5)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 68,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z5",
@@ -1963,14 +1879,12 @@
    "H0H6^(0,6)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 69,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -2006,14 +1920,12 @@
    "(0,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 70,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z3",
@@ -2049,14 +1961,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 71,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1",
    "X2Z4Z6",
@@ -2096,14 +2006,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 72,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -2145,14 +2053,12 @@
    "(0,1)"
   ],
   "aut_group_size": 15360,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 73,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -2194,14 +2100,12 @@
    "(0,1)"
   ],
   "aut_group_size": 15360,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 74,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -2237,14 +2141,12 @@
    "(2,3)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 76,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z4",
    "X1Z2Z3",
@@ -2283,14 +2185,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 960,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 77,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0X1",
    "X2Z3Z4",
@@ -2329,14 +2229,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 960,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 78,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z2Z3Z6",
@@ -2378,14 +2276,12 @@
    "(4,5)"
   ],
   "aut_group_size": 6912,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 79,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4",
    "X5",
@@ -2426,14 +2322,12 @@
    "(4,5)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 81,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4",
    "X5",
@@ -2472,14 +2366,12 @@
    "(4,5)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 82,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4",
    "X5",
@@ -2521,14 +2413,12 @@
    "(4,5)"
   ],
   "aut_group_size": 4608,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 84,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4",
    "X5",
@@ -2569,14 +2459,12 @@
    "(4,5)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 85,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4",
    "X5",
@@ -2619,14 +2507,12 @@
    "(4,5)"
   ],
   "aut_group_size": 18432,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 86,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X4",
    "X5",
@@ -2665,14 +2551,12 @@
    "(1,2)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 87,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X3",
@@ -2711,14 +2595,12 @@
    "H0H1H2H3^(0,1)(2,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 88,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X2",
@@ -2757,14 +2639,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 89,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0Z2",
@@ -2804,14 +2684,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 512,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 90,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X1",
@@ -2848,14 +2726,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 91,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X4X5",
@@ -2894,14 +2770,12 @@
    "(1,3)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 92,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z2",
@@ -2938,14 +2812,12 @@
    "(1,3)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 93,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z1Z3",
@@ -2986,14 +2858,12 @@
    "(0,1)"
   ],
   "aut_group_size": 3072,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 94,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z3",
@@ -3034,14 +2904,12 @@
    "(0,1)"
   ],
   "aut_group_size": 3072,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 95,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z3",
@@ -3081,14 +2949,12 @@
    "(2,3)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 96,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z1",
@@ -3127,14 +2993,12 @@
    "(2,4)"
   ],
   "aut_group_size": 576,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 97,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z5",
@@ -3174,14 +3038,12 @@
    "(0,3)"
   ],
   "aut_group_size": 1152,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 124,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z6",
@@ -3221,14 +3083,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 125,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z4",
@@ -3268,14 +3128,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 126,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -3315,14 +3173,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 127,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3362,14 +3218,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 128,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3407,14 +3261,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 129,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -3454,14 +3306,12 @@
    "(1,2)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 130,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z6",
@@ -3499,14 +3349,12 @@
    "(0,1)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 131,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3548,14 +3396,12 @@
    "(3,4)"
   ],
   "aut_group_size": 9216,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 132,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3597,14 +3443,12 @@
    "(3,4)"
   ],
   "aut_group_size": 9216,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 133,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3645,14 +3489,12 @@
    "(0,1)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 134,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3695,14 +3537,12 @@
    "(2,4)(3,5)"
   ],
   "aut_group_size": 13824,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 135,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -3745,14 +3585,12 @@
    "(3,4)"
   ],
   "aut_group_size": 27648,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 140,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X3",
    "X4",
@@ -3793,14 +3631,12 @@
    "(3,4)"
   ],
   "aut_group_size": 3072,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 141,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X3",
    "X4",
@@ -3843,14 +3679,12 @@
    "(3,4)"
   ],
   "aut_group_size": 18432,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 142,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X3",
    "X4",
@@ -3891,14 +3725,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 143,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -3937,14 +3769,12 @@
    "(0,2)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 144,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -3985,14 +3815,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 145,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X5",
    "X6",
@@ -4033,14 +3861,12 @@
    "(3,4)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 146,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X1",
@@ -4081,14 +3907,12 @@
    "(3,4)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 147,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z1",
@@ -4127,14 +3951,12 @@
    "(3,4)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 148,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X2",
@@ -4171,14 +3993,12 @@
    "H0H1H2H3H4H5^(0,1)(2,3)(4,5)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 161,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z1Z5",
@@ -4220,14 +4040,12 @@
    "(3,4)"
   ],
   "aut_group_size": 13824,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 168,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z5",
@@ -4269,14 +4087,12 @@
    "(3,4)"
   ],
   "aut_group_size": 9216,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 169,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -4318,14 +4134,12 @@
    "(0,1)"
   ],
   "aut_group_size": 9216,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 170,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -4365,14 +4179,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 171,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -4413,14 +4225,12 @@
    "(0,1)"
   ],
   "aut_group_size": 4608,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 172,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z5",
@@ -4463,14 +4273,12 @@
    "(2,3)"
   ],
   "aut_group_size": 30720,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 176,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X2",
    "X3",
@@ -4513,14 +4321,12 @@
    "(0,1)"
   ],
   "aut_group_size": 46080,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 181,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -4562,14 +4368,12 @@
    "(0,1)"
   ],
   "aut_group_size": 15360,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 182,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -4613,14 +4417,12 @@
    "(1,2)"
   ],
   "aut_group_size": 276480,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 186,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1",
    "X2",
@@ -4659,14 +4461,12 @@
    "(0,1)(4,5)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 188,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z5",
@@ -4705,14 +4505,12 @@
    "(0,1)(3,4)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 189,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z3",
    "X1Z4",
@@ -4753,14 +4551,12 @@
    "H0H1H2H3H4H5^(0,1)(2,3)(4,5)"
   ],
   "aut_group_size": 6912,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 191,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z1Z5",
@@ -4801,14 +4597,12 @@
    "(0,1)(2,3)(4,5)"
   ],
   "aut_group_size": 6912,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 192,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z5",
@@ -4851,14 +4645,12 @@
    "(0,1)"
   ],
   "aut_group_size": 138240,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 202,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z5",
@@ -4901,14 +4693,12 @@
    "(0,1)"
   ],
   "aut_group_size": 92160,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 205,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z5",
@@ -4952,14 +4742,12 @@
    "(0,1)"
   ],
   "aut_group_size": 645120,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 207,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -4999,14 +4787,12 @@
    "H2H3H4H5^(2,3)(4,5)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 211,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z1",
    "X0X1",
@@ -5043,14 +4829,12 @@
    "(0,1)(3,5)"
   ],
   "aut_group_size": 288,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 216,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2",
    "Z0Z1Z4",
@@ -5094,14 +4878,12 @@
    "(0,2)(1,3)"
   ],
   "aut_group_size": 62208,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 223,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 1,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z1",
    "X0X1",
@@ -5141,14 +4923,12 @@
    "R4r5^(0,1)(4,5)"
   ],
   "aut_group_size": 12960,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 224,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 1,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Y0Z1Z2Z5",
    "Z0Y1Z3Z5",
@@ -5185,14 +4965,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 225,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z3Z5",
@@ -5229,14 +5007,12 @@
    "(2,3)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 269,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X4",
@@ -5273,14 +5049,12 @@
    "(2,3)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 270,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X1",
@@ -5318,14 +5092,12 @@
    "(2,3)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 271,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X4",
@@ -5360,14 +5132,12 @@
    "(1,2)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 272,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X2",
@@ -5402,14 +5172,12 @@
    "(1,2)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 273,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X2",
@@ -5448,14 +5216,12 @@
    "(2,3)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 274,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -5494,14 +5260,12 @@
    "(2,3)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 275,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X4",
@@ -5540,14 +5304,12 @@
    "H2H3^(2,3)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 276,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0Z4",
@@ -5584,14 +5346,12 @@
    "(0,1)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 277,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -5630,14 +5390,12 @@
    "(0,1)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 278,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -5676,14 +5434,12 @@
    "(0,1)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 279,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -5723,14 +5479,12 @@
    "(2,3)"
   ],
   "aut_group_size": 1152,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 280,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -5766,14 +5520,12 @@
    "H1H4^(1,4)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 281,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1Z4",
@@ -5810,14 +5562,12 @@
    "(1,4)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 282,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X4",
@@ -5854,14 +5604,12 @@
    "(0,1)(2,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 283,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X4",
@@ -5898,14 +5646,12 @@
    "(0,1)(2,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 284,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -5942,14 +5688,12 @@
    "H2H4^(0,1)(2,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 285,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0Z4",
@@ -5984,14 +5728,12 @@
    "(0,2)(1,4)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 286,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X1X3",
@@ -6028,14 +5770,12 @@
    "H0H4^(0,4)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 287,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0Z4",
@@ -6072,14 +5812,12 @@
    "(0,4)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 288,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -6118,14 +5856,12 @@
    "(1,2)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 289,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X1X4",
@@ -6164,14 +5900,12 @@
    "(2,3)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 290,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0X1",
@@ -6212,14 +5946,12 @@
    "(0,1)"
   ],
   "aut_group_size": 7680,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 291,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -6254,14 +5986,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 292,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0X1Z3",
@@ -6299,14 +6029,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 480,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 293,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Y0Y1Z2Z3",
@@ -6341,14 +6069,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 294,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0X2Z4",
@@ -6388,14 +6114,12 @@
    "(2,3)"
   ],
   "aut_group_size": 1152,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 300,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -6436,14 +6160,12 @@
    "(2,3)"
   ],
   "aut_group_size": 3456,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 303,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -6481,14 +6203,12 @@
    "(0,1)(2,4)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 309,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -6530,14 +6250,12 @@
    "(0,1)"
   ],
   "aut_group_size": 23040,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 313,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "Z0Z4",
@@ -6576,14 +6294,12 @@
    "(0,1)(2,3)"
   ],
   "aut_group_size": 1440,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 322,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X6",
    "X0Z1Z2",
@@ -6619,14 +6335,12 @@
    "H0H5^(0,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 330,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -6662,14 +6376,12 @@
    "(1,3)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 331,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z3",
@@ -6705,14 +6417,12 @@
    "H0H5^(0,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 332,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -6750,14 +6460,12 @@
    "(2,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 333,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -6795,14 +6503,12 @@
    "(2,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 334,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -6838,14 +6544,12 @@
    "H0H1H2H3^(0,2)(1,3)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 335,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1Z5",
    "Z0X1Z6",
@@ -6880,14 +6584,12 @@
    "H0H1^(0,1)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 336,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1",
    "Z0X1Z6",
@@ -6925,14 +6627,12 @@
    "(2,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 337,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z5",
@@ -6965,14 +6665,12 @@
    "(1,2)(3,4)(5,6)"
   ],
   "aut_group_size": 4,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 338,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0X1Z5",
    "Z0X2Z6",
@@ -7010,14 +6708,12 @@
    "(2,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 339,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -7054,14 +6750,12 @@
    "(0,1)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 340,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -7099,14 +6793,12 @@
    "(1,5)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 341,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z5",
@@ -7143,14 +6835,12 @@
    "(3,4)(5,6)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 342,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1",
    "Z0X1",
@@ -7190,14 +6880,12 @@
    "(3,5)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 343,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -7233,14 +6921,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 344,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1",
    "Z0X1Z6",
@@ -7278,14 +6964,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 345,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -7321,14 +7005,12 @@
    "(1,4)(2,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 346,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z4Z6",
@@ -7366,14 +7048,12 @@
    "(1,2)(5,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 347,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z1Z5",
@@ -7412,14 +7092,12 @@
    "(1,2)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 348,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z2",
@@ -7456,14 +7134,12 @@
    "(0,1)(2,3)(5,6)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 349,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -7497,14 +7173,12 @@
    "r1r2R4R5^(1,4)(2,5)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 350,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z4Z6",
    "X2Z5Z6",
@@ -7544,14 +7218,12 @@
    "(0,1)(2,3)(5,6)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 351,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z6",
@@ -7587,14 +7259,12 @@
    "(0,1)(3,4)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 352,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -7630,14 +7300,12 @@
    "(0,1)(3,6)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 353,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z3",
@@ -7673,14 +7341,12 @@
    "(0,1)(4,5)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 354,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5Z6",
    "Z1Z3Z5",
@@ -7716,14 +7382,12 @@
    "(0,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 355,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z3",
@@ -7759,14 +7423,12 @@
    "(0,1)(3,4)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 356,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z3Z6",
    "X1Z4Z6",
@@ -7806,14 +7468,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 357,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -7847,14 +7507,12 @@
    "(0,6)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 358,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z4Z6",
@@ -7892,14 +7550,12 @@
    "H2H4^(2,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 359,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -7937,14 +7593,12 @@
    "H2H4^(2,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 360,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -7984,14 +7638,12 @@
    "(0,1)(2,3)(5,6)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 361,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z6",
@@ -8024,14 +7676,12 @@
    "(1,2)(3,4)(5,6)"
   ],
   "aut_group_size": 4,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 362,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X3Z4Z5",
    "Z3X4Z6",
@@ -8069,14 +7719,12 @@
    "H2H4^(2,4)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 363,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z5",
@@ -8112,14 +7760,12 @@
    "(1,3)(2,4)"
   ],
   "aut_group_size": 48,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 364,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z3Z5",
    "Z2Z3Z6",
@@ -8157,14 +7803,12 @@
    "(0,1)(5,6)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 365,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z6",
@@ -8200,14 +7844,12 @@
    "H1H3^(1,3)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 366,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -8245,14 +7887,12 @@
    "(0,1)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 367,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -8288,14 +7928,12 @@
    "S3r4R5S6^(0,1)(3,6)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 368,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -8335,14 +7973,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 369,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -8381,14 +8017,12 @@
    "(0,3)(4,6)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 370,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z2",
@@ -8422,14 +8056,12 @@
    "H0H4^(0,4)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 371,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z4",
    "X1Z2Z3",
@@ -8465,14 +8097,12 @@
    "(1,4)(2,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 372,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z4Z6",
@@ -8510,14 +8140,12 @@
    "(1,2)(5,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 373,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z1Z5",
@@ -8551,14 +8179,12 @@
    "(0,6)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 374,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z2Z5Z6",
@@ -8593,14 +8219,12 @@
    "(0,2)(1,3)(5,6)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 375,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1Z5",
    "Z0X1Z6",
@@ -8636,14 +8260,12 @@
    "(0,1)(2,3)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 376,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -8679,14 +8301,12 @@
    "H1H6^(1,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 377,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -8722,14 +8342,12 @@
    "(0,1)(3,4)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 378,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1Z3Z4",
    "X0X2Z3Z5",
@@ -8765,14 +8383,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 379,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "Z1X2Z4Z6",
@@ -8810,14 +8426,12 @@
    "(0,1)(5,6)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 380,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z5",
    "Z1Z6",
@@ -8856,14 +8470,12 @@
    "(1,2)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 381,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z2",
@@ -8903,14 +8515,12 @@
    "(0,1)(2,3)(5,6)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 382,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -8946,14 +8556,12 @@
    "r2r3R5R6^(2,5)(3,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 383,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z4",
    "Z1X2Z5",
@@ -8987,14 +8595,12 @@
    "H0H1^(0,1)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 384,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1",
    "Z0X1Z6",
@@ -9030,14 +8636,12 @@
    "H1H2H4H5^(1,4)(2,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 385,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z4Z6",
@@ -9073,14 +8677,12 @@
    "(2,3)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 386,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z4",
    "Y1Y2Z3Z5",
@@ -9118,14 +8720,12 @@
    "(1,2)(5,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 387,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z4",
    "X1Z5",
@@ -9161,14 +8761,12 @@
    "(0,1)(3,4)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 388,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -9202,14 +8800,12 @@
    "H0H6^(0,6)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 389,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X2Z5Z6",
@@ -9246,14 +8842,12 @@
    "(1,2)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 390,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z2",
    "X1X2",
@@ -9289,14 +8883,12 @@
    "(2,4)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 391,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "X2X4",
@@ -9332,14 +8924,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 392,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z3",
    "X2Z4",
@@ -9375,14 +8965,12 @@
    "(1,2)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 393,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z5",
    "Z2Z6",
@@ -9418,14 +9006,12 @@
    "(1,3)(4,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 394,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z3Z4",
@@ -9463,14 +9049,12 @@
    "(0,1)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 395,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -9504,14 +9088,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 396,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0X1Z6",
    "X2Z4Z6",
@@ -9547,14 +9129,12 @@
    "(1,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 397,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z5",
    "X2X4",
@@ -9588,14 +9168,12 @@
    "(1,4)(2,5)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 398,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z4Z6",
    "Z2Z5Z6",
@@ -9633,14 +9211,12 @@
    "(3,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 399,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -9678,14 +9254,12 @@
    "H3H5^(3,5)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 400,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -9723,14 +9297,12 @@
    "(0,4)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 401,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z6",
@@ -9766,14 +9338,12 @@
    "(0,4)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 402,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X4",
    "Z2Z6",
@@ -9809,14 +9379,12 @@
    "r2r3R4R5^(2,4)(3,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 403,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1",
    "Z2X4Z5",
@@ -9850,14 +9418,12 @@
    "(2,3)(5,6)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 404,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z2Z3",
    "Z1X2Z5",
@@ -9893,14 +9459,12 @@
    "H0H6^(0,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 405,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X2Z4",
@@ -9935,14 +9499,12 @@
    "H1S3S4S5V6^(3,5)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 406,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z4",
    "Z1X3Z6",
@@ -9976,14 +9538,12 @@
    "(1,3)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 407,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z3",
    "Z2Z5Z6",
@@ -10019,14 +9579,12 @@
    "(0,1)"
   ],
   "aut_group_size": 48,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 408,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -10064,14 +9622,12 @@
    "(3,5)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 409,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -10109,14 +9665,12 @@
    "(3,6)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 410,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z1Z4",
@@ -10152,14 +9706,12 @@
    "(0,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 411,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z5",
@@ -10197,14 +9749,12 @@
    "(3,5)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 412,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -10243,14 +9793,12 @@
    "(3,4)"
   ],
   "aut_group_size": 576,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 413,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -10290,14 +9838,12 @@
    "(0,1)"
   ],
   "aut_group_size": 3840,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 414,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -10333,14 +9879,12 @@
    "(0,1)(3,4)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 415,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1Z3Z4",
    "X0X2Z3Z5",
@@ -10375,14 +9919,12 @@
    "H2H3V4S5S6^(2,3)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 416,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z6",
    "X2Z3Z5",
@@ -10416,14 +9958,12 @@
    "H1H6^(1,6)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 417,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z6",
    "X2Z3Z4",
@@ -10461,14 +10001,12 @@
    "(0,1)(5,6)"
   ],
   "aut_group_size": 768,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 418,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -10506,14 +10044,12 @@
    "H2H3H5H6^(2,3)(5,6)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 419,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z4",
    "X2X5",
@@ -10553,14 +10089,12 @@
    "(4,5)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 420,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -10601,14 +10135,12 @@
    "(2,4)(3,5)"
   ],
   "aut_group_size": 2304,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 421,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z3",
@@ -10644,14 +10176,12 @@
    "(1,6)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 422,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "X2X4",
@@ -10689,14 +10219,12 @@
    "(3,5)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 423,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -10736,14 +10264,12 @@
    "(0,1)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 424,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z6",
@@ -10781,14 +10307,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 425,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "X2X4",
@@ -10826,14 +10350,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 426,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -10871,14 +10393,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 427,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z5",
@@ -10916,14 +10436,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 428,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z6",
    "X2Z4",
@@ -10959,14 +10477,12 @@
    "(2,3)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 429,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z6",
    "X2Z4Z6",
@@ -11004,14 +10520,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 256,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 430,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z3",
@@ -11050,14 +10564,12 @@
    "(3,4)"
   ],
   "aut_group_size": 384,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 431,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "X2X5",
@@ -11095,14 +10607,12 @@
    "(2,6)"
   ],
   "aut_group_size": 128,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 432,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z4",
    "Z2Z6",
@@ -11139,14 +10649,12 @@
    "(1,2)(3,4)"
   ],
   "aut_group_size": 240,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 433,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X1Z2Z3Z6",
    "Z1X2Z4Z6",
@@ -11186,14 +10694,12 @@
    "(1,2)"
   ],
   "aut_group_size": 1152,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 434,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -11231,14 +10737,12 @@
    "(3,5)"
   ],
   "aut_group_size": 192,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 435,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -11278,14 +10782,12 @@
    "(1,2)"
   ],
   "aut_group_size": 1152,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 436,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -11326,14 +10828,12 @@
    "(4,5)"
   ],
   "aut_group_size": 4608,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 437,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -11373,14 +10873,12 @@
    "(1,2)"
   ],
   "aut_group_size": 1536,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 438,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -11422,14 +10920,12 @@
    "(1,2)"
   ],
   "aut_group_size": 46080,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 439,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z1Z6",
    "Z2Z6",
@@ -11462,14 +10958,12 @@
    "(1,2)(3,4)(5,6)"
   ],
   "aut_group_size": 4,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 440,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z1Z2",
    "X3Z4Z5",
@@ -11505,14 +10999,12 @@
    "H0H5^(0,5)"
   ],
   "aut_group_size": 32,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 441,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -11548,14 +11040,12 @@
    "(0,1)(3,4)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 442,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -11589,14 +11079,12 @@
    "H2H3V4S5S6^(2,3)"
   ],
   "aut_group_size": 8,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 443,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0X1Z6",
    "X2Z3Z6",
@@ -11632,14 +11120,12 @@
    "(0,1)"
   ],
   "aut_group_size": 48,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 444,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z6",
    "X1Z6",
@@ -11673,14 +11159,12 @@
    "(1,2)(4,5)"
   ],
   "aut_group_size": 16,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 445,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z3Z6",
    "X1Z4Z6",
@@ -11716,14 +11200,12 @@
    "H3V4S5S6^(0,1)(5,6)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 446,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Z5",
    "X1Z6",
@@ -11759,14 +11241,12 @@
    "(0,1)(3,6)(4,5)"
   ],
   "aut_group_size": 64,
-  "code_type": "StabSubSystemCode",
   "d": 1,
   "index": 447,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z6",
    "Z1Z3",

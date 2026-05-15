@@ -13,14 +13,12 @@
    "(0,3)(1,4)(2,5)"
   ],
   "aut_group_size": 5184,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 728,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4X5",
    "X0X1X2X6X7X8",
@@ -66,14 +64,12 @@
    "V2V3^(0,1)"
   ],
   "aut_group_size": 480,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1108,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3",
    "Z0Z1X4X5X6X7X8",
@@ -119,14 +115,12 @@
    "V5V6V7V8^(0,1)"
   ],
   "aut_group_size": 288,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1160,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4",
    "Z0Z1X5X6X7X8",
@@ -172,14 +166,12 @@
    "H1H2H3H4H5H6H7H8^(1,6)(2,7)(3,8)"
   ],
   "aut_group_size": 144,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1211,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4X5",
    "X0Z4Z5Z6Z7Z8",
@@ -224,14 +216,12 @@
    "r0H1H2r4r5R6R7R8^(0,6)(4,7)(5,8)"
   ],
   "aut_group_size": 48,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1212,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4X5X6",
    "Y0Z1Z2X3Z6Z7Z8",
@@ -276,14 +266,12 @@
    "V3V4V5V6V7V8^(0,1)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1213,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4",
    "Z0Z1X2X5X6X7X8",
@@ -332,14 +320,12 @@
    "V0V2V3V4V5V6V7V8"
   ],
   "aut_group_size": 40320,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1214,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1",
    "X0X2X3X4X5X6X7X8",
@@ -386,14 +372,12 @@
    "H3H4H5H6H7H8^(1,2)"
   ],
   "aut_group_size": 4320,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1215,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2",
    "Z0Z1X3X4X5X6X7X8",
@@ -441,14 +425,12 @@
    "V0V4V5V6V7V8"
   ],
   "aut_group_size": 2880,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1216,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3",
    "X0X4X5X6X7X8",
@@ -493,14 +475,12 @@
    "V0H6H7H8^(2,4)(3,5)"
   ],
   "aut_group_size": 48,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1217,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4X5",
    "Z0Z1Z2Z3X6X7X8",
@@ -546,14 +526,12 @@
    "V1V2S7S8^(0,6)"
   ],
   "aut_group_size": 96,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1218,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0X1X2Z6Z7Z8",
    "X0X1X2X3X4X5X6",
@@ -599,14 +577,12 @@
    "V0H6H7H8^(2,4)(3,5)"
   ],
   "aut_group_size": 144,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1219,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0X1X2X3X4X5",
    "Z0Z1Z2Z3X4X6X7X8",
@@ -656,14 +632,12 @@
    "(0,1)"
   ],
   "aut_group_size": 483840,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 1258,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X8",
    "X0X1X2X3X4X5X6X7",

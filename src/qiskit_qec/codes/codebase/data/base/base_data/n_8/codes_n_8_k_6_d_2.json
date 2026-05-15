@@ -12,14 +12,12 @@
    "H0H1H2H3H4H5H6H7"
   ],
   "aut_group_size": 241920,
-  "code_type": "StabSubSystemCode",
   "d": 2,
   "index": 67,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 1,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "Z0Z1Z2Z3Z4Z5Z6Z7",
    "X0X1X2X3X4X5X6X7"

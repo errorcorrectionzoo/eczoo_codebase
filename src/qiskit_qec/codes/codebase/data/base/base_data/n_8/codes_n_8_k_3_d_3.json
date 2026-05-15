@@ -6,14 +6,12 @@
    "H0V1R3S4H5r6R7^(0,1)(2,5,4,3,6,7)"
   ],
   "aut_group_size": 168,
-  "code_type": "StabSubSystemCode",
   "d": 3,
   "index": 6822,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
-  "is_subsystem": 1,
   "isotropic_generators": [
    "X0Y1Y2X3Z4Z7",
    "Z0X1Z3X4Z6Z7",
