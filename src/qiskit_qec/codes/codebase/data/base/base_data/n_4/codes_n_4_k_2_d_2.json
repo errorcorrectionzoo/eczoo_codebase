@@ -9,12 +9,17 @@
   ],
   "aut_group_size": 144,
   "d": 2,
+  "d_lee": 2,
   "index": 9,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 1,
   "isotropic_generators": [
+   "Z0Z1Z2Z3",
+   "X0X1X2X3"
+  ],
+  "lee_generators": [
    "Z0Z1Z2Z3",
    "X0X1X2X3"
   ],

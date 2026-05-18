@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Batch-compute the optimal LC Lee distance for all codes in the base_data database.
 
-For each code with k >= 1, performs an exhaustive 3^n LC search (excluding H gates,
+For each code with k > 0, performs an exhaustive 3^n LC search (excluding H gates,
 which never affect Lee distance) and injects two new fields into the JSON:
   "d_lee":          best Lee distance over all LC-equivalents
   "lee_generators": generators of the LC-equivalent achieving that distance
+
+Lee distance is the lowest Lee-weight element of N(S) \ S.
 
 Both fields are placed immediately after their sibling keys ("d" and
 "isotropic_generators" respectively), preserving the existing key order.
@@ -27,6 +29,7 @@ Usage
 
 import argparse
 import json
+import re
 import sys
 import time
 from itertools import product
@@ -40,6 +43,7 @@ DATA_DIR = (
     Path(__file__).parent.parent
     / "src/qiskit_qec/codes/codebase/data/base/base_data"
 )
+CODE_FILE_RE = re.compile(r"^codes_n_(?P<n>\d+)_k_(?P<k>\d+)_d_(?P<d>\d+)$")
 
 
 # ---------------------------------------------------------------------------
@@ -50,6 +54,10 @@ def compute_max_lee(H_rows: list[int], n: int, d_pauli: int) -> tuple[int, list[
     """Return (best_lee_dist, best_H_rows) over all 3^n LC-equivalents."""
     upper = 2 * d_pauli
     best_dist = lee_distance(H_rows, n, max_weight=upper)
+    if best_dist == 0:
+        raise ValueError(
+            f"No nonstabilizer normalizer element found up to the Lee-distance upper bound {upper}."
+        )
     best_H = list(H_rows)
     if best_dist >= upper:
         return best_dist, best_H
@@ -60,6 +68,10 @@ def compute_max_lee(H_rows: list[int], n: int, d_pauli: int) -> tuple[int, list[
         if lee_distance(H_lc, n, max_weight=best_dist) != 0:
             continue  # can't beat current best
         d = lee_distance(H_lc, n, max_weight=upper)
+        if d == 0:
+            raise ValueError(
+                f"No nonstabilizer normalizer element found up to the Lee-distance upper bound {upper}."
+            )
         if d > best_dist:
             best_dist = d
             best_H = H_lc
@@ -100,6 +112,8 @@ def _load_delta(delta_path: Path) -> dict[str, dict]:
             line = line.strip()
             if line:
                 rec = json.loads(line)
+                if rec["d_lee"] == 0:
+                    continue
                 done[rec["id"]] = {
                     "d_lee": rec["d_lee"],
                     "lee_generators": rec["lee_generators"],
@@ -133,6 +147,27 @@ def _flush_delta(json_path: Path, codes: dict, delta: dict[str, dict]) -> dict:
     return codes
 
 
+def _entry_needs_lee(entry: dict) -> bool:
+    """Return True when Lee fields are missing or contain an invalid zero distance."""
+    return (
+        "d_lee" not in entry
+        or "lee_generators" not in entry
+        or entry["d_lee"] == 0
+    )
+
+
+def _code_file_key(path: Path) -> tuple[int, int, int]:
+    """Return the (n, k, d) encoded in a database JSON filename."""
+    match = CODE_FILE_RE.match(path.stem)
+    if not match:
+        raise ValueError(f"Unexpected code database filename: {path}")
+    return (
+        int(match.group("n")),
+        int(match.group("k")),
+        int(match.group("d")),
+    )
+
+
 # ---------------------------------------------------------------------------
 # Per-file processing
 # ---------------------------------------------------------------------------
@@ -153,12 +188,12 @@ def process_file(json_path: Path, n: int, flush_every: int) -> tuple[int, int]:
 
     delta = _load_delta(delta_path)
 
-    # Pending = k>=1, not in delta, not already in the JSON
+    # Pending = k > 0, not in delta, not already complete in the JSON.
     pending = [
         cid for cid, entry in codes.items()
-        if entry.get("k", 0) >= 1
+        if entry.get("k", 0) > 0
         and cid not in delta
-        and ("d_lee" not in entry or "lee_generators" not in entry)
+        and _entry_needs_lee(entry)
     ]
     n_skipped = len(codes) - len(pending)
 
@@ -175,12 +210,13 @@ def process_file(json_path: Path, n: int, flush_every: int) -> tuple[int, int]:
     try:
         for i, cid in enumerate(pending):
             entry = codes[cid]
+            code_n = entry.get("n", n)
             d_pauli = entry["d"]
 
             t0 = time.perf_counter()
-            H_rows = generators_to_H(entry["isotropic_generators"], n)
-            d_lee, best_H = compute_max_lee(H_rows, n, d_pauli)
-            lee_gens = H_to_generators(best_H, n)
+            H_rows = generators_to_H(entry["isotropic_generators"], code_n)
+            d_lee, best_H = compute_max_lee(H_rows, code_n, d_pauli)
+            lee_gens = H_to_generators(best_H, code_n)
             elapsed = time.perf_counter() - t0
 
             _append_delta(delta_path, cid, d_lee, lee_gens)
@@ -191,7 +227,7 @@ def process_file(json_path: Path, n: int, flush_every: int) -> tuple[int, int]:
 
             total_elapsed = time.perf_counter() - t_file
             eta_s = total_elapsed / processed * (len(pending) - i - 1)
-            flag = "*" if d_lee > d_pauli else " "
+            flag = "*" if d_lee is not None and d_lee > d_pauli else " "
             print(
                 f"  {flag}[{i + 1}/{len(pending)}] id={cid}"
                 f"  d={d_pauli}  d_lee={d_lee}"
@@ -239,16 +275,13 @@ def main() -> None:
     args = parser.parse_args()
 
     files = sorted(
-        DATA_DIR.glob("n_*/codes_n_*_k_*.json"),
-        key=lambda p: (
-            int(p.parent.name.split("_")[1]),
-            int(p.stem.split("_k_")[1]),
-        ),
+        DATA_DIR.glob("n_*/codes_n_*_k_*_d_*.json"),
+        key=_code_file_key,
     )
     files = [
         p for p in files
-        if int(p.parent.name.split("_")[1]) >= args.start_n
-        and int(p.stem.split("_k_")[1]) >= args.start_k
+        if _code_file_key(p)[0] >= args.start_n
+        and _code_file_key(p)[1] >= args.start_k
     ]
 
     print(f"Database : {DATA_DIR}")
@@ -260,8 +293,7 @@ def main() -> None:
 
     try:
         for path in files:
-            n = int(path.parent.name.split("_")[1])
-            k = int(path.stem.split("_k_")[1])
+            n, k, _ = _code_file_key(path)
             size_kb = path.stat().st_size // 1024
 
             with open(path) as f:
@@ -272,9 +304,9 @@ def main() -> None:
             delta = _load_delta(path.with_suffix(".delta.jsonl"))
             pending = [
                 cid for cid, e in codes_peek.items()
-                if e.get("k", 0) >= 1
+                if e.get("k", 0) > 0
                 and cid not in delta
-                and ("d_lee" not in e or "lee_generators" not in e)
+                and _entry_needs_lee(e)
             ]
             done_count = len(codes_peek) - len(pending)
 

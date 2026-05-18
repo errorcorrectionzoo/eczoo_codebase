@@ -10,12 +10,18 @@
   ],
   "aut_group_size": 192,
   "d": 2,
+  "d_lee": 2,
   "index": 73,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "Z0Z1Z2Z4",
+   "Z0Z1Z3Z5",
+   "X0X1Y2Y3Y4Y5"
+  ],
+  "lee_generators": [
    "Z0Z1Z2Z4",
    "Z0Z1Z3Z5",
    "X0X1Y2Y3Y4Y5"
@@ -51,12 +57,18 @@
   ],
   "aut_group_size": 48,
   "d": 2,
+  "d_lee": 2,
   "index": 76,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0Z1X2Z4",
+   "Z0X1X3Z5",
+   "Z2Z3Y4Y5"
+  ],
+  "lee_generators": [
    "X0Z1X2Z4",
    "Z0X1X3Z5",
    "Z2Z3Y4Y5"
@@ -93,12 +105,18 @@
   ],
   "aut_group_size": 192,
   "d": 2,
+  "d_lee": 2,
   "index": 82,
   "is_css": 1,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1",
+   "X2X3X4X5",
+   "Z0Z1Z2Z3Z4Z5"
+  ],
+  "lee_generators": [
    "X0X1",
    "X2X3X4X5",
    "Z0Z1Z2Z3Z4Z5"
@@ -133,12 +151,18 @@
   ],
   "aut_group_size": 36,
   "d": 2,
+  "d_lee": 2,
   "index": 85,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "Z3Z4X5",
+   "Z0X1Z2X4Z5",
+   "Y0Y1Y2X3Y4"
+  ],
+  "lee_generators": [
    "Z3Z4X5",
    "Z0X1Z2X4Z5",
    "Y0Y1Y2X3Y4"
@@ -172,12 +196,18 @@
   ],
   "aut_group_size": 16,
   "d": 2,
+  "d_lee": 2,
   "index": 86,
   "is_css": 0,
   "is_decomposable": 0,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "Z2Z3Y4Y5",
+   "Z0X1Z2X4Z5",
+   "Y0Y1Y2X3Y4"
+  ],
+  "lee_generators": [
    "Z2Z3Y4Y5",
    "Z0X1Z2X4Z5",
    "Y0Y1Y2X3Y4"

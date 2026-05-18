@@ -9,6 +9,7 @@
   ],
   "aut_group_size": 96,
   "d": 3,
+  "d_lee": 4,
   "index": 68,
   "is_css": 0,
   "is_decomposable": 0,
@@ -20,6 +21,13 @@
    "Y1Y3Z4Z5",
    "X1Z2X4Z5",
    "Z0Y1Z2Z3Y5"
+  ],
+  "lee_generators": [
+   "Y0Y5",
+   "X1X2Z3Z4",
+   "Y1X3Z4Y5",
+   "X1Z2Y4Y5",
+   "Z0Y1Z2Z3X5"
   ],
   "k": 1,
   "logical_ops": [
@@ -49,12 +57,20 @@
   ],
   "aut_group_size": 720,
   "d": 3,
+  "d_lee": 3,
   "index": 87,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X5",
+   "Y0Y1Z2Z3",
+   "Y0Z1Y2Z4",
+   "X0Z2X3Z4",
+   "X0Z1Z3X4"
+  ],
+  "lee_generators": [
    "X5",
    "Y0Y1Z2Z3",
    "Y0Z1Y2Z4",

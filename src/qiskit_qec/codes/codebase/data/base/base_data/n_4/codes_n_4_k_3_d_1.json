@@ -12,12 +12,16 @@
   ],
   "aut_group_size": 576,
   "d": 1,
+  "d_lee": 1,
   "index": 0,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X2X3"
+  ],
+  "lee_generators": [
    "X2X3"
   ],
   "k": 3,
@@ -51,12 +55,16 @@
   ],
   "aut_group_size": 288,
   "d": 1,
+  "d_lee": 1,
   "index": 1,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X1X2X3"
+  ],
+  "lee_generators": [
    "X1X2X3"
   ],
   "k": 3,
@@ -90,6 +98,7 @@
   ],
   "aut_group_size": 384,
   "d": 1,
+  "d_lee": 2,
   "index": 2,
   "is_css": 1,
   "is_decomposable": 0,
@@ -97,6 +106,9 @@
   "is_gf4linear": 0,
   "isotropic_generators": [
    "X0X1X2X3"
+  ],
+  "lee_generators": [
+   "Y0Y1Y2Y3"
   ],
   "k": 3,
   "logical_ops": [
@@ -131,12 +143,16 @@
   ],
   "aut_group_size": 2592,
   "d": 1,
+  "d_lee": 1,
   "index": 3,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X3"
+  ],
+  "lee_generators": [
    "X3"
   ],
   "k": 3,

@@ -7,6 +7,7 @@
   ],
   "aut_group_size": 168,
   "d": 3,
+  "d_lee": 4,
   "index": 6822,
   "is_css": 0,
   "is_decomposable": 0,
@@ -18,6 +19,13 @@
    "X0Z1Z2X5Z6Z7",
    "Y0Y2Z3Z5X6Z7",
    "Y0Z1X2Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "X0X1X2X3Y4Y7",
+   "Z0Y1Z3Z4Z6Y7",
+   "X0Z1Y2X5Z6Y7",
+   "Y0X2Z3Z5X6Y7",
+   "Y0Z1Z2Y4Z5X7"
   ],
   "k": 3,
   "logical_ops": [

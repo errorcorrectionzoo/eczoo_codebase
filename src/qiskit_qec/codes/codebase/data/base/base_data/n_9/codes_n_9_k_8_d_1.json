@@ -27,12 +27,16 @@
   ],
   "aut_group_size": 11287019520,
   "d": 1,
+  "d_lee": 1,
   "index": 0,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1"
+  ],
+  "lee_generators": [
    "X0X1"
   ],
   "k": 8,
@@ -96,12 +100,16 @@
   ],
   "aut_group_size": 1612431360,
   "d": 1,
+  "d_lee": 1,
   "index": 1,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2"
+  ],
+  "lee_generators": [
    "X0X1X2"
   ],
   "k": 8,
@@ -164,12 +172,16 @@
   ],
   "aut_group_size": 358318080,
   "d": 1,
+  "d_lee": 1,
   "index": 2,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3"
+  ],
+  "lee_generators": [
    "X0X1X2X3"
   ],
   "k": 8,
@@ -231,12 +243,16 @@
   ],
   "aut_group_size": 119439360,
   "d": 1,
+  "d_lee": 1,
   "index": 3,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4"
   ],
   "k": 8,
@@ -297,12 +313,16 @@
   ],
   "aut_group_size": 59719680,
   "d": 1,
+  "d_lee": 1,
   "index": 4,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4X5"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4X5"
   ],
   "k": 8,
@@ -362,12 +382,16 @@
   ],
   "aut_group_size": 46448640,
   "d": 1,
+  "d_lee": 1,
   "index": 5,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4X5X6"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4X5X6"
   ],
   "k": 8,
@@ -426,12 +450,16 @@
   ],
   "aut_group_size": 61931520,
   "d": 1,
+  "d_lee": 1,
   "index": 6,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4X5X6X7"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4X5X6X7"
   ],
   "k": 8,
@@ -490,6 +518,7 @@
   ],
   "aut_group_size": 185794560,
   "d": 1,
+  "d_lee": 2,
   "index": 7,
   "is_css": 1,
   "is_decomposable": 0,
@@ -497,6 +526,9 @@
   "is_gf4linear": 0,
   "isotropic_generators": [
    "X0X1X2X3X4X5X6X7X8"
+  ],
+  "lee_generators": [
+   "Y0Y1Y2Y3Y4Y5Y6Y7Y8"
   ],
   "k": 8,
   "logical_ops": [
@@ -561,12 +593,16 @@
   ],
   "aut_group_size": 135444234240,
   "d": 1,
+  "d_lee": 1,
   "index": 8,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0"
+  ],
+  "lee_generators": [
    "X0"
   ],
   "k": 8,

@@ -24,12 +24,16 @@
   ],
   "aut_group_size": 268738560,
   "d": 1,
+  "d_lee": 1,
   "index": 0,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1"
+  ],
+  "lee_generators": [
    "X0X1"
   ],
   "k": 7,
@@ -87,12 +91,16 @@
   ],
   "aut_group_size": 44789760,
   "d": 1,
+  "d_lee": 1,
   "index": 1,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2"
+  ],
+  "lee_generators": [
    "X0X1X2"
   ],
   "k": 7,
@@ -149,12 +157,16 @@
   ],
   "aut_group_size": 11943936,
   "d": 1,
+  "d_lee": 1,
   "index": 2,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3"
+  ],
+  "lee_generators": [
    "X0X1X2X3"
   ],
   "k": 7,
@@ -210,12 +222,16 @@
   ],
   "aut_group_size": 4976640,
   "d": 1,
+  "d_lee": 1,
   "index": 3,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4"
   ],
   "k": 7,
@@ -270,12 +286,16 @@
   ],
   "aut_group_size": 3317760,
   "d": 1,
+  "d_lee": 1,
   "index": 4,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4X5"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4X5"
   ],
   "k": 7,
@@ -329,12 +349,16 @@
   ],
   "aut_group_size": 3870720,
   "d": 1,
+  "d_lee": 1,
   "index": 5,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0X1X2X3X4X5X6"
+  ],
+  "lee_generators": [
    "X0X1X2X3X4X5X6"
   ],
   "k": 7,
@@ -388,6 +412,7 @@
   ],
   "aut_group_size": 10321920,
   "d": 1,
+  "d_lee": 2,
   "index": 6,
   "is_css": 1,
   "is_decomposable": 0,
@@ -395,6 +420,9 @@
   "is_gf4linear": 0,
   "isotropic_generators": [
    "X0X1X2X3X4X5X6X7"
+  ],
+  "lee_generators": [
+   "Y0Y1Y2Y3Y4Y5Y6Y7"
   ],
   "k": 7,
   "logical_ops": [
@@ -453,12 +481,16 @@
   ],
   "aut_group_size": 2821754880,
   "d": 1,
+  "d_lee": 1,
   "index": 7,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 0,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0"
+  ],
+  "lee_generators": [
    "X0"
   ],
   "k": 7,

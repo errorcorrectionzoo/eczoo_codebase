@@ -12,6 +12,7 @@
   ],
   "aut_group_size": 768,
   "d": 3,
+  "d_lee": 4,
   "index": 40,
   "is_css": 0,
   "is_decomposable": 1,
@@ -25,6 +26,15 @@
    "Y1Y3Z4Z5",
    "X1Z2X4Z5",
    "Z0Y1Z2Z3Y5"
+  ],
+  "lee_generators": [
+   "X6",
+   "X7",
+   "Y0Y5",
+   "X1X2Z3Z4",
+   "Y1X3Z4Y5",
+   "X1Z2Y4Y5",
+   "Z0Y1Z2Z3X5"
   ],
   "k": 1,
   "logical_ops": [
@@ -56,6 +66,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 107,
   "is_css": 0,
   "is_decomposable": 0,
@@ -69,6 +80,15 @@
    "Z3X5Z6Z7",
    "Z0X3Y4Y6",
    "Z1Z4Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "Y1Y7",
+   "Y2X3Z4Y5",
+   "Z2Y4Z6Y7",
+   "Y3Z5Z6Y7",
+   "Z0Z3X4Y6",
+   "Z1Z4Y5Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -102,6 +122,7 @@
   ],
   "aut_group_size": 256,
   "d": 3,
+  "d_lee": 4,
   "index": 140,
   "is_css": 0,
   "is_decomposable": 0,
@@ -115,6 +136,15 @@
    "Z2X3X4Z6",
    "Z1Y4Z5Y6Z7",
    "Z0Z3Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "X2Z3",
+   "Y4Y5",
+   "Z2Y3Y4Z6",
+   "Z1X4Z5Y6Z7",
+   "Z0Z3Z4Z5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -146,6 +176,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 152,
   "is_css": 0,
   "is_decomposable": 0,
@@ -159,6 +190,15 @@
    "Z1Z3Y5Y6",
    "Z0Z3Z4X7",
    "Z2Y3X4Y5Z6"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "X2Z4",
+   "Z3Y5Z7",
+   "Z1Y3X5Y6",
+   "Z0Y3Z4Y7",
+   "Z2X3Y4X5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -190,6 +230,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 154,
   "is_css": 0,
   "is_decomposable": 0,
@@ -203,6 +244,15 @@
    "Z1Z3Y5Y6",
    "Z2Y3X4Y5Z6",
    "Z0Z2Z3Y4Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "X2Z4",
+   "Y3Z5Z7",
+   "Z1Z3X5X6",
+   "Z2X3Y4X5Z6",
+   "Z0Z2Z3X4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -234,6 +284,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 164,
   "is_css": 0,
   "is_decomposable": 0,
@@ -247,6 +298,15 @@
    "Y3Y5Z6Z7",
    "Z1X3X6Z7",
    "Z0Y3Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1Z6",
+   "X2Z4",
+   "Z2X3X4Z5",
+   "Y3X5Z6Y7",
+   "Z1X3Y6Y7",
+   "Z0Y3Z4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -276,6 +336,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 181,
   "is_css": 0,
   "is_decomposable": 0,
@@ -289,6 +350,15 @@
    "X2Z3X6",
    "Z0X2X5X7",
    "Z1X4Z5X6Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z4",
+   "Y3Z4Z6",
+   "X2Y5Z6",
+   "Y2Z3X6",
+   "Z0Y2X5Y7",
+   "Z1Y4Z5X6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -319,6 +389,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 230,
   "is_css": 0,
   "is_decomposable": 0,
@@ -332,6 +403,15 @@
    "Z1Z5X6Z7",
    "X2Z3Z4X5Z6",
    "Z0Z2Z4Y5Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "X2X3Z4Z7",
+   "Y2X4Y5Z7",
+   "Z1Y5Y6Z7",
+   "Y2Z3Z4Z5Z6",
+   "Z0Z2Z4X5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -364,6 +444,7 @@
   ],
   "aut_group_size": 384,
   "d": 3,
+  "d_lee": 4,
   "index": 243,
   "is_css": 0,
   "is_decomposable": 0,
@@ -377,6 +458,15 @@
    "Y3Y5Z6Z7",
    "X3Z4X6Z7",
    "Z0Z2Y3Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1Z2",
+   "Z1X2Y7",
+   "X3X4Z5Z6",
+   "Y3X5Z6Y7",
+   "X3Z4Y6Y7",
+   "Z0Z2Y3Z4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -408,6 +498,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 249,
   "is_css": 0,
   "is_decomposable": 0,
@@ -421,6 +512,15 @@
    "Z3Z4Y5Y6",
    "Z1X2Y3Y5Z6",
    "Z0Z2Z3Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z2",
+   "Y3Z5Z7",
+   "Z4Y6Z7",
+   "Z3Y4Y5X6",
+   "Z1Y2X3Y5Y6",
+   "Z0Z2Z3Y4X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -450,6 +550,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 258,
   "is_css": 0,
   "is_decomposable": 0,
@@ -463,6 +564,15 @@
    "Y2Y3Z4Z6",
    "Z0X2Z4Z5X6",
    "Z1X2Z3Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "Y2Z4Z7",
+   "X3Z4Y5",
+   "X2Y3Y4Z6",
+   "Z0Z2Y4Z5X6",
+   "Z1Z2Z3Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -492,6 +602,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 259,
   "is_css": 0,
   "is_decomposable": 0,
@@ -505,6 +616,15 @@
    "Z3Z5X6Z7",
    "Z1X2X4X6",
    "Z0X2X5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z4",
+   "Y3Z4Z6",
+   "Y2X5Z6",
+   "Z3Y5Y6Z7",
+   "Z1X2Y4Y6",
+   "Z0X2Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -535,6 +655,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 278,
   "is_css": 0,
   "is_decomposable": 0,
@@ -548,6 +669,15 @@
    "Z1X2X3Z5",
    "Y3Y5Z6Z7",
    "Z0Z2Z3Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z2",
+   "Z4Z5Y6",
+   "Y3X4X6",
+   "Z1Y2Y3Z5",
+   "X3X5Z6Z7",
+   "Z0Z2Z3Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -578,6 +708,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 291,
   "is_css": 0,
   "is_decomposable": 0,
@@ -591,6 +722,15 @@
    "X2Z4X5Z7",
    "Z0Z5Z6X7",
    "Z1X2Z3X6Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Y6",
+   "Y2X3Z4Y5",
+   "Y2Y3Y4Y6",
+   "X2Z4Z5Z7",
+   "Z0Y5Y6X7",
+   "Z1X2Y3Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -620,6 +760,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 292,
   "is_css": 0,
   "is_decomposable": 0,
@@ -633,6 +774,15 @@
    "Z1Z3Z4X6",
    "X2X3Z4Z6Z7",
    "Z0Z3Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "Z2X3Z4Z5",
+   "Z2Z3X5Z7",
+   "Z1Z3Y4Y6",
+   "X2X3Y4Z6Z7",
+   "Z0Z3Y4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -664,6 +814,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 294,
   "is_css": 0,
   "is_decomposable": 0,
@@ -677,6 +828,15 @@
    "Y3Y5Z6Z7",
    "X3Z4X6Z7",
    "Z0Z1Y2Z3Z4Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z2",
+   "Z1Y2X3Y5",
+   "Z1Y2X4Y6",
+   "Y3X5Y6Z7",
+   "X3Z4Z6Z7",
+   "Z0Z1X2Z3Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -708,6 +868,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 295,
   "is_css": 0,
   "is_decomposable": 0,
@@ -721,6 +882,15 @@
    "Y3Y5Z6Z7",
    "X3Z4X6Z7",
    "Z0Z2Z3Z4X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1Z2",
+   "Z1X2X3Z5",
+   "Z1X2Z4Z6",
+   "Y3X5Z6Y7",
+   "X3Y4X6Y7",
+   "Z0Z2Z3Y4Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -752,6 +922,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 298,
   "is_css": 0,
   "is_decomposable": 0,
@@ -765,6 +936,15 @@
    "Z1X3Y4Y7",
    "Y2Z3Y4Z6Z7",
    "Z0Z2Y4Z5Y6"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "Y2X3Y4Z5",
+   "Z2Z3Z4X5",
+   "Z1Y3X4Y7",
+   "Y2Z3X4Z6Z7",
+   "Z0Z2X4Z5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -797,6 +977,7 @@
   ],
   "aut_group_size": 256,
   "d": 3,
+  "d_lee": 4,
   "index": 327,
   "is_css": 0,
   "is_decomposable": 0,
@@ -810,6 +991,15 @@
    "X2Z3X4Z7",
    "Z0Z2Z4Z5X6",
    "Z1Z3Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "Y4Y5",
+   "X2X3Z6Z7",
+   "Y2Z3Y4Z7",
+   "Z0Z2Z4Z5Y6",
+   "Z1Z3Z4Z5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -841,6 +1031,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 330,
   "is_css": 0,
   "is_decomposable": 0,
@@ -854,6 +1045,15 @@
    "Z1Y3Y5Z7",
    "Z2Y4Y6Z7",
    "Z0Y3Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1Z5",
+   "X2Z6",
+   "X3X4Z5Z6",
+   "Z1Y3X5Y7",
+   "Z2Y4X6Y7",
+   "Z0Y3Z4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -887,6 +1087,7 @@
   ],
   "aut_group_size": 512,
   "d": 3,
+  "d_lee": 4,
   "index": 346,
   "is_css": 0,
   "is_decomposable": 0,
@@ -900,6 +1101,15 @@
    "Z3Z6X7",
    "Z0Z1Y4Y5",
    "Z0Z2X4Z5X6Z7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1Z5",
+   "Y2Y6",
+   "Y3Y7",
+   "Z3Y6Z7",
+   "Z0Z1X4X5",
+   "Z0Z2Y4Z5Z6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -933,6 +1143,7 @@
   ],
   "aut_group_size": 1152,
   "d": 3,
+  "d_lee": 4,
   "index": 409,
   "is_css": 0,
   "is_decomposable": 1,
@@ -946,6 +1157,15 @@
    "Y3Y5Z6Z7",
    "X3Z4X6Z7",
    "Z0Y3Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1Z2",
+   "Z1X2",
+   "X3X4Z5Z6",
+   "Y3X5Z6Y7",
+   "X3Z4Y6Y7",
+   "Z0Y3Z4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -981,12 +1201,22 @@
   ],
   "aut_group_size": 17280,
   "d": 3,
+  "d_lee": 3,
   "index": 469,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X5",
+   "X6",
+   "X7",
+   "Y0Y1Z2Z3",
+   "Y0Z1Y2Z4",
+   "X0Z2X3Z4",
+   "X0Z1Z3X4"
+  ],
+  "lee_generators": [
    "X5",
    "X6",
    "X7",
@@ -1027,6 +1257,7 @@
   ],
   "aut_group_size": 384,
   "d": 3,
+  "d_lee": 4,
   "index": 493,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1040,6 +1271,15 @@
    "Z2X5Z6Z7",
    "Z3Z4Z5X6",
    "Z0Z1X3Y6Y7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1Y7",
+   "X2Z5",
+   "X3X4",
+   "Z2Y5Z6Y7",
+   "Z3Z4Z5X6",
+   "Z0Z1X3Y6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1072,6 +1312,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 524,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1085,6 +1326,15 @@
    "Y3Y5Z6Z7",
    "Z2X3Z4X6Z7",
    "Z0Z1Y3Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z7",
+   "Y2Y6",
+   "X3Z4Y5Y6",
+   "Y3X5Y6Z7",
+   "Z2X3Y4Z6Z7",
+   "Z0Z1Y3Y4Y5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1117,6 +1367,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 533,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1130,6 +1381,15 @@
    "Y3Y5Z6Z7",
    "Z2Z4Z5X6",
    "Z0Z1Z3Z4X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1Y7",
+   "X2Z6",
+   "X3Z4Z5Z6",
+   "Y3X5Z6Y7",
+   "Z2Y4Z5Y6",
+   "Z0Z1Z3Y4Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1163,6 +1423,7 @@
   ],
   "aut_group_size": 384,
   "d": 3,
+  "d_lee": 4,
   "index": 564,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1176,6 +1437,15 @@
    "Z3Z4X5",
    "Z0X3Y5Y7",
    "Z1Z2X3Z5X6Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "X2Z6",
+   "Y3Y4",
+   "Z3Z4Y5",
+   "Z0Y3X5Y7",
+   "Z1Z2Y3Z5Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1207,6 +1477,7 @@
   ],
   "aut_group_size": 96,
   "d": 3,
+  "d_lee": 4,
   "index": 580,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1220,6 +1491,15 @@
    "X2X3Z5Z6",
    "X2X4Z6Z7",
    "Z0Z1Y2Z3Z5Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z7",
+   "Z2Z4Y5",
+   "Z3Z4Y6",
+   "Y2Y3Z5Z6",
+   "Y2Y4Z6Z7",
+   "Z0Z1X2Z3Z5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1254,12 +1534,22 @@
   ],
   "aut_group_size": 8640,
   "d": 3,
+  "d_lee": 3,
   "index": 589,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X0Z7",
+   "X1Z7",
+   "Z0Z1X7",
+   "Y2Y3Z4Z5",
+   "Y2Z3Y4Z6",
+   "X2Z4X5Z6",
+   "X2Z3Z5X6"
+  ],
+  "lee_generators": [
    "X0Z7",
    "X1Z7",
    "Z0Z1X7",
@@ -1298,6 +1588,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 595,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1311,6 +1602,15 @@
    "Z4Z5X6",
    "Y2Y3X6",
    "Z0Z1X2Z3Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z7",
+   "Z2Y4Z6",
+   "Y3Z5Z6",
+   "Z4Y5X6",
+   "Y2X3X6",
+   "Z0Z1X2Y3Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1343,6 +1643,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 598,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1356,6 +1657,15 @@
    "Y2Z4Y5Z7",
    "Y3Z4Y6Z7",
    "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1Y7",
+   "X2Z3Z5Z6",
+   "X2Y4Z6Y7",
+   "Y2Z4X5Y7",
+   "X3Z4Y6Y7",
+   "Z0Z1Z2Y3Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1388,6 +1698,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 600,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1401,6 +1712,15 @@
    "Z3Z4Y5Y6",
    "X2Z4X5Z6Z7",
    "Z0Z1Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z7",
+   "X2Y3Z4Y5",
+   "X2Z3X4Z6",
+   "Z3Z4X5X6",
+   "Y2Z4Z5Z6Z7",
+   "Z0Z1Y5Z6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1435,6 +1755,7 @@
   ],
   "aut_group_size": 2880,
   "d": 3,
+  "d_lee": 4,
   "index": 602,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1448,6 +1769,15 @@
    "X2Z4X5Z6",
    "X2Z3Z5X6",
    "Z0Z1X2Z3Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z7",
+   "Y2X3Y4Z5",
+   "Y2Z3X4Y6",
+   "X2Y4X5Y6",
+   "X2Z3Z5Z6",
+   "Z0Z1X2Z3Y4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1480,6 +1810,7 @@
   ],
   "aut_group_size": 576,
   "d": 3,
+  "d_lee": 4,
   "index": 604,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1493,6 +1824,15 @@
    "X2Z3X5Z6",
    "Z0Z1Z6X7",
    "Y2Z3Z4Y6Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z7",
+   "X2X3Z4Z5",
+   "Y2X4Z5Y6",
+   "X2Z3Y5Y6",
+   "Z0Z1Y6X7",
+   "Y2Z3Z4X6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1528,6 +1868,7 @@
   ],
   "aut_group_size": 2304,
   "d": 3,
+  "d_lee": 4,
   "index": 631,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1541,6 +1882,15 @@
    "X4Z5",
    "Z0Z1Z4Y5Y7",
    "Z2Z3Z4X5X6Z7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1Y7",
+   "X2Z6",
+   "X3Z6",
+   "X4Z5",
+   "Z0Z1Z4Y5X7",
+   "Z2Z3Z4X5Y6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1567,6 +1917,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 665,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1580,6 +1931,15 @@
    "Z1Z3Z4X6",
    "X0X2Y3Y6",
    "Y0Z5X6Y7"
+  ],
+  "lee_generators": [
+   "X0Z1Y7",
+   "Z0X1Z6",
+   "Z2Z3Y4Y5",
+   "Z2Y3Z5Y7",
+   "Z1Y3Z4Y6",
+   "X0X2X3X6",
+   "Y0Y5Y6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1607,6 +1967,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 666,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1620,6 +1981,15 @@
    "X0Y1Z3Y4",
    "X0Y2Z3Y5",
    "Z0Y1Z2Z4Y6"
+  ],
+  "lee_generators": [
+   "X0Y6Z7",
+   "Z0Y3X7",
+   "X1X2Z4Z5",
+   "X3Z4Z5Z7",
+   "X0Y1Z3Y4",
+   "X0Y2Z3Y5",
+   "Z0Y1Z2Z4X6"
   ],
   "k": 1,
   "logical_ops": [
@@ -1651,6 +2021,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 730,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1664,6 +2035,15 @@
    "Z2Y3Z4Y5Z7",
    "Z1X3Z5X6Z7",
    "Z0Z4Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "Y2Y5",
+   "Z3X4Z6Z7",
+   "Z2Y3Z4X5Z7",
+   "Z1X3Y5X6Z7",
+   "Z0Z4Y5Z6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1695,6 +2075,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 739,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1708,6 +2089,15 @@
    "Z1Z3Z4X6",
    "Z0Y3Y4X7",
    "Z2X3Z4X5Z6"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "Y2Y5",
+   "Y4Y5Z6Z7",
+   "Z1Z3Z4X6",
+   "Z0X3X4X7",
+   "Z2Y3Z4Z5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -1739,6 +2129,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 748,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1752,6 +2143,15 @@
    "Z3X5Z6",
    "Z1Z2X3X4X6",
    "Z0Z2Z3Y4Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Y6",
+   "X2Z4",
+   "X3Y5Z7",
+   "Z3Z5Y6",
+   "Z1Z2X3Y4Z6",
+   "Z0Z2Z3X4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1781,6 +2181,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 787,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1794,6 +2195,15 @@
    "Z1Y3Y4Z6",
    "Z0X2X5X7",
    "Z2X3Z4X5Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z4",
+   "Y2X5Z6",
+   "X2Z3Y6",
+   "Z1X3X4Z6",
+   "Z0X2Z5X7",
+   "Z2Y3Z4Z5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1825,6 +2235,7 @@
   ],
   "aut_group_size": 384,
   "d": 3,
+  "d_lee": 4,
   "index": 800,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1838,6 +2249,15 @@
    "Z0Z1Y6Y7",
    "Y2Z3Y4Z6Z7",
    "Z0Z2Y4Z5Y6"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "Y2Y3Y4Y5",
+   "Z2Z3Z4Z5",
+   "Z0Z1Y6Y7",
+   "Y2Z3X4Z6Z7",
+   "Z0Z2X4Y5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -1864,6 +2284,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 808,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1877,6 +2298,15 @@
    "Z2Z3X5Z7",
    "Z0X4X5X6",
    "Z0Z3Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Y6Z7",
+   "X1Z4Y6",
+   "X0X2Z3Z4",
+   "Z1X3Y4Z5",
+   "Z2Y3Y5Z7",
+   "Z0X4Y5Z6",
+   "Z0Y3Z4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1903,6 +2333,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 809,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1916,6 +2347,15 @@
    "Z2Z3X5Z7",
    "Y0Z1Z2Y6",
    "Z0X2Z4X7"
+  ],
+  "lee_generators": [
+   "Z2Z5Y6",
+   "Y3Z4Z5",
+   "X0X1Z4Z7",
+   "Z1Z3X4Z7",
+   "Y2Z3Y5Z7",
+   "Y0Z1Y2X6",
+   "Z0Z2Z4X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1942,6 +2382,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 810,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1955,6 +2396,15 @@
    "Z0Z1Z3X6",
    "Y0Y3Z5X7",
    "Z0Y2X4Y7"
+  ],
+  "lee_generators": [
+   "X0Y6Z7",
+   "X0X3Y4",
+   "X1X2Y4Y6",
+   "Z1Z2X5Z7",
+   "Z0Z1Z3Z6",
+   "Y0Y3Z5X7",
+   "Z0Y2Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -1984,6 +2434,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 830,
   "is_css": 0,
   "is_decomposable": 0,
@@ -1997,6 +2448,15 @@
    "Z2X3X5Z7",
    "Z1Z4Z5X7",
    "Z0X2Z4Z5X6"
+  ],
+  "lee_generators": [
+   "Y0Y6",
+   "X1Z7",
+   "Y2X3Z4Y6",
+   "Y2Y3X4Z7",
+   "Z2Z3Z5Z7",
+   "Z1Z4Y5Y7",
+   "Z0X2Z4Y5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -2027,6 +2487,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 832,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2040,6 +2501,15 @@
    "Z2X5Z6Z7",
    "Y2X3Z4Y5",
    "Z3Z5X6Z7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1Z4",
+   "Z0Y5X7",
+   "Z1X3Y4Y6",
+   "Z2X5Y6Y7",
+   "Y2Z3Z4Y5",
+   "Y3Z5Z6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2070,6 +2540,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 833,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2083,6 +2554,15 @@
    "Z2Z4X5Z7",
    "X2Z3Z4Z5X6",
    "Z0Z2Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z3",
+   "Z1X3Y6",
+   "X2Y4Y6Z7",
+   "Z2Z4Z5Z7",
+   "X2Z3Z4Y5Z6",
+   "Z0Z2Y5Y6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2112,6 +2592,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 851,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2125,6 +2606,15 @@
    "Y2Y3X5Z6",
    "Z1Z4Y5Y6",
    "Z0Z2Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "Z2Y3Z4",
+   "Y2Y4Z5Z7",
+   "X2X3X5Z6",
+   "Z1Z4Y5Y6",
+   "Z0Z2Z5Z6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2160,6 +2650,7 @@
   ],
   "aut_group_size": 6144,
   "d": 3,
+  "d_lee": 4,
   "index": 855,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2173,6 +2664,15 @@
    "X4Z6",
    "Z3Z4Y5Y6",
    "Z0Z1Z2Z3X5Z6X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1Y7",
+   "Y2Y7",
+   "X3Z5",
+   "X4Z6",
+   "Z3Z4X5X6",
+   "Z0Z1Z2Z3Y5Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2207,6 +2707,7 @@
   ],
   "aut_group_size": 4608,
   "d": 3,
+  "d_lee": 4,
   "index": 894,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2220,6 +2721,15 @@
    "Y3Y5Z6Z7",
    "X3Z4X6Z7",
    "Z0Z1Z2Y3Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1Y7",
+   "Y2Y7",
+   "X3X4Z5Z6",
+   "Y3X5Z6Y7",
+   "X3Z4Y6Y7",
+   "Z0Z1Z2Y3Z4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2249,6 +2759,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 895,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2262,6 +2773,15 @@
    "Z2X3X5Z7",
    "Z1Z4Z5X7",
    "Z0Z2Y3Z5Y6"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "Y2Z3Z4",
+   "Y3Y4Z6Z7",
+   "Z2Y3Y5Z7",
+   "Z1Z4Z5X7",
+   "Z0Z2X3Z5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -2289,6 +2809,7 @@
   ],
   "aut_group_size": 6,
   "d": 3,
+  "d_lee": 4,
   "index": 904,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2302,6 +2823,15 @@
    "Z0Z1Z2X6",
    "Y0Y3Z6X7",
    "X0Z1Z3X4Z6"
+  ],
+  "lee_generators": [
+   "X0X1Y4Y7",
+   "X0Y2Z5Y7",
+   "X3Y4Z5Y7",
+   "Z2Z3X5Y7",
+   "Z0Z1Z2Y6",
+   "Y0Y3Z6Z7",
+   "X0Z1Z3Z4Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -2328,6 +2858,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 906,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2341,6 +2872,15 @@
    "X0X1Z2X7",
    "X2X3Y5Y7",
    "X0X2Z4Z5Z7"
+  ],
+  "lee_generators": [
+   "Z0X2Y3Y4",
+   "Z1Z2Z4Z7",
+   "Z0Z5Z6Z7",
+   "Z1Y5Y6Z7",
+   "X0X1Z2X7",
+   "Y2X3X5Y7",
+   "X0Y2Y4Y5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2367,6 +2907,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 923,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2380,6 +2921,15 @@
    "Z2Z3X5Z7",
    "Y0X4X5Y6",
    "Z0X1Z5X7"
+  ],
+  "lee_generators": [
+   "X1Y4Z6",
+   "Y2Z5Z6",
+   "Y0X3X7",
+   "X0Y1Z3X4",
+   "Z2Z3Y5Y7",
+   "Y0Z4Y5X6",
+   "Z0X1Z5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2406,6 +2956,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 925,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2419,6 +2970,15 @@
    "Z1Z3X4X5",
    "Z0Y2X4Y7",
    "Z1X2X6X7"
+  ],
+  "lee_generators": [
+   "X0Y6Y7",
+   "X1Y5Y6",
+   "X0Y2X3Y5",
+   "Z2Y3X4Y6",
+   "Z1Z3Z4Z5",
+   "Z0X2Z4X7",
+   "Z1Y2Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2446,6 +3006,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 926,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2459,6 +3020,15 @@
    "Z0X4X5X6",
    "Z0X2Z3X7",
    "X0Z2Z3X4Z6"
+  ],
+  "lee_generators": [
+   "X1Z5Y6",
+   "Y2Z4Z5",
+   "Y3Z4Y6Z7",
+   "Z1Z2X5Z7",
+   "Z0X4X5Z6",
+   "Z0Y2Z3Y7",
+   "X0Z2Z3X4Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -2486,6 +3056,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 928,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2499,6 +3070,15 @@
    "Z0Z1X3X4",
    "Y2X4Z5Y6",
    "Y0Y2Z3X7"
+  ],
+  "lee_generators": [
+   "Z0Y2Z6",
+   "Z1Y5Z6",
+   "X1X3Z5Z7",
+   "X0Z2X4Z7",
+   "Z0Z1Y3Y4",
+   "X2Y4Z5Y6",
+   "X0X2Z3X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2525,6 +3105,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 945,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2538,6 +3119,15 @@
    "Z2Y3Y5Z6",
    "Z1Z3Z4X6",
    "Z0Y2X5Y7"
+  ],
+  "lee_generators": [
+   "Z0X1Y6",
+   "Y2X3X4",
+   "Y0Y1X3Z5",
+   "Z2Z4Y6Y7",
+   "Z2Y3X5Y6",
+   "Z1Z3Y4Z6",
+   "Z0Y2Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2564,6 +3154,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 952,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2577,6 +3168,15 @@
    "Z2Z3X5Z7",
    "Z1Z3Z4X6",
    "X1Y4Y5X7"
+  ],
+  "lee_generators": [
+   "X0Z1Y7",
+   "Y2Z3X4",
+   "Z3Z5Y6Y7",
+   "Y0Y1Z2Z4",
+   "Z2Y3X5Y7",
+   "Z1Y3Y4Z6",
+   "X1X4Y5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2604,6 +3204,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 965,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2617,6 +3218,15 @@
    "Z2Z3X5Z7",
    "Y0Y3Z6X7",
    "Y0Z1Z2Y6Z7"
+  ],
+  "lee_generators": [
+   "X1Z4Y6",
+   "X2Z5Y6",
+   "X0X1X3Z5",
+   "Z1Z3X4Z7",
+   "Z2Z3X5Z7",
+   "Y0Y3Y6Y7",
+   "Y0Z1Z2X6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2643,6 +3253,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 972,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2656,6 +3267,15 @@
    "Z0Z1X3X4",
    "Y1Z2Y3X6",
    "Z3Z4Z6X7"
+  ],
+  "lee_generators": [
+   "X1Y3Z5",
+   "Z1X5Y6",
+   "Y0X2Z4Y6",
+   "Y0Y2Y4Y7",
+   "Z0Z1Z3X4",
+   "Y1Y2X3Z6",
+   "Y3Z4Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2684,6 +3304,7 @@
   ],
   "aut_group_size": 12,
   "d": 3,
+  "d_lee": 4,
   "index": 975,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2697,6 +3318,15 @@
    "Z0X1X5Z7",
    "Z1Z3Z5X6",
    "Z2Z4Z5X7"
+  ],
+  "lee_generators": [
+   "Y0Y1Y2Y6",
+   "Y0Z1X2Y7",
+   "Z0X1X3Z4",
+   "Z0Z2Z3X4",
+   "Z0X1Y5Y7",
+   "Z1Z3Z5Z6",
+   "Y2Z4Z5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2728,6 +3358,7 @@
   ],
   "aut_group_size": 384,
   "d": 3,
+  "d_lee": 4,
   "index": 979,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2741,6 +3372,15 @@
    "Z2X3Z4X5Z6",
    "Z1Y3Z4Y6Z7",
    "Z0Z3Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z6",
+   "Y2Y5",
+   "Y4Y5Z6Z7",
+   "Z2Y3Z4Z5Z6",
+   "Z1X3Z4Y6Z7",
+   "Z0Z3Z4Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2773,6 +3413,7 @@
   ],
   "aut_group_size": 768,
   "d": 3,
+  "d_lee": 4,
   "index": 983,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2786,6 +3427,15 @@
    "X2Z3X4Z7",
    "Z0Y2Z3Z4Z5Y6",
    "Z1X2Z4Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "Y4Y5",
+   "X2X3Z6Z7",
+   "Y2Z3Y4Z7",
+   "Z0X2Z3Z4Z5Y6",
+   "Z1Y2Z4Z5Z6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2810,6 +3460,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1014,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2823,6 +3474,15 @@
    "Y1X2Y3X4",
    "Z2Z3X5Z7",
    "Z0Z1Z2X6"
+  ],
+  "lee_generators": [
+   "Z2Y5Y6",
+   "Z0Y3X7",
+   "X0X1Y4Z7",
+   "X3Y4Y5Z7",
+   "Y1Z2Y3Z4",
+   "Y2Z3Z5Z7",
+   "Z0Z1Y2Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -2850,6 +3510,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1016,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2863,6 +3524,15 @@
    "X0X1Z2X7",
    "X2X3Y5Y7",
    "X0X2Z4Z5Z7"
+  ],
+  "lee_generators": [
+   "Z0X2Y3Y4",
+   "Z1X2Z3X4",
+   "Z0Z5Z6Z7",
+   "Z1Y5Y6Z7",
+   "X0X1Z2X7",
+   "Y2X3X5Y7",
+   "X0Y2Y4Y5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2887,6 +3557,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1017,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2900,6 +3571,15 @@
    "Z0X1X3Z4",
    "Z1Z3Z5X6",
    "Z2Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z1Z2",
+   "Z0Y2Z7",
+   "Z5Y6Z7",
+   "X3Y4Z5",
+   "Z0X1Z3Z4",
+   "Z1Y3Y5Z6",
+   "Z2Z4Y5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2924,6 +3604,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1019,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2937,6 +3618,15 @@
    "Z1Z2X5Z7",
    "Z0Z1Z3X6",
    "Y0Y3Z5X7"
+  ],
+  "lee_generators": [
+   "X1Y5Y6",
+   "X0Y3Z4",
+   "X1X2Y3Z7",
+   "Z2X3Y4Y6",
+   "Z1Z2Z5Z7",
+   "Z0Z1Z3Z6",
+   "Y0X3Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -2964,6 +3654,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1021,
   "is_css": 0,
   "is_decomposable": 0,
@@ -2977,6 +3668,15 @@
    "X0Y1Z3Y4",
    "X0Y2Z3Y5",
    "Y0Z1Z2Y6"
+  ],
+  "lee_generators": [
+   "X0Z6Z7",
+   "Y0Y3X7",
+   "X1X2Y4Y5",
+   "X1Y3Y5Z6",
+   "X0Y1Z3X4",
+   "X0Y2Z3X5",
+   "Y0Z1Z2X6"
   ],
   "k": 1,
   "logical_ops": [
@@ -3001,6 +3701,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1025,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3014,6 +3715,15 @@
    "X2X3X4X5",
    "Y2X4Z5Y6",
    "Z3Z4Z6X7"
+  ],
+  "lee_generators": [
+   "X0Y2Z4",
+   "Z0Y4Z7",
+   "Z1Z5Y6",
+   "Y1X3Y5Z7",
+   "Z2Y3Y4Z5",
+   "X2Y4Y5X6",
+   "Z3Z4Y6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3041,6 +3751,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1028,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3054,6 +3765,15 @@
    "X0X1Z2X7",
    "Y3Z4Y5X7",
    "X0X2Z4Z5Z7"
+  ],
+  "lee_generators": [
+   "Z0Y2X3Y7",
+   "Z1Y2X4Y7",
+   "Z0Z5Y6Y7",
+   "Z1Y5Z6Y7",
+   "X0X1Y2Z7",
+   "Y3Z4X5Z7",
+   "X0Z2Z4Y5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3085,6 +3805,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 1034,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3097,6 +3818,15 @@
    "Z1Z5X6",
    "Z2X3X4Z5",
    "Y3Y5Z6Z7",
+   "Z0Z3Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Y6",
+   "X2Z4",
+   "Z1Y5Z6",
+   "Z2X3Y4Y5",
+   "Y3X5Y6Z7",
    "Z0Z3Z4X7"
   ],
   "k": 1,
@@ -3122,6 +3852,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1046,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3135,6 +3866,15 @@
    "Z2Z3X5Z7",
    "Y1Y2Y4Y5",
    "Y0X4X5Y6"
+  ],
+  "lee_generators": [
+   "X2Z5Y6",
+   "X1X2Y3",
+   "Y0Y3Y7",
+   "X0X1Z4Z7",
+   "Z2Z3Y5Z7",
+   "Y1Y2Y4X5",
+   "Y0X4Y5X6"
   ],
   "k": 1,
   "logical_ops": [
@@ -3161,6 +3901,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1051,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3174,6 +3915,15 @@
    "X3X4Y5Y6",
    "X0X1Z2X7",
    "X0X2Z4Z5Z7"
+  ],
+  "lee_generators": [
+   "Z0Z2Y3Z7",
+   "Z1Y2Z3X4",
+   "Y0X1X2X5",
+   "Z1Y5Z6Z7",
+   "Y3Y4X5X6",
+   "X0X1Z2X7",
+   "X0X2Z4Y5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3201,6 +3951,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1054,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3214,6 +3965,15 @@
    "X3Z4X5Z7",
    "Z1Z3Z5X6",
    "Z2Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z1Y2",
+   "Z0X1Y6",
+   "Z0Z2Y7",
+   "X3X4Y6Y7",
+   "Y3Y4Y5Y7",
+   "Z1Z3Z5Z6",
+   "Y2Y4Z5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3241,6 +4001,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1055,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3254,6 +4015,15 @@
    "Y0Z2Y4Z7",
    "X0Z4Z5X6Z7",
    "X0Z2Z3Z6X7"
+  ],
+  "lee_generators": [
+   "X1Z3Z5",
+   "Z1X3Y7",
+   "Z1X5Y6",
+   "Y0Y2Y4Y6",
+   "Y0Z2X4Y7",
+   "X0Y4Z5Z6Y7",
+   "X0Z2Z3Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3281,6 +4051,7 @@
   ],
   "aut_group_size": 6,
   "d": 3,
+  "d_lee": 4,
   "index": 1064,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3294,6 +4065,15 @@
    "Z0X1X3Z4",
    "Z1Z3Z5X6",
    "Z2Z4Z5X7"
+  ],
+  "lee_generators": [
+   "Z0Y2Z7",
+   "Z3Y4Z7",
+   "Z5Y6Z7",
+   "Y0X1Z2Y6",
+   "Z0Z1X3Z4",
+   "Y1Z3Y5Z6",
+   "Z2Z4Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3321,6 +4101,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1075,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3334,6 +4115,15 @@
    "Y1X2Y4X5",
    "Z1Z5X6Z7",
    "Z0Y3X5Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Z2Z6",
+   "Z1X2Y3Y5",
+   "Z2Z3Z4Z7",
+   "X1X2X4Z5",
+   "Z1Y5Y6Z7",
+   "Z0X3Z5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3368,6 +4158,7 @@
   ],
   "aut_group_size": 2048,
   "d": 3,
+  "d_lee": 4,
   "index": 1090,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3381,6 +4172,15 @@
    "Z0Z1Y4Y5",
    "Z2Z3Y6Y7",
    "Z0Z2X4Z5X6Z7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1Z5",
+   "X2Z6",
+   "X3Z7",
+   "Z0Z1X4X5",
+   "Z2Z3X6X7",
+   "Z0Z2Y4Z5Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3415,6 +4215,7 @@
   ],
   "aut_group_size": 1024,
   "d": 3,
+  "d_lee": 4,
   "index": 1094,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3428,6 +4229,15 @@
    "Z0Y3Z4Z5Y6",
    "Z0Z2X5X6Z7",
    "Z1Z3Z4Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z6",
+   "X1Z7",
+   "X2Z5",
+   "X3X4",
+   "Z0Y3Z4Z5X6",
+   "Z0Z2X5Y6Z7",
+   "Z1Z3Z4Z6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3455,6 +4265,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1119,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3468,6 +4279,15 @@
    "Z0Z1Z3X6",
    "Z0Y2X4Y7",
    "X0Z2Z3X4Z6"
+  ],
+  "lee_generators": [
+   "X0X1Z5Z7",
+   "X1X2Y4Y6",
+   "X3Y4Y6Z7",
+   "Z1Z3Z4X5",
+   "Z0Z1Z3Z6",
+   "Z0Y2Z4Y7",
+   "X0Z2Z3Z4Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -3494,6 +4314,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1121,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3507,6 +4328,15 @@
    "Z1Z2Z3X6",
    "Z0Z3Y4Y7",
    "X0Z1X2Z4Z6"
+  ],
+  "lee_generators": [
+   "Y0Y1Y6Y7",
+   "Z3Z5Y6Y7",
+   "Y2X4Z5Y7",
+   "Y3Z4X5Y7",
+   "Z1Y2Y3Z6",
+   "Z0Y3Y4X7",
+   "X0Z1Z2Z4Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -3533,6 +4363,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1122,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3546,6 +4377,15 @@
    "X2X3X4X5",
    "Z2Z5X6Z7",
    "Z3Z4Z6X7"
+  ],
+  "lee_generators": [
+   "X1Y3Z5",
+   "Z0Z4Y7",
+   "Z1X5Z6",
+   "Y0X2Y4Z6",
+   "Y2Z3Z4X5",
+   "Z2Z5Y6Y7",
+   "Y3Y4Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3573,6 +4413,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1124,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3586,6 +4427,15 @@
    "Z3Z4X5Z7",
    "Z1Z2Z3X6",
    "Z0Z1Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Z3Z5Y6",
+   "X1X2Y4Z7",
+   "X1Z2Z3Z4",
+   "Y3Y4Y5Z7",
+   "Z1Z2Y3Z6",
+   "Z0Z1Y4Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3612,6 +4462,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1140,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3625,6 +4476,15 @@
    "X3X4Y5Y6",
    "X0X1Z2X7",
    "Y1Z2Y4Z6Z7"
+  ],
+  "lee_generators": [
+   "X2Z3Y4Z7",
+   "Z0Z2X3Z7",
+   "Z1Y5Y6Z7",
+   "X0Y1X2X6",
+   "X3Z4X5X6",
+   "X0X1Z2X7",
+   "Y1Z2X4Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3654,6 +4514,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1146,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3667,6 +4528,15 @@
    "Z3Z5X6Z7",
    "X2Y3Z4Y6",
    "Z0X2X5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z4",
+   "X2X5Y6",
+   "Z1Y3X4Y6",
+   "Z3Z5Z6Z7",
+   "Y2Y3Z4X6",
+   "Z0Y2Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3694,6 +4564,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1148,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3707,6 +4578,15 @@
    "Z3X5Z6Z7",
    "Y1Y3Y4Y6",
    "Z0X2Y6Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1X4Y5",
+   "Y1X2Z4Y6",
+   "Z1Y2Y3Z5",
+   "Z3Y5Y6Z7",
+   "Y1X3Y4X6",
+   "Z0Y2X6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3737,6 +4617,7 @@
   ],
   "aut_group_size": 288,
   "d": 3,
+  "d_lee": 4,
   "index": 1150,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3750,6 +4631,15 @@
    "Z0Z1X4X7",
    "Y0Z1Y4Z5Z6",
    "X0Z1Z2X5Z7"
+  ],
+  "lee_generators": [
+   "X2Z3Z5",
+   "Z2X3Z6",
+   "Y2Y5X6",
+   "Y0Y1Y4Y7",
+   "Z0Z1Z4Z7",
+   "Y0Z1X4Z5Z6",
+   "X0Z1Z2X5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3777,6 +4667,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1157,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3790,6 +4681,15 @@
    "Y0Z1Y2Z7",
    "Y3Y4Z5Z6",
    "X1X2X4X5"
+  ],
+  "lee_generators": [
+   "Z0X1Y6",
+   "Z3X5Y7",
+   "Z1Y4Z6",
+   "Y2Z5Z7",
+   "Y0Z1X2Y7",
+   "Y3X4Z5Y6",
+   "X1Z2Z4X5"
   ],
   "k": 1,
   "logical_ops": [
@@ -3817,6 +4717,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1163,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3830,6 +4731,15 @@
    "Z1Z2Z3X6",
    "Z0Y2Y3X7",
    "X0Z1Z2X4Z5"
+  ],
+  "lee_generators": [
+   "Y0Y1Y6Y7",
+   "Y2Y4Y6Y7",
+   "Y3Y5Y6Y7",
+   "Z3Y4Z5Y7",
+   "Z1Z2Z3Z6",
+   "Z0X2X3Z7",
+   "X0Z1Z2Z4Y5"
   ],
   "k": 1,
   "logical_ops": [
@@ -3858,6 +4768,7 @@
   ],
   "aut_group_size": 24,
   "d": 3,
+  "d_lee": 4,
   "index": 1165,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3871,6 +4782,15 @@
    "Z0Z1Z2X6",
    "Y0Y3Z6X7",
    "X0X3Z4Z5Z6"
+  ],
+  "lee_generators": [
+   "X0X1Z4Z7",
+   "X0X2Z5Z7",
+   "Z1Y3Y4Z5",
+   "Z2Y3Z4Y5",
+   "Z0Z1Z2Z6",
+   "Y0Y3Y6Y7",
+   "X0X3Z4Z5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -3898,6 +4818,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1172,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3911,6 +4832,15 @@
    "Z2Y3Z4Y5",
    "Z2Z3X4X6",
    "Z0X2Z3Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X2Z5Y6",
+   "X1X2X3Z7",
+   "Z1Y3Y4Z5",
+   "Z2Y3Z4Y5",
+   "Z2Z3X4Z6",
+   "Z0X2Z3Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3938,6 +4868,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1182,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3951,6 +4882,15 @@
    "Y1X2Y4X5",
    "Y1Y3Y4Y6",
    "Z0Y3X5Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Y2Z6",
+   "Z1Z2Z3Z5",
+   "Y2Y3Z4Z7",
+   "Y1Z2X4Y5",
+   "Y1X3X4Y6",
+   "Z0X3Y5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -3979,6 +4919,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1185,
   "is_css": 0,
   "is_decomposable": 0,
@@ -3992,6 +4933,15 @@
    "Z0Y2Y3X7",
    "X0Z1X2Z4Z6",
    "X0Z2Z3X6Z7"
+  ],
+  "lee_generators": [
+   "Y0Y1Y6Y7",
+   "X2X3Z4Z5",
+   "Y2Y4Z5Y6",
+   "X2Z3X5Y6",
+   "Z0Y2Y3Z7",
+   "X0Z1X2Z4Y6",
+   "X0Z2Z3Z6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4019,6 +4969,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1187,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4032,6 +4983,15 @@
    "Z0Y3Y4X5",
    "Z2Z3Z5X7",
    "Y1Y4X6X7"
+  ],
+  "lee_generators": [
+   "X0Z5",
+   "Z3X4Y6",
+   "Y1Y2Y6Y7",
+   "Z1X2X3Z4",
+   "Z0Y3Y4X5",
+   "Z2Z3Z5Z7",
+   "Y1Y4Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4062,6 +5022,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 1198,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4075,6 +5036,15 @@
    "X1X3Y4Y5",
    "Z3Z4X6Z7",
    "Z1Z5Z6X7"
+  ],
+  "lee_generators": [
+   "Y0Y1Y4Y7",
+   "Y2Y3Y5Y6",
+   "Z0Z4Y5Y6",
+   "Z2Y4Z5Y7",
+   "X1X3X4X5",
+   "Z3Y4Z6Y7",
+   "Z1Y5Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4102,6 +5072,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1201,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4115,6 +5086,15 @@
    "Z0X2Z3X5",
    "X0Z2Z4X6",
    "X0Z1Z5X7"
+  ],
+  "lee_generators": [
+   "Y0Y1Y2Y6",
+   "Y0Z1X2Y7",
+   "Z0X1Z3Z4",
+   "Y3X4Z5Y6",
+   "Z0Z2Z3X5",
+   "X0Y2Y4Z6",
+   "X0Z1Z5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4144,6 +5124,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1202,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4157,6 +5138,15 @@
    "X0X2Y3Y6",
    "Z0Y2X5Y7",
    "X0Z1Z2Z3X5"
+  ],
+  "lee_generators": [
+   "Y0Y1Y6Y7",
+   "Y3Y5Y6Y7",
+   "Y2Y4Y6Y7",
+   "Z1Z3Z4Z6",
+   "X0Z2X3X6",
+   "Z0X2Z5X7",
+   "X0Z1Y2Z3Z5"
   ],
   "k": 1,
   "logical_ops": [
@@ -4187,6 +5177,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 1204,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4200,6 +5191,15 @@
    "Z1Z5Z6X7",
    "X0Z1Z2X5Z7",
    "Y2Z3Z4Y5Z7"
+  ],
+  "lee_generators": [
+   "Y0Y1Y4Y7",
+   "Y2Y3Y5Y6",
+   "Z0Z4Y5Y6",
+   "Z2Z3Z5Z6",
+   "Z1Y5Y6Z7",
+   "X0Z1Z2Z5Y7",
+   "Y2Z3Y4X5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4227,6 +5227,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1211,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4239,6 +5240,15 @@
    "Z1X3Z7",
    "Y0Y2X3X4",
    "Z2Z3X6X7",
+   "X0Z1Z4Z5X6"
+  ],
+  "lee_generators": [
+   "X4X5",
+   "Z0Y1Y3",
+   "Z0Z2Z6",
+   "Z1Z3Y7",
+   "Y0X2Z3X4",
+   "Y2Y3X6Z7",
    "X0Z1Z4Z5X6"
   ],
   "k": 1,
@@ -4267,6 +5277,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1246,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4280,6 +5291,15 @@
    "Y2Y3X4X6",
    "Z0X3Z6X7",
    "X1Z3X4Z6Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Z1X2Y4",
+   "X3Y4Z5",
+   "Z2Z4Y5Y6",
+   "Y2Y3Z4Z6",
+   "Z0X3Y6Y7",
+   "X1Z3Z4Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4307,6 +5327,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1247,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4319,6 +5340,15 @@
    "Z2X4Z6Z7",
    "Z2Z3X5Z7",
    "Z1Z3Z4X6",
+   "Z0Z5X6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Z3Z5",
+   "Y2Z3X4",
+   "Z2Z4Z6Z7",
+   "Z2Y3Y5Z7",
+   "Z1Y3Y4X6",
    "Z0Z5X6X7"
   ],
   "k": 1,
@@ -4349,6 +5379,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1255,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4362,6 +5393,15 @@
    "Z2Z3Y5Y6",
    "Z1Z2Z3X7",
    "X1Y2Z4Y5Z6"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X2Z5Y7",
+   "X3Z6Y7",
+   "Z0Y1X4Y7",
+   "Z2Z3X5X6",
+   "Z1Z2Z3Z7",
+   "X1Y2Z4X5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -4391,6 +5431,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1262,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4404,6 +5445,15 @@
    "Y2Y5Z6Z7",
    "X2Z3X6Z7",
    "Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "Y0Y4",
+   "Z0Y1Z4",
+   "Z1X2Y4Y5",
+   "Z1X3Y4Y6",
+   "Y2X5Y6Z7",
+   "X2Z3Z6Z7",
+   "Y1Z2Z3Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4433,6 +5483,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1271,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4446,6 +5497,15 @@
    "Y2Y5Z6Z7",
    "X2Z3X6Z7",
    "Y1Z2Z3Z4Y7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "Z0Z1X4",
+   "Y1X2Z4Y5",
+   "Y1X3Z4Y6",
+   "Y2X5Y6Z7",
+   "X2Z3Z6Z7",
+   "X1Z2Z3Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4475,6 +5535,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1277,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4488,6 +5549,15 @@
    "X1X2Z3X5",
    "Y1Z2Z3Y6Z7",
    "Z0Z1Z4Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X2Z4Y6",
+   "Y3Y5Y6",
+   "X1Y2X4Y5",
+   "X1X2Z3Z5",
+   "Y1Z2Z3X6Z7",
+   "Z0Z1Z4Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4515,6 +5585,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1287,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4528,6 +5599,15 @@
    "X1X3Y4Y5",
    "X2X3X6Z7",
    "Z0Z4Z5Z6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z2Y6",
+   "Z1Y2Z4",
+   "Z3Y5Y6Z7",
+   "X1Y3Y4X5",
+   "Y2Y3Z6Z7",
+   "Z0Z4Z5Y6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4556,6 +5636,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1288,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4568,6 +5649,15 @@
    "Z3X5Z6Z7",
    "Y1X2Y4X5",
    "X2X3X6Z7",
+   "Z0Y1Y2Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Z2Y6",
+   "X3Y4Z5",
+   "Z3Y5Y6Z7",
+   "Y1X2X4Y5",
+   "X2X3Z6Z7",
    "Z0Y1Y2Z5X7"
   ],
   "k": 1,
@@ -4597,6 +5687,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1305,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4610,6 +5701,15 @@
    "Z0Y1Y4Z7",
    "Y2Y5Z6Z7",
    "Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "Z3Y5Z6",
+   "Y2X3X6",
+   "X1Y2Z4Y5",
+   "Z0Y1X4Y7",
+   "X2X5Y6Y7",
+   "Z1Z2Z3Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4637,6 +5737,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1315,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4650,6 +5751,15 @@
    "X0Z2X3Z7",
    "Z2Z3X6X7",
    "X0Z1Z4Z5X6"
+  ],
+  "lee_generators": [
+   "Y4Y5",
+   "Z0Z1Z3",
+   "Y4Y6Z7",
+   "Y0Y1Y2Y6",
+   "X0Z2X3Z7",
+   "Z2Z3Z6X7",
+   "X0Y1Z4Z5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -4679,6 +5789,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1321,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4692,6 +5803,15 @@
    "Y1Y3Y4Y5",
    "Z2Z3Z4X6",
    "Z0Z1Z2Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Y5Z7",
+   "X1X2Y3",
+   "X1X4Y6",
+   "Y1X3Y4X5",
+   "Z2Z3Z4Z6",
+   "Z0Z1Z2Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4722,6 +5842,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1332,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4735,6 +5856,15 @@
    "Z4Z5X6Z7",
    "Z0X1Z2X3Z5",
    "Z1Y2Z5Z6Y7"
+  ],
+  "lee_generators": [
+   "X0Z1",
+   "Y2Z3Y4Z7",
+   "X3Z4Z5Z6",
+   "Z3X5Z6Z7",
+   "Y4Z5Y6Z7",
+   "Z0Y1Z2X3Z5",
+   "Z1X2Z5Z6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4764,6 +5894,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1335,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4776,6 +5907,15 @@
    "X1X2Z4Z6",
    "X1Z2X4Z7",
    "Y1Z4Z5Y6Z7",
+   "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Z3X5Y6",
+   "X1X3Y5",
+   "X1Y2Z4Y6",
+   "X1Z2X4Z7",
+   "Y1Z4Z5X6Z7",
    "Z0Z1Z2Z3X7"
   ],
   "k": 1,
@@ -4805,6 +5945,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1336,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4818,6 +5959,15 @@
    "Z1Z4Z5X6",
    "Z2Z3Z5X7",
    "Z0X1Z2X5Z7"
+  ],
+  "lee_generators": [
+   "X0Z5",
+   "Z3Z4Y7",
+   "Y3X4Z6",
+   "Y1X2Z6Y7",
+   "Z1Z4Z5X6",
+   "Y2Y3Z5Z7",
+   "Z0X1Y2X5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4847,6 +5997,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1337,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4860,6 +6011,15 @@
    "X1Z2X4Z7",
    "Z1Z4Z5X6",
    "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Z3X5Y6",
+   "X1X3Y5",
+   "X1Y2Z4Y6",
+   "X1Z2X4Z7",
+   "Z1Z4Z5Z6",
+   "Z0Z1Z2Z3Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4888,6 +6048,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1338,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4901,6 +6062,15 @@
    "Y1X2Y3X6",
    "Z1Y4X5Y6",
    "Z0Z1X2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y2Z4Z5",
+   "X2Y3X4",
+   "Y3Z5Y6Z7",
+   "Y1Y2X3Z6",
+   "Z1X4X5X6",
+   "Z0Z1Y2Z3X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4928,6 +6098,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1344,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4941,6 +6112,15 @@
    "X1X2Z4Z5",
    "Z0Y1Y4Z7",
    "Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "Z3Z6Y7",
+   "Y2X5Z6",
+   "Y3Z5X6",
+   "X1Z2Z4Z5",
+   "Z0Y1X4Y7",
+   "Z1Y2Y3Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -4970,6 +6150,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1349,
   "is_css": 0,
   "is_decomposable": 0,
@@ -4983,6 +6164,15 @@
    "Z2Z3Z4X6",
    "Y1Z3Z4Y5Z7",
    "Z0Z1Z2Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X3Z5Y6",
+   "Y1X2X3",
+   "Y1Y4Y6",
+   "Z2Z3Z4Z6",
+   "X1Z3Z4Y5Z7",
+   "Z0Z1Z2Z4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5013,6 +6203,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1358,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5025,6 +6216,15 @@
    "X4Z5Z6Z7",
    "Z2Z3Z4X6",
    "Y1Z3Z4Y5Z7",
+   "Z0Z1Z2Z4X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1X2Z5Y6",
+   "Y1X3Y6Z7",
+   "Y4Z5Y6Z7",
+   "Z2Z3Z4Z6",
+   "X1Z3Z4Y5Z7",
    "Z0Z1Z2Z4X7"
   ],
   "k": 1,
@@ -5054,6 +6254,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1377,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5066,6 +6267,15 @@
    "Z2Z3X5Z7",
    "Z1Z2X6Z7",
    "X1X3Z5Z6Z7",
+   "Z0X1Y3Z4Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1X2Z4Z5",
+   "Z1Y3Y4Z5",
+   "Z2Z3X5Z7",
+   "Z1Z2Z6Z7",
+   "X1X3Z5Y6Z7",
    "Z0X1Y3Z4Y7"
   ],
   "k": 1,
@@ -5096,6 +6306,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1386,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5109,6 +6320,15 @@
    "X1Y3Y5",
    "Y1Z4Z5Y6Z7",
    "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Z2Y4Z6",
+   "Y1X2X4",
+   "Z3Y5Z6",
+   "Y1X3X5",
+   "X1Z4Z5Y6Z7",
+   "Z0Z1Z2Z3Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5138,6 +6358,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1387,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5151,6 +6372,15 @@
    "Z2Z3Y5Y6",
    "Z1Z2Z3X7",
    "X1Y2Z4Y5Z6"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "Y2Z5Z7",
+   "Z3Y6Z7",
+   "Z0Z1X4",
+   "Z2Y3Y5X6",
+   "Z1Z2Y3Y7",
+   "Y1X2Z4Y5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -5181,6 +6411,7 @@
   ],
   "aut_group_size": 96,
   "d": 3,
+  "d_lee": 4,
   "index": 1409,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5194,6 +6425,15 @@
    "Z2Y4Y6X7",
    "Z0Y1Z2Z3Y6",
    "Z1Z3X4Z5X6"
+  ],
+  "lee_generators": [
+   "X0Z1",
+   "X2Z4Z6Z7",
+   "X3Z5Z6Z7",
+   "Z2Z3Y4Y5",
+   "Z2Y4X6Y7",
+   "Z0Y1Z2Z3X6",
+   "Z1Z3X4Z5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -5224,6 +6464,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 1420,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5237,6 +6478,15 @@
    "X1Z3X5Z7",
    "Z1Z4Z5X6",
    "Z0Y1Z2Z3Z6Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1X2Y4Y6",
+   "X1X3Y5Y6",
+   "X1Z2Z4Z7",
+   "X1Z3Z5Z7",
+   "Z1Y4Y5Z6",
+   "Z0Y1Z2Z3Y6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5267,6 +6517,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 1421,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5280,6 +6531,15 @@
    "X1Z3X5Z7",
    "Z1Z4Z5X6",
    "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "X1X2Z4Z6",
+   "X1Z3Z5Z6",
+   "X1Z2Y4Y7",
+   "X1Y3X5Y7",
+   "Z1Z4Z5X6",
+   "Z0Z1Z2Y3Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5311,6 +6571,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 1422,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5324,6 +6585,15 @@
    "Z1Z3Z4X5",
    "Z2Z3Z4X6",
    "Z0Y1Z2Z4Z5Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1X2Y5Y6",
+   "X1Y3Y6Z7",
+   "X4Y5Y6Z7",
+   "Z1Z3Z4Z5",
+   "Z2Z3Z4Z6",
+   "Z0Y1Z2Z4Y5Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5353,6 +6623,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1424,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5366,6 +6637,15 @@
    "Z1Z2Z3X6",
    "X1Z2X4Z5Z6",
    "Z0Z1Z2Y4Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Y2Y4Z7",
+   "X1X3Z5Z7",
+   "Z3Y4Y5Z7",
+   "Z1Z2Z3Z6",
+   "X1Z2Z4Z5Y6",
+   "Z0Z1Z2X4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5395,6 +6675,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1425,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5407,6 +6688,15 @@
    "X1Z2X4Z7",
    "X1Z3X5Z7",
    "Y1Z4Z5Y6Z7",
+   "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Y2Z4Z6",
+   "Y1Y3Z5Z6",
+   "Y1Z2Y4Z7",
+   "Y1Z3Y5Z7",
+   "X1Z4Z5Y6Z7",
    "Z0Z1Z2Z3X7"
   ],
   "k": 1,
@@ -5436,6 +6726,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1426,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5449,6 +6740,15 @@
    "Z3X5Z6Z7",
    "Z1Z5X6Z7",
    "Z0Z4Z5Z6X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Y1X2Y4Z6",
+   "Z1Z2X3Z5",
+   "Y2Z3Z4Y7",
+   "Z3Y5Z6Y7",
+   "Z1Z5Y6Y7",
+   "Z0Y4Z5Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5479,6 +6779,7 @@
   ],
   "aut_group_size": 48,
   "d": 3,
+  "d_lee": 4,
   "index": 1431,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5492,6 +6793,15 @@
    "Z2Z3X5Z7",
    "Z1Z3Z4X6",
    "Z0Z1X2Z3X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Z3Y5Z6Y7",
+   "X1X2Z3Z4",
+   "Z2Y4Z6Y7",
+   "Z2Y3Z5Y7",
+   "Z1Y3Z4Y6",
+   "Z0Z1X2Y3Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5523,6 +6833,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 1432,
   "is_css": 1,
   "is_decomposable": 0,
@@ -5536,6 +6847,15 @@
    "X1X3X4X5",
    "X2X3X4X6",
    "X0X1X2X4X7"
+  ],
+  "lee_generators": [
+   "Y0Y7",
+   "Z1Z2Z5Z6",
+   "Z1Y3Z6Y7",
+   "Y4Z5Z6Y7",
+   "X1Z3Z4X5",
+   "Y2Z3Z4Y6",
+   "Z0X1Y2Z4Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5566,6 +6886,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1436,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5579,6 +6900,15 @@
    "Z4Z5Y6Y7",
    "Z1Z2Z3X6Z7",
    "Z0Y1Y3X4X6"
+  ],
+  "lee_generators": [
+   "X0Z1",
+   "X2Z4Z6Z7",
+   "Y3Y5Z6Z7",
+   "Z2Z3X4X5",
+   "Z4Y5X6Y7",
+   "Z1Z2Z3Y6Z7",
+   "Z0Y1X3Y4Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -5608,6 +6938,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1437,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5621,6 +6952,15 @@
    "Y2Y5Z6Z7",
    "X2Z3X6Z7",
    "Y1Z2Z3Z4Y7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1X2Z4Z5",
+   "X1X3Z4Z6",
+   "Z0Y1X4Y7",
+   "Y2X5Z6Y7",
+   "X2Z3Y6Y7",
+   "Y1Z2Z3Z4X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5650,6 +6990,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1446,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5663,6 +7004,15 @@
    "Y2Y5Z6Z7",
    "X2Z3X6Z7",
    "Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1X2Z4Z5",
+   "X1X3Z4Z6",
+   "Z0Y1X4Y7",
+   "Y2X5Z6Y7",
+   "X2Z3Y6Y7",
+   "Z1Z2Z3Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5691,6 +7041,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1460,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5703,6 +7054,15 @@
    "X1X2Z4Z6",
    "X1Z2X4Z7",
    "Z1Z4Z5X6",
+   "Z0Z1Z2Z3X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X3Y5Z7",
+   "Z3Z5Y6",
+   "X1X2Y4Y6",
+   "X1Z2Z4Z7",
+   "Z1Y4Y5Z6",
    "Z0Z1Z2Z3X7"
   ],
   "k": 1,
@@ -5732,6 +7092,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1468,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5745,6 +7106,15 @@
    "Y2Y5Z6Z7",
    "Z1Z2Z3X7",
    "Z0Y1X2Y4Z5"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1Z4Y7",
+   "Z3Z5Y6",
+   "X2Y3X6",
+   "Y2X5Z6Y7",
+   "Z1Z2Z3Z7",
+   "Z0Y1X2X4Z5"
   ],
   "k": 1,
   "logical_ops": [
@@ -5774,6 +7144,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1470,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5787,6 +7158,15 @@
    "X2Z3X6Z7",
    "Z1Z2Z3X7",
    "Z0Y1X2Y4Z5"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1Z4Y7",
+   "X2Z3Z5Z6",
+   "Y2X5Z6Y7",
+   "X2Y3X6Y7",
+   "Z1Z2Y3Z7",
+   "Z0Y1X2X4Z5"
   ],
   "k": 1,
   "logical_ops": [
@@ -5815,6 +7195,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1471,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5828,6 +7209,15 @@
    "Z2Y3Y5Z6",
    "Z0X3Y6Y7",
    "Z1X2Z3Z5X6"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1Y6Z7",
+   "X1Y2Y3Z4",
+   "X1X2X4Z5",
+   "Z2X3Y5Y6",
+   "Z0Y3X6Y7",
+   "Z1Y2Z3Z5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -5857,6 +7247,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1472,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5870,6 +7261,15 @@
    "X2Z3X6Z7",
    "Z0Y1X2Y4Z5",
    "Z1Y2Z3Z5Y7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1Z4Y7",
+   "X2Z3Z5Z6",
+   "Y2X5Z6Y7",
+   "X2Y3X6Y7",
+   "Z0Y1X2X4Z5",
+   "Z1Y2Y3Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5898,6 +7298,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1475,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5911,6 +7312,15 @@
    "Z2Z3X5Z7",
    "Z1Z3Z4X6",
    "Z0Z5X6X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1Z6Z7",
+   "Y1X2X3Y4",
+   "Y1Y2X4Z5",
+   "Z2Z3X5Z7",
+   "Z1Z3Y4Y6",
+   "Z0Z5Y6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5941,6 +7351,7 @@
   ],
   "aut_group_size": 96,
   "d": 3,
+  "d_lee": 4,
   "index": 1481,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5954,6 +7365,15 @@
    "Y2Y5Z6Z7",
    "X2Z3X6Z7",
    "Z1Y2Z3Z5Y7"
+  ],
+  "lee_generators": [
+   "X0Z4",
+   "X1Z4Y7",
+   "Z0Z1X4",
+   "X2X3Z5Z6",
+   "Y2X5Z6Y7",
+   "X2Z3Y6Y7",
+   "Z1Y2Z3Z5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -5982,6 +7402,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1485,
   "is_css": 0,
   "is_decomposable": 0,
@@ -5995,6 +7416,15 @@
    "Z1Z5X6Z7",
    "Z0X3Z6X7",
    "X1Z3X4Z6Z7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "Y1X2Z4Y6",
+   "Z1Y2Y3Z5",
+   "Z2X4Y5Y6",
+   "Z1Z5Z6Z7",
+   "Z0Y3Y6X7",
+   "X1Z3X4Y6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6024,6 +7454,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1491,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6037,6 +7468,15 @@
    "Z2Z3X4X6",
    "Y1Z3Y4Z6Z7",
    "Z0X1Z3Z5X7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1X2Y4Y5",
+   "X3Y4Y5Z7",
+   "Z1Z2Z4Z5",
+   "Z2Z3Z4X6",
+   "Y1Z3X4Z6Z7",
+   "Z0X1Z3Y5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6066,6 +7506,7 @@
   ],
   "aut_group_size": 16,
   "d": 3,
+  "d_lee": 4,
   "index": 1492,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6079,6 +7520,15 @@
    "Y1Y2X3X6",
    "X1X3Z5Z6Z7",
    "Z0X1Y3Z4Y7"
+  ],
+  "lee_generators": [
+   "X0Z7",
+   "X1X2Y4Y5",
+   "Z1Z3Z4Z7",
+   "Z2Z3Z5Z7",
+   "Y1Y2X3X6",
+   "X1X3Y5Z6Z7",
+   "Z0X1Y3Y4Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6107,6 +7557,7 @@
   ],
   "aut_group_size": 12,
   "d": 3,
+  "d_lee": 4,
   "index": 1498,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6120,6 +7571,15 @@
    "Z0Y2Y5X7",
    "X0X2Z4Z5Z7",
    "Y0Z3Y5Z6Z7"
+  ],
+  "lee_generators": [
+   "X1Z4Z6",
+   "Z0Z2Z3Z7",
+   "Z1Z2X4Z7",
+   "Z0Z1Y5Y6",
+   "Z0Y2Y5X7",
+   "X0X2Z4Z5Z7",
+   "Y0Y3Y5Z6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6147,6 +7607,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1499,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6159,6 +7620,15 @@
    "Z2Y3Y4Z6",
    "X0Y1Z2Y5",
    "Z0Z1Z3X6",
+   "Z0X1Y3Y7"
+  ],
+  "lee_generators": [
+   "X0Y6Z7",
+   "X1X2Y4Y6",
+   "X0X2X3Z5",
+   "Z2Y3X4Y6",
+   "X0Y1Z2Y5",
+   "Z0Z1Z3Z6",
    "Z0X1Y3Y7"
   ],
   "k": 1,
@@ -6186,6 +7656,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1500,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6198,6 +7669,15 @@
    "Z2Z3X5Z7",
    "Z1Z3Z4X6",
    "X0X2Y3Y6",
+   "Z0X2Z3X7"
+  ],
+  "lee_generators": [
+   "X2Y4Z5",
+   "Y0X1Y6Z7",
+   "Z2Z4Y6Z7",
+   "Z2Z3Y5Z7",
+   "Y1Z3Y4Z6",
+   "X0X2Y3X6",
    "Z0X2Z3X7"
   ],
   "k": 1,
@@ -6226,6 +7706,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1501,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6239,6 +7720,15 @@
    "Z1Z2X4X5",
    "Z0Z1Z2X6",
    "Y2Y4Y6Y7"
+  ],
+  "lee_generators": [
+   "Z0X3Y7",
+   "X0X1Z4Z7",
+   "X0Y2Y5Z7",
+   "Y3Z4Y5Z7",
+   "Z1Z2X4Z5",
+   "Z0Z1Z2Z6",
+   "X2Y4X6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6265,6 +7755,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1502,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6278,6 +7769,15 @@
    "X0Y1X2Y6",
    "Z0Y2Y5X7",
    "Z3Y4Y6X7"
+  ],
+  "lee_generators": [
+   "X1Z4Z6",
+   "Z0Z2X3Z7",
+   "Z1Z2X4Z7",
+   "Z1Y5Y6Z7",
+   "X0Y1X2X6",
+   "Z0Y2X5Y7",
+   "Z3Y4X6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6305,6 +7805,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1506,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6317,6 +7818,15 @@
    "Z2Z3Y4Y5",
    "Z1Y3X4Y6",
    "Z0Y2Y3X7",
+   "X0Z1Z2X4Z5"
+  ],
+  "lee_generators": [
+   "Z0Y1Z6",
+   "X2Z4Z6Y7",
+   "X3Z5Z6Y7",
+   "Z2Z3Y4Y5",
+   "Z1Y3X4Y6",
+   "Z0Y2Y3Z7",
    "X0Z1Z2X4Z5"
   ],
   "k": 1,
@@ -6345,6 +7855,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1507,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6358,6 +7869,15 @@
    "Z2Z3X5Z7",
    "Z0Z1Z2X6",
    "Y2Y4Y6Y7"
+  ],
+  "lee_generators": [
+   "Z0X3Y7",
+   "X0X1Z4Z7",
+   "X0X2Z5Z7",
+   "Z1Y3Y4Z7",
+   "Z2Y3Y5Z7",
+   "Z0Z1Z2Z6",
+   "Y2X4X6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6385,6 +7905,7 @@
   ],
   "aut_group_size": 4,
   "d": 3,
+  "d_lee": 4,
   "index": 1512,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6398,6 +7919,15 @@
    "Z1Z2Z3X6",
    "Z0Y2Y3X7",
    "X0Z1Z2X4Z5"
+  ],
+  "lee_generators": [
+   "Z0Y1Z6",
+   "Y2Z4Z6Y7",
+   "Z3Y5Z6Y7",
+   "Z2Y3Y4X5",
+   "Z1Z2Y3Y6",
+   "Z0X2X3Z7",
+   "X0Z1Z2X4Y5"
   ],
   "k": 1,
   "logical_ops": [
@@ -6426,6 +7956,7 @@
   ],
   "aut_group_size": 24,
   "d": 3,
+  "d_lee": 4,
   "index": 1513,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6439,6 +7970,15 @@
    "Z1Z2X4X5",
    "X0Z1Z3X4Z6",
    "Y0Z1Z2Y6Z7"
+  ],
+  "lee_generators": [
+   "Z0X3X7",
+   "X0X1Y4Y7",
+   "X0X2Y5Y7",
+   "Y3Y4Y5Y7",
+   "Z1Z2Z4Z5",
+   "X0Z1Z3Z4Z6",
+   "Y0Z1Z2Y6Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6467,6 +8007,7 @@
   ],
   "aut_group_size": 24,
   "d": 3,
+  "d_lee": 4,
   "index": 1515,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6480,6 +8021,15 @@
    "Z2Z3X5Z7",
    "X0X3Z4Z5Z6",
    "Y0Z1Z2Y6Z7"
+  ],
+  "lee_generators": [
+   "Z0X3Y7",
+   "X0X1Z4Z7",
+   "X0X2Z5Z7",
+   "Z1Y3Y4Z7",
+   "Z2Y3Y5Z7",
+   "X0Z3Z4Z5Y6",
+   "Y0Z1Z2X6Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6504,6 +8054,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1521,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6517,6 +8068,15 @@
    "Z3Z4X5Z7",
    "Z1Z2Z3X6",
    "Z0Z2Y5Y7"
+  ],
+  "lee_generators": [
+   "Z0X1Y6",
+   "Y0Y1X2Y4",
+   "Y3Y5Y6Y7",
+   "Y2X4Y5Y6",
+   "Z3Y4Z5Y7",
+   "Z1Z2Z3Z6",
+   "Z0Z2X5X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6541,6 +8101,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1523,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6554,6 +8115,15 @@
    "Z1Z3Z4X6",
    "Z0X2Z3X7",
    "X1Y4Y5X7"
+  ],
+  "lee_generators": [
+   "X2Y4Z5",
+   "Y0X1Z6Y7",
+   "X3Z5Z6Y7",
+   "Z2Z3X5Y7",
+   "Z1Z3Y4Y6",
+   "Z0X2Z3Z7",
+   "Y1X4Y5Z7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6580,6 +8150,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1525,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6593,6 +8164,15 @@
    "X0Y1X2Y6",
    "Z0Y2Y5X7",
    "Z3Y4Y6X7"
+  ],
+  "lee_generators": [
+   "X0Z3Y5",
+   "Z0Z2X3Z7",
+   "Z1Z2Z4Z7",
+   "Z1Y5Y6Z7",
+   "X0Y1Y2X6",
+   "Z0X2X5X7",
+   "Z3X4X6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6619,6 +8199,7 @@
   ],
   "aut_group_size": 2,
   "d": 3,
+  "d_lee": 4,
   "index": 1532,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6632,6 +8213,15 @@
    "Z1Z2X5Z7",
    "Z0Z1Z3X6",
    "Z0X1Y3Y7"
+  ],
+  "lee_generators": [
+   "X0Y6Z7",
+   "X1Y2Z4Y6",
+   "X0Y2Y3Z5",
+   "Z2X3Y4Y6",
+   "Z1Z2X5Z7",
+   "Z0Z1Z3Z6",
+   "Z0X1X3Y7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6656,6 +8246,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1533,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6669,6 +8260,15 @@
    "Z1Z5X6Z7",
    "X3X4Y5Y6",
    "Y2Z5Z6Y7"
+  ],
+  "lee_generators": [
+   "X1Z4Z6",
+   "X2Z3Z4Y7",
+   "Z0Z2X3Y7",
+   "Y0X1X2X5",
+   "Z1Y5X6Y7",
+   "X3X4X5Y6",
+   "Y2Y5Z6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6693,6 +8293,7 @@
   "aut_group_generators": [],
   "aut_group_size": 1,
   "d": 3,
+  "d_lee": 4,
   "index": 1537,
   "is_css": 0,
   "is_decomposable": 0,
@@ -6706,6 +8307,15 @@
    "Z2Z3X5Z7",
    "Z0Z1Z2X6",
    "Y0Y3Z6X7"
+  ],
+  "lee_generators": [
+   "X2Z5Y6",
+   "X0X1Z4Z7",
+   "X0X2Z3Z4",
+   "Z1Y3Y4Z7",
+   "Z2Y3Y5Z7",
+   "Z0Z1Z2Z6",
+   "Y0X3Y6X7"
   ],
   "k": 1,
   "logical_ops": [
@@ -6740,12 +8350,22 @@
   ],
   "aut_group_size": 1536,
   "d": 3,
+  "d_lee": 3,
   "index": 1692,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "X0Z4",
+   "X1Z4",
+   "X2Z5",
+   "X3Z6",
+   "Z2Z3Y5Y6",
+   "Z0Z1Z2X4X5Z6"
+  ],
+  "lee_generators": [
    "X7",
    "X0Z4",
    "X1Z4",
@@ -6786,6 +8406,7 @@
   ],
   "aut_group_size": 1152,
   "d": 3,
+  "d_lee": 4,
   "index": 1698,
   "is_css": 0,
   "is_decomposable": 1,
@@ -6799,6 +8420,15 @@
    "Y2Y4Z5Z6",
    "X2Z3X5Z6",
    "Z0Z1Y2Z3Z4Y6"
+  ],
+  "lee_generators": [
+   "X7",
+   "Y0Y6",
+   "Y1Y6",
+   "X2X3Z4Z5",
+   "Y2X4Z5Y6",
+   "X2Z3Y5Y6",
+   "Z0Z1Y2Z3Z4X6"
   ],
   "k": 1,
   "logical_ops": [
@@ -6831,6 +8461,7 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 4,
   "index": 1726,
   "is_css": 0,
   "is_decomposable": 1,
@@ -6844,6 +8475,15 @@
    "Y2Z3Y4Z6",
    "Z0X2Z4X5Z6",
    "Z1X2Z3Z5X6"
+  ],
+  "lee_generators": [
+   "X7",
+   "X0Z5",
+   "Y1Y6",
+   "X2X3Z4Z5",
+   "X2Z3Y4Y6",
+   "Z0Y2Z4X5Y6",
+   "Z1Y2Z3Z5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -6876,12 +8516,22 @@
   ],
   "aut_group_size": 128,
   "d": 3,
+  "d_lee": 3,
   "index": 1728,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "X0Z6",
+   "X1Z3",
+   "Z3X4Z5Z6",
+   "Z1X2Y3Y4",
+   "Z2Z4X5Z6",
+   "Z0Y2Z4Y6"
+  ],
+  "lee_generators": [
    "X7",
    "X0Z6",
    "X1Z3",
@@ -6917,6 +8567,7 @@
   ],
   "aut_group_size": 8,
   "d": 3,
+  "d_lee": 4,
   "index": 1741,
   "is_css": 0,
   "is_decomposable": 1,
@@ -6930,6 +8581,15 @@
    "Y0Z1Y2Z6",
    "Z0X1X3Z4",
    "X0Z2Z3X5"
+  ],
+  "lee_generators": [
+   "X7",
+   "Y3X4Y6",
+   "Y2Z4Z6",
+   "Y0Y1Y2Y5",
+   "Y0Z1X2Y6",
+   "Z0X1Z3Z4",
+   "X0Y2Y3Z5"
   ],
   "k": 1,
   "logical_ops": [
@@ -6962,12 +8622,22 @@
   ],
   "aut_group_size": 384,
   "d": 3,
+  "d_lee": 3,
   "index": 1745,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "X0Z6",
+   "X1Z5",
+   "X2Z4",
+   "Z2X3X4Z5",
+   "Z1Y3Y5Z6",
+   "Z0Z3Z4X6"
+  ],
+  "lee_generators": [
    "X7",
    "X0Z6",
    "X1Z5",
@@ -7009,12 +8679,22 @@
   ],
   "aut_group_size": 8640,
   "d": 3,
+  "d_lee": 3,
   "index": 1751,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "X0Z1",
+   "Z0X1",
+   "Y2Y3Z4Z5",
+   "Y2Z3Y4Z6",
+   "X2Z4X5Z6",
+   "X2Z3Z5X6"
+  ],
+  "lee_generators": [
    "X7",
    "X0Z1",
    "Z0X1",
@@ -7050,6 +8730,7 @@
   ],
   "aut_group_size": 12,
   "d": 3,
+  "d_lee": 4,
   "index": 1756,
   "is_css": 0,
   "is_decomposable": 1,
@@ -7063,6 +8744,15 @@
    "Y0Z1Y2Z6",
    "Z0X1X3Z4",
    "Z0X2Z3X4"
+  ],
+  "lee_generators": [
+   "X7",
+   "Z1Z3Y5",
+   "Y2Z4Z6",
+   "Y0X1Y2Z5",
+   "Y0Z1X2Y6",
+   "Z0Y1Y3Z4",
+   "Z0Z2Z3X4"
   ],
   "k": 1,
   "logical_ops": [
@@ -7093,6 +8783,7 @@
   ],
   "aut_group_size": 96,
   "d": 3,
+  "d_lee": 4,
   "index": 1763,
   "is_css": 0,
   "is_decomposable": 1,
@@ -7106,6 +8797,15 @@
    "Z0Z2Y3Y5",
    "Z0Z1Z2X6",
    "Y0Y3Z4Z5Z6"
+  ],
+  "lee_generators": [
+   "X7",
+   "X0X1Z3Z4",
+   "X0X2Z3Z5",
+   "Z0Z1Y3Y4",
+   "Z0Z2Y3Y5",
+   "Z0Z1Z2Z6",
+   "Y0Y3Z4Z5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -7136,6 +8836,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1775,
   "is_css": 0,
   "is_decomposable": 1,
@@ -7149,6 +8850,15 @@
    "Z2Z3Z4X5",
    "Z0Z1Z2X6",
    "Y0Y3Z4Z5Z6"
+  ],
+  "lee_generators": [
+   "X7",
+   "X0Y1Z3Y4",
+   "X0X2Z3Z5",
+   "Z0Z1X3X4",
+   "Z2Z3Y4Y5",
+   "Z0Z1Z2Z6",
+   "Y0X3Y4Z5Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -7182,12 +8892,22 @@
   ],
   "aut_group_size": 2016,
   "d": 3,
+  "d_lee": 3,
   "index": 1780,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "Z0Z1Z3Z6",
+   "Z0Z2Z3Z5",
+   "Y1Y2Y3Y4",
+   "Z3Z4Z5Z6",
+   "Y0Y1Y4Y5",
+   "Y0Y2Y4Y6"
+  ],
+  "lee_generators": [
    "X7",
    "Z0Z1Z3Z6",
    "Z0Z2Z3Z5",
@@ -7224,12 +8944,22 @@
   ],
   "aut_group_size": 84,
   "d": 3,
+  "d_lee": 3,
   "index": 1781,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "Y0Y1Z2Z5",
+   "Y0Z1Y2Z6",
+   "Z0X1X3Z4",
+   "Z0X2Z3X4",
+   "X0Z2Z3X5",
+   "X0Z1Z4X6"
+  ],
+  "lee_generators": [
    "X7",
    "Y0Y1Z2Z5",
    "Y0Z1Y2Z6",
@@ -7268,12 +8998,22 @@
   ],
   "aut_group_size": 288,
   "d": 3,
+  "d_lee": 3,
   "index": 1782,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "Y0Y1Z5Z6",
+   "Z0X1X2Z3",
+   "X0Z1Z2X3",
+   "X0Z1X4Z6",
+   "Z0Z3Z4X5",
+   "Z1Z2Z4X6"
+  ],
+  "lee_generators": [
    "X7",
    "Y0Y1Z5Z6",
    "Z0X1X2Z3",
@@ -7312,6 +9052,7 @@
   ],
   "aut_group_size": 192,
   "d": 3,
+  "d_lee": 4,
   "index": 1795,
   "is_css": 0,
   "is_decomposable": 1,
@@ -7325,6 +9066,15 @@
    "Y2Y4Z5Z6",
    "X2Z3X5Z6",
    "Z1Y2Z3Z4Y6"
+  ],
+  "lee_generators": [
+   "X7",
+   "X0Z1",
+   "Z0X1Y6",
+   "X2X3Z4Z5",
+   "Y2X4Z5Y6",
+   "X2Z3Y5Y6",
+   "Z1Y2Z3Z4X6"
   ],
   "k": 1,
   "logical_ops": [
@@ -7355,6 +9105,7 @@
   ],
   "aut_group_size": 32,
   "d": 3,
+  "d_lee": 4,
   "index": 1796,
   "is_css": 0,
   "is_decomposable": 1,
@@ -7368,6 +9119,15 @@
    "X1X2Z4Z5",
    "X1X3Z5Z6",
    "Z0Y1Z2Z4Y6"
+  ],
+  "lee_generators": [
+   "X7",
+   "X0Z6",
+   "Z1Z3Y4",
+   "Z2Z3Y5",
+   "Y1Y2Z4Z5",
+   "Y1Y3Z5Z6",
+   "Z0X1Z2Z4Y6"
   ],
   "k": 1,
   "logical_ops": [
@@ -7399,6 +9159,7 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 4,
   "index": 1808,
   "is_css": 0,
   "is_decomposable": 1,
@@ -7412,6 +9173,15 @@
    "Z0X4Z5Z6",
    "Z2Z3Y5Y6",
    "X1Z3Z4X5Z6"
+  ],
+  "lee_generators": [
+   "X7",
+   "X0Z4",
+   "X1Y2Z3Y5",
+   "X1Z2X3Z6",
+   "Z0Y4Y5Z6",
+   "Z2Z3X5X6",
+   "Y1Z3Z4Z5Z6"
   ],
   "k": 1,
   "logical_ops": [
@@ -7443,12 +9213,22 @@
   ],
   "aut_group_size": 64,
   "d": 3,
+  "d_lee": 3,
   "index": 1810,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X7",
+   "X0Z6",
+   "X1X2Z4Z5",
+   "X1X3Z5Z6",
+   "Y1Z3Y4Z6",
+   "Y2Z3Y5Z6",
+   "Z0Z1Z2X6"
+  ],
+  "lee_generators": [
    "X7",
    "X0Z6",
    "X1X2Z4Z5",

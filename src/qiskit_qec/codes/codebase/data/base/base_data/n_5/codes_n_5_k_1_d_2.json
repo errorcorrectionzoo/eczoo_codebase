@@ -9,6 +9,7 @@
   ],
   "aut_group_size": 96,
   "d": 2,
+  "d_lee": 3,
   "index": 9,
   "is_css": 1,
   "is_decomposable": 0,
@@ -19,6 +20,12 @@
    "Z1Z4",
    "Z2Z3",
    "X0X1X2X3X4"
+  ],
+  "lee_generators": [
+   "Y0Y4",
+   "Y1Y4",
+   "Z2Z3",
+   "Z0Z1X2Y3Z4"
   ],
   "k": 1,
   "logical_ops": [
@@ -45,6 +52,7 @@
   ],
   "aut_group_size": 16,
   "d": 2,
+  "d_lee": 3,
   "index": 14,
   "is_css": 1,
   "is_decomposable": 0,
@@ -55,6 +63,12 @@
    "X2X3",
    "X0X1X4",
    "Z0Z2Z3Z4"
+  ],
+  "lee_generators": [
+   "Y1Y4",
+   "X2Z3",
+   "Y0Z1Z4",
+   "Z0Z2Y3Y4"
   ],
   "k": 1,
   "logical_ops": [
@@ -79,6 +93,7 @@
   ],
   "aut_group_size": 8,
   "d": 2,
+  "d_lee": 3,
   "index": 18,
   "is_css": 1,
   "is_decomposable": 0,
@@ -89,6 +104,12 @@
    "Z2Z3Z4",
    "X1X2X3",
    "X0X3X4"
+  ],
+  "lee_generators": [
+   "Z0Y1Z3",
+   "Z2Z3Y4",
+   "Z1Y2X3",
+   "Y0X3Z4"
   ],
   "k": 1,
   "logical_ops": [
@@ -114,6 +135,7 @@
   ],
   "aut_group_size": 8,
   "d": 2,
+  "d_lee": 3,
   "index": 20,
   "is_css": 0,
   "is_decomposable": 0,
@@ -124,6 +146,12 @@
    "X1Z3Z4",
    "Y0X3Y4",
    "X0Y1Z2Y3"
+  ],
+  "lee_generators": [
+   "Y1Y2",
+   "Y1Y3Z4",
+   "X0Z3X4",
+   "Y0X1Z2X3"
   ],
   "k": 1,
   "logical_ops": [
@@ -152,12 +180,19 @@
   ],
   "aut_group_size": 64,
   "d": 2,
+  "d_lee": 2,
   "index": 25,
   "is_css": 1,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X4",
+   "X0X1",
+   "X2X3",
+   "Z0Z1Z2Z3"
+  ],
+  "lee_generators": [
    "X4",
    "X0X1",
    "X2X3",
@@ -188,12 +223,19 @@
   ],
   "aut_group_size": 48,
   "d": 2,
+  "d_lee": 2,
   "index": 26,
   "is_css": 0,
   "is_decomposable": 1,
   "is_degenerate": 1,
   "is_gf4linear": 0,
   "isotropic_generators": [
+   "X4",
+   "Z0X2Z3",
+   "Y0X1Y2",
+   "Z1Z2X3"
+  ],
+  "lee_generators": [
    "X4",
    "Z0X2Z3",
    "Y0X1Y2",
