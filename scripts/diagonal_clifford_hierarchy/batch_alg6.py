@@ -34,13 +34,12 @@ from itertools import groupby
 from pathlib import Path
 
 _SCRIPT_DIR  = Path(__file__).resolve().parent
-_DCH_DIR     = _SCRIPT_DIR / "diagonal_clifford_hierarchy"   # where run_alg6_stabilizer lives
-DATA_DIR     = _SCRIPT_DIR.parent / "src/qiskit_qec/codes/codebase/data/base/base_data"
-CSSLO_DIR    = _SCRIPT_DIR.parent.parent / "CSSLO"
+DATA_DIR     = _SCRIPT_DIR.parent.parent / "src/qiskit_qec/codes/codebase/data/base/base_data"
+CSSLO_DIR    = _SCRIPT_DIR.parent.parent.parent / "CSSLO"
 
 # Set up sys.path at module level so forked workers inherit the entries and
 # any already-imported modules from the main process.
-for _p in (str(CSSLO_DIR), str(_DCH_DIR)):
+for _p in (str(CSSLO_DIR), str(_SCRIPT_DIR)):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 

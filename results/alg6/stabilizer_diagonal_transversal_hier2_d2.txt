@@ -1,0 +1,2642 @@
+Diagonal transversal gates at hierarchy level t=2
+  filters: d=2
+Total codes: 272118  |  k=0 skipped: 0  |  tested: 272118  |  hits: 2567  |  errors: 0
+Script: run_alg6_stabilizer.py  (CSS and non-CSS stabilizer codes)
+
+[[4,2,2]]
+  id=9      (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[5,1,2]]
+  id=9      (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=18     (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+
+[[5,2,2]]
+  id=26     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=32     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[6,1,2]]
+  id=17     (CSS)  physical=S1S5CZ[0-2]  logical=S0
+  id=31     (CSS)  physical=S†5S0CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=50     (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=56     (CSS)  physical=S2S3CZ[0-1]  logical=S0
+  id=59     (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=62     (CSS)  physical=S4S5CZ[2-3]  logical=S0
+  id=70     (CSS)  physical=S†2S1S4CZ[0-3]  logical=S0  strongFT
+  id=71     (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+  id=81     (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=85     (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+
+[[6,2,2]]
+  id=10     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=38     (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=52     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=56     (CSS)  physical=S†2S4CZ[0-5]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=57     (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=82     (CSS)  physical=S1S4CZ[0-2]  logical=S0
+  id=126    (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=128    (CSS)  physical=S0S1CZ[2-5]CZ[3-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=129    (CSS)  physical=S3S5CZ[2-4]  logical=S0Z1CZ[0-1]
+  id=150    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[6,3,2]]
+  id=73     (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[6,4,2]]
+  id=29     (CSS)  physical=S†2S3S4S5CZ[0-1]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+
+[[7,1,2]]
+  id=5      (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=17     (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+  id=24     (CSS)  physical=S†1S2S4CZ[0-3]  logical=S0  strongFT
+  id=28     (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=103    (CSS)  physical=S2S4CZ[0-5]CZ[1-3]  logical=S0  strongFT
+  id=104    (CSS)  physical=S†6S0CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=106    (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=107    (CSS)  physical=S5S6CZ[2-3]  logical=S0
+  id=109    (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=111    (CSS)  physical=S†0S3S4CZ[2-5]  logical=S0  strongFT
+  id=118    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=120    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=123    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=150    (CSS)  physical=S2S4S6CZ[0-3]CZ[1-5]  logical=S0
+  id=152    (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=157    (CSS)  physical=S5S6CZ[0-1]  logical=S0
+  id=158    (CSS)  physical=S†2S3S4CZ[0-1]  logical=S0  strongFT
+  id=159    (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=160    (CSS)  physical=S†3S2S4CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=167    (CSS)  physical=S2S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=173    (CSS)  physical=S†3S0CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=174    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=183    (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=195    (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0  strongFT
+  id=234    (CSS)  physical=S3S4S6Z0Z1CZ[2-5]  logical=S0  strongFT
+  id=242    (CSS)  physical=S†1S5S6CZ[2-3]  logical=S0  strongFT
+  id=243    (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=247    (CSS)  physical=S†5S3S6CZ[0-4]  logical=S0  strongFT
+  id=250    (CSS)  physical=S†3S4S6CZ[2-5]  logical=S0  strongFT
+  id=301    (CSS)  physical=S2S5CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=311    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=315    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=317    (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=320    (CSS)  physical=S4S5CZ[2-3]  logical=S0
+  id=328    (CSS)  physical=S†2S1S4CZ[0-3]  logical=S0  strongFT
+  id=329    (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+
+[[7,2,2]]
+  id=23     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=55     (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=63     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=66     (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=151    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=173    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=182    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=183    (CSS)  physical=S†0S1CZ[2-5]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=184    (CSS)  physical=S3S4CZ[0-5]CZ[1-2]  logical=S0S1  strongFT
+  id=188    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=192    (CSS)  physical=S5S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=194    (CSS)  physical=S5S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=226    (CSS)  physical=S3S6Z5CZ[0-2]CZ[1-4]  logical=S0CZ[0-1]  strongFT
+  id=271    (CSS)  physical=S4S5S6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=275    (CSS)  physical=S4S6CZ[1-3]  logical=S0S1CZ[0-1]
+  id=276    (CSS)  physical=S5S6CZ[2-3]  logical=S0S1CZ[0-1]
+  id=286    (CSS)  physical=S†2S5CZ[0-6]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=287    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=381    (CSS)  physical=S†1S†2S0S3S4S6  logical=S0Z1CZ[0-1]  strongFT
+  id=438    (CSS)  physical=S†5S4Z6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=465    (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=492    (CSS)  physical=S†3S4Z1CZ[0-2]CZ[5-6]  logical=S†1S0  strongFT
+  id=519    (CSS)  physical=S†0S1CZ[2-4]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=521    (CSS)  physical=S†1S4S6Z5CZ[0-2]  logical=S0Z1  strongFT
+  id=594    (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=606    (CSS)  physical=S1S4S5CZ[0-2]CZ[3-6]  logical=S0S1
+  id=609    (CSS)  physical=S3S6CZ[2-5]  logical=S0Z1CZ[0-1]
+  id=614    (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=631    (CSS)  physical=S†1S†5S2S4S6CZ[0-3]  logical=S0CZ[0-1]  strongFT
+  id=634    (CSS)  physical=S1S2Z4CZ[0-5]CZ[3-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=635    (CSS)  physical=S†3S4Z6CZ[0-2]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=636    (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=641    (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=666    (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=746    (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=747    (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=748    (CSS)  physical=S†2S4CZ[0-5]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=755    (CSS)  physical=S1S4CZ[0-2]  logical=S0
+  id=757    (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=772    (CSS)  physical=S0S1CZ[2-5]CZ[3-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=773    (CSS)  physical=S3S5CZ[2-4]  logical=S0Z1CZ[0-1]
+
+[[7,3,2]]
+  id=31     (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=120    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=475    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=509    (CSS)  physical=S2S4S5CZ[0-1]CZ[3-6]  logical=S0S2Z1CZ[0-1]
+  id=568    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=600    (CSS)  physical=S†5S0S1S2S6CZ[3-4]  logical=S†2S0S1CZ[0-2]CZ[1-2]  strongFT
+  id=603    (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=667    (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[7,4,2]]
+  id=219    (CSS)  physical=S†2S3S4S5CZ[0-1]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=220    (CSS)  physical=S†2S3S4S5CZ[0-1]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=238    (CSS)  physical=S†2S3S4S5CZ[0-1]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+
+[[8,1,2]]
+  id=33     (CSS)  physical=S†2S1S4CZ[0-3]  logical=S0  strongFT
+  id=36     (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+  id=43     (CSS)  physical=S2S5CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=67     (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=77     (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=82     (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=85     (CSS)  physical=S4S5CZ[2-3]  logical=S0
+  id=133    (CSS)  physical=S†2S3S4CZ[0-5]CZ[1-7]  logical=S0  strongFT
+  id=135    (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+  id=143    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=167    (CSS)  physical=S†7S0CZ[1-2]CZ[3-5]CZ[4-6]  logical=S0  strongFT
+  id=169    (CSS)  physical=S2S4CZ[0-6]CZ[1-7]CZ[3-5]  logical=S0  strongFT
+  id=170    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=188    (CSS)  physical=S†1S†2S5Z3Z4CZ[0-6]  logical=S0  strongFT
+  id=199    (CSS)  physical=S†2S5S6CZ[0-3]  logical=S0  strongFT
+  id=203    (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=223    (CSS)  physical=S†2S5S6CZ[0-3]  logical=S0  strongFT
+  id=224    (CSS)  physical=S†2S6S7CZ[3-5]  logical=S0  strongFT
+  id=234    (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=235    (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=236    (CSS)  physical=S†0S3S6CZ[2-5]  logical=S0  strongFT
+  id=252    (CSS)  physical=S†4S3S6CZ[2-7]  logical=S0  strongFT
+  id=254    (CSS)  physical=S†0S4S5CZ[2-3]  logical=S0  strongFT
+  id=255    (CSS)  physical=S†3S2S4CZ[0-5]  logical=S0  strongFT
+  id=285    (CSS)  physical=S2S3S6Z1Z4CZ[0-5]  logical=S0  strongFT
+  id=287    (CSS)  physical=S†3S2S5CZ[0-6]CZ[1-7]  logical=S0  strongFT
+  id=335    (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=339    (CSS)  physical=S†0S3S4CZ[1-2]  logical=S0  strongFT
+  id=340    (CSS)  physical=S5S6CZ[1-2]  logical=S0
+  id=344    (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=347    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=348    (CSS)  physical=S6S7CZ[0-1]  logical=S0
+  id=354    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=403    (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=404    (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=454    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=466    (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+  id=480    (CSS)  physical=S†0S4S5CZ[2-3]  logical=S0  strongFT
+  id=481    (CSS)  physical=S†2S3S4CZ[0-5]  logical=S0  strongFT
+  id=483    (CSS)  physical=S1S4S6CZ[0-2]CZ[3-5]  logical=S0
+  id=486    (CSS)  physical=S4S6CZ[2-3]  logical=S0
+  id=487    (CSS)  physical=S0S7Z3Z6CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=494    (CSS)  physical=S2S7CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=499    (CSS)  physical=S†3S4S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=509    (CSS)  physical=S†7S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=514    (CSS)  physical=S†3S4S5Z1CZ[0-2]  logical=S0  strongFT
+  id=515    (CSS)  physical=S†2S3S4Z1CZ[0-5]  logical=S0  strongFT
+  id=520    (CSS)  physical=S3S7CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=527    (CSS)  physical=S†7S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=530    (CSS)  physical=S†7S0CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=543    (CSS)  physical=S4S6CZ[0-3]CZ[2-5]  logical=S0  strongFT
+  id=548    (CSS)  physical=S5S6CZ[0-2]CZ[1-3]  logical=S0  strongFT
+  id=549    (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=554    (CSS)  physical=S†0S7Z5Z6CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=561    (CSS)  physical=S†2S7CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=582    (CSS)  physical=S†0S†2S†3S4S5S6  logical=S0  strongFT
+  id=584    (CSS)  physical=S2S7CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=588    (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0  strongFT
+  id=594    (CSS)  physical=S†5S3S7CZ[0-4]  logical=S0  strongFT
+  id=606    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=609    (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=610    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=624    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=630    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=633    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=642    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=761    (CSS)  physical=S4S5CZ[0-1]  logical=S0
+  id=763    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=774    (CSS)  physical=S†0S†1S2S3S4S5  logical=S0  strongFT
+  id=775    (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=779    (CSS)  physical=S†3S2S6S7CZ[0-1]CZ[4-5]  logical=S0  strongFT
+  id=797    (CSS)  physical=S†6S†7S4S5CZ[0-1]CZ[2-3]  logical=S0  strongFT
+  id=817    (CSS)  physical=S†4S2S3CZ[0-5]CZ[1-7]  logical=S0  strongFT
+  id=852    (CSS)  physical=S2S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=857    (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=858    (CSS)  physical=S5S6CZ[3-4]  logical=S0
+  id=875    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=878    (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=879    (CSS)  physical=S1S5CZ[0-3]  logical=S0
+  id=884    (CSS)  physical=S†3S0CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=885    (CSS)  physical=S1S6CZ[0-3]  logical=S0
+  id=887    (CSS)  physical=S†5S1S4CZ[0-6]  logical=S0  strongFT
+  id=889    (CSS)  physical=S†7S0CZ[1-6]CZ[2-5]CZ[3-4]  logical=S0  strongFT
+  id=890    (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=901    (CSS)  physical=S1S4S7Z3Z5CZ[0-2]  logical=S0  strongFT
+  id=958    (CSS)  physical=S2S4CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=959    (CSS)  physical=S†3S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=960    (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=985    (CSS)  physical=S†7S1CZ[0-2]CZ[3-4]  logical=S0  strongFT
+  id=988    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=992    (CSS)  physical=S4S5CZ[2-3]  logical=S0
+  id=1024   (CSS)  physical=S†6S†7S5Z4CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=1042   (CSS)  physical=S1S6CZ[0-5]  logical=S0
+  id=1058   (CSS)  physical=S†1S†2S†3S4S5S6S7  logical=S0  strongFT
+  id=1084   (CSS)  physical=S†4S2S6CZ[1-7]  logical=S0  strongFT
+  id=1093   (CSS)  physical=S4S6CZ[0-5]  logical=S0
+  id=1096   (CSS)  physical=S2S4CZ[0-1]  logical=S0
+  id=1098   (CSS)  physical=S†2S†6S3Z7CZ[0-4]CZ[1-5]  logical=S0  strongFT
+  id=1102   (CSS)  physical=S†3S1S7CZ[0-5]  logical=S0  strongFT
+  id=1116   (CSS)  physical=S0S3S4Z5CZ[1-7]CZ[2-6]  logical=S0  strongFT
+  id=1178   (CSS)  physical=S6S7CZ[4-5]  logical=S0
+  id=1200   (CSS)  physical=S†3S†4S1S2S6S7CZ[0-5]  logical=S0
+  id=1236   (CSS)  physical=S†4S2S3Z7CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=1259   (CSS)  physical=S†5S1S4S6CZ[0-2]CZ[3-7]  logical=S0
+  id=1333   (CSS)  physical=S†2S†3S4S5S6S7Z0Z1  logical=S0  strongFT
+  id=1356   (CSS)  physical=S2S3S4S5S6S7Z0Z1  logical=S0  strongFT
+  id=1372   (CSS)  physical=S†2S†3S1S4S5S7CZ[0-6]  logical=S0  strongFT
+  id=1388   (CSS)  physical=S†1S4S5CZ[2-3]  logical=S0  strongFT
+  id=1428   (CSS)  physical=S†5S3S7CZ[0-4]  logical=S0  strongFT
+  id=1456   (CSS)  physical=S†3S5S7CZ[2-6]  logical=S0  strongFT
+  id=1458   (CSS)  physical=S†2S1S6CZ[0-5]CZ[4-7]  logical=S0  strongFT
+  id=1466   (CSS)  physical=S†6S1S2CZ[0-5]CZ[4-7]  logical=S0  strongFT
+  id=1482   (CSS)  physical=S3S5S7Z0Z1CZ[2-6]  logical=S0  strongFT
+  id=1657   (CSS)  physical=S†1S2S4CZ[0-3]  logical=S0  strongFT
+  id=1660   (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=1686   (CSS)  physical=S2S4CZ[0-5]CZ[1-3]  logical=S0  strongFT
+  id=1688   (CSS)  physical=S†6S0CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=1690   (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=1691   (CSS)  physical=S5S6CZ[2-3]  logical=S0
+  id=1693   (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=1701   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=1703   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=1706   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=1707   (CSS)  physical=S†0S3S4CZ[2-5]  logical=S0  strongFT
+  id=1713   (CSS)  physical=S2S4S6CZ[0-3]CZ[1-5]  logical=S0
+  id=1715   (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=1719   (CSS)  physical=S5S6CZ[0-1]  logical=S0
+  id=1720   (CSS)  physical=S†2S3S4CZ[0-1]  logical=S0  strongFT
+  id=1721   (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=1722   (CSS)  physical=S†3S2S4CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=1729   (CSS)  physical=S2S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=1732   (CSS)  physical=S†3S0CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=1733   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=1739   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=1750   (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0  strongFT
+  id=1784   (CSS)  physical=S†3S4S6CZ[2-5]  logical=S0  strongFT
+  id=1789   (CSS)  physical=S3S4S6Z0Z1CZ[2-5]  logical=S0  strongFT
+  id=1798   (CSS)  physical=S†1S5S6CZ[2-3]  logical=S0  strongFT
+  id=1799   (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=1803   (CSS)  physical=S†5S3S6CZ[0-4]  logical=S0  strongFT
+
+[[8,2,2]]
+  id=66     (CSS)  physical=S3S5CZ[2-4]  logical=S0Z1CZ[0-1]
+  id=74     (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=90     (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=91     (CSS)  physical=S†2S4CZ[0-5]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=92     (CSS)  physical=S0S1CZ[2-5]CZ[3-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=123    (CSS)  physical=S1S4CZ[0-2]  logical=S0
+  id=125    (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=323    (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=327    (CSS)  physical=S†0S1CZ[2-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=343    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=347    (CSS)  physical=S†0S1CZ[2-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=348    (CSS)  physical=S1S2CZ[0-5]CZ[3-7]  logical=S0S1  strongFT
+  id=350    (CSS)  physical=S4S5CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=365    (CSS)  physical=S†0S1CZ[2-5]CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=367    (CSS)  physical=S†6S4S5CZ[0-3]  logical=S0S1CZ[0-1]  strongFT
+  id=370    (CSS)  physical=S†4S3Z1CZ[0-5]CZ[2-7]  logical=S†1S0  strongFT
+  id=372    (CSS)  physical=S†3S†4S5S6S7Z1CZ[0-2]  logical=S0S1  strongFT
+  id=374    (CSS)  physical=S1S5CZ[0-2]CZ[3-6]  logical=S0S1  strongFT
+  id=376    (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=377    (CSS)  physical=S†1S†5S2S4S7CZ[0-3]  logical=S0CZ[0-1]  strongFT
+  id=396    (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=410    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=419    (CSS)  physical=S†2S3Z7CZ[0-4]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=437    (CSS)  physical=S†6S5CZ[1-3]CZ[2-4]  logical=S†1S0  strongFT
+  id=466    (CSS)  physical=S6S7CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=475    (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=476    (CSS)  physical=S2S3S4CZ[0-6]CZ[1-5]  logical=S0S1
+  id=744    (CSS)  physical=S4S5S7CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=769    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=773    (CSS)  physical=S4S5CZ[0-1]  logical=S0
+  id=876    (CSS)  physical=S0S7CZ[1-6]CZ[2-3]  logical=S0S1  strongFT
+  id=1160   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1249   (CSS)  physical=S1S5S6CZ[0-2]CZ[3-4]  logical=S0S1
+  id=1271   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1273   (CSS)  physical=S3S4CZ[0-5]CZ[1-2]  logical=S0S1  strongFT
+  id=1276   (CSS)  physical=S†0S1CZ[2-5]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=1278   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1286   (CSS)  physical=S†1S†5S3S4S6CZ[0-2]  logical=S0S1  strongFT
+  id=1287   (CSS)  physical=S†4S5Z2CZ[0-3]CZ[1-6]  logical=S0CZ[0-1]  strongFT
+  id=1289   (CSS)  physical=S4S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=1308   (CSS)  physical=S†7S0CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=1312   (CSS)  physical=S6S7CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=1313   (CSS)  physical=S†0S†1S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=1314   (CSS)  physical=S4S6CZ[3-5]  logical=S0Z1CZ[0-1]
+  id=1320   (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=1353   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=1364   (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1367   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1368   (CSS)  physical=S5S7CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=1390   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=1399   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=1400   (CSS)  physical=S6S7CZ[2-3]  logical=S0S1CZ[0-1]
+  id=1459   (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1478   (CSS)  physical=S†1S7CZ[0-3]CZ[2-5]CZ[4-6]  logical=S0CZ[0-1]
+  id=1723   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1781   (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=1783   (CSS)  physical=S†1S2CZ[0-7]CZ[3-5]  logical=S0CZ[0-1]  strongFT
+  id=1796   (CSS)  physical=S†1S†6S4S7CZ[0-2]CZ[3-5]  logical=S0Z1  strongFT
+  id=1816   (CSS)  physical=S†0S†2S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=1820   (CSS)  physical=S†1S0CZ[2-3]CZ[4-6]CZ[5-7]  logical=S0CZ[0-1]  strongFT
+  id=1851   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1858   (CSS)  physical=S3S5CZ[2-4]  logical=S0S1
+  id=1859   (CSS)  physical=S3S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=1879   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=1882   (CSS)  physical=S1S2CZ[0-5]CZ[3-7]  logical=S0S1  strongFT
+  id=1884   (CSS)  physical=S3S7CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=1903   (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=1905   (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=1909   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=1917   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=1918   (CSS)  physical=S0S1CZ[2-6]CZ[3-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=1919   (CSS)  physical=S†5S4CZ[2-7]CZ[3-6]  logical=S†1S0  strongFT
+  id=1920   (CSS)  physical=S3S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=1927   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1928   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1933   (CSS)  physical=S†0S7CZ[1-5]CZ[2-4]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=1947   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=1949   (CSS)  physical=S5S7CZ[4-6]  logical=S0Z1CZ[0-1]
+  id=2026   (CSS)  physical=S3S4Z6CZ[0-5]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=2027   (CSS)  physical=S†1S3S4S5S6CZ[0-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=2030   (CSS)  physical=S†0S†4S1S6S7CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=2035   (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=2038   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2053   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2069   (CSS)  physical=S2S3CZ[0-1]CZ[4-7]CZ[5-6]  logical=S0Z1CZ[0-1]
+  id=2072   (CSS)  physical=S6S7CZ[0-3]CZ[1-5]CZ[2-4]  logical=S0S1CZ[0-1]
+  id=2077   (CSS)  physical=S5S6CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=2078   (CSS)  physical=S3S7CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=2100   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2107   (CSS)  physical=S1S6CZ[0-3]  logical=S0
+  id=2726   (CSS)  physical=S2S7CZ[0-3]CZ[1-6]  logical=S0S1CZ[0-1]  strongFT
+  id=2915   (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3012   (CSS)  physical=S†1S3S4S5CZ[0-7]CZ[2-6]  logical=S0S1  strongFT
+  id=3054   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=3055   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=3058   (CSS)  physical=S0S1CZ[2-6]CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=3059   (CSS)  physical=S†0S1CZ[2-6]CZ[3-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=3063   (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3066   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=3080   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3154   (CSS)  physical=S2S7CZ[1-3]  logical=S0S1CZ[0-1]
+  id=3478   (CSS)  physical=S†2S3S4S5S6S7Z1  logical=S†1S0CZ[0-1]  strongFT
+  id=3511   (CSS)  physical=S†0S†1S3S4S5S7  logical=S0Z1CZ[0-1]  strongFT
+  id=3580   (CSS)  physical=S†4S7Z5CZ[0-2]CZ[1-3]  logical=S0Z1CZ[0-1]  strongFT
+  id=3722   (CSS)  physical=S4S5CZ[0-1]  logical=S0
+  id=3723   (CSS)  physical=S2S4CZ[0-1]  logical=S0
+  id=3724   (CSS)  physical=S5S7CZ[1-3]  logical=S0
+  id=3737   (CSS)  physical=S†1S†2S3S4S5S6Z0  logical=S0Z1CZ[0-1]  strongFT
+  id=3753   (CSS)  physical=S6S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3820   (CSS)  physical=S†7S1CZ[2-5]CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=3857   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=4022   (CSS)  physical=S†5S2S4S6CZ[0-1]CZ[3-7]  logical=S0Z1CZ[0-1]
+  id=4075   (CSS)  physical=S†3S†4S0S1S6S7CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=4117   (CSS)  physical=S†0S†1Z2Z6CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=4208   (CSS)  physical=S†0S†1S3S4S6S7CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=4237   (CSS)  physical=S†4S†5S1S6CZ[0-7]CZ[2-3]  logical=S†1S0  strongFT
+  id=4240   (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4284   (CSS)  physical=S3S4Z1CZ[0-6]CZ[2-5]  logical=S0S1  strongFT
+  id=4294   (CSS)  physical=S†1S†6Z0Z5CZ[2-4]CZ[3-7]  logical=S†1S0  strongFT
+  id=4520   (CSS)  physical=S†1S†6S4S5CZ[0-7]CZ[2-3]  logical=S†1S0  strongFT
+  id=4912   (CSS)  physical=S4S5CZ[0-6]CZ[1-3]  logical=S0S1  strongFT
+  id=4926   (CSS)  physical=S†2S†3S4S5S6S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=4927   (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=4937   (CSS)  physical=S0S2CZ[1-7]CZ[3-5]CZ[4-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=4941   (CSS)  physical=S4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=4988   (CSS)  physical=S†1S2Z4Z6CZ[0-3]CZ[5-7]  logical=S0CZ[0-1]  strongFT
+  id=4998   (CSS)  physical=S†6S4S5CZ[1-2]  logical=S0S1CZ[0-1]  strongFT
+  id=5030   (CSS)  physical=S†1S5S6CZ[0-2]CZ[3-7]  logical=S0S1CZ[0-1]
+  id=5044   (CSS)  physical=S3S6CZ[2-4]  logical=S0S1
+  id=5045   (CSS)  physical=S†0S†1S2S3S4S6  logical=S0Z1CZ[0-1]  strongFT
+  id=5095   (CSS)  physical=S†2S1Z4Z6CZ[0-5]CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=5116   (CSS)  physical=S†5S3S7CZ[0-4]  logical=S0S1CZ[0-1]  strongFT
+  id=5143   (CSS)  physical=S†1S†2S0S3S4S7  logical=S0Z1CZ[0-1]  strongFT
+  id=5160   (CSS)  physical=S†1S5S7Z4CZ[0-2]  logical=S0  strongFT
+  id=5195   (CSS)  physical=S†1S2S6CZ[0-4]  logical=S0  strongFT
+  id=5268   (CSS)  physical=S†2S3S4S5S6S7Z0  logical=S†1S0CZ[0-1]  strongFT
+  id=5270   (CSS)  physical=S†4S5S7CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=5294   (CSS)  physical=S†1S2S6CZ[0-4]  logical=S0  strongFT
+  id=5295   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5330   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5547   (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=5551   (CSS)  physical=S2S3S4S5S6S7Z0Z1  logical=S0Z1CZ[0-1]  strongFT
+  id=5553   (CSS)  physical=S†1S†3S2S4S7CZ[0-5]  logical=S†1S0  strongFT
+  id=5554   (CSS)  physical=S5S6Z3CZ[0-7]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=5697   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5710   (CSS)  physical=S†0S†1S2S3S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=5712   (CSS)  physical=S†5S6Z3CZ[0-4]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=5753   (CSS)  physical=S†0S2S6CZ[1-4]  logical=S0  strongFT
+  id=5787   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6713   (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=6721   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6724   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6733   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6735   (CSS)  physical=S†0S1CZ[2-5]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=6736   (CSS)  physical=S3S4CZ[0-5]CZ[1-2]  logical=S0S1  strongFT
+  id=6742   (CSS)  physical=S5S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=6744   (CSS)  physical=S5S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=6747   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=6748   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=6756   (CSS)  physical=S3S6Z5CZ[0-2]CZ[1-4]  logical=S0CZ[0-1]  strongFT
+  id=6761   (CSS)  physical=S4S5S6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=6764   (CSS)  physical=S4S6CZ[1-3]  logical=S0S1CZ[0-1]
+  id=6766   (CSS)  physical=S5S6CZ[2-3]  logical=S0S1CZ[0-1]
+  id=6772   (CSS)  physical=S†2S5CZ[0-6]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=6773   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6789   (CSS)  physical=S†1S†2S0S3S4S6  logical=S0Z1CZ[0-1]  strongFT
+  id=6797   (CSS)  physical=S†5S4Z6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=6808   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6815   (CSS)  physical=S†3S4Z1CZ[0-2]CZ[5-6]  logical=S†1S0  strongFT
+  id=6823   (CSS)  physical=S†0S1CZ[2-4]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=6825   (CSS)  physical=S†1S4S6Z5CZ[0-2]  logical=S0Z1  strongFT
+  id=6876   (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=6887   (CSS)  physical=S1S4S5CZ[0-2]CZ[3-6]  logical=S0S1
+  id=6890   (CSS)  physical=S3S6CZ[2-5]  logical=S0Z1CZ[0-1]
+  id=6896   (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=6913   (CSS)  physical=S†1S†5S2S4S6CZ[0-3]  logical=S0CZ[0-1]  strongFT
+  id=6916   (CSS)  physical=S1S2Z4CZ[0-5]CZ[3-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=6917   (CSS)  physical=S†3S4Z6CZ[0-2]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=6918   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6924   (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=6948   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[8,3,2]]
+  id=123    (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=175    (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=176    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=233    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=245    (CSS)  physical=S3S6CZ[1-2]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=249    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=251    (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=253    (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=257    (CSS)  physical=S0S1S3S6CZ[2-4]CZ[5-7]  logical=S†1S0Z2CZ[0-1]CZ[1-2]  strongFT
+  id=258    (CSS)  physical=S3S6CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=431    (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=690    (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1009   (CSS)  physical=S†5S0S1S2S6CZ[3-4]  logical=S†2S0S1CZ[0-2]CZ[1-2]  strongFT
+  id=1067   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1070   (CSS)  physical=S†5S7CZ[0-4]CZ[1-6]CZ[2-3]  logical=S0S2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=1071   (CSS)  physical=S3S6CZ[0-1]CZ[2-5]CZ[4-7]  logical=S0S2Z1CZ[0-1]CZ[1-2]
+  id=1080   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=1090   (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1507   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1539   (CSS)  physical=S4S5CZ[0-2]  logical=S0Z2CZ[0-2]
+  id=1553   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1554   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1567   (CSS)  physical=S3S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=1569   (CSS)  physical=S†0S1CZ[2-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=1577   (CSS)  physical=S6S7CZ[2-3]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=1580   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=1585   (CSS)  physical=S†5S6S7CZ[3-4]  logical=S0S2CZ[0-2]  strongFT
+  id=1586   (CSS)  physical=S†5S1S2S4S6CZ[0-3]  logical=S†1S0S2CZ[0-1]CZ[1-2]  strongFT
+  id=1589   (CSS)  physical=S1S2Z4CZ[0-5]CZ[3-7]  logical=S0Z2CZ[0-1]  strongFT
+  id=1628   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1638   (CSS)  physical=S†1S4S5S6CZ[0-3]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=1869   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=2237   (CSS)  physical=S†0S†1S2S3S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=2315   (CSS)  physical=S†0S†1S3S4S5S7  logical=S0Z2CZ[0-2]  strongFT
+  id=2472   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2590   (CSS)  physical=S1S2Z3CZ[0-6]CZ[4-7]  logical=S0Z1CZ[0-2]  strongFT
+  id=2788   (CSS)  physical=S1S2CZ[0-6]CZ[4-7]  logical=S0S1  strongFT
+  id=2909   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3268   (CSS)  physical=S3S6CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=3391   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3438   (CSS)  physical=S2S3S4S5S6S7Z0Z1  logical=S†1S†2S0CZ[1-2]  strongFT
+  id=3883   (CSS)  physical=S0S6CZ[1-3]CZ[2-7]  logical=S0S1  strongFT
+  id=3888   (CSS)  physical=S†0S1CZ[3-6]CZ[4-7]  logical=S0CZ[0-2]  strongFT
+  id=4584   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=4753   (CSS)  physical=S1S2CZ[0-5]CZ[3-7]  logical=S0S1  strongFT
+  id=4756   (CSS)  physical=S†1S†5S2S3S6CZ[0-4]  logical=S0S1S2CZ[0-2]CZ[1-2]  strongFT
+  id=4758   (CSS)  physical=S†4S5CZ[0-3]CZ[1-7]CZ[2-6]  logical=S0CZ[0-1]
+  id=4762   (CSS)  physical=S3S4S5S6CZ[0-7]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=4882   (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=4899   (CSS)  physical=S†1S†5S4S7CZ[0-2]CZ[3-6]  logical=S†1S0S2CZ[1-2]  strongFT
+  id=5497   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5527   (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=6221   (CSS)  physical=S2S6CZ[0-1]CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]
+  id=6798   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=6865   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6867   (CSS)  physical=S†2S3S4S5S6S7Z0  logical=S†2S0Z1CZ[0-1]CZ[1-2]  strongFT
+  id=6881   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=6883   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6885   (CSS)  physical=S†3S6CZ[0-7]CZ[1-5]  logical=S0S2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=6889   (CSS)  physical=S†2S†4S1S3S6CZ[0-5]  logical=S†1S0S2  strongFT
+  id=6928   (CSS)  physical=S3S6CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=6929   (CSS)  physical=S3S6CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=6930   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=6933   (CSS)  physical=S0S1CZ[2-3]CZ[6-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=7033   (CSS)  physical=S2S4S5CZ[0-1]CZ[3-6]  logical=S0S2Z1CZ[0-1]
+  id=7053   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=7057   (CSS)  physical=S†0S4S5CZ[1-2]CZ[3-6]  logical=S0S1Z2CZ[0-1]CZ[0-2]
+  id=7059   (CSS)  physical=S†4S0S5CZ[1-2]CZ[3-6]  logical=S†2S0S1CZ[0-1]CZ[1-2]
+  id=7060   (CSS)  physical=S†0S1CZ[2-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=7068   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=7085   (CSS)  physical=S†5S2S4S7CZ[0-6]CZ[1-3]  logical=S0S2CZ[0-1]CZ[0-2]  strongFT
+  id=7112   (CSS)  physical=S3S4S5CZ[0-6]CZ[1-2]  logical=S0S2Z1CZ[0-1]
+  id=7117   (CSS)  physical=S†4S1S2S7CZ[0-6]CZ[3-5]  logical=S†2S0Z1CZ[0-1]  strongFT
+  id=7154   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7232   (CSS)  physical=S3S7CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=7325   (CSS)  physical=S†7S1S2S4CZ[0-3]CZ[5-6]  logical=S0S2  strongFT
+  id=7336   (CSS)  physical=S†0S†1S2S3S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=7356   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7383   (CSS)  physical=S†2S1Z5CZ[0-4]CZ[6-7]  logical=S0Z1Z2CZ[0-2]  strongFT
+  id=7412   (CSS)  physical=S1S6Z3CZ[0-5]CZ[4-7]  logical=S†1S†2S0CZ[0-1]  strongFT
+  id=7416   (CSS)  physical=S†2S1Z3CZ[0-4]CZ[6-7]  logical=S0Z1CZ[0-2]  strongFT
+  id=8018   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=8021   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=8054   (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=8062   (CSS)  physical=S2S4S5CZ[0-1]CZ[3-6]  logical=S0S2Z1CZ[0-1]
+  id=8079   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=8091   (CSS)  physical=S†5S0S1S2S6CZ[3-4]  logical=S†2S0S1CZ[0-2]CZ[1-2]  strongFT
+  id=8095   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[8,4,2]]
+  id=46     (CSS)  physical=S†4S5S6S7CZ[2-3]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=352    (CSS)  physical=S4S5S6S7Z1CZ[0-3]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=570    (CSS)  physical=S†4S5S6S7CZ[2-3]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=752    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1380   (CSS)  physical=S†2S3S5S6CZ[0-4]CZ[1-7]  logical=S0S2S3CZ[0-1]CZ[0-2]CZ[0-3]  strongFT
+  id=1785   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2065   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2206   (CSS)  physical=S†1S†2S0S3S4S5S6S7  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=2326   (CSS)  physical=S†2S†4S3S5CZ[0-7]CZ[1-6]  logical=S†1S0S2CZ[0-3]  strongFT
+  id=2332   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3050   (CSS)  physical=S4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=3051   (CSS)  physical=S†4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=3057   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3071   (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=3078   (CSS)  physical=S2S3S5S6CZ[0-4]CZ[1-7]  logical=S0Z1Z3CZ[0-2]CZ[0-3]CZ[1-3]  strongFT
+
+[[8,6,2]]
+  id=67     (CSS)  physical=S2S3S4S5S6S7CZ[0-1]  logical=S0Z1Z2Z3Z4Z5CZ[0-1]CZ[0-2]CZ[0-3]CZ[0-4]CZ[0-5]CZ[1-2]CZ[1-3]CZ[1-4]CZ[1-5]CZ[2-3]CZ[2-4]CZ[2-5]CZ[3-4]CZ[3-5]CZ[4-5]
+
+[[9,1,2]]
+  id=87     (CSS)  physical=S†1S2S4CZ[0-3]  logical=S0  strongFT
+  id=89     (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=128    (CSS)  physical=S†1S5S6CZ[2-3]  logical=S0  strongFT
+  id=131    (CSS)  physical=S3S4S6Z0Z1CZ[2-5]  logical=S0  strongFT
+  id=132    (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=136    (CSS)  physical=S†5S3S6CZ[0-4]  logical=S0  strongFT
+  id=141    (CSS)  physical=S†3S4S6CZ[2-5]  logical=S0  strongFT
+  id=155    (CSS)  physical=S2S4CZ[0-5]CZ[1-3]  logical=S0  strongFT
+  id=157    (CSS)  physical=S†6S0CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=159    (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=160    (CSS)  physical=S5S6CZ[2-3]  logical=S0
+  id=168    (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=171    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=173    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=176    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=177    (CSS)  physical=S†0S3S4CZ[2-5]  logical=S0  strongFT
+  id=222    (CSS)  physical=S2S4S6CZ[0-3]CZ[1-5]  logical=S0
+  id=225    (CSS)  physical=S5S6CZ[0-1]  logical=S0
+  id=226    (CSS)  physical=S†2S3S4CZ[0-1]  logical=S0  strongFT
+  id=227    (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=230    (CSS)  physical=S†3S2S4CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=232    (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=253    (CSS)  physical=S2S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=255    (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=257    (CSS)  physical=S†3S0CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=285    (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=307    (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0  strongFT
+  id=495    (CSS)  physical=S†0S4S6CZ[3-7]  logical=S0  strongFT
+  id=502    (CSS)  physical=S†7S†8S6CZ[0-4]CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=505    (CSS)  physical=S†4S3S7CZ[0-6]  logical=S0  strongFT
+  id=526    (CSS)  physical=S†0S†3S2S5S6S7CZ[1-4]  logical=S0  strongFT
+  id=528    (CSS)  physical=S†6S0S4CZ[1-5]CZ[2-7]  logical=S0  strongFT
+  id=529    (CSS)  physical=S6S7S8CZ[0-4]CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=531    (CSS)  physical=S†0S4S6CZ[1-5]CZ[2-7]  logical=S0  strongFT
+  id=548    (CSS)  physical=S3S6CZ[0-4]CZ[1-5]CZ[2-7]  logical=S0
+  id=558    (CSS)  physical=S1S8CZ[0-6]CZ[2-5]CZ[3-7]  logical=S0  strongFT
+  id=561    (CSS)  physical=S†0S5S7CZ[1-3]CZ[2-6]  logical=S0  strongFT
+  id=563    (CSS)  physical=S†7S5S8CZ[0-4]CZ[1-2]CZ[3-6]  logical=S0  strongFT
+  id=565    (CSS)  physical=S†0S4S6CZ[1-3]  logical=S0  strongFT
+  id=566    (CSS)  physical=S†1S3S4CZ[0-6]  logical=S0  strongFT
+  id=585    (CSS)  physical=S†7S2Z8CZ[0-1]CZ[3-6]CZ[4-5]  logical=S0
+  id=593    (CSS)  physical=S†7S0S5CZ[1-3]CZ[2-6]  logical=S0  strongFT
+  id=600    (CSS)  physical=S†2S3S4CZ[1-5]  logical=S0  strongFT
+  id=601    (CSS)  physical=S†8S0CZ[1-2]CZ[3-5]CZ[4-7]  logical=S0  strongFT
+  id=634    (CSS)  physical=S†1S0S6CZ[2-4]CZ[3-5]  logical=S0  strongFT
+  id=635    (CSS)  physical=S4S8CZ[0-3]  logical=S0
+  id=636    (CSS)  physical=S6S8CZ[0-1]  logical=S0
+  id=646    (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=647    (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=655    (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=736    (CSS)  physical=S7S8CZ[0-1]  logical=S0
+  id=757    (CSS)  physical=S†3S4S6CZ[0-7]CZ[1-8]  logical=S0  strongFT
+  id=848    (CSS)  physical=S†5S0S6CZ[1-7]CZ[2-8]  logical=S0  strongFT
+  id=849    (CSS)  physical=S†0S3S5CZ[1-4]  logical=S0  strongFT
+  id=850    (CSS)  physical=S†4S3S7Z6CZ[0-1]  logical=S0  strongFT
+  id=868    (CSS)  physical=S3S5CZ[1-2]  logical=S0
+  id=881    (CSS)  physical=S†0S3S4CZ[1-5]  logical=S0  strongFT
+  id=883    (CSS)  physical=S6S8CZ[0-1]  logical=S0
+  id=948    (CSS)  physical=S†3S5S6Z2Z4CZ[0-1]  logical=S0  strongFT
+  id=970    (CSS)  physical=S†3S6S8CZ[1-5]  logical=S0  strongFT
+  id=986    (CSS)  physical=S†4S1S3CZ[0-6]  logical=S0  strongFT
+  id=1102   (CSS)  physical=S†4S3S5Z7CZ[0-2]CZ[1-6]  logical=S0  strongFT
+  id=1112   (CSS)  physical=S†2S3S6CZ[0-4]CZ[7-8]  logical=S0  strongFT
+  id=1143   (CSS)  physical=S†0S†2S†3S4S5S7  logical=S0  strongFT
+  id=1146   (CSS)  physical=S7S8CZ[0-1]  logical=S0
+  id=1333   (CSS)  physical=S†2S3S4CZ[0-6]CZ[5-8]  logical=S0  strongFT
+  id=1355   (CSS)  physical=S†1S†4S5Z2Z3CZ[0-6]  logical=S0  strongFT
+  id=1455   (CSS)  physical=S†4S2S5S7S8CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=1507   (CSS)  physical=S†5S2S3CZ[0-7]CZ[1-8]  logical=S0  strongFT
+  id=1511   (CSS)  physical=S†5S3S7S8CZ[0-1]CZ[4-6]  logical=S0  strongFT
+  id=1516   (CSS)  physical=S†2S6S7CZ[0-3]  logical=S0  strongFT
+  id=1517   (CSS)  physical=S5S6CZ[0-4]CZ[1-2]CZ[3-8]  logical=S0  strongFT
+  id=1535   (CSS)  physical=S†1S2S3CZ[0-6]CZ[4-8]  logical=S0  strongFT
+  id=1549   (CSS)  physical=S†5S6S8CZ[2-4]  logical=S0  strongFT
+  id=1634   (CSS)  physical=S†5S3S8CZ[0-4]  logical=S0  strongFT
+  id=1686   (CSS)  physical=S†5S6Z4CZ[0-7]CZ[1-3]CZ[2-8]  logical=S0  strongFT
+  id=1695   (CSS)  physical=S4S6CZ[1-3]  logical=S0
+  id=1698   (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=1701   (CSS)  physical=S4S7S8CZ[0-1]CZ[3-5]  logical=S0
+  id=1702   (CSS)  physical=S4S7CZ[1-3]  logical=S0
+  id=1704   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=1706   (CSS)  physical=S4S6CZ[0-3]  logical=S0
+  id=1716   (CSS)  physical=S†2S†5S3S4S7S8Z6CZ[0-1]  logical=S0  strongFT
+  id=1724   (CSS)  physical=S†1S5S6CZ[2-3]  logical=S0  strongFT
+  id=1725   (CSS)  physical=S†4S1S7CZ[0-8]  logical=S0  strongFT
+  id=1810   (CSS)  physical=S†4S0S5Z7CZ[1-6]CZ[2-3]  logical=S0  strongFT
+  id=1821   (CSS)  physical=S†4S6S7S8CZ[0-1]CZ[2-3]  logical=S0  strongFT
+  id=1969   (CSS)  physical=S†0S†2S†3S4S5S7  logical=S0  strongFT
+  id=2046   (CSS)  physical=S†4S2S3S7CZ[0-5]CZ[1-6]  logical=S0
+  id=2057   (CSS)  physical=S†0S2S4S6CZ[1-5]CZ[3-7]  logical=S0
+  id=2059   (CSS)  physical=S†0S†1S2S5S6S7  logical=S0  strongFT
+  id=2060   (CSS)  physical=S†0S†3S†4S5S6S7  logical=S0  strongFT
+  id=2133   (CSS)  physical=S†3S†5S†8S7Z4CZ[0-1]CZ[2-6]  logical=S0  strongFT
+  id=2146   (CSS)  physical=S†0S3S7CZ[2-6]  logical=S0  strongFT
+  id=2152   (CSS)  physical=S3S8CZ[0-4]CZ[1-6]CZ[2-5]  logical=S0  strongFT
+  id=2154   (CSS)  physical=S†3S4S5CZ[2-6]  logical=S0  strongFT
+  id=2156   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=2198   (CSS)  physical=S2S8CZ[0-1]  logical=S0
+  id=2331   (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=2762   (CSS)  physical=S†6S†7S0CZ[1-3]CZ[2-5]CZ[4-8]  logical=S0  strongFT
+  id=2763   (CSS)  physical=S5S6CZ[0-7]CZ[1-3]CZ[2-8]  logical=S0  strongFT
+  id=2769   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=2773   (CSS)  physical=S2S5S8CZ[0-6]CZ[1-4]CZ[3-7]  logical=S0  strongFT
+  id=2789   (CSS)  physical=S†0S3S6S7CZ[1-2]CZ[4-5]  logical=S0  strongFT
+  id=2797   (CSS)  physical=S†5S3S4CZ[0-2]CZ[1-6]  logical=S0  strongFT
+  id=2799   (CSS)  physical=S†4S6S7S8CZ[0-1]CZ[2-3]  logical=S0  strongFT
+  id=2817   (CSS)  physical=S†3S4S5CZ[0-6]CZ[1-8]  logical=S0  strongFT
+  id=2822   (CSS)  physical=S†0S†2S3S4S5S6  logical=S0  strongFT
+  id=2843   (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=2862   (CSS)  physical=S†4S5S6S7CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=3118   (CSS)  physical=S†0S†3S†4S5S6S7  logical=S0  strongFT
+  id=3121   (CSS)  physical=S†5S4S7CZ[3-8]  logical=S0  strongFT
+  id=3263   (CSS)  physical=S†2S1S4CZ[0-3]  logical=S0  strongFT
+  id=3266   (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+  id=3273   (CSS)  physical=S2S5CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=3297   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=3307   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=3312   (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=3315   (CSS)  physical=S4S5CZ[2-3]  logical=S0
+  id=3389   (CSS)  physical=S†1S†7S4S5CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=3413   (CSS)  physical=S†3S5S8Z1CZ[0-4]  logical=S0  strongFT
+  id=3425   (CSS)  physical=S0S8Z3Z6CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=3431   (CSS)  physical=S†5S3S4CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=3435   (CSS)  physical=S†4S0S5CZ[2-6]CZ[3-7]  logical=S0  strongFT
+  id=3437   (CSS)  physical=S†0S4S5CZ[2-6]CZ[3-7]  logical=S0  strongFT
+  id=3441   (CSS)  physical=S†3S4S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=3442   (CSS)  physical=S2S8CZ[0-7]CZ[1-3]  logical=S0  strongFT
+  id=3444   (CSS)  physical=S†6S1S4CZ[0-3]  logical=S0  strongFT
+  id=3454   (CSS)  physical=S5S6CZ[0-4]  logical=S0
+  id=3463   (CSS)  physical=S4S7CZ[2-3]  logical=S0
+  id=3469   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3470   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3471   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3472   (CSS)  physical=S5S7Z8CZ[0-6]CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=3486   (CSS)  physical=S2S6CZ[0-7]CZ[1-4]CZ[3-5]  logical=S0  strongFT
+  id=3501   (CSS)  physical=S†5S1S3CZ[0-4]  logical=S0  strongFT
+  id=3503   (CSS)  physical=S4S5CZ[1-3]CZ[2-6]  logical=S0  strongFT
+  id=3506   (CSS)  physical=S3S7CZ[0-2]CZ[1-5]  logical=S0  strongFT
+  id=3513   (CSS)  physical=S4S8CZ[0-5]CZ[1-3]  logical=S0  strongFT
+  id=3525   (CSS)  physical=S4S8CZ[0-5]CZ[1-2]  logical=S0  strongFT
+  id=3535   (CSS)  physical=S†2S8CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=3546   (CSS)  physical=S†2S8CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=3557   (CSS)  physical=S†7S4CZ[0-3]CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=3564   (CSS)  physical=S†2S8CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=3569   (CSS)  physical=S3S8CZ[0-6]CZ[1-4]  logical=S0  strongFT
+  id=3586   (CSS)  physical=S0S8Z5Z6CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=3589   (CSS)  physical=S†7S3Z8CZ[0-4]CZ[1-6]CZ[2-5]  logical=S0  strongFT
+  id=3626   (CSS)  physical=S†1S†3S6Z4Z5CZ[0-7]  logical=S0  strongFT
+  id=3636   (CSS)  physical=S†4S3S7CZ[0-6]  logical=S0  strongFT
+  id=3641   (CSS)  physical=S†3S4S7Z1CZ[0-5]  logical=S0  strongFT
+  id=3642   (CSS)  physical=S†5S4S7CZ[0-6]  logical=S0  strongFT
+  id=3663   (CSS)  physical=S†6S3S5CZ[0-4]  logical=S0  strongFT
+  id=3665   (CSS)  physical=S†5S1S4CZ[0-6]  logical=S0  strongFT
+  id=3667   (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=3676   (CSS)  physical=S†4S3S5CZ[0-8]CZ[2-7]  logical=S0  strongFT
+  id=3700   (CSS)  physical=S0S4CZ[2-7]CZ[3-6]  logical=S0  strongFT
+  id=3714   (CSS)  physical=S3S8CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=3722   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=3724   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=3731   (CSS)  physical=S†0S5S6CZ[3-4]  logical=S0  strongFT
+  id=3732   (CSS)  physical=S†0S5S7CZ[2-6]  logical=S0  strongFT
+  id=3734   (CSS)  physical=S†2S4S7CZ[3-5]  logical=S0  strongFT
+  id=3756   (CSS)  physical=S†4S1S7CZ[0-8]  logical=S0  strongFT
+  id=3761   (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=3762   (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=3763   (CSS)  physical=S†0S†1S3S4S5S6  logical=S0  strongFT
+  id=3764   (CSS)  physical=S†3S4S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=3776   (CSS)  physical=S†3S4S7CZ[2-5]  logical=S0  strongFT
+  id=3778   (CSS)  physical=S3S4S7Z0Z1Z6CZ[2-5]  logical=S0  strongFT
+  id=3785   (CSS)  physical=S†6S3S4CZ[0-5]  logical=S0  strongFT
+  id=3819   (CSS)  physical=S†6S1S3S7CZ[0-2]CZ[4-5]  logical=S0  strongFT
+  id=3831   (CSS)  physical=S†3S4S6CZ[0-7]CZ[1-2]  logical=S0  strongFT
+  id=3842   (CSS)  physical=S2S8CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=3867   (CSS)  physical=S†8S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=3871   (CSS)  physical=S†4S3S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=3874   (CSS)  physical=S†0S4S6CZ[3-7]  logical=S0  strongFT
+  id=3876   (CSS)  physical=S†4S3S7Z1CZ[0-6]  logical=S0  strongFT
+  id=3885   (CSS)  physical=S†7S1CZ[0-2]CZ[3-8]  logical=S0  strongFT
+  id=3891   (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=3942   (CSS)  physical=S2S8CZ[0-6]CZ[1-4]  logical=S0  strongFT
+  id=3955   (CSS)  physical=S†3S1S5CZ[0-6]  logical=S0  strongFT
+  id=3957   (CSS)  physical=S0S8Z3Z4Z7CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=3960   (CSS)  physical=S5S7CZ[0-3]CZ[2-4]  logical=S0  strongFT
+  id=3967   (CSS)  physical=S2S8CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=3970   (CSS)  physical=S†2S8CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=3976   (CSS)  physical=S†0S8Z3Z4Z7CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=3977   (CSS)  physical=S†8S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=3982   (CSS)  physical=S2S8CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=3985   (CSS)  physical=S†8S1CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=3988   (CSS)  physical=S†8S1CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=4002   (CSS)  physical=S1S5CZ[0-2]  logical=S0
+  id=4004   (CSS)  physical=S3S6CZ[2-4]  logical=S0
+  id=4005   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4045   (CSS)  physical=S†0S4S6CZ[2-3]  logical=S0  strongFT
+  id=4059   (CSS)  physical=S†0S4S5CZ[2-3]  logical=S0  strongFT
+  id=4060   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=4070   (CSS)  physical=S†8S6S7CZ[0-4]CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=4074   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=4077   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=4080   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=4082   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=4088   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=4095   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=4143   (CSS)  physical=S4S6S8CZ[0-7]CZ[1-2]CZ[3-5]  logical=S0
+  id=4144   (CSS)  physical=S†8S4S5CZ[0-7]CZ[1-2]CZ[3-6]  logical=S0
+  id=4147   (CSS)  physical=S†1S8Z0Z5Z6CZ[2-4]CZ[3-7]  logical=S0  strongFT
+  id=4164   (CSS)  physical=S†0S8Z5Z6CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=4187   (CSS)  physical=S†3S4S5Z1CZ[0-2]CZ[6-7]  logical=S0  strongFT
+  id=4206   (CSS)  physical=S†5S1S4S6CZ[0-2]CZ[3-7]  logical=S0
+  id=4214   (CSS)  physical=S†4S8Z3Z6CZ[0-5]CZ[1-2]  logical=S0  strongFT
+  id=4225   (CSS)  physical=S†2S5S6CZ[3-4]  logical=S0  strongFT
+  id=4226   (CSS)  physical=S†7S4S5Z1CZ[0-6]CZ[2-3]  logical=S0  strongFT
+  id=4287   (CSS)  physical=S†8S0CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=4288   (CSS)  physical=S†6S1S3CZ[0-7]  logical=S0  strongFT
+  id=4313   (CSS)  physical=S4S5S7Z0Z2CZ[3-6]  logical=S0  strongFT
+  id=4316   (CSS)  physical=S6S8CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=4337   (CSS)  physical=S2S8Z3Z7CZ[0-6]CZ[1-4]  logical=S0  strongFT
+  id=4340   (CSS)  physical=S†1S7Z4Z5CZ[0-2]CZ[3-8]  logical=S0  strongFT
+  id=4343   (CSS)  physical=S†0S†1S†4S5S7S8  logical=S0  strongFT
+  id=4345   (CSS)  physical=S†4S5S7CZ[3-6]  logical=S0  strongFT
+  id=4366   (CSS)  physical=S†3S†4S1S2S5S6CZ[0-7]  logical=S0  strongFT
+  id=4376   (CSS)  physical=S6S8CZ[0-4]CZ[1-2]  logical=S0  strongFT
+  id=4437   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4438   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4446   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4448   (CSS)  physical=S1S6CZ[0-3]  logical=S0
+  id=4451   (CSS)  physical=S2S5CZ[1-4]  logical=S0
+  id=4453   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4454   (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=4455   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4459   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=4461   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4466   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4468   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=4469   (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=4470   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4480   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4481   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4484   (CSS)  physical=S3S7CZ[0-2]  logical=S0
+  id=4485   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4486   (CSS)  physical=S2S8CZ[0-1]  logical=S0
+  id=4487   (CSS)  physical=S†0S5S6CZ[4-7]  logical=S0  strongFT
+  id=4490   (CSS)  physical=S†0S†2S4S5S6S7  logical=S0  strongFT
+  id=4542   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4560   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=4562   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=4576   (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=4578   (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=4612   (CSS)  physical=S†0S5S6CZ[4-7]  logical=S0  strongFT
+  id=4964   (CSS)  physical=S†0S1S5S6S7S8Z2Z3  logical=S0  strongFT
+  id=5019   (CSS)  physical=S1S6S8Z4Z5CZ[0-2]  logical=S0  strongFT
+  id=5034   (CSS)  physical=S3S5S7Z6CZ[0-4]CZ[1-2]  logical=S0  strongFT
+  id=5080   (CSS)  physical=S2S5S7Z3Z4CZ[1-8]  logical=S0  strongFT
+  id=5108   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=5120   (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+  id=5196   (CSS)  physical=S†2S1S3Z5CZ[0-4]CZ[6-8]  logical=S0  strongFT
+  id=5232   (CSS)  physical=S†8S3S5CZ[1-6]CZ[2-7]  logical=S0  strongFT
+  id=5237   (CSS)  physical=S†6S3S5CZ[2-4]  logical=S0  strongFT
+  id=5239   (CSS)  physical=S†3S2S4CZ[1-5]  logical=S0  strongFT
+  id=5274   (CSS)  physical=S†5S3S4CZ[1-8]  logical=S0  strongFT
+  id=5275   (CSS)  physical=S7S8CZ[1-2]  logical=S0
+  id=5281   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=5282   (CSS)  physical=S3S4S8Z0Z5CZ[1-2]  logical=S0  strongFT
+  id=5283   (CSS)  physical=S6S7CZ[1-2]  logical=S0
+  id=5286   (CSS)  physical=S†6S3S5CZ[2-8]  logical=S0  strongFT
+  id=5297   (CSS)  physical=S†6S†7S4S5CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=5359   (CSS)  physical=S†4S†7S2S5S8CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=5362   (CSS)  physical=S†6S†7S4S8Z2CZ[0-1]CZ[3-5]  logical=S0  strongFT
+  id=5385   (CSS)  physical=S6S7CZ[1-2]  logical=S0
+  id=5403   (CSS)  physical=S2S7S8CZ[1-5]CZ[3-4]  logical=S0
+  id=5405   (CSS)  physical=S1S6S7CZ[0-8]CZ[2-5]  logical=S0
+  id=5435   (CSS)  physical=S†4S5S8CZ[3-6]  logical=S0  strongFT
+  id=5439   (CSS)  physical=S4S5S8Z0Z1CZ[3-6]  logical=S0  strongFT
+  id=5444   (CSS)  physical=S†2S7S8CZ[3-4]  logical=S0  strongFT
+  id=5447   (CSS)  physical=S†2S†3S†5S4S6S7S8CZ[0-1]  logical=S0  strongFT
+  id=5459   (CSS)  physical=S7S8CZ[0-1]  logical=S0
+  id=5480   (CSS)  physical=S6S7S8CZ[0-5]CZ[3-4]  logical=S0
+  id=5481   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=5482   (CSS)  physical=S†6S4S5CZ[2-3]  logical=S0  strongFT
+  id=5483   (CSS)  physical=S†4S3S5CZ[2-6]  logical=S0  strongFT
+  id=5484   (CSS)  physical=S†6S4S5CZ[2-8]CZ[3-7]  logical=S0  strongFT
+  id=5486   (CSS)  physical=S†6S4S8CZ[0-5]  logical=S0  strongFT
+  id=5514   (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0  strongFT
+  id=5522   (CSS)  physical=S3S6S8Z0Z4CZ[2-7]  logical=S0  strongFT
+  id=5535   (CSS)  physical=S5S8CZ[0-1]  logical=S0
+  id=5537   (CSS)  physical=S†7S5S8CZ[0-6]  logical=S0  strongFT
+  id=5541   (CSS)  physical=S†3S6S8CZ[2-7]  logical=S0  strongFT
+  id=5553   (CSS)  physical=S†4S3S8CZ[2-7]  logical=S0  strongFT
+  id=5556   (CSS)  physical=S†2S3S4CZ[0-6]CZ[1-5]CZ[7-8]  logical=S0  strongFT
+  id=5872   (CSS)  physical=S†2S6S7CZ[0-3]  logical=S0  strongFT
+  id=5873   (CSS)  physical=S†2S3S5CZ[0-7]CZ[1-8]  logical=S0  strongFT
+  id=5879   (CSS)  physical=S†2S1S3CZ[0-6]CZ[4-8]  logical=S0  strongFT
+  id=6017   (CSS)  physical=S†5S7S8CZ[3-4]  logical=S0  strongFT
+  id=6034   (CSS)  physical=S†1S5S6Z8CZ[0-2]CZ[3-4]  logical=S0  strongFT
+  id=6056   (CSS)  physical=S†5S4S7CZ[3-8]  logical=S0  strongFT
+  id=6124   (CSS)  physical=S†3S2S7CZ[0-5]CZ[4-8]  logical=S0  strongFT
+  id=6127   (CSS)  physical=S†3S2S4CZ[0-7]CZ[5-8]  logical=S0  strongFT
+  id=6131   (CSS)  physical=S†7S2S3CZ[0-5]CZ[4-8]  logical=S0  strongFT
+  id=6138   (CSS)  physical=S†5S1S8CZ[0-7]  logical=S0  strongFT
+  id=6180   (CSS)  physical=S2S3S7Z1Z4CZ[0-6]  logical=S0  strongFT
+  id=6184   (CSS)  physical=S†3S2S6CZ[0-7]CZ[4-8]  logical=S0  strongFT
+  id=6193   (CSS)  physical=S†4S3S8Z0Z5CZ[2-7]  logical=S0  strongFT
+  id=6226   (CSS)  physical=S4S8CZ[0-3]CZ[1-7]CZ[2-5]  logical=S0  strongFT
+  id=6231   (CSS)  physical=S0S3CZ[1-6]CZ[2-4]  logical=S0  strongFT
+  id=6232   (CSS)  physical=S5S6CZ[0-4]  logical=S0
+  id=6233   (CSS)  physical=S3S6CZ[0-2]CZ[1-4]  logical=S0  strongFT
+  id=6242   (CSS)  physical=S2S6CZ[0-7]CZ[1-3]  logical=S0  strongFT
+  id=6243   (CSS)  physical=S†6S4S8CZ[0-5]  logical=S0  strongFT
+  id=6245   (CSS)  physical=S†7S4S5CZ[3-6]  logical=S0  strongFT
+  id=6279   (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=6280   (CSS)  physical=S†5S1S4CZ[0-7]  logical=S0  strongFT
+  id=6282   (CSS)  physical=S1S5S7CZ[0-3]CZ[4-6]  logical=S0
+  id=6283   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=6285   (CSS)  physical=S5S7CZ[3-4]  logical=S0
+  id=6289   (CSS)  physical=S2S8CZ[0-1]  logical=S0
+  id=6290   (CSS)  physical=S†3S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=6291   (CSS)  physical=S†8S0CZ[1-6]CZ[2-5]CZ[3-4]  logical=S0  strongFT
+  id=6299   (CSS)  physical=S2S3CZ[0-7]CZ[1-4]  logical=S0  strongFT
+  id=6301   (CSS)  physical=S†4S6S8Z1CZ[0-5]  logical=S0  strongFT
+  id=6302   (CSS)  physical=S†5S0S7CZ[1-6]CZ[2-4]  logical=S0  strongFT
+  id=6316   (CSS)  physical=S†3S0CZ[1-4]CZ[2-6]  logical=S0  strongFT
+  id=6317   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=6318   (CSS)  physical=S†6S1S4CZ[0-5]  logical=S0  strongFT
+  id=6324   (CSS)  physical=S2S8CZ[0-7]CZ[1-5]  logical=S0  strongFT
+  id=6333   (CSS)  physical=S†2S6CZ[0-7]CZ[1-3]  logical=S0  strongFT
+  id=6334   (CSS)  physical=S†3S0CZ[1-4]CZ[2-6]  logical=S0  strongFT
+  id=6346   (CSS)  physical=S1S6CZ[0-5]  logical=S0
+  id=6347   (CSS)  physical=S1S6CZ[0-5]  logical=S0
+  id=6349   (CSS)  physical=S5S7CZ[0-4]CZ[3-6]  logical=S0  strongFT
+  id=6352   (CSS)  physical=S†7S4CZ[0-5]CZ[1-6]  logical=S0  strongFT
+  id=6355   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=6357   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=6358   (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=6360   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=6363   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=6364   (CSS)  physical=S2S5CZ[1-4]  logical=S0
+  id=6366   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=6373   (CSS)  physical=S5S7CZ[4-6]  logical=S0
+  id=6376   (CSS)  physical=S†3S0CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=6384   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=6385   (CSS)  physical=S†2S8CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=6399   (CSS)  physical=S†0S†1S4S5S6S7  logical=S0  strongFT
+  id=7151   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=7154   (CSS)  physical=S1S6CZ[0-5]  logical=S0
+  id=7155   (CSS)  physical=S1S6CZ[0-4]  logical=S0
+  id=7160   (CSS)  physical=S2S4CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=7161   (CSS)  physical=S†3S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=7162   (CSS)  physical=S1S7CZ[0-4]  logical=S0
+  id=7164   (CSS)  physical=S†5S4S7CZ[0-6]  logical=S0  strongFT
+  id=7166   (CSS)  physical=S†4S0CZ[1-7]CZ[2-6]CZ[3-5]  logical=S0  strongFT
+  id=7168   (CSS)  physical=S3S4CZ[0-7]CZ[1-6]CZ[2-5]  logical=S0  strongFT
+  id=7172   (CSS)  physical=S6S7CZ[4-5]  logical=S0
+  id=7173   (CSS)  physical=S†0S5S6CZ[4-7]  logical=S0  strongFT
+  id=7174   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=7423   (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=7424   (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=7446   (CSS)  physical=S3S8CZ[1-6]CZ[2-5]  logical=S0  strongFT
+  id=7448   (CSS)  physical=S†6S4S5CZ[0-8]CZ[1-3]CZ[2-7]  logical=S0  strongFT
+  id=7449   (CSS)  physical=S†4S1S6Z3CZ[0-2]  logical=S0  strongFT
+  id=7454   (CSS)  physical=S1S4S5CZ[0-6]CZ[2-3]  logical=S0
+  id=7457   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=7458   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=7459   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=7460   (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=7547   (CSS)  physical=S4S6S8Z0Z5CZ[3-7]  logical=S0  strongFT
+  id=7553   (CSS)  physical=S†5S7S8CZ[3-4]  logical=S0  strongFT
+  id=7558   (CSS)  physical=S†4S6S8CZ[3-7]  logical=S0  strongFT
+  id=7591   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=7600   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=7606   (CSS)  physical=S5S8CZ[0-1]  logical=S0
+  id=7714   (CSS)  physical=S2S4S8Z6Z7CZ[0-5]CZ[1-3]  logical=S0  strongFT
+  id=7847   (CSS)  physical=S†0S†1S†2S3S4S5S6  logical=S0  strongFT
+  id=7943   (CSS)  physical=S2S5CZ[0-7]CZ[1-6]  logical=S0  strongFT
+  id=7944   (CSS)  physical=S†3S0CZ[1-6]CZ[2-7]  logical=S0  strongFT
+  id=7945   (CSS)  physical=S1S6CZ[0-5]  logical=S0
+  id=8332   (CSS)  physical=S1S7CZ[0-6]  logical=S0
+  id=8518   (CSS)  physical=S†1S5S6Z4CZ[0-3]  logical=S0  strongFT
+  id=8576   (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=8629   (CSS)  physical=S†3S6S7CZ[0-1]  logical=S0  strongFT
+  id=8654   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=8805   (CSS)  physical=S2S6S8Z1Z4CZ[0-3]  logical=S0  strongFT
+  id=9071   (CSS)  physical=S†1S†5S3S4S6CZ[0-8]CZ[2-7]  logical=S0  strongFT
+  id=9072   (CSS)  physical=S†5S†6S1S2S7CZ[0-8]CZ[3-4]  logical=S0  strongFT
+  id=9403   (CSS)  physical=S†8S5S6CZ[4-7]  logical=S0  strongFT
+  id=9405   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=9480   (CSS)  physical=S†0S†2S†4S5S7S8  logical=S0  strongFT
+  id=9569   (CSS)  physical=S†3S†4S†7S0S2S5S8CZ[1-6]  logical=S0  strongFT
+  id=9817   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=10727  (CSS)  physical=S1S6S7Z2Z4CZ[0-3]  logical=S0  strongFT
+  id=11114  (CSS)  physical=S†5S4S6CZ[1-3]  logical=S0  strongFT
+  id=11151  (CSS)  physical=S3S6S8Z0Z1Z4CZ[2-7]  logical=S0  strongFT
+  id=11246  (CSS)  physical=S†4S6S7CZ[2-3]  logical=S0  strongFT
+  id=11260  (CSS)  physical=S†1S2S7CZ[0-4]  logical=S0  strongFT
+  id=11318  (CSS)  physical=S†2S†4S†7Z0Z6CZ[1-3]CZ[5-8]  logical=S0  strongFT
+  id=11379  (CSS)  physical=S†0S2S7CZ[1-4]  logical=S0  strongFT
+  id=11380  (CSS)  physical=S†1S†4S5Z7CZ[0-6]CZ[2-3]  logical=S0  strongFT
+  id=11438  (CSS)  physical=S4S6S8Z3Z5CZ[1-2]  logical=S0  strongFT
+  id=11461  (CSS)  physical=S†7S2S5Z3CZ[0-4]CZ[1-6]  logical=S0  strongFT
+  id=11463  (CSS)  physical=S†2S†3S1S5S6S8CZ[0-7]  logical=S0  strongFT
+  id=11464  (CSS)  physical=S5S6S7Z0CZ[1-4]CZ[2-3]  logical=S0  strongFT
+  id=11602  (CSS)  physical=S†2S†5S1S3S6S8CZ[0-4]  logical=S0  strongFT
+  id=11620  (CSS)  physical=S†5S1S7CZ[0-3]  logical=S0  strongFT
+  id=11633  (CSS)  physical=S†1S4S7CZ[0-3]CZ[5-8]  logical=S0  strongFT
+  id=11635  (CSS)  physical=S†8S1S5CZ[0-3]CZ[4-6]  logical=S0  strongFT
+  id=11730  (CSS)  physical=S†2S3S8CZ[1-7]  logical=S0  strongFT
+  id=11736  (CSS)  physical=S†5S8Z6CZ[0-3]CZ[1-2]CZ[4-7]  logical=S0  strongFT
+  id=11737  (CSS)  physical=S†6S†8Z5CZ[0-3]CZ[1-4]CZ[2-7]  logical=S0  strongFT
+  id=11778  (CSS)  physical=S†1S6S8Z4CZ[0-2]  logical=S0  strongFT
+  id=11879  (CSS)  physical=S0S1S4S5S7S8Z2Z3  logical=S0  strongFT
+  id=11907  (CSS)  physical=S†2S†6S1S3S4S7S8CZ[0-5]  logical=S0
+  id=11908  (CSS)  physical=S†1S†2S†4S0S3S5S6  logical=S0  strongFT
+  id=11919  (CSS)  physical=S†6S5S8CZ[1-4]  logical=S0  strongFT
+  id=11921  (CSS)  physical=S†6S4S8CZ[1-5]  logical=S0  strongFT
+  id=11965  (CSS)  physical=S†1S3S7CZ[0-4]CZ[6-8]  logical=S0  strongFT
+  id=11968  (CSS)  physical=S†2S7S8CZ[1-3]  logical=S0  strongFT
+  id=11976  (CSS)  physical=S†2S†3S5S6S7S8Z0Z1  logical=S0  strongFT
+  id=12009  (CSS)  physical=S†4S2S6CZ[1-7]  logical=S0  strongFT
+  id=12019  (CSS)  physical=S†3S†5S1S2S6S8CZ[0-7]  logical=S0  strongFT
+  id=12022  (CSS)  physical=S3S4S6Z2CZ[0-1]CZ[5-7]  logical=S0  strongFT
+  id=12025  (CSS)  physical=S†1S4S6CZ[3-5]  logical=S0  strongFT
+  id=12029  (CSS)  physical=S†5S3S7CZ[2-8]  logical=S0  strongFT
+  id=12031  (CSS)  physical=S†5S7S8CZ[2-3]  logical=S0  strongFT
+  id=12052  (CSS)  physical=S†1S†4S2S3S5S6CZ[0-7]  logical=S0
+  id=12085  (CSS)  physical=S†3S5S7Z0Z2CZ[1-6]CZ[4-8]  logical=S0  strongFT
+  id=12320  (CSS)  physical=S†0S6S7CZ[5-8]  logical=S0  strongFT
+  id=12323  (CSS)  physical=S†3S6S8CZ[2-7]  logical=S0  strongFT
+  id=12415  (CSS)  physical=S†3S5S7CZ[4-8]  logical=S0  strongFT
+  id=12416  (CSS)  physical=S†0S7S8CZ[1-2]  logical=S0  strongFT
+  id=12678  (CSS)  physical=S2S3S4S5S6S7S8Z0Z1  logical=S0  strongFT
+  id=13054  (CSS)  physical=S†0S†2S†3S4S5S6S7Z1  logical=S0  strongFT
+  id=13067  (CSS)  physical=S†7S5S6CZ[2-3]  logical=S0  strongFT
+  id=13327  (CSS)  physical=S†3S7S8CZ[4-5]  logical=S0  strongFT
+  id=13356  (CSS)  physical=S†5S3S8CZ[0-4]  logical=S0  strongFT
+  id=13415  (CSS)  physical=S†1S4S6CZ[2-8]  logical=S0  strongFT
+  id=13477  (CSS)  physical=S†6S2S3S4S5S7S8Z0  logical=S0  strongFT
+  id=13498  (CSS)  physical=S†1S6S7Z4CZ[0-5]CZ[2-3]  logical=S0  strongFT
+  id=15082  (CSS)  physical=S†2S3S4CZ[0-5]CZ[1-7]  logical=S0  strongFT
+  id=15084  (CSS)  physical=S†3S1S4CZ[0-2]  logical=S0  strongFT
+  id=15092  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=15116  (CSS)  physical=S†7S0CZ[1-2]CZ[3-5]CZ[4-6]  logical=S0  strongFT
+  id=15118  (CSS)  physical=S2S4CZ[0-6]CZ[1-7]CZ[3-5]  logical=S0  strongFT
+  id=15119  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=15137  (CSS)  physical=S†1S†2S5Z3Z4CZ[0-6]  logical=S0  strongFT
+  id=15148  (CSS)  physical=S†2S5S6CZ[0-3]  logical=S0  strongFT
+  id=15152  (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=15172  (CSS)  physical=S†2S5S6CZ[0-3]  logical=S0  strongFT
+  id=15173  (CSS)  physical=S†2S6S7CZ[3-5]  logical=S0  strongFT
+  id=15183  (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=15184  (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=15185  (CSS)  physical=S†0S3S6CZ[2-5]  logical=S0  strongFT
+  id=15201  (CSS)  physical=S†4S3S6CZ[2-7]  logical=S0  strongFT
+  id=15203  (CSS)  physical=S†0S4S5CZ[2-3]  logical=S0  strongFT
+  id=15204  (CSS)  physical=S†3S2S4CZ[0-5]  logical=S0  strongFT
+  id=15234  (CSS)  physical=S2S3S6Z1Z4CZ[0-5]  logical=S0  strongFT
+  id=15236  (CSS)  physical=S†3S2S5CZ[0-6]CZ[1-7]  logical=S0  strongFT
+  id=15254  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=15255  (CSS)  physical=S†0S3S4CZ[1-2]  logical=S0  strongFT
+  id=15256  (CSS)  physical=S5S6CZ[1-2]  logical=S0
+  id=15258  (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=15261  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=15262  (CSS)  physical=S6S7CZ[0-1]  logical=S0
+  id=15268  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=15282  (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=15283  (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=15289  (CSS)  physical=S†0S4S5CZ[2-3]  logical=S0  strongFT
+  id=15290  (CSS)  physical=S†2S3S4CZ[0-5]  logical=S0  strongFT
+  id=15292  (CSS)  physical=S1S4S6CZ[0-2]CZ[3-5]  logical=S0
+  id=15295  (CSS)  physical=S4S6CZ[2-3]  logical=S0
+  id=15296  (CSS)  physical=S0S7Z3Z6CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=15303  (CSS)  physical=S2S7CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=15308  (CSS)  physical=S†3S4S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=15318  (CSS)  physical=S†7S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=15323  (CSS)  physical=S†3S4S5Z1CZ[0-2]  logical=S0  strongFT
+  id=15324  (CSS)  physical=S†2S3S4Z1CZ[0-5]  logical=S0  strongFT
+  id=15329  (CSS)  physical=S3S7CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=15336  (CSS)  physical=S†7S5CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=15339  (CSS)  physical=S†7S0CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=15352  (CSS)  physical=S4S6CZ[0-3]CZ[2-5]  logical=S0  strongFT
+  id=15357  (CSS)  physical=S5S6CZ[0-2]CZ[1-3]  logical=S0  strongFT
+  id=15358  (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=15363  (CSS)  physical=S†0S7Z5Z6CZ[1-3]CZ[2-4]  logical=S0  strongFT
+  id=15370  (CSS)  physical=S†2S7CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=15391  (CSS)  physical=S†0S†2S†3S4S5S6  logical=S0  strongFT
+  id=15393  (CSS)  physical=S2S7CZ[0-6]CZ[1-3]  logical=S0  strongFT
+  id=15397  (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0  strongFT
+  id=15403  (CSS)  physical=S†5S3S7CZ[0-4]  logical=S0  strongFT
+  id=15414  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=15417  (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=15418  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=15423  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=15426  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=15427  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=15429  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=15508  (CSS)  physical=S4S5CZ[0-1]  logical=S0
+  id=15510  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=15521  (CSS)  physical=S†0S†1S2S3S4S5  logical=S0  strongFT
+  id=15522  (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=15526  (CSS)  physical=S†3S2S6S7CZ[0-1]CZ[4-5]  logical=S0  strongFT
+  id=15544  (CSS)  physical=S†6S†7S4S5CZ[0-1]CZ[2-3]  logical=S0  strongFT
+  id=15564  (CSS)  physical=S†4S2S3CZ[0-5]CZ[1-7]  logical=S0  strongFT
+  id=15599  (CSS)  physical=S2S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=15604  (CSS)  physical=S2S7CZ[1-3]  logical=S0
+  id=15605  (CSS)  physical=S5S6CZ[3-4]  logical=S0
+  id=15610  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=15613  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=15614  (CSS)  physical=S1S5CZ[0-3]  logical=S0
+  id=15619  (CSS)  physical=S†3S0CZ[1-4]CZ[2-5]  logical=S0  strongFT
+  id=15620  (CSS)  physical=S1S6CZ[0-3]  logical=S0
+  id=15622  (CSS)  physical=S†5S1S4CZ[0-6]  logical=S0  strongFT
+  id=15624  (CSS)  physical=S†7S0CZ[1-6]CZ[2-5]CZ[3-4]  logical=S0  strongFT
+  id=15625  (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0  strongFT
+  id=15636  (CSS)  physical=S1S4S7Z3Z5CZ[0-2]  logical=S0  strongFT
+  id=15687  (CSS)  physical=S2S4CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=15688  (CSS)  physical=S†3S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=15689  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=15711  (CSS)  physical=S†7S1CZ[0-2]CZ[3-4]  logical=S0  strongFT
+  id=15714  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=15718  (CSS)  physical=S4S5CZ[2-3]  logical=S0
+  id=15750  (CSS)  physical=S†6S†7S5Z4CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=15766  (CSS)  physical=S1S6CZ[0-5]  logical=S0
+  id=15781  (CSS)  physical=S†1S†2S†3S4S5S6S7  logical=S0  strongFT
+  id=15807  (CSS)  physical=S†4S2S6CZ[1-7]  logical=S0  strongFT
+  id=15815  (CSS)  physical=S4S6CZ[0-5]  logical=S0
+  id=15818  (CSS)  physical=S2S4CZ[0-1]  logical=S0
+  id=15820  (CSS)  physical=S†2S†6S3Z7CZ[0-4]CZ[1-5]  logical=S0  strongFT
+  id=15824  (CSS)  physical=S†3S1S7CZ[0-5]  logical=S0  strongFT
+  id=15837  (CSS)  physical=S0S3S4Z5CZ[1-7]CZ[2-6]  logical=S0  strongFT
+  id=15899  (CSS)  physical=S6S7CZ[4-5]  logical=S0
+  id=15921  (CSS)  physical=S†3S†4S1S2S6S7CZ[0-5]  logical=S0
+  id=15956  (CSS)  physical=S†4S2S3Z7CZ[0-6]CZ[1-5]  logical=S0  strongFT
+  id=15982  (CSS)  physical=S†5S1S4S6CZ[0-2]CZ[3-7]  logical=S0
+  id=15996  (CSS)  physical=S†2S†3S4S5S6S7Z0Z1  logical=S0  strongFT
+  id=16078  (CSS)  physical=S2S3S4S5S6S7Z0Z1  logical=S0  strongFT
+  id=16096  (CSS)  physical=S†2S†3S1S4S5S7CZ[0-6]  logical=S0  strongFT
+  id=16110  (CSS)  physical=S†1S4S5CZ[2-3]  logical=S0  strongFT
+  id=16141  (CSS)  physical=S†5S3S7CZ[0-4]  logical=S0  strongFT
+  id=16174  (CSS)  physical=S†3S5S7CZ[2-6]  logical=S0  strongFT
+  id=16176  (CSS)  physical=S†2S1S6CZ[0-5]CZ[4-7]  logical=S0  strongFT
+  id=16185  (CSS)  physical=S3S5S7Z0Z1CZ[2-6]  logical=S0  strongFT
+  id=16189  (CSS)  physical=S†6S1S2CZ[0-5]CZ[4-7]  logical=S0  strongFT
+
+[[9,2,2]]
+  id=542    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=543    (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=550    (CSS)  physical=S†1S†5S2S4S6CZ[0-3]  logical=S0CZ[0-1]  strongFT
+  id=554    (CSS)  physical=S1S2Z4CZ[0-5]CZ[3-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=555    (CSS)  physical=S†3S4Z6CZ[0-2]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=557    (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=560    (CSS)  physical=S†3S4Z1CZ[0-2]CZ[5-6]  logical=S†1S0  strongFT
+  id=562    (CSS)  physical=S†0S1CZ[2-4]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=581    (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=586    (CSS)  physical=S1S4S5CZ[0-2]CZ[3-6]  logical=S0S1
+  id=591    (CSS)  physical=S3S6CZ[2-5]  logical=S0Z1CZ[0-1]
+  id=596    (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=605    (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=606    (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=639    (CSS)  physical=S†0S1CZ[2-5]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=640    (CSS)  physical=S3S4CZ[0-5]CZ[1-2]  logical=S0S1  strongFT
+  id=648    (CSS)  physical=S5S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=650    (CSS)  physical=S5S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=652    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=655    (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=780    (CSS)  physical=S3S6Z5CZ[0-2]CZ[1-4]  logical=S0CZ[0-1]  strongFT
+  id=833    (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=847    (CSS)  physical=S4S5S6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=852    (CSS)  physical=S4S6CZ[1-3]  logical=S0S1CZ[0-1]
+  id=860    (CSS)  physical=S5S6CZ[2-3]  logical=S0S1CZ[0-1]
+  id=890    (CSS)  physical=S†2S5CZ[0-6]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=896    (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1017   (CSS)  physical=S†1S†2S0S3S4S6  logical=S0Z1CZ[0-1]  strongFT
+  id=1042   (CSS)  physical=S†5S4Z6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=1061   (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=1082   (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=1156   (CSS)  physical=S†1S4S6Z5CZ[0-2]  logical=S0Z1  strongFT
+  id=2685   (CSS)  physical=S3S7CZ[2-4]  logical=S0S1
+  id=2688   (CSS)  physical=S†5S2S4CZ[1-7]  logical=S0S1CZ[0-1]  strongFT
+  id=2689   (CSS)  physical=S†0S†1S2S3S4S7  logical=S0Z1CZ[0-1]  strongFT
+  id=2691   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2697   (CSS)  physical=S†3S1S5Z2CZ[0-4]  logical=S0Z1  strongFT
+  id=2708   (CSS)  physical=S3S4S5Z1CZ[0-2]  logical=S†1S0CZ[0-1]  strongFT
+  id=2709   (CSS)  physical=S†3S1S5Z2CZ[0-4]  logical=S0Z1  strongFT
+  id=2754   (CSS)  physical=S1S2CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=2814   (CSS)  physical=S†1S3S4S5S7CZ[0-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=2817   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=2819   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=2820   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=2825   (CSS)  physical=S†0S1CZ[2-5]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=2834   (CSS)  physical=S†3S†4S5S7S8Z1CZ[0-2]  logical=S0S1  strongFT
+  id=2849   (CSS)  physical=S2S5CZ[0-3]CZ[4-7]  logical=S0S1  strongFT
+  id=2854   (CSS)  physical=S†4S3Z8CZ[0-5]CZ[1-6]CZ[2-7]  logical=S†1S0  strongFT
+  id=2859   (CSS)  physical=S†8S5S7CZ[4-6]  logical=S0S1CZ[0-1]  strongFT
+  id=2861   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=2863   (CSS)  physical=S7S8CZ[0-2]  logical=S0
+  id=2866   (CSS)  physical=S3S4CZ[0-6]CZ[2-8]  logical=S0S1  strongFT
+  id=2882   (CSS)  physical=S6S7CZ[3-4]  logical=S0S1CZ[0-1]
+  id=2887   (CSS)  physical=S4S5CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=2889   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=2919   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=2920   (CSS)  physical=S2S8CZ[1-3]  logical=S0S1CZ[0-1]
+  id=2923   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=2997   (CSS)  physical=S†2S†5S6S7S8CZ[1-4]  logical=S0CZ[0-1]  strongFT
+  id=3002   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3003   (CSS)  physical=S2S8CZ[1-3]  logical=S0S1CZ[0-1]
+  id=3024   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3045   (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=3083   (CSS)  physical=S†6S4S5CZ[2-8]CZ[3-7]  logical=S0  strongFT
+  id=3107   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=3251   (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=3255   (CSS)  physical=S2S3CZ[0-1]CZ[4-8]CZ[5-7]  logical=S0Z1CZ[0-1]
+  id=3322   (CSS)  physical=S2S8CZ[1-3]  logical=S0S1CZ[0-1]
+  id=3325   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3328   (CSS)  physical=S5S7S8CZ[0-1]CZ[3-4]  logical=S0S1
+  id=3331   (CSS)  physical=S4S5CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=3343   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=3349   (CSS)  physical=S†1S2CZ[3-5]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=3351   (CSS)  physical=S3S4CZ[0-7]CZ[1-5]  logical=S0S1  strongFT
+  id=3398   (CSS)  physical=S4S5Z6CZ[0-8]CZ[1-7]CZ[2-3]  logical=S0S1  strongFT
+  id=3422   (CSS)  physical=S4S7CZ[2-3]  logical=S0
+  id=3424   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3443   (CSS)  physical=S0S1CZ[2-4]CZ[3-7]CZ[5-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=3444   (CSS)  physical=S†0S1CZ[3-8]CZ[4-6]CZ[5-7]  logical=S0CZ[0-1]  strongFT
+  id=3446   (CSS)  physical=S3S4CZ[0-7]CZ[1-5]  logical=S0S1  strongFT
+  id=3502   (CSS)  physical=S†1S2CZ[3-5]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=3529   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3530   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3538   (CSS)  physical=S†3S2CZ[0-6]CZ[1-4]  logical=S†1S0  strongFT
+  id=3539   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=3594   (CSS)  physical=S3S4CZ[0-5]CZ[1-6]CZ[2-7]  logical=S0S1  strongFT
+  id=3609   (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=3613   (CSS)  physical=S†5S4CZ[0-8]CZ[1-6]  logical=S†1S0  strongFT
+  id=3616   (CSS)  physical=S†4S5CZ[0-2]CZ[1-6]  logical=S0CZ[0-1]  strongFT
+  id=3693   (CSS)  physical=S†0S3S8CZ[2-6]  logical=S0  strongFT
+  id=3813   (CSS)  physical=S†5S1S4CZ[0-6]  logical=S0  strongFT
+  id=3950   (CSS)  physical=S†4S1S5Z2CZ[0-6]  logical=S0Z1  strongFT
+  id=3958   (CSS)  physical=S†6S2S3CZ[1-7]  logical=S0S1CZ[0-1]  strongFT
+  id=3960   (CSS)  physical=S†6S1S3CZ[0-7]CZ[2-4]CZ[5-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=4000   (CSS)  physical=S†0S†6S1S7S8CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=4051   (CSS)  physical=S†4S†5S3S7S8CZ[0-1]  logical=S†1S0  strongFT
+  id=4059   (CSS)  physical=S4S8CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=4067   (CSS)  physical=S†0S†6S1S7S8CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=4072   (CSS)  physical=S†5S4S6CZ[2-3]CZ[7-8]  logical=S0S1CZ[0-1]  strongFT
+  id=4122   (CSS)  physical=S†3S4Z8CZ[0-2]CZ[1-7]  logical=S0CZ[0-1]  strongFT
+  id=4182   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=4183   (CSS)  physical=S4S8CZ[1-5]  logical=S0S1
+  id=4253   (CSS)  physical=S†7S3Z5CZ[0-6]CZ[1-8]CZ[2-4]  logical=S0Z1CZ[0-1]
+  id=4262   (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=4264   (CSS)  physical=S†4S3Z8CZ[0-6]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=4265   (CSS)  physical=S1S2Z8CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=4266   (CSS)  physical=S3S4Z2Z7CZ[0-5]CZ[1-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=4268   (CSS)  physical=S†3S4Z8CZ[0-5]CZ[1-6]CZ[2-7]  logical=S†1S0  strongFT
+  id=4270   (CSS)  physical=S†4S†5S3S7S8CZ[0-1]  logical=S†1S0  strongFT
+  id=4272   (CSS)  physical=S†1S†5S2S7S8CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=4292   (CSS)  physical=S4S7CZ[1-3]  logical=S0Z1CZ[0-1]
+  id=4294   (CSS)  physical=S†2S3Z5Z7CZ[0-4]CZ[1-6]  logical=S0CZ[0-1]  strongFT
+  id=4296   (CSS)  physical=S3S4Z2Z6CZ[0-7]CZ[1-5]  logical=S0S1  strongFT
+  id=4394   (CSS)  physical=S4S8CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=4441   (CSS)  physical=S†3S†4Z2Z6CZ[0-7]CZ[1-5]  logical=S0S1  strongFT
+  id=4660   (CSS)  physical=S3S6Z7CZ[2-4]CZ[5-8]  logical=S0S1  strongFT
+  id=4669   (CSS)  physical=S†3S†4Z2Z7CZ[0-5]CZ[1-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=4697   (CSS)  physical=S†6S4S5CZ[0-3]  logical=S0S1CZ[0-1]  strongFT
+  id=4729   (CSS)  physical=S†4S†5S3S7S8CZ[0-1]  logical=S†1S0  strongFT
+  id=4771   (CSS)  physical=S†5S1S6CZ[0-7]CZ[2-8]CZ[3-4]  logical=S†1S0  strongFT
+  id=4824   (CSS)  physical=S†4S3Z8CZ[0-6]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=4900   (CSS)  physical=S0S1CZ[2-5]CZ[3-7]CZ[6-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=4902   (CSS)  physical=S4S7CZ[1-3]  logical=S0Z1CZ[0-1]
+  id=4910   (CSS)  physical=S†1S†2Z7CZ[0-4]CZ[3-5]CZ[6-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=4952   (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=4966   (CSS)  physical=S†5S7Z8CZ[2-6]CZ[3-4]  logical=S†1S0  strongFT
+  id=4972   (CSS)  physical=S1S2Z8CZ[3-4]CZ[5-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=5014   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5150   (CSS)  physical=S†3S6S7CZ[4-5]  logical=S0S1CZ[0-1]  strongFT
+  id=5154   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5167   (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5168   (CSS)  physical=S†3S4Z2Z6CZ[0-1]CZ[5-8]  logical=S†1S0  strongFT
+  id=5176   (CSS)  physical=S3S4CZ[1-8]CZ[5-7]  logical=S0S1  strongFT
+  id=5188   (CSS)  physical=S6S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5192   (CSS)  physical=S3S7CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=5194   (CSS)  physical=S†0S4S5CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=5195   (CSS)  physical=S†3S1S5CZ[0-6]  logical=S0  strongFT
+  id=5196   (CSS)  physical=S†3S5S7Z6CZ[0-1]CZ[2-4]  logical=S0S1CZ[0-1]
+  id=5203   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=5215   (CSS)  physical=S3S7CZ[0-2]CZ[1-6]CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=5217   (CSS)  physical=S†6S2S3CZ[1-7]  logical=S0S1CZ[0-1]  strongFT
+  id=5562   (CSS)  physical=S†1S†2S0S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=5774   (CSS)  physical=S4S6CZ[0-5]  logical=S0S1
+  id=5846   (CSS)  physical=S4S5S8CZ[0-3]CZ[1-7]CZ[2-6]  logical=S0S1  strongFT
+  id=5850   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=5852   (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=5855   (CSS)  physical=S†4S1S7CZ[0-8]  logical=S0S1CZ[0-1]  strongFT
+  id=5896   (CSS)  physical=S†0S†1S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=5905   (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=5961   (CSS)  physical=S0S8CZ[1-3]CZ[2-6]  logical=S0S1  strongFT
+  id=5987   (CSS)  physical=S0S8CZ[1-3]CZ[2-6]  logical=S0S1  strongFT
+  id=6100   (CSS)  physical=S†1S2CZ[3-7]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=6122   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=6124   (CSS)  physical=S6S8CZ[1-5]  logical=S0S1CZ[0-1]
+  id=6137   (CSS)  physical=S†4S†7S5CZ[0-2]CZ[1-8]CZ[3-6]  logical=S†1S0CZ[0-1]  strongFT
+  id=6144   (CSS)  physical=S†4S1S7CZ[0-8]  logical=S0S1CZ[0-1]  strongFT
+  id=6151   (CSS)  physical=S†0S†1S†2S3S7S8  logical=S†1S0  strongFT
+  id=6154   (CSS)  physical=S1S4S5CZ[0-7]CZ[2-8]CZ[3-6]  logical=S0S1  strongFT
+  id=6156   (CSS)  physical=S†5S†6S0CZ[1-2]CZ[3-8]CZ[4-7]  logical=S†1S0  strongFT
+  id=6168   (CSS)  physical=S1S4S5Z2CZ[0-6]  logical=S0Z1  strongFT
+  id=6201   (CSS)  physical=S†6S4S8CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=6204   (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=6216   (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=6227   (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=6228   (CSS)  physical=S†3S2S5CZ[0-4]  logical=S0  strongFT
+  id=6241   (CSS)  physical=S†0S†1S2S3S4S6  logical=S0Z1CZ[0-1]  strongFT
+  id=6282   (CSS)  physical=S2S3CZ[0-4]CZ[1-6]  logical=S0S1  strongFT
+  id=6296   (CSS)  physical=S†4S6S7CZ[3-5]  logical=S0S1CZ[0-1]  strongFT
+  id=6306   (CSS)  physical=S†7S6S8CZ[4-5]  logical=S0S1CZ[0-1]  strongFT
+  id=6321   (CSS)  physical=S4S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=6336   (CSS)  physical=S†7S4S6CZ[3-5]  logical=S0S1CZ[0-1]  strongFT
+  id=6777   (CSS)  physical=S†1S†3S2S6S8CZ[0-5]  logical=S0S1  strongFT
+  id=6778   (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=6844   (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=6936   (CSS)  physical=S2S3CZ[0-7]CZ[1-4]CZ[5-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=6937   (CSS)  physical=S†2S1Z4Z6CZ[0-5]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=7008   (CSS)  physical=S†0S†3S4S5S6S7Z1  logical=S†1S0CZ[0-1]  strongFT
+  id=7137   (CSS)  physical=S1S2Z4CZ[0-5]CZ[3-6]  logical=S†1S0  strongFT
+  id=7138   (CSS)  physical=S†3S†4S2S5S6S7CZ[0-1]  logical=S0S1
+  id=7153   (CSS)  physical=S†8S2CZ[0-7]CZ[1-4]  logical=S†1S0  strongFT
+  id=7194   (CSS)  physical=S0S3S4S5S6S7Z1Z2  logical=S†1S0  strongFT
+  id=7202   (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=7493   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7564   (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7566   (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7585   (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7719   (CSS)  physical=S†4S5S7CZ[0-2]CZ[3-8]  logical=S†1S0
+  id=7720   (CSS)  physical=S†7S1S6CZ[0-2]CZ[3-8]  logical=S†1S0
+  id=7721   (CSS)  physical=S†6S3S8CZ[0-7]  logical=S0S1CZ[0-1]  strongFT
+  id=7811   (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=7865   (CSS)  physical=S†4S†5S1S6S8CZ[0-3]  logical=S0S1  strongFT
+  id=7883   (CSS)  physical=S6S7S8Z1CZ[3-4]  logical=S†1S0CZ[0-1]  strongFT
+  id=7886   (CSS)  physical=S†4S3CZ[1-6]CZ[2-8]  logical=S†1S0  strongFT
+  id=7911   (CSS)  physical=S†2S3Z1CZ[0-6]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=7917   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7986   (CSS)  physical=S†3S6Z8CZ[0-2]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=7989   (CSS)  physical=S1S6Z4CZ[0-5]CZ[3-8]  logical=S0S1  strongFT
+  id=8084   (CSS)  physical=S†3S2Z5Z7CZ[0-6]CZ[1-4]  logical=S0CZ[0-1]  strongFT
+  id=8088   (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=8430   (CSS)  physical=S†0S1CZ[2-7]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=8599   (CSS)  physical=S0S2CZ[3-7]CZ[4-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=9865   (CSS)  physical=S2S8CZ[0-6]CZ[1-5]  logical=S0S1CZ[0-1]  strongFT
+  id=11138  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=11189  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=11190  (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=11193  (CSS)  physical=S7S8CZ[1-2]  logical=S0S1CZ[0-1]
+  id=11215  (CSS)  physical=S†7S4CZ[0-1]CZ[2-6]CZ[3-5]  logical=S0S1CZ[0-1]
+  id=11218  (CSS)  physical=S2S6CZ[0-3]CZ[4-7]  logical=S0S1  strongFT
+  id=11221  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=11234  (CSS)  physical=S†1S†6S3S5S8CZ[0-4]  logical=S0CZ[0-1]  strongFT
+  id=11236  (CSS)  physical=S3S8CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=11237  (CSS)  physical=S†3S2CZ[0-6]CZ[1-5]  logical=S†1S0  strongFT
+  id=11265  (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=11289  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=11297  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=11302  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=11449  (CSS)  physical=S†8S1CZ[2-4]CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=11715  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=11719  (CSS)  physical=S2S7Z6CZ[1-5]CZ[4-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=11738  (CSS)  physical=S4S5S6Z0CZ[2-8]CZ[3-7]  logical=S0Z1  strongFT
+  id=11794  (CSS)  physical=S†3S2Z8CZ[0-1]CZ[4-7]CZ[5-6]  logical=S0CZ[0-1]
+  id=11821  (CSS)  physical=S†4S3Z8CZ[0-5]CZ[1-6]CZ[2-7]  logical=S†1S0  strongFT
+  id=11901  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=11928  (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=13049  (CSS)  physical=S†0S†6S1S7S8CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=13054  (CSS)  physical=S5S6Z8CZ[0-4]CZ[3-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=13055  (CSS)  physical=S†3S4Z8CZ[0-2]CZ[1-7]  logical=S0CZ[0-1]  strongFT
+  id=13056  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=13061  (CSS)  physical=S0S8CZ[1-3]CZ[2-6]  logical=S0S1  strongFT
+  id=13070  (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=13080  (CSS)  physical=S†7S1S6CZ[0-2]CZ[3-8]  logical=S†1S0
+  id=13112  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=13114  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=13282  (CSS)  physical=S2S8CZ[1-3]  logical=S0S1CZ[0-1]
+  id=13358  (CSS)  physical=S†0S5Z1Z4CZ[2-6]CZ[3-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=13732  (CSS)  physical=S†4S3Z1CZ[0-5]CZ[6-8]  logical=S0CZ[0-1]  strongFT
+  id=14324  (CSS)  physical=S†3S4Z1CZ[0-6]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=14485  (CSS)  physical=S3S5CZ[2-4]  logical=S0Z1CZ[0-1]
+  id=14490  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=14502  (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=14503  (CSS)  physical=S0S1CZ[2-5]CZ[3-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=14505  (CSS)  physical=S†2S4CZ[0-5]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=14535  (CSS)  physical=S1S4CZ[0-2]  logical=S0
+  id=14537  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=14856  (CSS)  physical=S†3S†4S1S7CZ[0-5]CZ[2-6]  logical=S0Z1  strongFT
+  id=14907  (CSS)  physical=S3S8CZ[0-7]CZ[1-2]  logical=S0  strongFT
+  id=14909  (CSS)  physical=S†1S4S5S6S7CZ[0-3]  logical=S0Z1CZ[0-1]  strongFT
+  id=14910  (CSS)  physical=S†5S4Z2CZ[0-6]CZ[1-3]  logical=S0CZ[0-1]  strongFT
+  id=14911  (CSS)  physical=S0S1Z4CZ[2-6]CZ[3-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=14912  (CSS)  physical=S4S7CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=14915  (CSS)  physical=S†0S†3S4S6S7CZ[2-5]  logical=S†1S0  strongFT
+  id=14917  (CSS)  physical=S†1S†5S3S4S7CZ[0-2]  logical=S0S1  strongFT
+  id=14918  (CSS)  physical=S†5S0S1S4S6CZ[2-3]  logical=S0Z1CZ[0-1]  strongFT
+  id=14922  (CSS)  physical=S2S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=14925  (CSS)  physical=S1S5S6CZ[0-4]CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=14934  (CSS)  physical=S†4S3CZ[0-6]CZ[1-5]  logical=S†1S0  strongFT
+  id=14959  (CSS)  physical=S0S8CZ[1-6]CZ[2-5]  logical=S0S1  strongFT
+  id=14961  (CSS)  physical=S0S1CZ[2-6]CZ[5-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=14981  (CSS)  physical=S5S7CZ[3-4]  logical=S0
+  id=14982  (CSS)  physical=S0S8Z5Z7CZ[1-3]CZ[2-4]  logical=S0Z1  strongFT
+  id=15026  (CSS)  physical=S†0S1CZ[2-6]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=15029  (CSS)  physical=S†4S5CZ[0-2]CZ[1-6]  logical=S0CZ[0-1]  strongFT
+  id=15046  (CSS)  physical=S†4S†5S3S6S8CZ[0-7]CZ[1-2]  logical=S†1S0  strongFT
+  id=15049  (CSS)  physical=S5S7Z8CZ[0-1]CZ[2-3]CZ[4-6]  logical=S0S1CZ[0-1]
+  id=15050  (CSS)  physical=S4S5S6CZ[0-1]CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=15055  (CSS)  physical=S†8S4S7CZ[0-5]CZ[1-3]CZ[2-6]  logical=S0S1  strongFT
+  id=15057  (CSS)  physical=S†0S†1S5S6S8Z4CZ[2-3]  logical=S0Z1CZ[0-1]  strongFT
+  id=15058  (CSS)  physical=S4S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=15097  (CSS)  physical=S†1S2CZ[0-8]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=15099  (CSS)  physical=S†0S1CZ[2-6]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=15122  (CSS)  physical=S†2S8CZ[0-5]CZ[1-4]  logical=S0S1CZ[0-1]  strongFT
+  id=15124  (CSS)  physical=S†4S†5S6S7S8Z1CZ[0-3]  logical=S0S1  strongFT
+  id=15125  (CSS)  physical=S1S6CZ[0-2]CZ[3-4]  logical=S0S1  strongFT
+  id=15130  (CSS)  physical=S†0S1CZ[2-7]CZ[3-5]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=15133  (CSS)  physical=S†8S1CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=15147  (CSS)  physical=S3S4CZ[0-6]CZ[1-5]  logical=S0S1  strongFT
+  id=15153  (CSS)  physical=S†2S1Z7CZ[0-4]CZ[5-6]  logical=S†1S0  strongFT
+  id=15155  (CSS)  physical=S†5S4CZ[0-2]CZ[1-6]  logical=S†1S0  strongFT
+  id=15186  (CSS)  physical=S†1S8Z4Z5CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=15188  (CSS)  physical=S†7S6CZ[2-4]CZ[3-5]  logical=S†1S0  strongFT
+  id=15190  (CSS)  physical=S†0S1CZ[2-6]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=15191  (CSS)  physical=S3S4CZ[0-6]CZ[1-5]  logical=S0S1  strongFT
+  id=15193  (CSS)  physical=S5S7CZ[0-2]CZ[1-3]  logical=S0  strongFT
+  id=15224  (CSS)  physical=S†0S8Z3Z4Z7CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=15274  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=15279  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=15283  (CSS)  physical=S2S8CZ[0-6]CZ[1-7]  logical=S0S1CZ[0-1]  strongFT
+  id=15288  (CSS)  physical=S6S8CZ[0-4]CZ[1-3]  logical=S0S1CZ[0-1]  strongFT
+  id=15290  (CSS)  physical=S1S3S6Z4CZ[0-7]  logical=S0Z1  strongFT
+  id=15292  (CSS)  physical=S5S6S8CZ[0-1]CZ[2-3]CZ[4-7]  logical=S0S1CZ[0-1]
+  id=15294  (CSS)  physical=S3S4S6Z1CZ[0-5]  logical=S0Z1  strongFT
+  id=15297  (CSS)  physical=S†4S3S6CZ[0-5]  logical=S0  strongFT
+  id=15302  (CSS)  physical=S†8S1CZ[2-5]CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=15306  (CSS)  physical=S†0S†1S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=15340  (CSS)  physical=S†8S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=15342  (CSS)  physical=S2S3CZ[0-7]CZ[1-4]CZ[5-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=15348  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=15355  (CSS)  physical=S0S8Z3Z4Z7CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=15356  (CSS)  physical=S0S8Z3Z4Z7CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=15358  (CSS)  physical=S5S6S8CZ[0-7]CZ[1-2]CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=15362  (CSS)  physical=S2S8CZ[0-6]CZ[1-5]  logical=S0S1CZ[0-1]  strongFT
+  id=15364  (CSS)  physical=S†8S1CZ[2-4]CZ[3-5]  logical=S0  strongFT
+  id=15373  (CSS)  physical=S3S4Z8CZ[0-7]CZ[1-2]CZ[5-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=15382  (CSS)  physical=S4S8CZ[0-7]CZ[1-6]  logical=S0  strongFT
+  id=15384  (CSS)  physical=S†6S2S5CZ[0-7]CZ[1-4]CZ[3-8]  logical=S0  strongFT
+  id=15387  (CSS)  physical=S†6S0S7CZ[1-3]CZ[2-5]CZ[4-8]  logical=S0  strongFT
+  id=15425  (CSS)  physical=S†8S5S6CZ[0-7]CZ[1-2]CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=15426  (CSS)  physical=S†6S3S8CZ[0-7]CZ[1-5]CZ[2-4]  logical=S0CZ[0-1]  strongFT
+  id=15437  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=15525  (CSS)  physical=S†1S8Z0Z6Z7CZ[2-4]CZ[3-5]  logical=S0  strongFT
+  id=15537  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=15538  (CSS)  physical=S†2S8CZ[0-6]CZ[1-5]  logical=S0S1CZ[0-1]  strongFT
+  id=15539  (CSS)  physical=S†2S8CZ[0-6]CZ[1-5]  logical=S0S1CZ[0-1]  strongFT
+  id=15540  (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=15565  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=15570  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=15582  (CSS)  physical=S1S2Z7CZ[0-5]CZ[4-6]  logical=S†1S0  strongFT
+  id=15665  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=15675  (CSS)  physical=S†8S0CZ[1-5]CZ[2-6]  logical=S0  strongFT
+  id=15677  (CSS)  physical=S†8S1CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=15774  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=15777  (CSS)  physical=S4S6S8CZ[0-5]CZ[1-2]CZ[3-7]  logical=S0S1  strongFT
+  id=15779  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=15783  (CSS)  physical=S5S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=15784  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=15790  (CSS)  physical=S2S3CZ[0-6]CZ[1-4]  logical=S0S1  strongFT
+  id=15792  (CSS)  physical=S4S6S7CZ[0-3]CZ[2-5]  logical=S0Z1CZ[0-1]
+  id=15798  (CSS)  physical=S†8S6CZ[1-7]CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=15823  (CSS)  physical=S2S8CZ[1-3]  logical=S0S1CZ[0-1]
+  id=15824  (CSS)  physical=S0S1CZ[2-6]CZ[5-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=15825  (CSS)  physical=S5S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=15826  (CSS)  physical=S†2S3CZ[4-7]CZ[5-6]  logical=S0CZ[0-1]  strongFT
+  id=15828  (CSS)  physical=S2S8CZ[1-3]  logical=S0S1CZ[0-1]
+  id=15832  (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=15836  (CSS)  physical=S2S3CZ[0-7]CZ[1-4]  logical=S0  strongFT
+  id=15839  (CSS)  physical=S4S7CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=15861  (CSS)  physical=S3S8CZ[0-4]CZ[1-6]  logical=S0S1  strongFT
+  id=15891  (CSS)  physical=S3S8CZ[0-7]CZ[1-4]  logical=S0S1  strongFT
+  id=15894  (CSS)  physical=S6S8CZ[1-7]CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=15895  (CSS)  physical=S2S8CZ[0-7]CZ[1-4]  logical=S0S1CZ[0-1]  strongFT
+  id=15902  (CSS)  physical=S0S8Z3Z7CZ[1-4]CZ[2-5]  logical=S0Z1  strongFT
+  id=15903  (CSS)  physical=S†2S8CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=15922  (CSS)  physical=S†0S6S7CZ[2-3]  logical=S0  strongFT
+  id=15923  (CSS)  physical=S†3S2S4S5S6S7Z0  logical=S†1S0  strongFT
+  id=15932  (CSS)  physical=S2S8CZ[0-4]CZ[1-5]  logical=S0S1CZ[0-1]  strongFT
+  id=15933  (CSS)  physical=S1S8CZ[2-5]CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=15940  (CSS)  physical=S†6S2S5CZ[1-7]  logical=S0S1CZ[0-1]  strongFT
+  id=15947  (CSS)  physical=S†0S†1S3S4S5S7  logical=S0Z1CZ[0-1]  strongFT
+  id=15948  (CSS)  physical=S4S7CZ[3-5]  logical=S0S1
+  id=16041  (CSS)  physical=S†6S4S8CZ[0-5]  logical=S0S1CZ[0-1]  strongFT
+  id=16050  (CSS)  physical=S4S5S8Z0CZ[3-6]  logical=S0Z1  strongFT
+  id=16088  (CSS)  physical=S†1S†2S0S4S5S8  logical=S0Z1CZ[0-1]  strongFT
+  id=16090  (CSS)  physical=S†4S1S6Z2CZ[0-5]  logical=S0Z1  strongFT
+  id=16171  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=16179  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=16234  (CSS)  physical=S†2S†3S4S5S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=16237  (CSS)  physical=S†2S†4S1S5S6S7CZ[0-3]  logical=S†1S0
+  id=16241  (CSS)  physical=S†4S5S8CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=16249  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1
+  id=16266  (CSS)  physical=S†0S3S7CZ[2-5]  logical=S0  strongFT
+  id=16267  (CSS)  physical=S†2S5S7CZ[4-6]  logical=S0S1CZ[0-1]  strongFT
+  id=16580  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16581  (CSS)  physical=S†0S†2S4S5S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=16626  (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16645  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16648  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16649  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16654  (CSS)  physical=S5S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=16663  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16665  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=16668  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=16684  (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=16685  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16687  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=16688  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16689  (CSS)  physical=S4S5CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=16699  (CSS)  physical=S†1S2CZ[0-8]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=16704  (CSS)  physical=S5S8CZ[2-4]  logical=S0S1CZ[0-1]
+  id=16705  (CSS)  physical=S†1S†5S2S3S6CZ[0-4]  logical=S0S1  strongFT
+  id=16708  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16715  (CSS)  physical=S2S8CZ[0-1]  logical=S0
+  id=16717  (CSS)  physical=S5S7CZ[3-4]  logical=S0S1CZ[0-1]
+  id=16718  (CSS)  physical=S1S8CZ[0-3]  logical=S0
+  id=16720  (CSS)  physical=S5S8CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=16730  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=16731  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=16736  (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=16737  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=16738  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16739  (CSS)  physical=S3S5CZ[2-4]  logical=S0
+  id=16741  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16743  (CSS)  physical=S2S8CZ[0-1]  logical=S0
+  id=16744  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=16769  (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16780  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16810  (CSS)  physical=S5S6CZ[0-7]CZ[1-2]CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=16812  (CSS)  physical=S†8S5S6CZ[0-3]CZ[1-2]CZ[4-7]  logical=S0S1  strongFT
+  id=16816  (CSS)  physical=S4S5Z8CZ[0-7]CZ[1-6]CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=16861  (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16866  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=16893  (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16897  (CSS)  physical=S6S8CZ[2-5]  logical=S0S1CZ[0-1]
+  id=16900  (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16905  (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16906  (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=16924  (CSS)  physical=S0S1CZ[2-7]CZ[3-5]CZ[4-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=16932  (CSS)  physical=S4S8CZ[2-3]  logical=S0S1CZ[0-1]
+  id=17006  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=17007  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=17008  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=17009  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=17010  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=17015  (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=17140  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=17142  (CSS)  physical=S4S8CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=17143  (CSS)  physical=S2S4CZ[1-3]  logical=S0S1CZ[0-1]
+  id=17144  (CSS)  physical=S6S8CZ[2-5]  logical=S0S1CZ[0-1]
+  id=17300  (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=17302  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=17346  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=17532  (CSS)  physical=S2S8CZ[1-5]CZ[4-6]  logical=S0S1  strongFT
+  id=17536  (CSS)  physical=S†8S1CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=17542  (CSS)  physical=S†2S8CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=17712  (CSS)  physical=S3S7Z1Z4CZ[0-5]CZ[2-6]  logical=S†1S0  strongFT
+  id=18689  (CSS)  physical=S1S2Z4Z5CZ[0-6]CZ[3-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=18719  (CSS)  physical=S†8S2S7CZ[1-4]  logical=S0  strongFT
+  id=19008  (CSS)  physical=S†1S†2Z4Z5CZ[0-6]CZ[3-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=20250  (CSS)  physical=S†1S6S8CZ[5-7]  logical=S0S1CZ[0-1]  strongFT
+  id=21104  (CSS)  physical=S1S6S7Z2Z4CZ[0-3]  logical=S0  strongFT
+  id=21205  (CSS)  physical=S†1S5S7CZ[0-8]  logical=S0S1CZ[0-1]  strongFT
+  id=21207  (CSS)  physical=S4S7S8Z2Z6CZ[1-3]  logical=S†1S0CZ[0-1]  strongFT
+  id=21212  (CSS)  physical=S†1S4S6CZ[2-8]  logical=S0S1CZ[0-1]  strongFT
+  id=21217  (CSS)  physical=S†1S4S8CZ[2-7]  logical=S0S1CZ[0-1]  strongFT
+  id=21235  (CSS)  physical=S†3S4Z1Z5CZ[0-2]CZ[6-8]  logical=S†1S0  strongFT
+  id=21260  (CSS)  physical=S†0S†1S†2S3S4S5  logical=S0  strongFT
+  id=21262  (CSS)  physical=S†0S†1S6S8Z7CZ[2-4]CZ[3-5]  logical=S0CZ[0-1]  strongFT
+  id=21501  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=21926  (CSS)  physical=S†1S4S6CZ[0-2]  logical=S0  strongFT
+  id=21965  (CSS)  physical=S6S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=21997  (CSS)  physical=S†2S5CZ[0-3]CZ[1-4]CZ[6-8]  logical=S†1S0  strongFT
+  id=22004  (CSS)  physical=S5S7S8CZ[1-2]CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=22034  (CSS)  physical=S2S5S6S8CZ[0-7]CZ[1-3]  logical=S0S1  strongFT
+  id=22035  (CSS)  physical=S1S7S8CZ[0-4]CZ[2-3]  logical=S0
+  id=22048  (CSS)  physical=S3S7CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=22058  (CSS)  physical=S†0S†2S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=22072  (CSS)  physical=S†8S2Z7CZ[0-3]CZ[1-6]CZ[4-5]  logical=S0CZ[0-1]
+  id=22079  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22087  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22089  (CSS)  physical=S†4S7CZ[0-3]CZ[2-6]  logical=S0CZ[0-1]  strongFT
+  id=22092  (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=22094  (CSS)  physical=S1S7CZ[0-4]  logical=S0
+  id=22095  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22096  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22118  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22121  (CSS)  physical=S4S5S6Z0CZ[2-3]  logical=S†1S0CZ[0-1]  strongFT
+  id=22122  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22125  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22152  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=22162  (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=22163  (CSS)  physical=S5S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=22164  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22167  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22174  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22180  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=22194  (CSS)  physical=S6S7S8CZ[0-5]CZ[3-4]  logical=S0S1
+  id=22201  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=22210  (CSS)  physical=S†7S4CZ[0-1]CZ[2-5]CZ[3-6]  logical=S†1S0
+  id=22213  (CSS)  physical=S†0S†1S2S3S5S8  logical=S0Z1CZ[0-1]  strongFT
+  id=22215  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22217  (CSS)  physical=S†0S†2S3S4S5S7  logical=S0Z1CZ[0-1]  strongFT
+  id=22219  (CSS)  physical=S†5S3S6CZ[0-1]CZ[2-4]  logical=S0S1CZ[0-1]
+  id=22220  (CSS)  physical=S4S5CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=22243  (CSS)  physical=S†4S6S8Z3CZ[2-5]  logical=S0S1CZ[0-1]  strongFT
+  id=22251  (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0S1CZ[0-1]  strongFT
+  id=22254  (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=22264  (CSS)  physical=S3S5S8CZ[0-2]CZ[1-4]  logical=S0Z1CZ[0-1]
+  id=22266  (CSS)  physical=S1S7CZ[0-5]CZ[3-8]  logical=S0S1  strongFT
+  id=22267  (CSS)  physical=S6S7CZ[1-2]  logical=S0
+  id=22297  (CSS)  physical=S†7S†8S5CZ[0-2]CZ[1-6]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=22300  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22304  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22305  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22320  (CSS)  physical=S†1S4S6Z5CZ[0-2]  logical=S0Z1  strongFT
+  id=22325  (CSS)  physical=S†3S†5S7S8CZ[0-2]CZ[1-4]  logical=S0S1  strongFT
+  id=22374  (CSS)  physical=S†1S†4S2S3S5CZ[0-6]  logical=S0S1  strongFT
+  id=22375  (CSS)  physical=S4S7CZ[0-6]CZ[1-2]CZ[5-8]  logical=S0Z1CZ[0-1]
+  id=22387  (CSS)  physical=S7S8CZ[0-1]  logical=S0
+  id=22390  (CSS)  physical=S†1S†3S0S4S5S8  logical=S0Z1CZ[0-1]  strongFT
+  id=22391  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22395  (CSS)  physical=S†6S4S8CZ[0-5]  logical=S0S1CZ[0-1]  strongFT
+  id=22418  (CSS)  physical=S†3S5S6Z4CZ[2-7]  logical=S†1S0CZ[0-1]  strongFT
+  id=22419  (CSS)  physical=S†4S1S6Z3CZ[0-2]  logical=S0  strongFT
+  id=22428  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1
+  id=22465  (CSS)  physical=S†8S5S6CZ[4-7]  logical=S0S1CZ[0-1]  strongFT
+  id=22467  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=22486  (CSS)  physical=S3S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=22520  (CSS)  physical=S6S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=22523  (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=22528  (CSS)  physical=S†5S3S8CZ[0-4]  logical=S0  strongFT
+  id=22530  (CSS)  physical=S7S8CZ[0-1]  logical=S0
+  id=22629  (CSS)  physical=S†1S†2S3S4S6S7S8CZ[0-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=23140  (CSS)  physical=S†5S7S8CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=24323  (CSS)  physical=S†2S†3S5S6S7S8Z0Z1  logical=S0Z1CZ[0-1]  strongFT
+  id=24349  (CSS)  physical=S0S4S5CZ[1-3]CZ[2-8]CZ[6-7]  logical=S0Z1  strongFT
+  id=24614  (CSS)  physical=S1S2Z8CZ[0-7]CZ[3-6]CZ[4-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=24615  (CSS)  physical=S†3S†4S2S7S8CZ[0-1]  logical=S†1S0  strongFT
+  id=24636  (CSS)  physical=S4S8CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=24654  (CSS)  physical=S†1S2CZ[3-7]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=24667  (CSS)  physical=S0S8CZ[1-6]CZ[2-5]  logical=S0S1  strongFT
+  id=24683  (CSS)  physical=S†0S1CZ[2-6]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=24686  (CSS)  physical=S†2S3CZ[4-7]CZ[5-6]  logical=S0CZ[0-1]  strongFT
+  id=24693  (CSS)  physical=S†0S1CZ[2-5]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=24702  (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=24738  (CSS)  physical=S2S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=24770  (CSS)  physical=S2S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=24808  (CSS)  physical=S†3S2CZ[0-7]CZ[1-6]  logical=S†1S0  strongFT
+  id=24904  (CSS)  physical=S†3S5S8CZ[0-2]CZ[1-4]  logical=S0S1CZ[0-1]
+  id=24913  (CSS)  physical=S†8S3CZ[1-7]CZ[2-4]  logical=S†1S0  strongFT
+  id=24923  (CSS)  physical=S6S8CZ[0-1]  logical=S0
+  id=24926  (CSS)  physical=S5S8CZ[0-1]  logical=S0
+  id=24936  (CSS)  physical=S†1S2CZ[0-7]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=24946  (CSS)  physical=S4S6S8Z1CZ[3-7]  logical=S0Z1  strongFT
+  id=24968  (CSS)  physical=S4S8CZ[0-7]CZ[1-3]  logical=S0S1  strongFT
+  id=24980  (CSS)  physical=S1S5S6CZ[0-8]CZ[4-7]  logical=S0S1
+  id=24982  (CSS)  physical=S†3S†4S0S5S6S8  logical=S0Z1CZ[0-1]  strongFT
+  id=24984  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=25109  (CSS)  physical=S†1S2CZ[3-7]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=25132  (CSS)  physical=S†5S4S8CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=25135  (CSS)  physical=S†5S3S8CZ[0-4]  logical=S0S1CZ[0-1]  strongFT
+  id=25138  (CSS)  physical=S4S5S7Z0CZ[3-6]  logical=S†1S0CZ[0-1]  strongFT
+  id=25148  (CSS)  physical=S3S4CZ[0-7]CZ[1-2]CZ[5-8]  logical=S0Z1CZ[0-1]
+  id=25157  (CSS)  physical=S†5S4S8CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=25210  (CSS)  physical=S†1S2Z4Z6CZ[0-3]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=25212  (CSS)  physical=S†6S7CZ[1-4]CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=25296  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=25297  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=25304  (CSS)  physical=S†1S2CZ[3-5]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=25318  (CSS)  physical=S†1S0CZ[2-4]CZ[3-7]CZ[5-6]  logical=S0CZ[0-1]  strongFT
+  id=25419  (CSS)  physical=S†4S6S8CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=25465  (CSS)  physical=S†4S3Z1CZ[0-5]CZ[6-8]  logical=S0CZ[0-1]  strongFT
+  id=25466  (CSS)  physical=S†3S4Z1CZ[0-6]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=25472  (CSS)  physical=S2S3CZ[1-4]CZ[5-6]  logical=S0S1  strongFT
+  id=25474  (CSS)  physical=S†3S2Z1CZ[0-4]CZ[6-8]  logical=S0CZ[0-1]  strongFT
+  id=25496  (CSS)  physical=S†0S1CZ[2-8]CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=25497  (CSS)  physical=S0S2CZ[3-7]CZ[4-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=25539  (CSS)  physical=S3S8Z0Z5CZ[1-6]CZ[2-4]  logical=S†1S0  strongFT
+  id=25771  (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=25777  (CSS)  physical=S5S6Z2CZ[0-4]CZ[1-3]  logical=S0Z1CZ[0-1]  strongFT
+  id=25778  (CSS)  physical=S†6S5CZ[0-7]CZ[1-4]CZ[2-3]  logical=S†1S0  strongFT
+  id=25787  (CSS)  physical=S2S7CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=25789  (CSS)  physical=S3S4Z2CZ[0-6]CZ[1-5]  logical=S0S1  strongFT
+  id=25901  (CSS)  physical=S1S6S7CZ[0-3]CZ[4-5]  logical=S0S1
+  id=25905  (CSS)  physical=S4S5CZ[0-7]CZ[3-6]  logical=S0S1  strongFT
+  id=25911  (CSS)  physical=S3S4CZ[0-6]CZ[1-5]  logical=S0S1  strongFT
+  id=25916  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=25917  (CSS)  physical=S2S6CZ[0-1]  logical=S0
+  id=25937  (CSS)  physical=S4S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=25942  (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=25943  (CSS)  physical=S4S5CZ[0-6]CZ[1-3]  logical=S0S1  strongFT
+  id=25945  (CSS)  physical=S4S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=25955  (CSS)  physical=S†1S†6S4S5S7CZ[0-3]  logical=S0S1  strongFT
+  id=25957  (CSS)  physical=S†5S6Z2CZ[0-4]CZ[1-7]  logical=S0CZ[0-1]  strongFT
+  id=25958  (CSS)  physical=S5S7CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=25959  (CSS)  physical=S4S5Z1CZ[0-7]CZ[3-6]  logical=S0S1  strongFT
+  id=25963  (CSS)  physical=S5S6CZ[0-7]CZ[1-4]CZ[2-3]  logical=S0S1  strongFT
+  id=25967  (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=25972  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=25988  (CSS)  physical=S†8S5CZ[0-1]CZ[2-7]CZ[3-4]  logical=S0S1CZ[0-1]
+  id=25990  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=26000  (CSS)  physical=S†0S†1S4S5S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=26001  (CSS)  physical=S5S7CZ[4-6]  logical=S0Z1CZ[0-1]
+  id=26004  (CSS)  physical=S2S4CZ[0-7]CZ[1-3]  logical=S0  strongFT
+  id=26006  (CSS)  physical=S6S7CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=27070  (CSS)  physical=S2S8CZ[0-1]CZ[3-5]CZ[4-7]  logical=S†1S0
+  id=27191  (CSS)  physical=S2S6CZ[0-5]CZ[7-8]  logical=S0S1  strongFT
+  id=27197  (CSS)  physical=S2S4CZ[0-5]CZ[3-8]  logical=S0S1  strongFT
+  id=27239  (CSS)  physical=S†3S4Z1CZ[0-2]CZ[7-8]  logical=S†1S0  strongFT
+  id=27256  (CSS)  physical=S†5S8Z6CZ[1-4]CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=27285  (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=27869  (CSS)  physical=S†2S†3Z1Z6CZ[0-7]CZ[4-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=27913  (CSS)  physical=S†7S6S8CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=27929  (CSS)  physical=S†0S2S7CZ[1-4]  logical=S0  strongFT
+  id=27964  (CSS)  physical=S†2S†8S4Z0CZ[1-3]CZ[5-7]  logical=S†1S0CZ[0-1]  strongFT
+  id=32495  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=32567  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=32684  (CSS)  physical=S†2S7S8CZ[0-1]  logical=S0  strongFT
+  id=32925  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=32987  (CSS)  physical=S1S2S6S7Z5CZ[0-4]CZ[3-8]  logical=S0S1  strongFT
+  id=33130  (CSS)  physical=S†2S7S8CZ[1-3]  logical=S0S1CZ[0-1]  strongFT
+  id=33240  (CSS)  physical=S†0S†2Z3Z6CZ[1-7]CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=33289  (CSS)  physical=S†5S3S7CZ[2-8]  logical=S0  strongFT
+  id=33313  (CSS)  physical=S†2S7S8CZ[1-3]  logical=S0  strongFT
+  id=33314  (CSS)  physical=S†2S3S8CZ[1-7]  logical=S0  strongFT
+  id=33325  (CSS)  physical=S†1S5S8Z3Z4CZ[0-2]  logical=S0Z1  strongFT
+  id=33527  (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=33730  (CSS)  physical=S†8S1S7CZ[0-2]  logical=S0  strongFT
+  id=33733  (CSS)  physical=S5S7S8Z1Z3CZ[0-6]  logical=S0Z1  strongFT
+  id=33778  (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=33827  (CSS)  physical=S7S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=33901  (CSS)  physical=S†5S1Z6CZ[0-7]CZ[2-3]CZ[4-8]  logical=S0Z1CZ[0-1]
+  id=33960  (CSS)  physical=S1S2Z6CZ[0-5]CZ[3-8]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=34251  (CSS)  physical=S3S4S8Z2Z6CZ[1-7]  logical=S0Z1  strongFT
+  id=34495  (CSS)  physical=S†8S0CZ[1-3]CZ[2-7]  logical=S0  strongFT
+  id=34497  (CSS)  physical=S†8S1CZ[0-2]CZ[3-6]  logical=S0  strongFT
+  id=34561  (CSS)  physical=S†8S0CZ[1-3]CZ[2-7]  logical=S0  strongFT
+  id=34817  (CSS)  physical=S†3S†6S1S2S4S7CZ[0-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=34818  (CSS)  physical=S†2S1S7CZ[0-8]  logical=S0  strongFT
+  id=34828  (CSS)  physical=S†7S5S6CZ[2-3]  logical=S0  strongFT
+  id=34835  (CSS)  physical=S†5S4S7CZ[3-8]  logical=S0  strongFT
+  id=34924  (CSS)  physical=S†5S7S8CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=34993  (CSS)  physical=S†5S7S8CZ[3-4]  logical=S0S1CZ[0-1]  strongFT
+  id=35023  (CSS)  physical=S†1S†2S3S4S6S7CZ[0-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=35026  (CSS)  physical=S†8S4S5S6CZ[1-2]CZ[3-7]  logical=S0Z1CZ[0-1]
+  id=35343  (CSS)  physical=S†0S†1S4S5S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=36039  (CSS)  physical=S1S6S8Z3Z7CZ[0-2]  logical=S0  strongFT
+  id=37464  (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=37465  (CSS)  physical=S4S6Z2CZ[0-7]CZ[1-5]  logical=S0S1  strongFT
+  id=37466  (CSS)  physical=S5S6CZ[0-7]CZ[1-4]  logical=S0S1  strongFT
+  id=37473  (CSS)  physical=S1S6CZ[0-4]  logical=S0
+  id=37482  (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=38409  (CSS)  physical=S7S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=38426  (CSS)  physical=S4S7S8Z0CZ[1-5]  logical=S†1S0CZ[0-1]  strongFT
+  id=38596  (CSS)  physical=S†1S†2S†3S0S5S6CZ[4-8]  logical=S0CZ[0-1]  strongFT
+  id=38656  (CSS)  physical=S†5S4S7CZ[3-8]  logical=S0  strongFT
+  id=40502  (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=40507  (CSS)  physical=S2S5S8CZ[0-6]CZ[1-4]CZ[3-7]  logical=S0  strongFT
+  id=40514  (CSS)  physical=S4S7CZ[1-3]  logical=S0Z1CZ[0-1]
+  id=40517  (CSS)  physical=S3S4CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=40531  (CSS)  physical=S4S5S6CZ[0-1]CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=40536  (CSS)  physical=S2S8CZ[0-6]CZ[1-5]  logical=S0S1CZ[0-1]  strongFT
+  id=40547  (CSS)  physical=S5S8CZ[3-4]  logical=S0S1CZ[0-1]
+  id=40550  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=40551  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=40752  (CSS)  physical=S†1S†2S0S3S4S8  logical=S0Z1CZ[0-1]  strongFT
+  id=40779  (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=40837  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=40846  (CSS)  physical=S3S6Z5CZ[2-7]CZ[4-8]  logical=S†1S0  strongFT
+  id=40851  (CSS)  physical=S4S8CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=40852  (CSS)  physical=S0S1CZ[2-6]CZ[3-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=40868  (CSS)  physical=S4S5S7CZ[2-8]CZ[3-6]  logical=S0Z1
+  id=40871  (CSS)  physical=S†8S5S7CZ[2-4]  logical=S0S1CZ[0-1]  strongFT
+  id=40877  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=40888  (CSS)  physical=S†5S3S8Z4CZ[2-6]  logical=S0Z1  strongFT
+  id=40924  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=40928  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=40929  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=40930  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=40940  (CSS)  physical=S4S5S8CZ[0-3]CZ[1-6]  logical=S0S1
+  id=40948  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=41078  (CSS)  physical=S2S8CZ[1-3]  logical=S0
+  id=41563  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=41812  (CSS)  physical=S†2S†5S1S6CZ[0-3]CZ[4-8]  logical=S†1S0  strongFT
+  id=42200  (CSS)  physical=S†0S†4S1S6CZ[2-3]CZ[7-8]  logical=S0CZ[0-1]  strongFT
+  id=42290  (CSS)  physical=S6S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=43059  (CSS)  physical=S0S1CZ[2-6]CZ[3-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=43154  (CSS)  physical=S†3S†4S0S1S7S8CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=43186  (CSS)  physical=S3S5CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=44455  (CSS)  physical=S†3S†4S2S5S6S7S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=44745  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=44748  (CSS)  physical=S†1S8CZ[3-6]CZ[4-5]  logical=S0CZ[0-1]  strongFT
+  id=44759  (CSS)  physical=S3S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=44770  (CSS)  physical=S0S8CZ[1-6]CZ[2-3]  logical=S0S1  strongFT
+  id=44784  (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=45350  (CSS)  physical=S†3S8CZ[1-6]CZ[2-5]  logical=S0S1CZ[0-1]  strongFT
+  id=45357  (CSS)  physical=S6S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=46248  (CSS)  physical=S†2S1Z8CZ[0-5]CZ[3-4]CZ[6-7]  logical=S0CZ[0-1]  strongFT
+  id=47148  (CSS)  physical=S†3S†8S2S4S6CZ[0-5]CZ[1-7]  logical=S0  strongFT
+  id=48019  (CSS)  physical=S†6S0Z3Z5CZ[1-8]CZ[2-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=48020  (CSS)  physical=S†0S†6Z2Z4CZ[1-7]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=48032  (CSS)  physical=S†0S5Z2Z4CZ[1-7]CZ[6-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=48817  (CSS)  physical=S†1S2S7CZ[0-4]  logical=S0  strongFT
+  id=48827  (CSS)  physical=S†2S1S8Z3Z4CZ[0-7]  logical=S0Z1  strongFT
+  id=48844  (CSS)  physical=S†0S†1S†2S3S5S8  logical=S†1S0  strongFT
+  id=48904  (CSS)  physical=S†1S0S2S3S4S5S6S7S8  logical=S0CZ[0-1]  strongFT
+  id=49420  (CSS)  physical=S†8S6Z2Z4CZ[0-5]CZ[1-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=49998  (CSS)  physical=S†6S0Z3Z5CZ[1-8]CZ[2-4]  logical=S0Z1CZ[0-1]  strongFT
+  id=50000  (CSS)  physical=S†6S5S8CZ[1-4]  logical=S0S1CZ[0-1]  strongFT
+  id=50224  (CSS)  physical=S2S3S4S5S6S7S8Z0Z1  logical=S0  strongFT
+  id=50449  (CSS)  physical=S†3S†5S1S7CZ[0-4]CZ[2-6]  logical=S†1S0  strongFT
+  id=50829  (CSS)  physical=S0S1CZ[2-6]CZ[5-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=50893  (CSS)  physical=S†0S1CZ[2-6]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=51256  (CSS)  physical=S†4S5CZ[0-6]CZ[2-8]CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=51928  (CSS)  physical=S†5S1S8CZ[0-7]  logical=S0S1CZ[0-1]  strongFT
+  id=51930  (CSS)  physical=S1S2S6S8Z7CZ[0-5]CZ[3-4]  logical=S†1S0  strongFT
+  id=51946  (CSS)  physical=S†3S2S6S7Z4CZ[0-1]CZ[5-8]  logical=S0S1  strongFT
+  id=51968  (CSS)  physical=S†4S6S7CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=52016  (CSS)  physical=S2S4S8Z3Z7CZ[1-6]  logical=S0  strongFT
+  id=52116  (CSS)  physical=S†8S6S7CZ[2-3]  logical=S0S1CZ[0-1]  strongFT
+  id=52120  (CSS)  physical=S†5S4S7CZ[3-8]  logical=S0S1CZ[0-1]  strongFT
+  id=52122  (CSS)  physical=S†3S4S7S8Z2CZ[0-1]CZ[5-6]  logical=S0Z1CZ[0-1]
+  id=53038  (CSS)  physical=S†2S†3S†5S6S7S8Z4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=53099  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=53102  (CSS)  physical=S†1S2S7Z3Z5CZ[0-4]  logical=S0Z1  strongFT
+  id=53103  (CSS)  physical=S3S6S8Z0CZ[2-7]  logical=S0Z1  strongFT
+  id=53106  (CSS)  physical=S2S8CZ[0-1]  logical=S0
+  id=53324  (CSS)  physical=S†2S5S6CZ[0-7]CZ[1-3]CZ[4-8]  logical=S†1S0CZ[0-1]  strongFT
+  id=54625  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=56710  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=56718  (CSS)  physical=S†1S4S6Z5CZ[0-2]  logical=S0Z1  strongFT
+  id=56804  (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=56817  (CSS)  physical=S1S4S8Z2Z6CZ[0-5]  logical=S0  strongFT
+  id=56835  (CSS)  physical=S†2S3S4S5S6S7Z0Z1  logical=S†1S0  strongFT
+  id=57036  (CSS)  physical=S†1S2CZ[0-5]CZ[3-7]CZ[4-6]  logical=S0CZ[0-1]  strongFT
+  id=57279  (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=58196  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=58198  (CSS)  physical=S†4S1CZ[2-6]CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=59117  (CSS)  physical=S5S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=60679  (CSS)  physical=S1S8CZ[0-2]  logical=S0
+  id=63623  (CSS)  physical=S†5S3S8CZ[0-4]  logical=S0S1CZ[0-1]  strongFT
+  id=68001  (CSS)  physical=S†2S4S7S8CZ[0-3]CZ[1-6]  logical=S0S1  strongFT
+  id=69294  (CSS)  physical=S†3S4Z1CZ[0-2]CZ[7-8]  logical=S†1S0  strongFT
+  id=73838  (CSS)  physical=S4S5CZ[0-7]CZ[2-8]CZ[3-6]  logical=S0S1
+  id=75014  (CSS)  physical=S†0S1CZ[2-4]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=78247  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=79988  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=80580  (CSS)  physical=S†2S†3S†4S5S6S7S8CZ[0-1]  logical=S0Z1  strongFT
+  id=80988  (CSS)  physical=S4S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=81337  (CSS)  physical=S†5S†6S4Z0CZ[2-3]CZ[7-8]  logical=S†1S0CZ[0-1]  strongFT
+  id=81371  (CSS)  physical=S†4S5CZ[0-6]CZ[1-8]  logical=S†1S0  strongFT
+  id=81372  (CSS)  physical=S6S7CZ[0-3]CZ[1-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=81758  (CSS)  physical=S†4S3CZ[0-5]CZ[1-8]  logical=S†1S0  strongFT
+  id=81778  (CSS)  physical=S4S6S7Z1Z5CZ[3-8]  logical=S†1S0CZ[0-1]  strongFT
+  id=82003  (CSS)  physical=S4S7CZ[1-3]  logical=S0Z1CZ[0-1]
+  id=82004  (CSS)  physical=S†0S†1S†3S4S7S8  logical=S†1S0  strongFT
+  id=82007  (CSS)  physical=S5S7S8Z0Z2Z4CZ[1-3]  logical=S0Z1  strongFT
+  id=82040  (CSS)  physical=S3S5CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=82051  (CSS)  physical=S2S5S8Z0Z3Z4CZ[1-6]  logical=S0Z1  strongFT
+  id=82083  (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=82113  (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=82156  (CSS)  physical=S6S7S8Z3CZ[1-2]  logical=S†1S0CZ[0-1]  strongFT
+  id=82161  (CSS)  physical=S†1S5S8CZ[2-7]  logical=S0S1CZ[0-1]  strongFT
+  id=82209  (CSS)  physical=S†1S2S7CZ[0-5]CZ[3-8]CZ[4-6]  logical=S0S1CZ[0-1]  strongFT
+  id=82221  (CSS)  physical=S†1S3S8CZ[2-7]  logical=S0S1CZ[0-1]  strongFT
+  id=82412  (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=82466  (CSS)  physical=S†4S3CZ[0-6]CZ[1-7]CZ[2-8]  logical=S†1S0  strongFT
+  id=82579  (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=82605  (CSS)  physical=S†6S7S8CZ[4-5]  logical=S0S1CZ[0-1]  strongFT
+  id=83142  (CSS)  physical=S†8S6S7CZ[2-3]  logical=S0  strongFT
+  id=83184  (CSS)  physical=S†0S†1S†5S2S4S6CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=83191  (CSS)  physical=S2S3Z5CZ[0-6]CZ[1-8]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=83200  (CSS)  physical=S†1S2Z8CZ[0-5]CZ[3-4]CZ[6-7]  logical=S0CZ[0-1]  strongFT
+  id=83480  (CSS)  physical=S†1S3S7CZ[0-6]CZ[2-8]  logical=S0  strongFT
+  id=84410  (CSS)  physical=S†3S2S5S6S7S8Z1  logical=S†1S0  strongFT
+  id=84425  (CSS)  physical=S†3S†6S1S2S4S7CZ[0-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=84434  (CSS)  physical=S4S7S8CZ[0-5]CZ[1-2]CZ[3-6]  logical=S0Z1CZ[0-1]
+  id=84507  (CSS)  physical=S†1S2CZ[3-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=84576  (CSS)  physical=S†1S3S5CZ[2-6]  logical=S0  strongFT
+  id=84583  (CSS)  physical=S4S6S8Z0Z5CZ[3-7]  logical=S0  strongFT
+  id=84585  (CSS)  physical=S†4S3S7CZ[2-8]  logical=S0  strongFT
+  id=84586  (CSS)  physical=S†1S†2S0S5S6S7  logical=S0  strongFT
+  id=84606  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=84697  (CSS)  physical=S†1S†5S3S4S6CZ[0-8]CZ[2-7]  logical=S†1S0  strongFT
+  id=84768  (CSS)  physical=S1S8Z0Z5CZ[2-6]CZ[3-7]  logical=S†1S0  strongFT
+  id=84806  (CSS)  physical=S†2S†3Z1Z6CZ[0-4]CZ[7-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=85011  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=85499  (CSS)  physical=S4S5CZ[0-3]CZ[2-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=85500  (CSS)  physical=S†0S1CZ[3-6]CZ[5-8]  logical=S0CZ[0-1]  strongFT
+  id=85510  (CSS)  physical=S1S2CZ[0-6]CZ[3-8]  logical=S0S1  strongFT
+  id=85517  (CSS)  physical=S†0S†1S2S3S7S8  logical=S0Z1CZ[0-1]  strongFT
+  id=85520  (CSS)  physical=S2S3S4S5S6S7Z0Z1  logical=S0Z1CZ[0-1]  strongFT
+  id=85529  (CSS)  physical=S3S5S6Z4CZ[0-7]  logical=S†1S0CZ[0-1]  strongFT
+  id=85534  (CSS)  physical=S†2S1S3S6CZ[0-4]CZ[5-7]  logical=S0S1  strongFT
+  id=85607  (CSS)  physical=S†7S5Z8CZ[1-3]CZ[2-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=85643  (CSS)  physical=S6S7Z0Z1CZ[2-3]CZ[5-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=85645  (CSS)  physical=S†1S†2S3S4S7S8  logical=S0Z1CZ[0-1]  strongFT
+  id=85652  (CSS)  physical=S0S3S4S5S6S7Z1Z2  logical=S†1S0  strongFT
+  id=85676  (CSS)  physical=S†1S†2S3S4S7S8  logical=S0Z1CZ[0-1]  strongFT
+  id=85678  (CSS)  physical=S0S3S4S6S7S8Z1Z2  logical=S0Z1CZ[0-1]  strongFT
+  id=85684  (CSS)  physical=S†5S4S8CZ[3-7]  logical=S0S1CZ[0-1]  strongFT
+  id=85721  (CSS)  physical=S6S7S8Z2CZ[3-5]  logical=S0Z1  strongFT
+  id=85723  (CSS)  physical=S†2S5S7CZ[4-8]  logical=S0S1CZ[0-1]  strongFT
+  id=85922  (CSS)  physical=S†4S5S8CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=85931  (CSS)  physical=S†0S†1S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=85972  (CSS)  physical=S†2S†4S1S3S8CZ[0-6]CZ[5-7]  logical=S†1S0  strongFT
+  id=86264  (CSS)  physical=S†4S7S8CZ[2-3]  logical=S0  strongFT
+  id=86344  (CSS)  physical=S†1S8CZ[0-2]CZ[3-6]CZ[4-7]  logical=S†1S0  strongFT
+  id=86510  (CSS)  physical=S†0S4S7CZ[1-2]  logical=S0  strongFT
+  id=86511  (CSS)  physical=S†0S†1S2S5S6S7  logical=S0  strongFT
+  id=87299  (CSS)  physical=S†1S†2S4S5S6S8  logical=S0  strongFT
+  id=87319  (CSS)  physical=S5S6S7Z2CZ[3-4]  logical=S†1S0CZ[0-1]  strongFT
+  id=87322  (CSS)  physical=S†5S3S8CZ[0-4]  logical=S0S1CZ[0-1]  strongFT
+  id=87329  (CSS)  physical=S†3S†4S0S1S6S7CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=87550  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=87555  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=87557  (CSS)  physical=S†0S6S7CZ[1-2]  logical=S0  strongFT
+  id=87566  (CSS)  physical=S2S3CZ[1-6]CZ[4-5]  logical=S0S1  strongFT
+  id=87572  (CSS)  physical=S†3S2CZ[0-7]CZ[1-5]  logical=S†1S0  strongFT
+  id=87579  (CSS)  physical=S†3S†4S2S5CZ[0-1]CZ[6-7]  logical=S0CZ[0-1]  strongFT
+  id=87824  (CSS)  physical=S3S4S5S6S7S8Z1Z2  logical=S†1S0CZ[0-1]  strongFT
+  id=88042  (CSS)  physical=S1S2CZ[0-5]CZ[3-6]CZ[7-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=88045  (CSS)  physical=S†4S3CZ[0-6]CZ[1-7]CZ[2-8]  logical=S†1S0  strongFT
+  id=88046  (CSS)  physical=S†1S2CZ[0-7]CZ[3-8]  logical=S0CZ[0-1]  strongFT
+  id=88048  (CSS)  physical=S0S2CZ[3-6]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=88075  (CSS)  physical=S†2S1S4CZ[0-7]CZ[6-8]  logical=S0  strongFT
+  id=88089  (CSS)  physical=S†2S1S3S4S5S8Z0  logical=S†1S0  strongFT
+  id=88223  (CSS)  physical=S2S3CZ[0-8]CZ[1-6]CZ[4-5]  logical=S0S1
+  id=89140  (CSS)  physical=S3S5S8Z0Z1CZ[2-6]  logical=S0  strongFT
+  id=89218  (CSS)  physical=S3S8CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=89388  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=89456  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=89638  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=89647  (CSS)  physical=S3S7Z2CZ[1-6]CZ[5-8]  logical=S†1S0  strongFT
+  id=89648  (CSS)  physical=S†5S†7Z8CZ[2-6]CZ[3-4]  logical=S†1S0  strongFT
+  id=89663  (CSS)  physical=S†1S2S4S5S6S7Z0  logical=S†1S0CZ[0-1]  strongFT
+  id=90068  (CSS)  physical=S4S8CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=90428  (CSS)  physical=S†2S1S4Z3CZ[0-7]CZ[6-8]  logical=S0Z1  strongFT
+  id=90429  (CSS)  physical=S†3S†4S1S2S6S7CZ[0-5]  logical=S0S1  strongFT
+  id=91273  (CSS)  physical=S6S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=91324  (CSS)  physical=S†5S2S4S6CZ[0-1]CZ[3-7]  logical=S0Z1CZ[0-1]
+  id=91748  (CSS)  physical=S†3S4S5CZ[2-8]  logical=S0  strongFT
+  id=91765  (CSS)  physical=S†0S†1S†3S4S6S8  logical=S†1S0  strongFT
+  id=92276  (CSS)  physical=S5S7S8Z2CZ[1-3]  logical=S†1S0CZ[0-1]  strongFT
+  id=92277  (CSS)  physical=S†3S5Z0Z4Z8CZ[1-2]CZ[6-7]  logical=S†1S0  strongFT
+  id=92433  (CSS)  physical=S2S3CZ[0-5]CZ[1-7]CZ[4-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=92437  (CSS)  physical=S†7S0CZ[2-6]CZ[3-8]CZ[4-5]  logical=S0CZ[0-1]  strongFT
+  id=93155  (CSS)  physical=S1S8CZ[0-6]CZ[2-5]CZ[3-7]  logical=S0S1  strongFT
+  id=93156  (CSS)  physical=S6S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=93706  (CSS)  physical=S†1S†4S3S5S7CZ[0-8]CZ[2-6]  logical=S†1S0  strongFT
+  id=95109  (CSS)  physical=S3S8CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=95200  (CSS)  physical=S†0S†1S3S4S6S7CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=95464  (CSS)  physical=S†6S4S8CZ[3-7]  logical=S0  strongFT
+  id=95473  (CSS)  physical=S†3S†5S4S6S8CZ[0-2]CZ[1-7]  logical=S0CZ[0-1]  strongFT
+  id=95475  (CSS)  physical=S†4S1S2S7S8CZ[0-5]CZ[3-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=95479  (CSS)  physical=S†7S3S4S6CZ[0-5]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=95489  (CSS)  physical=S†3S2CZ[0-5]CZ[1-8]  logical=S†1S0  strongFT
+  id=95490  (CSS)  physical=S1S2CZ[0-6]CZ[3-8]  logical=S0S1  strongFT
+  id=95654  (CSS)  physical=S†6S†7S3S4S8CZ[0-5]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=95861  (CSS)  physical=S†4S†5S3S6S8CZ[0-2]CZ[1-7]  logical=S0CZ[0-1]  strongFT
+  id=95928  (CSS)  physical=S†7S3S8CZ[0-2]CZ[1-4]CZ[5-6]  logical=S0S1  strongFT
+  id=95972  (CSS)  physical=S†5S0S6CZ[1-2]CZ[7-8]  logical=S0  strongFT
+  id=96078  (CSS)  physical=S†0S†1S4S5S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=96123  (CSS)  physical=S4S7S8CZ[0-3]CZ[1-5]CZ[2-6]  logical=S0S1  strongFT
+  id=96275  (CSS)  physical=S3S4Z6CZ[0-7]CZ[1-2]CZ[5-8]  logical=S0Z1CZ[0-1]
+  id=97234  (CSS)  physical=S†6S3S4CZ[2-5]  logical=S0S1CZ[0-1]  strongFT
+  id=97272  (CSS)  physical=S†3S4Z8CZ[0-5]CZ[1-2]CZ[6-7]  logical=S†1S0  strongFT
+  id=97756  (CSS)  physical=S†1S†2S0S3S4S8  logical=S0Z1CZ[0-1]  strongFT
+  id=97771  (CSS)  physical=S1S2Z8CZ[0-4]CZ[3-7]CZ[5-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=97778  (CSS)  physical=S†4S3Z1Z5CZ[0-2]CZ[6-8]  logical=S†1S0  strongFT
+  id=97779  (CSS)  physical=S2S3Z1Z6CZ[0-7]CZ[4-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=97782  (CSS)  physical=S3S8CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=97785  (CSS)  physical=S†3S4Z1Z5CZ[0-2]CZ[6-8]  logical=S†1S0  strongFT
+  id=97803  (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=99531  (CSS)  physical=S†1S4S6CZ[0-5]CZ[2-7]CZ[3-8]  logical=S0S1CZ[0-1]  strongFT
+  id=99735  (CSS)  physical=S†3S2S5CZ[0-6]CZ[4-8]  logical=S0  strongFT
+  id=99740  (CSS)  physical=S†4S3Z8CZ[0-5]CZ[1-2]CZ[6-7]  logical=S†1S0  strongFT
+  id=99757  (CSS)  physical=S†0S†1S4S5S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=99789  (CSS)  physical=S†0S4S5S6CZ[1-2]CZ[3-7]  logical=S0Z1CZ[0-1]
+  id=100649 (CSS)  physical=S†8S4S7CZ[0-5]CZ[1-2]CZ[3-6]  logical=S0Z1CZ[0-1]
+  id=100654 (CSS)  physical=S†1S†2S3S4S6S7CZ[0-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=100913 (CSS)  physical=S2S8CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=101317 (CSS)  physical=S†1S†4S5S6S7S8Z3CZ[0-2]  logical=S†1S0
+  id=101329 (CSS)  physical=S†2S†3S4S5S6S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=101397 (CSS)  physical=S†1S†4S3S5CZ[0-8]CZ[2-6]  logical=S†1S0  strongFT
+  id=101679 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=104734 (CSS)  physical=S†0S†1S3S5S6S8  logical=S0Z1CZ[0-1]  strongFT
+  id=107924 (CSS)  physical=S†1S0S5S6CZ[2-3]CZ[7-8]  logical=S0Z1CZ[0-1]  strongFT
+  id=109094 (CSS)  physical=S0S1S4S5S7S8Z2Z3  logical=S0Z1CZ[0-1]  strongFT
+  id=112197 (CSS)  physical=S†5S0S4CZ[1-6]CZ[2-3]CZ[7-8]  logical=S0Z1  strongFT
+  id=113022 (CSS)  physical=S†2S†3S4S5S6S7S8Z0Z1  logical=S0  strongFT
+  id=113732 (CSS)  physical=S†5S2S3S7CZ[0-4]CZ[1-6]  logical=S0S1  strongFT
+  id=119279 (CSS)  physical=S0S3S6CZ[1-5]CZ[2-7]CZ[4-8]  logical=S0Z1
+  id=125092 (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125093 (CSS)  physical=S†0S1CZ[2-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=125109 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125113 (CSS)  physical=S†0S1CZ[2-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=125114 (CSS)  physical=S1S2CZ[0-5]CZ[3-7]  logical=S0S1  strongFT
+  id=125116 (CSS)  physical=S4S5CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=125131 (CSS)  physical=S†0S1CZ[2-5]CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=125133 (CSS)  physical=S†6S4S5CZ[0-3]  logical=S0S1CZ[0-1]  strongFT
+  id=125136 (CSS)  physical=S†4S3Z1CZ[0-5]CZ[2-7]  logical=S†1S0  strongFT
+  id=125138 (CSS)  physical=S†3S†4S5S6S7Z1CZ[0-2]  logical=S0S1  strongFT
+  id=125140 (CSS)  physical=S1S5CZ[0-2]CZ[3-6]  logical=S0S1  strongFT
+  id=125142 (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=125143 (CSS)  physical=S†1S†5S2S4S7CZ[0-3]  logical=S0CZ[0-1]  strongFT
+  id=125162 (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125176 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125185 (CSS)  physical=S†2S3Z7CZ[0-4]CZ[1-5]  logical=S0CZ[0-1]  strongFT
+  id=125203 (CSS)  physical=S†6S5CZ[1-3]CZ[2-4]  logical=S†1S0  strongFT
+  id=125233 (CSS)  physical=S6S7CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=125241 (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=125242 (CSS)  physical=S2S3S4CZ[0-6]CZ[1-5]  logical=S0S1
+  id=125374 (CSS)  physical=S4S5S7CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=125380 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125384 (CSS)  physical=S4S5CZ[0-1]  logical=S0
+  id=125390 (CSS)  physical=S0S7CZ[1-6]CZ[2-3]  logical=S0S1  strongFT
+  id=125425 (CSS)  physical=S1S5S6CZ[0-2]CZ[3-4]  logical=S0S1
+  id=125447 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125450 (CSS)  physical=S3S4CZ[0-5]CZ[1-2]  logical=S0S1  strongFT
+  id=125453 (CSS)  physical=S†0S1CZ[2-5]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=125455 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125463 (CSS)  physical=S†1S†5S3S4S6CZ[0-2]  logical=S0S1  strongFT
+  id=125464 (CSS)  physical=S†4S5Z2CZ[0-3]CZ[1-6]  logical=S0CZ[0-1]  strongFT
+  id=125466 (CSS)  physical=S4S6CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=125484 (CSS)  physical=S†7S0CZ[1-3]CZ[2-5]  logical=S0  strongFT
+  id=125489 (CSS)  physical=S†0S†1S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=125490 (CSS)  physical=S4S6CZ[3-5]  logical=S0Z1CZ[0-1]
+  id=125496 (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=125517 (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=125528 (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125531 (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125532 (CSS)  physical=S5S7CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=125540 (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=125542 (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=125543 (CSS)  physical=S6S7CZ[2-3]  logical=S0S1CZ[0-1]
+  id=125544 (CSS)  physical=S6S7CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=125548 (CSS)  physical=S3S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125550 (CSS)  physical=S†1S7CZ[0-3]CZ[2-5]CZ[4-6]  logical=S0CZ[0-1]
+  id=125700 (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=125702 (CSS)  physical=S†1S2CZ[0-7]CZ[3-5]  logical=S0CZ[0-1]  strongFT
+  id=125713 (CSS)  physical=S†1S†6S4S7CZ[0-2]CZ[3-5]  logical=S0Z1  strongFT
+  id=125715 (CSS)  physical=S†0S†2S3S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=125718 (CSS)  physical=S†1S0CZ[2-3]CZ[4-6]CZ[5-7]  logical=S0CZ[0-1]  strongFT
+  id=125743 (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125749 (CSS)  physical=S3S5CZ[2-4]  logical=S0S1
+  id=125750 (CSS)  physical=S3S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=125770 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125773 (CSS)  physical=S1S2CZ[0-5]CZ[3-7]  logical=S0S1  strongFT
+  id=125775 (CSS)  physical=S3S7CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=125793 (CSS)  physical=S1S6CZ[0-2]  logical=S0
+  id=125795 (CSS)  physical=S2S7CZ[0-1]  logical=S0
+  id=125799 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125807 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125808 (CSS)  physical=S†5S4CZ[2-7]CZ[3-6]  logical=S†1S0  strongFT
+  id=125809 (CSS)  physical=S3S6CZ[0-2]  logical=S0Z1CZ[0-1]
+  id=125810 (CSS)  physical=S0S1CZ[2-6]CZ[3-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=125817 (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125818 (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125823 (CSS)  physical=S†0S7CZ[1-5]CZ[2-4]CZ[3-6]  logical=S0CZ[0-1]  strongFT
+  id=125837 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=125839 (CSS)  physical=S5S7CZ[4-6]  logical=S0Z1CZ[0-1]
+  id=125893 (CSS)  physical=S3S4Z6CZ[0-5]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=125894 (CSS)  physical=S†1S3S4S5S6CZ[0-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=125897 (CSS)  physical=S†0S†4S1S6S7CZ[2-3]  logical=S0CZ[0-1]  strongFT
+  id=125902 (CSS)  physical=S†3S2CZ[0-5]CZ[1-4]  logical=S†1S0  strongFT
+  id=125905 (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125920 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125936 (CSS)  physical=S2S3CZ[0-1]CZ[4-7]CZ[5-6]  logical=S0Z1CZ[0-1]
+  id=125938 (CSS)  physical=S6S7CZ[0-3]CZ[1-5]CZ[2-4]  logical=S0S1CZ[0-1]
+  id=125944 (CSS)  physical=S5S6CZ[3-4]  logical=S0Z1CZ[0-1]
+  id=125945 (CSS)  physical=S3S7CZ[0-6]CZ[1-2]  logical=S0  strongFT
+  id=125952 (CSS)  physical=S4S5CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=125957 (CSS)  physical=S1S6CZ[0-3]  logical=S0
+  id=126175 (CSS)  physical=S2S7CZ[0-3]CZ[1-6]  logical=S0S1CZ[0-1]  strongFT
+  id=126240 (CSS)  physical=S5S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=126329 (CSS)  physical=S†1S3S4S5CZ[0-7]CZ[2-6]  logical=S0S1  strongFT
+  id=126353 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=126354 (CSS)  physical=S1S7CZ[0-2]  logical=S0
+  id=126357 (CSS)  physical=S0S1CZ[2-6]CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=126358 (CSS)  physical=S†0S1CZ[2-6]CZ[3-5]CZ[4-7]  logical=S0CZ[0-1]  strongFT
+  id=126361 (CSS)  physical=S2S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=126362 (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=126376 (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=126396 (CSS)  physical=S2S7CZ[1-3]  logical=S0S1CZ[0-1]
+  id=126551 (CSS)  physical=S†2S3S4S5S6S7Z1  logical=S†1S0CZ[0-1]  strongFT
+  id=126568 (CSS)  physical=S†0S†1S3S4S5S7  logical=S0Z1CZ[0-1]  strongFT
+  id=126623 (CSS)  physical=S†4S7Z5CZ[0-2]CZ[1-3]  logical=S0Z1CZ[0-1]  strongFT
+  id=126727 (CSS)  physical=S4S5CZ[0-1]  logical=S0
+  id=126728 (CSS)  physical=S2S4CZ[0-1]  logical=S0
+  id=126729 (CSS)  physical=S5S7CZ[1-3]  logical=S0
+  id=126731 (CSS)  physical=S†1S†2S3S4S5S6Z0  logical=S0Z1CZ[0-1]  strongFT
+  id=126739 (CSS)  physical=S6S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=126752 (CSS)  physical=S†7S1CZ[2-5]CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=126760 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=126856 (CSS)  physical=S†5S2S4S6CZ[0-1]CZ[3-7]  logical=S0Z1CZ[0-1]
+  id=126885 (CSS)  physical=S†3S†4S0S1S6S7CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=126916 (CSS)  physical=S†0S†1Z2Z6CZ[3-5]CZ[4-7]  logical=S0Z1CZ[0-1]  strongFT
+  id=127006 (CSS)  physical=S†0S†1S3S4S6S7CZ[2-5]  logical=S0Z1CZ[0-1]  strongFT
+  id=127013 (CSS)  physical=S†4S†5S1S6CZ[0-7]CZ[2-3]  logical=S†1S0  strongFT
+  id=127016 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=127038 (CSS)  physical=S3S4Z1CZ[0-6]CZ[2-5]  logical=S0S1  strongFT
+  id=127047 (CSS)  physical=S†1S†6Z0Z5CZ[2-4]CZ[3-7]  logical=S†1S0  strongFT
+  id=127205 (CSS)  physical=S†1S†6S4S5CZ[0-7]CZ[2-3]  logical=S†1S0  strongFT
+  id=127402 (CSS)  physical=S4S5CZ[0-6]CZ[1-3]  logical=S0S1  strongFT
+  id=127416 (CSS)  physical=S†2S†3S4S5S6S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=127417 (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=127427 (CSS)  physical=S0S2CZ[1-7]CZ[3-5]CZ[4-6]  logical=S0Z1CZ[0-1]  strongFT
+  id=127431 (CSS)  physical=S4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=127478 (CSS)  physical=S†1S2Z4Z6CZ[0-3]CZ[5-7]  logical=S0CZ[0-1]  strongFT
+  id=127488 (CSS)  physical=S†6S4S5CZ[1-2]  logical=S0S1CZ[0-1]  strongFT
+  id=127518 (CSS)  physical=S†1S5S6CZ[0-2]CZ[3-7]  logical=S0S1CZ[0-1]
+  id=127532 (CSS)  physical=S3S6CZ[2-4]  logical=S0S1
+  id=127533 (CSS)  physical=S†0S†1S2S3S4S6  logical=S0Z1CZ[0-1]  strongFT
+  id=127582 (CSS)  physical=S†2S1Z4Z6CZ[0-5]CZ[3-7]  logical=S0CZ[0-1]  strongFT
+  id=127605 (CSS)  physical=S†5S3S7CZ[0-4]  logical=S0S1CZ[0-1]  strongFT
+  id=127632 (CSS)  physical=S†1S†2S0S3S4S7  logical=S0Z1CZ[0-1]  strongFT
+  id=127648 (CSS)  physical=S†1S5S7Z4CZ[0-2]  logical=S0  strongFT
+  id=127687 (CSS)  physical=S†1S2S6CZ[0-4]  logical=S0  strongFT
+  id=127757 (CSS)  physical=S†2S3S4S5S6S7Z0  logical=S†1S0CZ[0-1]  strongFT
+  id=127759 (CSS)  physical=S†4S5S7CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=127783 (CSS)  physical=S3S4CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=127818 (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=128038 (CSS)  physical=S3S7CZ[1-2]  logical=S0Z1CZ[0-1]
+  id=128042 (CSS)  physical=S2S3S4S5S6S7Z0Z1  logical=S0Z1CZ[0-1]  strongFT
+  id=128044 (CSS)  physical=S†1S†3S2S4S7CZ[0-5]  logical=S†1S0  strongFT
+  id=128045 (CSS)  physical=S5S6Z3CZ[0-7]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=128078 (CSS)  physical=S†1S2S6CZ[0-4]  logical=S0  strongFT
+  id=128194 (CSS)  physical=S2S6CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=128209 (CSS)  physical=S†0S†1S2S3S6S7  logical=S0Z1CZ[0-1]  strongFT
+  id=128211 (CSS)  physical=S†5S6Z3CZ[0-4]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=128256 (CSS)  physical=S†0S2S6CZ[1-4]  logical=S0  strongFT
+  id=128277 (CSS)  physical=S2S7CZ[0-1]  logical=S0Z1CZ[0-1]
+
+[[9,3,2]]
+  id=581    (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=591    (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=597    (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=622    (CSS)  physical=S†1S6S7S8CZ[0-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=905    (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=1081   (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=1127   (CSS)  physical=S3S4S6S7S8CZ[2-5]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=2051   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=2084   (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=2085   (CSS)  physical=S5S7CZ[4-6]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=2098   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=2131   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=2153   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=2163   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=2165   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=2175   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=2218   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=2608   (CSS)  physical=S5S8CZ[0-4]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=2841   (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=2859   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=2872   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=2879   (CSS)  physical=S†7S8CZ[0-3]CZ[1-2]  logical=S0CZ[0-2]  strongFT
+  id=2912   (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=2982   (CSS)  physical=S4S6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=2992   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=2993   (CSS)  physical=S†6S4S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[1-2]  strongFT
+  id=2994   (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=3000   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=3022   (CSS)  physical=S†5S7CZ[0-4]CZ[1-6]  logical=S0S2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3031   (CSS)  physical=S†5S7CZ[0-4]CZ[1-6]  logical=S0S2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3082   (CSS)  physical=S5S6Z2CZ[0-7]CZ[4-8]  logical=S0Z1CZ[0-1]CZ[0-2]  strongFT
+  id=3087   (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=3091   (CSS)  physical=S†3S†6S5CZ[0-8]CZ[1-2]CZ[4-7]  logical=S†1S0CZ[0-2]  strongFT
+  id=3108   (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=3113   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=3129   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=3130   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=3161   (CSS)  physical=S†6S7CZ[0-4]CZ[1-5]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3174   (CSS)  physical=S†6S5S7S8CZ[0-4]CZ[1-2]  logical=S0Z2CZ[1-2]  strongFT
+  id=3216   (CSS)  physical=S†0S†2S4S7S8CZ[5-6]  logical=S0S1Z2CZ[0-1]CZ[1-2]  strongFT
+  id=3232   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=3236   (CSS)  physical=S†6S7CZ[0-4]CZ[1-5]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3316   (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=3615   (CSS)  physical=S6S7CZ[0-5]CZ[1-4]  logical=S0S1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3776   (CSS)  physical=S†6S7CZ[0-5]CZ[1-4]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3789   (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=3815   (CSS)  physical=S†6S7CZ[0-5]CZ[1-4]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=3900   (CSS)  physical=S†5S8CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=3905   (CSS)  physical=S†0S6CZ[2-5]CZ[3-4]  logical=S0CZ[0-1]  strongFT
+  id=3912   (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=3920   (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=3922   (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=4052   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4152   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4171   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4206   (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4210   (CSS)  physical=S5S8CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=4216   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4228   (CSS)  physical=S†5S7CZ[0-6]CZ[1-4]  logical=S0S2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=4229   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4234   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4242   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4243   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4244   (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4271   (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=4337   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4338   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4357   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4358   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4364   (CSS)  physical=S†6S7Z1CZ[0-8]CZ[2-4]CZ[3-5]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]
+  id=4376   (CSS)  physical=S4S6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=4382   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4422   (CSS)  physical=S†5S4CZ[0-7]CZ[1-6]  logical=S†1S0  strongFT
+  id=4430   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4447   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4448   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4571   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4573   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4575   (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4705   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4834   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=4837   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4842   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4896   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=4969   (CSS)  physical=S†5S4CZ[0-7]CZ[1-6]  logical=S†1S0  strongFT
+  id=4981   (CSS)  physical=S†5S4CZ[0-7]CZ[1-6]  logical=S†1S0  strongFT
+  id=8828   (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=9181   (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=9186   (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=9202   (CSS)  physical=S4S8CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=11985  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=12000  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=15057  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=15100  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=15519  (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=15542  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=15561  (CSS)  physical=S†6S7CZ[0-5]CZ[1-4]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=15615  (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=15621  (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=15633  (CSS)  physical=S†4S6S7S8CZ[0-5]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=15647  (CSS)  physical=S5S6CZ[0-4]  logical=S0Z1CZ[0-1]
+  id=15648  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=15669  (CSS)  physical=S†4S3S5CZ[0-8]CZ[1-7]CZ[2-6]  logical=S0  strongFT
+  id=15738  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=15740  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=15769  (CSS)  physical=S†2S5CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=15791  (non-CSS)  physical=S7S8CZ[3-4]  logical=S0Z2CZ[0-2]
+  id=15848  (CSS)  physical=S†2S5CZ[0-4]CZ[1-3]  logical=S0  strongFT
+  id=15849  (non-CSS)  physical=S7S8CZ[4-6]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=15890  (CSS)  physical=S3S4CZ[0-6]CZ[1-5]  logical=S0S1  strongFT
+  id=15997  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=16000  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=16002  (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=16003  (CSS)  physical=S4S5CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=16006  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=16010  (CSS)  physical=S7S8CZ[5-6]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=16029  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=16067  (CSS)  physical=S0S6S7S8CZ[2-5]CZ[3-4]  logical=S0Z1Z2CZ[0-2]CZ[1-2]  strongFT
+  id=16068  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=16072  (CSS)  physical=S7S8Z4CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=16073  (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=16102  (CSS)  physical=S5S8CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=16110  (CSS)  physical=S†4S8CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=16115  (CSS)  physical=S†1S6S7S8CZ[0-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=16117  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=16118  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=16119  (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=16121  (CSS)  physical=S†4S5S6S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[1-2]  strongFT
+  id=16122  (CSS)  physical=S4S8CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=16123  (CSS)  physical=S4S5S6S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=16124  (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0  strongFT
+  id=16597  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=17234  (CSS)  physical=S†2S4S7CZ[3-5]CZ[6-8]  logical=S0S2CZ[0-1]
+  id=17336  (CSS)  physical=S†3S4S5CZ[2-6]  logical=S0S1CZ[0-1]  strongFT
+  id=18483  (non-CSS)  physical=S1S4S7Z2CZ[0-8]  logical=S0Z2  strongFT
+  id=18957  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=20421  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=21444  (CSS)  physical=S4S5CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=21556  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21573  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21574  (CSS)  physical=S5S7CZ[4-6]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=21579  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21714  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=21715  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=21720  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21748  (CSS)  physical=S†4S†5S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=21764  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21766  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=21768  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21769  (non-CSS)  physical=S7S8CZ[5-6]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=21770  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=21798  (CSS)  physical=S6S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]  strongFT
+  id=21799  (CSS)  physical=S4S8CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=21826  (CSS)  physical=S†1S†3S5S7S8CZ[0-2]CZ[4-6]  logical=S0S1Z2CZ[0-1]CZ[1-2]
+  id=21846  (CSS)  physical=S6S8Z4CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-1]CZ[0-2]  strongFT
+  id=21852  (CSS)  physical=S†4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z2CZ[1-2]  strongFT
+  id=21913  (CSS)  physical=S†4S5S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=21930  (CSS)  physical=S1S3S6CZ[0-7]CZ[2-4]CZ[5-8]  logical=S0S1CZ[1-2]  strongFT
+  id=21937  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=22017  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=22035  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=22051  (CSS)  physical=S4S5CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=22235  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=22298  (CSS)  physical=S†2S3S4S6S8Z1CZ[0-5]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=22436  (CSS)  physical=S†0S†1S2S3S5S8  logical=S0Z1CZ[0-1]  strongFT
+  id=22437  (CSS)  physical=S5S6S8CZ[0-1]CZ[4-7]  logical=S0S1Z2CZ[0-2]
+  id=23142  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=23144  (CSS)  physical=S†2S4S6S7S8Z1CZ[0-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=23146  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=23154  (CSS)  physical=S1S5CZ[0-4]  logical=S0
+  id=23245  (CSS)  physical=S5S6CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=23246  (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=23249  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=23253  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=23269  (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=23270  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=23277  (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=23281  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=23297  (CSS)  physical=S†6S7CZ[0-5]CZ[1-4]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=23343  (CSS)  physical=S5S6S8CZ[0-3]CZ[1-2]CZ[4-7]  logical=S0S2Z1CZ[0-1]  strongFT
+  id=23344  (CSS)  physical=S†5S†6S8CZ[0-3]CZ[1-2]CZ[4-7]  logical=S†2S0CZ[0-1]  strongFT
+  id=23365  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=23432  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=23433  (CSS)  physical=S7S8CZ[5-6]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=23472  (CSS)  physical=S4S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=26477  (CSS)  physical=S5S6Z2CZ[0-8]CZ[4-7]  logical=S0Z1CZ[0-1]CZ[0-2]  strongFT
+  id=27081  (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=31165  (non-CSS)  physical=S5S7CZ[3-4]  logical=S0S1
+  id=39711  (CSS)  physical=S1S2S4S5S6S7S8CZ[0-3]  logical=S†1S†2S0CZ[1-2]  strongFT
+  id=39789  (CSS)  physical=S†0S†1S†3S4S5S6  logical=S†1S0  strongFT
+  id=39891  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=40075  (CSS)  physical=S3S6Z4CZ[0-5]CZ[1-2]  logical=S†1S0  strongFT
+  id=40079  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=40229  (non-CSS)  physical=S7S8CZ[5-6]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=40241  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=40266  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=40297  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=40403  (CSS)  physical=S6S7CZ[3-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=40431  (CSS)  physical=S6S7CZ[3-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=40569  (CSS)  physical=S†2S1S6CZ[0-3]  logical=S0  strongFT
+  id=41390  (CSS)  physical=S2S3CZ[0-6]CZ[1-4]  logical=S0  strongFT
+  id=41418  (CSS)  physical=S7S8CZ[0-6]CZ[1-5]CZ[3-4]  logical=S0Z2CZ[0-2]
+  id=41425  (CSS)  physical=S†0S†1S2S3S7S8  logical=S0Z1Z2CZ[0-1]CZ[0-2]  strongFT
+  id=41469  (non-CSS)  physical=S†1S5S8CZ[4-7]  logical=S0S1CZ[0-1]  strongFT
+  id=46310  (CSS)  physical=S†5S4Z0Z1CZ[2-7]CZ[3-6]  logical=S†1S0CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=46724  (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0S1Z2CZ[0-2]  strongFT
+  id=46916  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=47260  (CSS)  physical=S7S8CZ[0-1]  logical=S0Z2CZ[0-2]
+  id=47344  (CSS)  physical=S6S7S8CZ[0-3]CZ[4-5]  logical=S†2S0CZ[0-2]
+  id=47794  (CSS)  physical=S†4S†6S2S3S8CZ[0-1]CZ[5-7]  logical=S†1S0S2CZ[0-2]CZ[1-2]
+  id=57607  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=57632  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=57655  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=57656  (CSS)  physical=S3S4S6S7S8CZ[2-5]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=58904  (CSS)  physical=S4S6S8CZ[0-3]CZ[1-7]  logical=S†1S0Z2CZ[0-1]CZ[0-2]
+  id=59117  (CSS)  physical=S†2S1S6CZ[0-4]CZ[3-5]CZ[7-8]  logical=S0Z2CZ[0-2]CZ[1-2]
+  id=59168  (CSS)  physical=S†0S†7S2S5S8CZ[1-3]CZ[4-6]  logical=S0S1CZ[0-1]CZ[1-2]  strongFT
+  id=62061  (non-CSS)  physical=S7S8CZ[3-4]  logical=S0Z2CZ[0-2]
+  id=62303  (CSS)  physical=S†8S6S7CZ[0-3]CZ[1-4]CZ[2-5]  logical=S†1S0S2CZ[0-2]CZ[1-2]  strongFT
+  id=62696  (CSS)  physical=S6S8CZ[5-7]  logical=S0S2Z1CZ[0-1]CZ[1-2]
+  id=62700  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=62895  (CSS)  physical=S6S7S8CZ[0-4]CZ[1-3]CZ[2-5]  logical=S†2S0S1CZ[0-2]CZ[1-2]  strongFT
+  id=62902  (CSS)  physical=S†0S†1S2S3S7S8  logical=S0  strongFT
+  id=68121  (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]  strongFT
+  id=69284  (CSS)  physical=S†3S2S4S5S8Z6CZ[0-1]  logical=S0CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=76195  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=76202  (CSS)  physical=S†0S2S4CZ[1-3]  logical=S0  strongFT
+  id=80517  (CSS)  physical=S2S3CZ[0-5]CZ[1-4]  logical=S0  strongFT
+  id=84795  (CSS)  physical=S†2S4S7CZ[3-5]CZ[6-8]  logical=S0S2CZ[1-2]
+  id=85189  (CSS)  physical=S†4S1S2CZ[0-3]  logical=S0  strongFT
+  id=89225  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=89478  (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=91237  (CSS)  physical=S†1S†3S4S7S8CZ[0-2]CZ[5-6]  logical=S0S1Z2CZ[0-1]CZ[1-2]  strongFT
+  id=91765  (CSS)  physical=S1S3S6CZ[0-2]CZ[4-5]CZ[7-8]  logical=S0S1Z2CZ[0-2]
+  id=95343  (CSS)  physical=S4S5Z0Z1CZ[2-7]CZ[3-6]  logical=S0Z1CZ[0-1]CZ[0-2]  strongFT
+  id=95563  (CSS)  physical=S†6S7CZ[0-3]CZ[1-2]  logical=S0CZ[0-2]  strongFT
+  id=101024 (CSS)  physical=S†2S1S8Z4CZ[0-3]  logical=S0Z1  strongFT
+  id=104736 (CSS)  physical=S4S5Z0Z1CZ[2-7]CZ[3-6]  logical=S0Z1CZ[0-1]CZ[0-2]  strongFT
+  id=104769 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=105593 (CSS)  physical=S5S6CZ[3-4]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=107424 (CSS)  physical=S†2S1S3CZ[0-8]  logical=S0  strongFT
+  id=109010 (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=109476 (CSS)  physical=S†1S†6S2S4S7CZ[0-8]CZ[3-5]  logical=S0S1CZ[0-1]CZ[0-2]  strongFT
+  id=110577 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=110681 (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0S1Z2CZ[1-2]  strongFT
+  id=110682 (CSS)  physical=S†2S4S7CZ[3-5]CZ[6-8]  logical=S0S2CZ[0-1]
+  id=110702 (CSS)  physical=S†4S†6S2S7S8CZ[3-5]  logical=S0Z2CZ[1-2]  strongFT
+  id=110705 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=115396 (non-CSS)  physical=S6S7CZ[3-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=115476 (CSS)  physical=S†2S4S7CZ[3-5]CZ[6-8]  logical=S0S2CZ[1-2]
+  id=123241 (CSS)  physical=S†4S†5Z8CZ[2-7]CZ[3-6]  logical=S0Z1CZ[0-1]CZ[0-2]  strongFT
+  id=123380 (CSS)  physical=S†5S4Z0Z1CZ[2-7]CZ[3-6]  logical=S†1S0CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=123401 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=130077 (CSS)  physical=S4S6S7CZ[0-1]CZ[2-3]CZ[5-8]  logical=S0S2Z1CZ[0-1]
+  id=131752 (CSS)  physical=S†0S†1S†4S2S3S5S6S7S8  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=138472 (CSS)  physical=S5S7CZ[4-6]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=141856 (CSS)  physical=S4S5Z8CZ[2-7]CZ[3-6]  logical=S0Z1CZ[0-1]CZ[0-2]  strongFT
+  id=141964 (CSS)  physical=S†5S4Z0Z1CZ[2-7]CZ[3-6]  logical=S†1S0CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=143370 (non-CSS)  physical=S5S7CZ[4-6]  logical=S0Z1CZ[0-1]
+  id=150811 (CSS)  physical=S†4S6CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=152723 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=152765 (CSS)  physical=S†5S4Z0Z1Z8CZ[2-7]CZ[3-6]  logical=S0CZ[0-1]CZ[0-2]  strongFT
+  id=152865 (CSS)  physical=S4S5Z8CZ[2-7]CZ[3-6]  logical=S0Z2CZ[0-1]CZ[0-2]  strongFT
+  id=165397 (non-CSS)  physical=S6S7CZ[2-3]  logical=S0Z2CZ[0-2]
+  id=165400 (CSS)  physical=S†4S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=165728 (CSS)  physical=S2S4S6S7S8Z1CZ[0-5]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=165735 (CSS)  physical=S†0S2S6S7S8CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=170181 (CSS)  physical=S†5S†7S4S6S8CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=170422 (CSS)  physical=S†2S4S5CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=170429 (CSS)  physical=S†2S4S5CZ[3-6]  logical=S0S1CZ[0-1]  strongFT
+  id=170515 (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=170525 (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=170526 (CSS)  physical=S2S4S6S7S8Z0Z1CZ[3-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=170546 (CSS)  physical=S†3S4S5CZ[2-6]  logical=S0S1CZ[0-1]  strongFT
+  id=170591 (CSS)  physical=S†4S2S6S7S8Z0Z1CZ[3-5]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=170655 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=171028 (CSS)  physical=S†2S†3S4S5S6S7  logical=S0Z1Z2CZ[0-1]CZ[0-2]  strongFT
+  id=171083 (CSS)  physical=S†2S3S4S5S6S7Z0Z1  logical=S†1S0Z2CZ[0-2]CZ[1-2]  strongFT
+  id=171367 (CSS)  physical=S3S4S8CZ[2-5]CZ[6-7]  logical=S0S2Z1CZ[0-1]
+  id=171756 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=171784 (CSS)  physical=S†2S4S6S7S8CZ[3-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=171870 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=171872 (CSS)  physical=S7S8CZ[2-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=171930 (CSS)  physical=S†2S†3S4S5S6S7  logical=S0Z1Z2CZ[0-1]CZ[0-2]  strongFT
+  id=172029 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=172050 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=172055 (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=172279 (CSS)  physical=S†2S3S4S5S6S7Z0Z1  logical=S†1S0Z2CZ[0-2]CZ[1-2]  strongFT
+  id=172594 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=172639 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=172994 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=173002 (CSS)  physical=S†2S†3S4S5S6S7  logical=S0Z1Z2CZ[0-1]CZ[0-2]  strongFT
+  id=173671 (CSS)  physical=S†4S3S5CZ[2-6]  logical=S0  strongFT
+  id=173819 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=175012 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=175416 (CSS)  physical=S4S8CZ[3-7]  logical=S0S1S2CZ[1-2]
+  id=175418 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=177230 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=177503 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=179385 (CSS)  physical=S3S4S8CZ[2-5]CZ[6-7]  logical=S0S1S2
+  id=179813 (CSS)  physical=S7S8CZ[1-5]CZ[2-6]  logical=S0S1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=179875 (CSS)  physical=S6S8CZ[2-7]  logical=S0S1S2CZ[0-1]
+  id=179944 (CSS)  physical=S†3S7Z1CZ[0-8]CZ[2-4]CZ[5-6]  logical=S0S1S2CZ[0-1]CZ[0-2]
+  id=179952 (CSS)  physical=S4S5CZ[0-6]CZ[1-7]CZ[2-8]  logical=S0S1
+  id=179994 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z2CZ[0-2]
+  id=180022 (CSS)  physical=S5S8CZ[2-4]  logical=S0Z1CZ[0-1]
+  id=180026 (non-CSS)  physical=S5S7CZ[4-6]  logical=S0Z1CZ[0-1]
+  id=180077 (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=180085 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=180124 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=180148 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=180185 (CSS)  physical=S6S8CZ[3-7]  logical=S0S1S2CZ[0-1]
+  id=180190 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=180540 (non-CSS)  physical=S6S7CZ[4-5]  logical=S0Z1CZ[0-1]
+  id=180588 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=183653 (CSS)  physical=S†0S3S5CZ[2-4]  logical=S0  strongFT
+  id=183657 (CSS)  physical=S†0S3S4CZ[2-5]  logical=S0  strongFT
+  id=184698 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=184753 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=184756 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=184760 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=184973 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=185149 (CSS)  physical=S7S8Z4Z5Z6CZ[0-3]CZ[1-2]  logical=S0Z2CZ[0-2]  strongFT
+  id=185150 (non-CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=185151 (CSS)  physical=S†2S†3S0S4S5S6  logical=S0Z1CZ[0-1]  strongFT
+  id=193293 (non-CSS)  physical=S†3S2Z6CZ[0-5]CZ[1-4]  logical=S†1S0Z2  strongFT
+  id=196541 (non-CSS)  physical=S†1S2Z5CZ[0-6]CZ[3-4]  logical=S0Z1Z2CZ[0-1]  strongFT
+  id=198137 (CSS)  physical=S†1S†2S0S3S4S7  logical=S0Z1CZ[0-1]  strongFT
+  id=199430 (non-CSS)  physical=S†6S7Z4CZ[1-3]CZ[2-5]  logical=S0Z1CZ[0-2]  strongFT
+  id=201033 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=203568 (non-CSS)  physical=S†7S6Z2Z5Z8CZ[0-4]CZ[1-3]  logical=S0Z1CZ[0-2]  strongFT
+  id=225794 (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=225795 (CSS)  physical=S4S5CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=225806 (CSS)  physical=S†6S7CZ[0-5]CZ[1-4]  logical=S0S1CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=225815 (CSS)  physical=S4S7CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=225826 (CSS)  physical=S†4S7CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=225833 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=225836 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=225840 (CSS)  physical=S4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=225867 (CSS)  physical=S†4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=225868 (CSS)  physical=S4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]  strongFT
+  id=225885 (CSS)  physical=S1S4CZ[0-3]  logical=S0
+  id=225928 (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=225932 (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=225935 (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=225936 (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=225937 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=225941 (CSS)  physical=S1S3CZ[0-2]  logical=S0
+  id=225961 (CSS)  physical=S3S4Z6CZ[0-1]CZ[2-5]  logical=S0S1Z2  strongFT
+  id=225969 (CSS)  physical=S†4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z2CZ[1-2]  strongFT
+  id=225972 (CSS)  physical=S†1S5S6S7CZ[0-4]  logical=S0Z1Z2CZ[0-1]CZ[0-2]CZ[1-2]
+  id=225975 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=226047 (CSS)  physical=S†1S†2S0S3S4S7  logical=S0Z1CZ[0-1]  strongFT
+  id=226144 (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+  id=226249 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=226603 (CSS)  physical=S2S5S6S7S8Z1CZ[0-3]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=226609 (CSS)  physical=S1S5S7S8CZ[0-3]CZ[2-6]  logical=S0S1Z2CZ[1-2]  strongFT
+  id=227113 (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=227143 (CSS)  physical=S4S5CZ[0-7]CZ[1-6]CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=227394 (CSS)  physical=S3S5CZ[2-4]  logical=S0Z1CZ[0-1]
+  id=227410 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=227456 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=227457 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1
+  id=227503 (CSS)  physical=S6S7CZ[4-5]  logical=S0Z1Z2CZ[0-1]CZ[0-2]
+  id=227585 (CSS)  physical=S†6S7CZ[0-3]CZ[1-2]  logical=S0CZ[0-2]  strongFT
+  id=227599 (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=227644 (CSS)  physical=S2S5S6S7S8CZ[0-3]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=227651 (CSS)  physical=S†1S5S7S8CZ[0-3]CZ[2-6]  logical=S0S1Z2CZ[1-2]  strongFT
+  id=227858 (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=227940 (CSS)  physical=S3S4Z6CZ[0-1]CZ[2-5]  logical=S0S1Z2  strongFT
+  id=227945 (CSS)  physical=S†3S2S5S6S7Z1CZ[0-4]  logical=S0S1Z2CZ[0-1]CZ[0-2]  strongFT
+
+[[9,4,2]]
+  id=273    (CSS)  physical=S5S6S7S8Z1CZ[0-4]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=384    (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=574    (CSS)  physical=S7S8CZ[0-3]CZ[1-2]  logical=S0Z3CZ[0-3]  strongFT
+  id=671    (CSS)  physical=S7S8Z4CZ[0-3]CZ[1-2]  logical=S0Z1Z3CZ[0-3]  strongFT
+  id=677    (CSS)  physical=S†4S5CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=734    (CSS)  physical=S0S6S7S8CZ[2-5]CZ[3-4]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[2-3]  strongFT
+  id=746    (CSS)  physical=S5S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-3]CZ[1-2]CZ[1-3]  strongFT
+  id=761    (CSS)  physical=S5S6S7S8Z4CZ[0-3]CZ[1-2]  logical=S0Z2Z3CZ[0-1]CZ[0-3]CZ[1-2]CZ[1-3]  strongFT
+  id=778    (CSS)  physical=S4S8CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=790    (CSS)  physical=S5S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=794    (CSS)  physical=S†4S8CZ[0-3]CZ[1-2]  logical=S0CZ[0-1]  strongFT
+  id=3361   (CSS)  physical=S5S6S7S8Z1CZ[0-4]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=5903   (CSS)  physical=S†4S5S6S7CZ[2-3]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=6055   (CSS)  physical=S5S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=6056   (CSS)  physical=S5S6S7S8Z4CZ[0-3]CZ[1-2]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=6073   (CSS)  physical=S†5S6S7S8CZ[3-4]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=8869   (CSS)  physical=S†1S†3S6S7S8CZ[0-2]CZ[4-5]  logical=S0S1Z2Z3CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=8924   (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=8925   (non-CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=8968   (CSS)  physical=S†4S6S7S8CZ[1-3]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=11800  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=11882  (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=12047  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=13968  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=13970  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=14002  (CSS)  physical=S†1S†3S2S4S5S6S7S8Z0  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=15445  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=17840  (CSS)  physical=S†0S†2S1S3S4S5S7S8  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=21289  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=21607  (CSS)  physical=S†2S0S3S4S6S7S8CZ[1-5]  logical=S0S1Z2Z3CZ[2-3]  strongFT
+  id=21822  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=25916  (CSS)  physical=S†0S†1S2S3S4S5  logical=S0Z1CZ[0-1]  strongFT
+  id=25918  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=26956  (CSS)  physical=S1S2S6S7S8CZ[0-3]  logical=S0Z2Z3CZ[2-3]  strongFT
+  id=26971  (CSS)  physical=S1S2S4S5S6CZ[0-3]  logical=S0Z1Z2CZ[1-2]  strongFT
+  id=28406  (CSS)  physical=S†0S†1S2S3S7S8  logical=S0Z3CZ[0-3]  strongFT
+  id=28411  (CSS)  physical=S†2S5S6S8CZ[1-4]CZ[3-7]  logical=S0S1S3Z2CZ[0-1]CZ[1-2]  strongFT
+  id=45162  (CSS)  physical=S†0S3S5S8CZ[1-7]CZ[2-6]  logical=S0S1S2S3CZ[0-1]CZ[0-2]CZ[1-3]  strongFT
+  id=46061  (CSS)  physical=S†1S†2S6S7S8CZ[0-4]CZ[3-5]  logical=S0S1Z2Z3CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=46505  (CSS)  physical=S3S5S7CZ[0-2]CZ[1-8]CZ[4-6]  logical=S0S2S3Z1CZ[1-2]  strongFT
+  id=47722  (CSS)  physical=S2S5S7S8Z0CZ[1-3]CZ[4-6]  logical=S†1S0S2Z3CZ[1-2]CZ[1-3]  strongFT
+  id=48742  (CSS)  physical=S5S6S7S8Z1CZ[0-3]CZ[2-4]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=52871  (CSS)  physical=S†6S1S5CZ[0-2]CZ[3-7]CZ[4-8]  logical=S†2S0S1CZ[0-1]CZ[0-3]CZ[1-2]CZ[1-3]  strongFT
+  id=52873  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=53685  (CSS)  physical=S†8S1S6S7Z2CZ[0-4]CZ[3-5]  logical=S0CZ[0-1]CZ[0-2]CZ[0-3]CZ[2-3]  strongFT
+  id=54005  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=55270  (CSS)  physical=S†1S2S5S6Z4CZ[0-8]CZ[3-7]  logical=S†1S0Z2CZ[0-3]CZ[1-2]  strongFT
+  id=58300  (CSS)  physical=S5S6S7S8Z0Z3CZ[2-4]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=60735  (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+  id=63530  (CSS)  physical=S†5S6S7S8Z1CZ[0-2]CZ[3-4]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=65244  (CSS)  physical=S4S5CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=67387  (CSS)  physical=S7S8CZ[2-6]  logical=S0S1Z3CZ[0-1]CZ[0-3]CZ[1-3]
+  id=72134  (CSS)  physical=S†0S2S3CZ[1-4]  logical=S0  strongFT
+  id=76884  (CSS)  physical=S†4S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=87340  (CSS)  physical=S5S6S7S8Z0Z2CZ[1-3]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=88523  (CSS)  physical=S†5S6S7S8CZ[0-4]CZ[1-2]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=88524  (CSS)  physical=S†5S6S7S8CZ[0-3]CZ[1-2]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=88527  (CSS)  physical=S5S6S7S8Z1CZ[0-4]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=88552  (CSS)  physical=S4S5CZ[0-3]CZ[1-2]  logical=S0Z1CZ[0-1]  strongFT
+  id=88728  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=88806  (CSS)  physical=S†1S†2S4S5S7CZ[0-8]CZ[3-6]  logical=S0S3Z1CZ[0-1]CZ[0-2]
+  id=88817  (CSS)  physical=S4S5CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=88820  (CSS)  physical=S†0S†3S1S4S5S6S7S8  logical=S†1S0Z2Z3CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=88884  (CSS)  physical=S4S5CZ[0-3]  logical=S0Z1CZ[0-1]
+  id=89001  (CSS)  physical=S3S4Z7CZ[0-2]CZ[1-5]  logical=S0S1Z3  strongFT
+  id=89581  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]
+  id=89601  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=89628  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]
+  id=89635  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=89636  (CSS)  physical=S†4S6S7S8CZ[3-5]  logical=S†1S0Z2Z3CZ[0-2]CZ[0-3]CZ[2-3]
+  id=89640  (CSS)  physical=S†5S6S7S8CZ[2-3]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=89645  (CSS)  physical=S5S6S7S8Z0Z2CZ[3-4]  logical=S0S1Z2Z3CZ[2-3]
+  id=89746  (CSS)  physical=S6S7CZ[4-5]  logical=S0S1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]
+  id=89750  (CSS)  physical=S†4S6S7S8CZ[3-5]  logical=S†2S0Z3CZ[1-2]CZ[1-3]
+  id=90289  (CSS)  physical=S4S5CZ[2-3]  logical=S0Z1CZ[0-1]
+  id=90516  (CSS)  physical=S†7S8Z1CZ[0-4]CZ[2-6]CZ[3-5]  logical=S0S1S2CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=90543  (CSS)  physical=S†0S†3S2S4S5S6S7S8  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=90935  (CSS)  physical=S7S8CZ[1-6]  logical=S0S1S2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=90936  (CSS)  physical=S7S8CZ[1-6]  logical=S0S1S2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=90943  (CSS)  physical=S7S8CZ[1-6]  logical=S0S1S2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=91748  (CSS)  physical=S3S4Z6CZ[0-1]CZ[2-5]  logical=S0S1Z2  strongFT
+  id=92058  (CSS)  physical=S3S4Z6CZ[0-1]CZ[2-5]  logical=S0S1Z2  strongFT
+  id=92062  (CSS)  physical=S3S4Z7CZ[0-2]CZ[1-5]  logical=S0S1Z3  strongFT
+  id=92173  (CSS)  physical=S†0S5Z2CZ[1-3]CZ[4-6]CZ[7-8]  logical=S0S1Z3CZ[0-1]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=92232  (CSS)  physical=S†4S5Z6CZ[0-1]CZ[2-3]  logical=S0Z2CZ[0-1]  strongFT
+  id=92396  (CSS)  physical=S†5S6Z4CZ[0-1]CZ[2-3]  logical=S0Z1CZ[0-2]  strongFT
+  id=92428  (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=98577  (CSS)  physical=S6S7Z8CZ[0-1]CZ[2-5]CZ[3-4]  logical=S†1S†2S0Z3CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=101663 (CSS)  physical=S4S5S6S7Z1CZ[0-3]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=101678 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=101698 (CSS)  physical=S†4S5S6S7CZ[2-3]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]
+  id=101720 (CSS)  physical=S†2S3S5S6CZ[0-4]CZ[1-7]  logical=S0S2S3CZ[0-1]CZ[0-2]CZ[0-3]  strongFT
+  id=101740 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=101750 (CSS)  physical=S6S7CZ[4-5]  logical=S0S1S2Z3CZ[0-1]CZ[0-3]CZ[1-3]CZ[2-3]
+  id=101772 (CSS)  physical=S†1S†2S0S3S4S5S6S7  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=101794 (CSS)  physical=S†2S†4S3S5CZ[0-7]CZ[1-6]  logical=S†1S0S2CZ[0-3]  strongFT
+  id=101795 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=101883 (CSS)  physical=S2S3S5S6CZ[0-4]CZ[1-7]  logical=S0Z1Z3CZ[0-2]CZ[0-3]CZ[1-3]  strongFT
+  id=101906 (CSS)  physical=S4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z1Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=101907 (CSS)  physical=S†4S5S6S7CZ[0-3]CZ[1-2]  logical=S0Z2Z3CZ[0-1]CZ[0-2]CZ[0-3]CZ[1-2]CZ[1-3]CZ[2-3]  strongFT
+  id=101912 (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=101927 (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+
+[[9,5,2]]
+  id=1062   (CSS)  physical=S4S5S6S7Z0Z1CZ[2-3]  logical=S0S1Z2Z3Z4CZ[0-2]CZ[0-3]CZ[0-4]CZ[1-2]CZ[1-3]CZ[1-4]CZ[2-3]CZ[2-4]CZ[3-4]
+  id=2010   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=2144   (CSS)  physical=S†4S1S2S5S6S7S8CZ[0-3]  logical=S0Z2Z3Z4CZ[1-2]CZ[1-3]CZ[1-4]CZ[2-3]CZ[2-4]CZ[3-4]  strongFT
+  id=7179   (CSS)  physical=S2S3CZ[0-1]  logical=S0Z1CZ[0-1]
+  id=7663   (CSS)  physical=S†6S0S4S7S8CZ[1-5]CZ[2-3]  logical=S0S1S2Z4CZ[2-3]CZ[2-4]CZ[3-4]
+  id=8507   (CSS)  physical=S†4S0S6CZ[1-5]CZ[2-8]CZ[3-7]  logical=S†2S0S1S3CZ[0-1]CZ[1-3]CZ[1-4]  strongFT
+  id=10646  (CSS)  physical=S1S5S6CZ[0-7]CZ[2-4]CZ[3-8]  logical=S0S3S4CZ[1-2]  strongFT
+  id=11025  (CSS)  physical=S†0S4S5CZ[1-8]CZ[2-6]CZ[3-7]  logical=S0S1S2CZ[0-1]CZ[0-3]CZ[1-4]  strongFT
+  id=11307  (CSS)  physical=S†4S5S6S7CZ[2-3]  logical=S0S1Z3Z4CZ[0-2]CZ[0-3]CZ[0-4]CZ[1-2]CZ[1-3]CZ[1-4]CZ[2-3]CZ[2-4]CZ[3-4]
+  id=13840  (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=13842  (CSS)  physical=S4S5CZ[2-3]  logical=S0S1Z2CZ[0-2]CZ[1-2]
+  id=14896  (CSS)  physical=S†0S1S4S5S6S7S8CZ[2-3]  logical=S0Z1Z2Z3Z4CZ[0-1]CZ[0-2]CZ[0-3]CZ[0-4]CZ[1-2]CZ[1-3]CZ[1-4]CZ[2-3]CZ[2-4]CZ[3-4]  strongFT
+
+[[9,6,2]]
+  id=1258   (CSS)  physical=S2S3S4S5S6S7CZ[0-1]  logical=S0Z1Z2Z3Z4Z5CZ[0-1]CZ[0-2]CZ[0-3]CZ[0-4]CZ[0-5]CZ[1-2]CZ[1-3]CZ[1-4]CZ[1-5]CZ[2-3]CZ[2-4]CZ[2-5]CZ[3-4]CZ[3-5]CZ[4-5]
+
+SUMMARY
+  Code            Total    CSS   non-CSS   t=2 hits
+  [[4,1,2]]       2      1         1          0
+  [[4,2,2]]       1      1         0          1
+  [[5,1,2]]       6      4         2          2
+  [[5,2,2]]       3      2         1          2
+  [[6,1,2]]      35     17        18         10
+  [[6,2,2]]      29     13        16         10
+  [[6,3,2]]       5      2         3          1
+  [[6,4,2]]       1      1         0          1
+  [[7,1,2]]     169     62       107         36
+  [[7,2,2]]     241     52       189         41
+  [[7,3,2]]      67     15        52          8
+  [[7,4,2]]       7      3         4          3
+  [[8,1,2]]    1170    248       922        140
+  [[8,2,2]]    3724    311      3413        181
+  [[8,3,2]]    2117    132      1985         88
+  [[8,4,2]]     264     36       228         15
+  [[8,5,2]]      11      3         8          0
+  [[8,6,2]]       1      1         0          1
+  [[9,1,2]]   10742   1031      9711        540
+  [[9,2,2]]   98027   1843     96184       1001
+  [[9,3,2]]  130598   1233    129365        371
+  [[9,4,2]]   24117    345     23772        102
+  [[9,5,2]]     768     43       725         12
+  [[9,6,2]]      13      4         9          1
