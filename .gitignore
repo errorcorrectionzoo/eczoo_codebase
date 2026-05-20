@@ -139,3 +139,8 @@ docs/_build/
 docs/stubs/*
 
 .DS_Store
+.venv_csslo/lib64
+.venv_csslo/pyvenv.cfg
+.venv_csslo/bin/python
+.venv_csslo/bin/python3
+.venv_csslo/bin/python3.10

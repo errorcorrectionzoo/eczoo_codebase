@@ -1,0 +1,65 @@
+[[5,1,2]] id=9    T1T3CS†0-2                 cld=2  DP  failures=0/15
+[[6,1,2]] id=17   T1T5CS†0-2                 cld=2  DP  failures=0/18
+[[6,1,2]] id=50   T1T4CS†0-3                 cld=2  DP  failures=0/18
+[[6,1,2]] id=56   T2T3CS†0-1                 cld=2  DP  failures=0/18
+[[6,1,2]] id=62   T4T5CS†2-3                 cld=2  DP  failures=0/18
+[[6,1,2]] id=81   T1T3CS†0-2                 cld=2  DP  failures=0/17
+[[6,2,2]] id=52   T4T5CS2-3CZ0-1             cld=2  DP  failures=0/18
+[[6,2,2]] id=82   T1T4CS†0-2                 cld=2  DP  failures=0/18
+[[7,1,2]] id=5    T1T3CS†0-2                 cld=2  DP  failures=0/19
+[[7,1,2]] id=28   T2T6CS†0-1                 cld=2  DP  failures=0/21
+[[7,1,2]] id=107  T5T6CS†2-3                 cld=2  DP  failures=0/21
+[[7,1,2]] id=109  T1T6CS†0-2                 cld=2  DP  failures=0/21
+[[7,1,2]] id=118  T1T3CS†0-2                 cld=2  DP  failures=0/21
+[[7,1,2]] id=120  T1T4CS†0-3                 cld=2  DP  failures=0/21
+[[7,1,2]] id=123  T1T3CS†0-2                 cld=2  DP  failures=0/21
+[[7,1,2]] id=150  T2T4T6CS†0-3CS†1-5         cld=2  DP  failures=0/21
+[[7,1,2]] id=152  T1T6CS†0-2                 cld=2  DP  failures=0/21
+[[7,1,2]] id=157  T5T6CS†0-1                 cld=2  DP  failures=0/21
+[[7,1,2]] id=174  T1T4CS†0-3                 cld=2  DP  failures=0/21
+[[7,1,2]] id=183  T1T5CS†0-4                 cld=2  DP  failures=0/21
+[[7,1,2]] id=311  T1T4CS†0-3                 cld=2  DP  failures=0/20
+[[7,1,2]] id=315  T1T4CS†0-3                 cld=2  DP  failures=0/20
+[[7,1,2]] id=320  T4T5CS†2-3                 cld=2  DP  failures=0/20
+[[7,2,2]] id=182  T1T3CS†0-2                 cld=2  DP  failures=0/21
+[[7,2,2]] id=188  T1T3CS†0-2                 cld=2  DP  failures=0/21
+[[7,2,2]] id=275  T4T6CS†1-3                 cld=2  DP  failures=0/21
+[[7,2,2]] id=276  T5T6CS†2-3                 cld=2  DP  failures=0/21
+[[7,2,2]] id=594  T1T6CS†0-2                 cld=2  DP  failures=0/21
+[[7,2,2]] id=747  T1T5CS†0-2                 cld=2  DP  failures=0/20
+[[7,2,2]] id=755  T1T4CS†0-2                 cld=2  DP  failures=0/20
+[[7,3,2]] id=31   T5T6CS†3-4                 cld=2  DP  failures=0/21
+[[7,3,2]] id=475  T4T5CS0-1CCZ2-3-6          cld=2  DP  failures=0/21
+
+[[5,1,2]] id=9    failing=1   Z0Z2
+[[6,1,2]] id=17   failing=1   Z0Z2
+[[6,1,2]] id=50   failing=1   Z0Z3
+[[6,1,2]] id=56   failing=1   Z0Z1
+[[6,1,2]] id=62   failing=1   Z2Z3
+[[6,1,2]] id=81   failing=1   Z0Z2
+[[6,2,2]] id=52   failing=4   Z0Z1, Z2Z3, X0X1, Y0Y1
+[[6,2,2]] id=82   failing=1   Z0Z2
+[[7,1,2]] id=5    failing=1   Z0Z2
+[[7,1,2]] id=28   failing=1   Z0Z1
+[[7,1,2]] id=107  failing=1   Z2Z3
+[[7,1,2]] id=109  failing=1   Z0Z2
+[[7,1,2]] id=118  failing=1   Z0Z2
+[[7,1,2]] id=120  failing=1   Z0Z3
+[[7,1,2]] id=123  failing=1   Z0Z2
+[[7,1,2]] id=150  failing=1   Z1Z5
+[[7,1,2]] id=152  failing=1   Z0Z2
+[[7,1,2]] id=157  failing=1   Z0Z1
+[[7,1,2]] id=174  failing=1   Z0Z3
+[[7,1,2]] id=183  failing=1   Z0Z4
+[[7,1,2]] id=311  failing=1   Z0Z3
+[[7,1,2]] id=315  failing=1   Z0Z3
+[[7,1,2]] id=320  failing=1   Z2Z3
+[[7,2,2]] id=182  failing=1   Z0Z2
+[[7,2,2]] id=188  failing=1   Z0Z2
+[[7,2,2]] id=275  failing=1   Z1Z3
+[[7,2,2]] id=276  failing=1   Z2Z3
+[[7,2,2]] id=594  failing=1   Z0Z2
+[[7,2,2]] id=747  failing=1   Z0Z2
+[[7,2,2]] id=755  failing=1   Z0Z2
+[[7,3,2]] id=31   failing=1   Z3Z4
+[[7,3,2]] id=475  failing=8   Z0Z1, Z2Z3, Z2Z6, Z3Z6, X2X3X6, Y2Y3X6, Y2X3Y6, X2Y3Y6

@@ -1,0 +1,118 @@
+Diagonal transversal gates at hierarchy level t=3
+  filters: n=8, d=2
+Total codes: 7287  |  k=0 skipped: 0  |  tested: 7287  |  hits: 99  |  errors: 0
+Script: run_alg6_stabilizer.py  (CSS and non-CSS stabilizer codes)
+
+[[8,1,2]]
+  id=67     (CSS)  physical=T1T4CS†[0-3]  logical=T0
+  id=77     (CSS)  physical=T1T4CS†[0-3]  logical=T0
+  id=85     (CSS)  physical=T4T5CS†[2-3]  logical=T0
+  id=135    (CSS)  physical=T5T6CS†[1-2]  logical=T0
+  id=143    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=170    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=234    (CSS)  physical=T2T7CS†[0-1]  logical=T0
+  id=339    (CSS)  physical=T5T6T7CS†[0-2]CS†[1-4]  logical=T0
+  id=340    (CSS)  physical=T5T6CS†[1-2]  logical=T0
+  id=344    (CSS)  physical=T1T6CS†[0-2]  logical=T0
+  id=347    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=348    (CSS)  physical=T6T7CS†[0-1]  logical=T0
+  id=354    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=454    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=483    (CSS)  physical=T1T4T6CS†[0-2]CS†[3-5]  logical=T0
+  id=486    (CSS)  physical=T4T6CS†[2-3]  logical=T0
+  id=548    (CSS)  physical=T2T4T7CS†[0-3]CS†[1-5]  logical=T0
+  id=549    (CSS)  physical=T2T7CS†[1-3]  logical=T0
+  id=606    (CSS)  physical=T1T4CS†[0-3]  logical=T0
+  id=609    (CSS)  physical=T2T7CS†[0-1]  logical=T0
+  id=610    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=624    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=630    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=633    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=642    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=761    (CSS)  physical=T4T5CS†[0-1]  logical=T0
+  id=763    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=774    (CSS)  physical=T6T7CS†[0-1]  logical=T0
+  id=857    (CSS)  physical=T2T7CS†[1-3]  logical=T0
+  id=858    (CSS)  physical=T5T6CS†[3-4]  logical=T0
+  id=875    (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=878    (CSS)  physical=T1T5CS†[0-4]  logical=T0
+  id=879    (CSS)  physical=T1T5CS†[0-3]  logical=T0
+  id=885    (CSS)  physical=T1T6CS†[0-3]  logical=T0
+  id=960    (CSS)  physical=T1T5CS†[0-4]  logical=T0
+  id=988    (CSS)  physical=T1T4CS†[0-3]  logical=T0
+  id=992    (CSS)  physical=T4T5CS†[2-3]  logical=T0
+  id=1042   (CSS)  physical=T1T6CS†[0-5]  logical=T0
+  id=1093   (CSS)  physical=T4T6CS†[0-5]  logical=T0
+  id=1096   (CSS)  physical=T2T4CS†[0-1]  logical=T0
+  id=1178   (CSS)  physical=T6T7CS†[4-5]  logical=T0
+  id=1660   (CSS)  physical=T2T6CS†[0-1]  logical=T0
+  id=1691   (CSS)  physical=T5T6CS†[2-3]  logical=T0
+  id=1693   (CSS)  physical=T1T6CS†[0-2]  logical=T0
+  id=1701   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=1703   (CSS)  physical=T1T4CS†[0-3]  logical=T0
+  id=1706   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=1713   (CSS)  physical=T2T4T6CS†[0-3]CS†[1-5]  logical=T0
+  id=1715   (CSS)  physical=T1T6CS†[0-2]  logical=T0
+  id=1719   (CSS)  physical=T5T6CS†[0-1]  logical=T0
+  id=1733   (CSS)  physical=T1T4CS†[0-3]  logical=T0
+  id=1739   (CSS)  physical=T1T5CS†[0-4]  logical=T0
+
+[[8,2,2]]
+  id=90     (CSS)  physical=T1T5CS†[0-2]  logical=T0
+  id=123    (CSS)  physical=T1T4CS†[0-2]  logical=T0
+  id=343    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=350    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=376    (CSS)  physical=T2T7CS†[0-1]  logical=T0
+  id=377    (CSS)  physical=T4T6CS†[2-3]  logical=T0T1CS†[0-1]
+  id=410    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=475    (CSS)  physical=T2T7CS†[0-1]  logical=T0
+  id=769    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=773    (CSS)  physical=T4T5CS†[0-1]  logical=T0
+  id=1353   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=1390   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=1399   (CSS)  physical=T1T5CS†[0-4]  logical=T0
+  id=1400   (CSS)  physical=T6T7CS†[2-3]  logical=T0T1CS†[0-1]
+  id=1816   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1859   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1879   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1903   (CSS)  physical=T1T6CS†[0-2]  logical=T0
+  id=1905   (CSS)  physical=T2T7CS†[0-1]  logical=T0
+  id=1909   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1917   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1920   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1947   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=2107   (CSS)  physical=T1T6CS†[0-3]  logical=T0
+  id=3054   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=3055   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=3063   (CSS)  physical=T3T5CS[2-4]CZ[0-1]  logical=T0Z1CZ[0-1]
+  id=3066   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=3154   (CSS)  physical=T2T7CS†[1-3]  logical=T0T1CS†[0-1]
+  id=3722   (CSS)  physical=T4T5CS†[0-1]  logical=T0
+  id=3723   (CSS)  physical=T2T4CS†[0-1]  logical=T0
+  id=3724   (CSS)  physical=T5T7CS†[1-3]  logical=T0
+  id=6747   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=6748   (CSS)  physical=T1T3CS†[0-2]  logical=T0
+  id=6764   (CSS)  physical=T4T6CS†[1-3]  logical=T0T1CS†[0-1]
+  id=6766   (CSS)  physical=T5T6CS†[2-3]  logical=T0T1CS†[0-1]
+  id=6876   (CSS)  physical=T1T6CS†[0-2]  logical=T0
+
+[[8,3,2]]
+  id=431    (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1067   (CSS)  physical=T5T7CS†[3-4]  logical=T0T1T2CS†[0-1]CS†[0-2]CS†[1-2]CCZ[0-1-2]
+  id=1090   (CSS)  physical=T5T7CS†[2-4]  logical=T0T2CS†[0-2]
+  id=1539   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=1567   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=4584   (CSS)  physical=T1T7CS†[0-2]  logical=T0
+  id=4882   (CSS)  physical=T†2T†4T3T5T6T7CS†[0-1]  logical=T0Z2CZ[0-2]CZ[1-2]CCZ[0-1-2]
+  id=6930   (CSS)  physical=T5T6CS[0-1]CCZ[2-3-4]  logical=T0S1S2CS†[0-1]CS†[0-2]
+  id=8018   (CSS)  physical=T5T6CS†[3-4]  logical=T0T1T2CS†[0-1]CS†[0-2]CS†[1-2]CCZ[0-1-2]
+  id=8054   (CSS)  physical=T4T5CS[0-1]CCZ[2-3-6]  logical=T0S1S2CS†[0-1]CS†[0-2]
+
+SUMMARY
+  Code            Total    CSS   non-CSS   t=3 hits
+  [[8,1,2]]    1170    248       922         52
+  [[8,2,2]]    3724    311      3413         37
+  [[8,3,2]]    2117    132      1985         10
+  [[8,4,2]]     264     36       228          0
+  [[8,5,2]]      11      3         8          0
+  [[8,6,2]]       1      1         0          0
