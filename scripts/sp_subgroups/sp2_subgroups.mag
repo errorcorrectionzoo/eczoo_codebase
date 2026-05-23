@@ -1,0 +1,79 @@
+// Classify all subgroups of Sp(2, GF(2)) up to isomorphism, with SmallGroup IDs.
+//
+// Sp(2, GF(2)) = SL(2, 2) = S3, order 6.
+//
+// Usage (Magma REPL):  load "sp2_subgroups.mag";
+// Usage (shell):       magma sp2_subgroups.mag
+
+G := Sp(2, GF(2));
+gid := IdentifyGroup(G);
+
+printf "G = Sp(2, GF(2)),  |G| = %o\n", #G;
+printf "G = SmallGroup(%o, %o)  (%o)\n\n", gid[1], gid[2], GroupName(G);
+
+// Subgroups(G) returns one representative per conjugacy class.
+// Each record has fields: subgroup, order, length (= conjugacy class size).
+subs := Subgroups(G);
+total_conj  := #subs;
+total_subs  := &+[s`length : s in subs];
+printf "Conjugacy classes: %o    Total subgroups: %o\n\n", total_conj, total_subs;
+
+// ── Accumulate isomorphism types ─────────────────────────────────────────────
+// iso[key] = [order, sg_index, conj_class_count, total_subgroup_count, name]
+iso := AssociativeArray();
+
+for s in subs do
+    H   := s`subgroup;
+    id  := IdentifyGroup(H);
+    n   := id[1];  k := id[2];
+    key := Sprintf("%o_%o", n, k);
+
+    if IsDefined(iso, key) then
+        v        := iso[key];
+        iso[key] := [v[1], v[2], v[3] + 1, v[4] + s`length, v[5]];
+    else
+        iso[key] := [n, k, 1, s`length, GroupName(H)];
+    end if;
+end for;
+
+// Sort by order, then SmallGroup index
+rows := [iso[k] : k in Keys(iso)];
+Sort(~rows, func<a, b | a[1] ne b[1] select a[1] - b[1] else a[2] - b[2]>);
+
+// ── Summary table ─────────────────────────────────────────────────────────────
+printf "Isomorphism classes of subgroups:\n\n";
+printf "  %-22o  %-7o  %-14o  %-11o  %o\n",
+    "SmallGroup(n, k)", "Order", "Conj. classes", "# Subgroups", "Name";
+printf "  %o\n", "-" ^ 65;
+
+for r in rows do
+    printf "  SmallGroup(%o, %o)%o%-7o  %-14o  %-11o  %o\n",
+        r[1], r[2],
+        " " ^ (10 - #IntegerToString(r[1]) - #IntegerToString(r[2])),
+        r[1], r[3], r[4], r[5];
+end for;
+
+printf "\n";
+
+// ── Per-conjugacy-class listing with generator matrices ───────────────────────
+printf "Conjugacy classes (with representative generator matrices over GF(2)):\n\n";
+
+Sort(~subs, func<a, b |
+    #a`subgroup ne #b`subgroup
+    select #a`subgroup - #b`subgroup
+    else   IdentifyGroup(a`subgroup)[2] - IdentifyGroup(b`subgroup)[2]>);
+
+for s in subs do
+    H  := s`subgroup;
+    id := IdentifyGroup(H);
+    printf "  SmallGroup(%o, %o), order %o  (%o),  class size %o\n",
+        id[1], id[2], #H, GroupName(H), s`length;
+    for i in [1..Ngens(H)] do
+        M := Matrix(H.i);
+        printf "    g%o = [[%o, %o], [%o, %o]]\n",
+            i,
+            IntegerRing() ! M[1][1], IntegerRing() ! M[1][2],
+            IntegerRing() ! M[2][1], IntegerRing() ! M[2][2];
+    end for;
+    printf "\n";
+end for;

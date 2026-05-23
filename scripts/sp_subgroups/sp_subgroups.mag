@@ -1,0 +1,138 @@
+// Classify all subgroups of Sp(2n, GF(2)) up to conjugacy within Sp(2n, GF(2)).
+//
+// Conjugacy is computed relative to Sp(2n, GF(2)) itself, NOT the larger
+// GL(2n, GF(2)).  For n = 1 these coincide (Sp(2,2) = GL(2,2) = S3), but for
+// n >= 2 they differ: a GL-conjugacy class can split into several Sp-conjugacy
+// classes.  Magma's Subgroups(G) with G = Sp(2n, GF(2)) gives exactly the
+// Sp-conjugacy classes.
+//
+// Feasible sizes:
+//   n=1  |Sp(2,2)|  = 6          (fast)
+//   n=2  |Sp(4,2)|  = 720        (fast, ~200 conjugacy classes)
+//   n=3  |Sp(6,2)|  = 1 451 520  (impractical for full enumeration)
+//
+// Usage:
+//   magma sp_subgroups.mag
+//   or in a REPL: load "sp_subgroups.mag";
+
+// ── Parameters ────────────────────────────────────────────────────────────────
+
+n          := 2;      // Sp(2*n, GF(2))
+ENUM_LIMIT := 10000;  // abort if |Sp(2n,2)| exceeds this
+GEN_LIMIT  := 8;      // show generator matrices only for subgroups of order <= this
+
+// ─────────────────────────────────────────────────────────────────────────────
+
+dim := 2 * n;         // matrix dimension throughout
+G   := Sp(dim, GF(2));
+
+printf "G = Sp(%o, GF(2)),  |G| = %o\n", dim, #G;
+printf "    %o\n\n", GroupName(G);
+
+if #G gt ENUM_LIMIT then
+    printf "  |G| = %o > ENUM_LIMIT = %o; aborting.\n", #G, ENUM_LIMIT;
+    printf "  Increase ENUM_LIMIT or reduce n.\n";
+    quit;
+end if;
+
+// ── Conjugacy classes of subgroups within Sp(2n, GF(2)) ──────────────────────
+//
+// Subgroups(G) with G = Sp(dim, GF(2)) places H1 and H2 in the same class iff
+//   H1 = g*H2*g^{-1}  for some g in Sp(dim, GF(2)),
+// NOT merely for some g in GL(dim, GF(2)).
+
+subs       := Subgroups(G);
+total_cc   := #subs;
+total_subs := &+[s`length : s in subs];
+
+printf "Sp(%o, 2)-conjugacy classes:  %o\n", dim, total_cc;
+printf "Total subgroups:              %o\n\n", total_subs;
+
+// ── Isomorphism-type label ────────────────────────────────────────────────────
+//
+// Returns (label, sort_ord, sort_sec).
+// Uses SmallGroup(n,k) when order is in the database (<= 2000, != 1024).
+// Falls back to an algebraic fingerprint for larger groups; NOTE: the
+// Nonabelian fallback is not a complete invariant when IdentifyGroup fails.
+
+function IsoLabel(H)
+    ord := #H;
+    if ord le 2000 and ord ne 1024 then
+        id := IdentifyGroup(H);
+        return Sprintf("SmallGroup(%o, %o)", id[1], id[2]), ord, id[2];
+    elif IsAbelian(H) then
+        invs := AbelianInvariants(H);
+        s    := &cat[IntegerToString(v) cat "+" : v in invs];
+        return "Abelian[" cat Substring(s, 1, #s-1) cat "]", ord, 0;
+    else
+        return Sprintf("Nonabelian(ord=%o)", ord), ord, 1;
+    end if;
+end function;
+
+// ── Accumulate per isomorphism type ──────────────────────────────────────────
+//
+// iso[label] = [ord, sec, label, cc_count, sub_total, display_name]
+
+iso := AssociativeArray();
+
+for s in subs do
+    H               := s`subgroup;
+    label, ord, sec := IsoLabel(H);
+    dname           := (ord le 2000 and ord ne 1024) select GroupName(H) else label;
+
+    if IsDefined(iso, label) then
+        v          := iso[label];
+        iso[label] := [v[1], v[2], v[3], v[4]+1, v[5]+s`length, v[6]];
+    else
+        iso[label] := [ord, sec, label, 1, s`length, dname];
+    end if;
+end for;
+
+rows := [iso[k] : k in Keys(iso)];
+Sort(~rows, func<a, b | a[1] ne b[1] select a[1]-b[1] else a[2]-b[2]>);
+
+// ── Summary table ─────────────────────────────────────────────────────────────
+
+printf "Isomorphism classes  (Sp(%o, 2)-conjugacy):\n\n", dim;
+printf "  %-28o  %-7o  %-14o  %-12o  %o\n",
+    "Isomorphism type", "Order", "Conj. classes", "# Subgroups", "Name";
+printf "  %o\n", "-" ^ 72;
+
+for r in rows do
+    printf "  %-28o  %-7o  %-14o  %-12o  %o\n",
+        r[3], r[1], r[4], r[5], r[6];
+end for;
+
+printf "\n";
+
+// ── Per-conjugacy-class listing with generator matrices ───────────────────────
+
+printf "All Sp(%o, 2)-conjugacy classes:\n\n", dim;
+Sort(~subs, func<a, b | #a`subgroup - #b`subgroup>);
+
+for s in subs do
+    H               := s`subgroup;
+    label, ord, _   := IsoLabel(H);
+    dname           := (ord le 2000 and ord ne 1024) select GroupName(H) else "";
+
+    printf "  %o  (order %o, class size %o%o)\n",
+        label, ord, s`length,
+        #dname gt 0 select ", " cat dname else "";
+
+    // Show generator matrices for small subgroups (size <= GEN_LIMIT)
+    if ord le GEN_LIMIT and Ngens(H) gt 0 then
+        for i in [1..Ngens(H)] do
+            Mi := Matrix(H.i);
+            for r in [1..dim] do
+                row := [IntegerRing() ! Mi[r][c] : c in [1..dim]];
+                if r eq 1 then
+                    printf "    g%o = %o\n", i, row;
+                else
+                    printf "         %o\n", row;
+                end if;
+            end for;
+        end for;
+    end if;
+
+    printf "\n";
+end for;
