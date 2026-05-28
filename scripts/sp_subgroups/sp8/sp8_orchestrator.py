@@ -23,6 +23,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_GAP = Path("/home/valbert/gap-4.15.1/gap")
 SCHEMA_VERSION = 1
+CURRENT_DETAIL_PREFIX = "detail_v2;"
 SEQUENCE_LOCK = threading.Lock()
 
 
@@ -64,6 +65,24 @@ def merge_key_label(merge_key: str) -> str:
     if not merge_key:
         return "unknown"
     return hashlib.sha1(merge_key.encode()).hexdigest()[:12]
+
+
+def current_detail_key(value: object) -> str:
+    value = str(value or "")
+    if value.startswith(CURRENT_DETAIL_PREFIX):
+        return value
+    return ""
+
+
+def has_current_detail_key(value: object) -> bool:
+    return bool(current_detail_key(value))
+
+
+def detail_key_label(detail_key: str) -> str:
+    detail_key = current_detail_key(detail_key)
+    if not detail_key:
+        return "mixed"
+    return hashlib.sha1(detail_key.encode()).hexdigest()[:12]
 
 
 def atomic_write(path: Path, data: str) -> None:
@@ -435,7 +454,7 @@ def write_merge_input(path: Path, dim: int, order: int, existing: list[dict], ca
                       proposal_path: Path, cache_path: Path, sentinel_path: Path) -> None:
     def rec_existing(item: dict) -> str:
         fingerprint = item.get("fingerprint", "")
-        detail_key = item.get("detail_key", "")
+        detail_key = current_detail_key(item.get("detail_key", ""))
         return (
             "rec("
             f"id:={item['id']}, "
@@ -448,7 +467,7 @@ def write_merge_input(path: Path, dim: int, order: int, existing: list[dict], ca
 
     def rec_candidate(item: dict) -> str:
         fingerprint = item.get("fingerprint", "")
-        detail_key = item.get("detail_key", "")
+        detail_key = current_detail_key(item.get("detail_key", ""))
         return (
             "rec("
             f"raw_id:={gap_string(item['raw_id'])}, "
@@ -559,7 +578,7 @@ def iter_detail_backfill_items(
     for path in sorted((run_dir / "reps").glob("rep_*.json")):
         meta = read_json(path)
         order = int(meta["order"])
-        if meta.get("detail_key") or not wanted_detail_order(order, max_order, orders):
+        if has_current_detail_key(meta.get("detail_key")) or not wanted_detail_order(order, max_order, orders):
             continue
         yield {
             "kind": "rep",
@@ -578,7 +597,7 @@ def iter_detail_backfill_items(
         children_path = raw_dir / "children.jsonl"
         for child in read_jsonl(children_path):
             order = int(child["order"])
-            if child.get("detail_key") or not wanted_detail_order(order, max_order, orders):
+            if has_current_detail_key(child.get("detail_key")) or not wanted_detail_order(order, max_order, orders):
                 continue
             yield {
                 "kind": "raw",
@@ -682,14 +701,14 @@ def apply_detail_records(records: list[dict]) -> dict:
     raw_by_file: dict[Path, dict[str, str]] = defaultdict(dict)
     for rec in records:
         detail_key = rec.get("detail_key", "")
-        if not detail_key:
+        if not has_current_detail_key(detail_key):
             continue
         if rec.get("kind") == "rep":
             path = Path(rec["json_path"])
             if not path.exists():
                 continue
             meta = read_json(path)
-            if meta.get("detail_key"):
+            if has_current_detail_key(meta.get("detail_key")):
                 continue
             meta["detail_key"] = detail_key
             atomic_write_json(path, meta)
@@ -703,7 +722,7 @@ def apply_detail_records(records: list[dict]) -> dict:
         records_out = []
         for child in read_jsonl(path):
             raw_id = child.get("raw_id")
-            if raw_id in detail_by_raw_id and not child.get("detail_key"):
+            if raw_id in detail_by_raw_id and not has_current_detail_key(child.get("detail_key")):
                 child["detail_key"] = detail_by_raw_id[raw_id]
                 changed += 1
             records_out.append(child)
@@ -793,6 +812,7 @@ def prepare_merge_task(
     manifest: dict,
     order: int,
     merge_key: str,
+    detail_key: str,
     existing: list[dict],
     candidates: list[dict],
     raw_dirs: set[Path],
@@ -804,15 +824,16 @@ def prepare_merge_task(
             if merge_key_from_fingerprint(item.get("fingerprint", "")) in candidate_keys
             or merge_key_from_fingerprint(item.get("fingerprint", "")) == ""
         ]
-    candidate_detail_keys = {str(item.get("detail_key", "")) for item in candidates}
+    candidate_detail_keys = {current_detail_key(item.get("detail_key", "")) for item in candidates}
     if candidate_detail_keys and "" not in candidate_detail_keys:
         existing = [
             item for item in existing
-            if item.get("detail_key", "") in candidate_detail_keys
-            or item.get("detail_key", "") == ""
+            if current_detail_key(item.get("detail_key", "")) in candidate_detail_keys
+            or current_detail_key(item.get("detail_key", "")) == ""
         ]
     key_label = merge_key_label(merge_key)
-    merge_id = f"{time.time_ns()}_{order}_{key_label}_{len(candidates)}"
+    detail_label = detail_key_label(detail_key)
+    merge_id = f"{time.time_ns()}_{order}_{key_label}_{detail_label}_{len(candidates)}"
     merge_dir = run_dir / "merge" / f"bucket_{order}_{merge_id}"
     merge_dir.mkdir(parents=True, exist_ok=True)
     input_path = merge_dir / "input.g"
@@ -855,6 +876,7 @@ def prepare_merge_task(
         "order": order,
         "merge_key": merge_key,
         "merge_key_label": key_label,
+        "detail_key_label": detail_label,
         "candidate_count": len(candidates),
         "existing_count": len(existing),
         "merge_dir": merge_dir,
@@ -880,6 +902,7 @@ def run_merge_task(task: dict) -> dict:
         "order": task["order"],
         "merge_key": task["merge_key"],
         "merge_key_label": task["merge_key_label"],
+        "detail_key_label": task["detail_key_label"],
         "candidate_count": task["candidate_count"],
         "existing_count": task["existing_count"],
         "returncode": proc.returncode,
@@ -899,14 +922,17 @@ def merge_unmerged(
     merge_workers: int = 8,
     merge_reservation_gb: float = 4.0,
     reserve_ram_gb: float = 8.0,
+    detail_split_min: int = 256,
 ) -> int:
     raw_jobs = unmerged_raw_jobs(run_dir)
     if not raw_jobs:
         return 0
     candidates_by_order: dict[int, list[dict]] = defaultdict(list)
     raw_dirs_by_order: dict[int, set[Path]] = defaultdict(set)
-    candidates_by_bucket: dict[tuple[int, str], list[dict]] = defaultdict(list)
-    raw_dirs_by_bucket: dict[tuple[int, str], set[Path]] = defaultdict(set)
+    candidates_by_key_bucket: dict[tuple[int, str], list[dict]] = defaultdict(list)
+    raw_dirs_by_key_bucket: dict[tuple[int, str], set[Path]] = defaultdict(set)
+    candidates_by_bucket: dict[tuple[int, str, str], list[dict]] = defaultdict(list)
+    raw_dirs_by_bucket: dict[tuple[int, str, str], set[Path]] = defaultdict(set)
     failed_raw_dirs: set[Path] = set()
     for raw_dir in raw_jobs:
         for child in read_jsonl(raw_dir / "children.jsonl"):
@@ -919,14 +945,26 @@ def merge_unmerged(
         keys = {merge_key_from_fingerprint(child.get("fingerprint", "")) for child in candidates}
         if "" in keys:
             bucket = (order, "")
-            candidates_by_bucket[bucket].extend(candidates)
-            raw_dirs_by_bucket[bucket].update(raw_dirs_by_order[order])
+            candidates_by_key_bucket[bucket].extend(candidates)
+            raw_dirs_by_key_bucket[bucket].update(raw_dirs_by_order[order])
             continue
         for child in candidates:
             merge_key = merge_key_from_fingerprint(child.get("fingerprint", ""))
             bucket = (order, merge_key)
-            candidates_by_bucket[bucket].append(child)
-            raw_dirs_by_bucket[bucket].add(Path(child["_raw_dir"]))
+            candidates_by_key_bucket[bucket].append(child)
+            raw_dirs_by_key_bucket[bucket].add(Path(child["_raw_dir"]))
+
+    for (order, merge_key), candidates in candidates_by_key_bucket.items():
+        detail_keys = {current_detail_key(child.get("detail_key", "")) for child in candidates}
+        if len(candidates) >= detail_split_min and "" not in detail_keys and len(detail_keys) > 1:
+            for child in candidates:
+                bucket = (order, merge_key, current_detail_key(child.get("detail_key", "")))
+                candidates_by_bucket[bucket].append(child)
+                raw_dirs_by_bucket[bucket].add(Path(child["_raw_dir"]))
+        else:
+            bucket = (order, merge_key, "")
+            candidates_by_bucket[bucket].extend(candidates)
+            raw_dirs_by_bucket[bucket].update(raw_dirs_by_key_bucket[(order, merge_key)])
 
     reps = load_reps(run_dir)
     existing_by_order: dict[int, list[dict]] = defaultdict(list)
@@ -939,14 +977,15 @@ def merge_unmerged(
             manifest,
             order,
             merge_key,
+            detail_key,
             existing_by_order.get(order, []),
             candidates,
-            raw_dirs_by_bucket[(order, merge_key)],
+            raw_dirs_by_bucket[(order, merge_key, detail_key)],
         )
-        for (order, merge_key), candidates in sorted(candidates_by_bucket.items())
+        for (order, merge_key, detail_key), candidates in sorted(candidates_by_bucket.items())
     ]
     workers = bounded_merge_workers(merge_workers, len(tasks), merge_reservation_gb, reserve_ram_gb)
-    print(f"merging {len(tasks)} order/key buckets with concurrency {workers}")
+    print(f"merging {len(tasks)} order/key/detail buckets with concurrency {workers}")
     for task in tasks:
         append_jsonl(
             run_dir / "jobs" / "running.jsonl",
@@ -954,6 +993,7 @@ def merge_unmerged(
                 "type": "merge_bucket",
                 "order": task["order"],
                 "merge_key_label": task["merge_key_label"],
+                "detail_key_label": task["detail_key_label"],
                 "candidate_count": task["candidate_count"],
                 "existing_count": task["existing_count"],
                 "merge_dir": str(task["merge_dir"]),
@@ -974,7 +1014,10 @@ def merge_unmerged(
 
     committed = 0
     task_by_merge_dir = {str(task["merge_dir"]): task for task in tasks}
-    for result in sorted(results, key=lambda item: (item["order"], item["merge_key_label"], item["merge_dir"])):
+    for result in sorted(
+        results,
+        key=lambda item: (item["order"], item["merge_key_label"], item["detail_key_label"], item["merge_dir"]),
+    ):
         task = task_by_merge_dir[result["merge_dir"]]
         if result["returncode"] != 0 or not result["sentinel"]:
             append_jsonl(
@@ -983,6 +1026,7 @@ def merge_unmerged(
                     "type": "merge_bucket",
                     "order": result["order"],
                     "merge_key_label": result["merge_key_label"],
+                    "detail_key_label": result["detail_key_label"],
                     "candidate_count": result["candidate_count"],
                     "existing_count": result["existing_count"],
                     "returncode": result["returncode"],
@@ -1026,7 +1070,7 @@ def commit_merge_proposals(run_dir: Path, proposal_path: Path) -> int:
                 "maximal_count": None,
                 "parent_ids": [prop["parent_id"]],
                 "fingerprint": prop.get("fingerprint", ""),
-                "detail_key": prop.get("detail_key", ""),
+                "detail_key": current_detail_key(prop.get("detail_key", "")),
                 "first_discovery_raw_id": prop["raw_id"],
                 "created_at": utc_now(),
             }
@@ -1079,6 +1123,19 @@ def cmd_run_round(args: argparse.Namespace) -> None:
     run_dir = Path(args.run_dir).resolve()
     manifest = load_manifest(run_dir)
     recover(run_dir)
+    raw_backlog = unmerged_raw_jobs(run_dir)
+    if raw_backlog:
+        print(f"merging existing raw backlog before launching workers: {len(raw_backlog)} raw jobs")
+        merge_count = merge_unmerged(
+            run_dir,
+            manifest,
+            args.merge_workers,
+            args.merge_reservation_gb,
+            args.reserve_ram_gb,
+            args.detail_split_min,
+        )
+        snapshot(run_dir, f"run_round_backlog_merge_new_{merge_count}")
+        return
     jobs = select_frontier(run_dir, args.include_heavy, args.max_jobs, args.only_top_light)
     if not jobs:
         print("no eligible queued representatives")
@@ -1088,6 +1145,7 @@ def cmd_run_round(args: argparse.Namespace) -> None:
             args.merge_workers,
             args.merge_reservation_gb,
             args.reserve_ram_gb,
+            args.detail_split_min,
         )
         snapshot(run_dir, f"run_round_merge_only_new_{merge_count}")
         return
@@ -1104,6 +1162,7 @@ def cmd_run_round(args: argparse.Namespace) -> None:
         args.merge_workers,
         args.merge_reservation_gb,
         args.reserve_ram_gb,
+        args.detail_split_min,
     )
     snap = snapshot(run_dir, f"run_round_new_{new_count}")
     print(f"committed {new_count} new representatives; snapshot {snap.name}")
@@ -1235,6 +1294,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--merge-workers", type=int, default=8)
     p.add_argument("--merge-reservation-gb", type=float, default=4.0)
     p.add_argument("--reserve-ram-gb", type=float, default=8.0)
+    p.add_argument("--detail-split-min", type=int, default=256)
     p.add_argument("--include-heavy", action="store_true")
     p.add_argument("--only-top-light", action="store_true")
     p.set_defaults(func=cmd_run_round)
@@ -1246,6 +1306,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--merge-workers", type=int, default=8)
     p.add_argument("--merge-reservation-gb", type=float, default=4.0)
     p.add_argument("--reserve-ram-gb", type=float, default=8.0)
+    p.add_argument("--detail-split-min", type=int, default=256)
     p.add_argument("--rounds", type=int, default=1)
     p.add_argument("--include-heavy", action="store_true")
     p.add_argument("--only-top-light", action="store_true")

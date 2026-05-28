@@ -15,8 +15,6 @@ should not be the primary `Sp(8,2)` driver.
 
 ## Recommended strategy
 
-Use the following workflow.
-
 1. Construct `G := Sp(8,2)` only as the source matrix group.
 2. Build a faithful permutation image
    `P := Image(SmallerDegreePermutationRepresentation(Image(IsomorphismPermGroup(G))))`.
@@ -34,11 +32,14 @@ Use the following workflow.
 This avoids the main failure mode of the brute-force script: a single command
 attempting to build and retain the entire subgroup classification at once.
 
-## Resource utilization plan
+All mathematical computation runs inside GAP worker subprocesses. The outer
+scheduling loop — managing the work queue, launching workers, running merge
+jobs in parallel, committing snapshots, and providing recovery and status
+queries — is handled by a Python orchestrator (`sp8_orchestrator.py`). GAP is
+invoked as a child process for each worker and merge task; it does not drive
+the outer loop.
 
-The production algorithm should be engineered to use the 28-core machine
-deliberately. The earlier sequential queue sketch is only the mathematical
-kernel; it is not the scheduler.
+## Resource utilization plan
 
 The scheduler should use breadth-first or round-based frontier expansion,
 because that exposes many independent subgroup representatives at once. A
@@ -113,22 +114,10 @@ limit, mark it incomplete, keep its representative in the database, and
 requeue it in the next heavier class or route it to the orthogonal fallback.
 Never allow an uncapped GAP job in the production run.
 
-Measured small-worker footprints on this machine were modest:
-
-| job | max RSS |
-|---|---:|
-| build degree-120 `P` and compute top maximals | 145 MB |
-| compute maximals inside top class 1 | 155 MB |
-| compute maximals inside top class 11 | 159 MB |
-| 24 simultaneous class-1 workers, each | about 155 MB |
-| 24 simultaneous mixed light workers, each | about 145-161 MB |
-
-These numbers justify many ordinary workers, but they are not safe upper
-bounds for deeper or harder branches. The 24-worker smoke test verifies that
-the ordinary pool can keep the CPUs busy for light jobs without stressing RAM,
-but it does not justify running many medium or heavy jobs at once. Every
-worker should be launched under `/usr/bin/time -v` or equivalent logging, and
-the scheduler should classify future jobs by observed peak RSS and runtime:
+Measured light-job footprints on this machine were 145–161 MB RSS each (see
+Test results). These are not safe upper bounds for deeper branches. Launch
+every worker under `/usr/bin/time -v` and classify future jobs by observed
+peak RSS and runtime:
 
 | class | initial concurrency | memory assumption | action |
 |---|---:|---:|---|
@@ -152,10 +141,11 @@ example, two 16 GB heavy jobs leave room for at most 12 light jobs plus merge
 reserve under the same headroom policy.
 
 Do not let independent GAP jobs all rebuild large state for one tiny task.
-After the prototype works, change `sp8_worker_maximals.g` into a batch worker
-that receives several subgroup ids, builds the degree-120 top group once, then
-processes ids until it reaches a time limit, memory threshold, or empty shard.
-Use small batches for heavy jobs and larger batches for light jobs.
+(Not yet implemented.) After the current implementation matures, consider
+changing `sp8_worker_maximals.g` into a batch worker that receives several
+subgroup ids, builds the degree-120 top group once, then processes ids until it
+reaches a time limit, memory threshold, or empty shard. Use small batches for
+heavy jobs and larger batches for light jobs.
 
 Keep the in-memory state of every process bounded:
 
@@ -190,6 +180,14 @@ large, split it by fingerprint hash and run several merge jobs. The final
 conjugacy check still uses `IsConjugate(P, H, R)`, but it should only be
 called on candidates that pass the cheap invariant filters.
 
+The first-level cheap filter is the **merge key**, derived from the fingerprint
+by dropping the `gens=` component. Generator count is not a conjugacy invariant
+— GAP can choose different generator sets for conjugate copies — so including
+it in a filter key causes false rejections. The remaining components (order,
+orbit lengths, solvability) are safe conjugacy invariants. Python partitions
+candidates by `(order, merge_key)` before launching any GAP job, making
+sub-buckets independent and parallelisable.
+
 The cheap filters should include both the coarse fingerprint and a cached
 `detail_key` for all subgroups of order at most 4096. The current detail key is
 `detail_v2`, consisting of center size, derived-subgroup size, the collected
@@ -204,10 +202,19 @@ spectrum is implemented for larger groups.
 Store `detail_key` in both representative JSON files and raw child records.
 Python should use it before launching GAP: when all candidates in a bucket have
 nonempty detail keys, pass only existing representatives with matching
-`detail_key` or unknown legacy keys. GAP merge workers must still recompute
-missing keys for legacy records and bucket both existing and newly accepted
-groups by detail key so the accepted-list scan does not grow quadratically
-inside one large merge job.
+`detail_key` or unknown legacy keys. Only the current `detail_v2` schema counts
+as a known detail key; stale versions such as `detail_v1` must be treated as
+missing, recomputed, and rewritten by the backfill path. GAP merge workers must
+still recompute missing or stale keys for legacy records and bucket both
+existing and newly accepted groups by detail key so the accepted-list scan does
+not grow quadratically inside one large merge job.
+
+For large merge-key buckets, Python should split the work further by
+`detail_key` before launching GAP. This is safe because `detail_key` is a
+conjugacy invariant, and it lets a single hot order/key bucket use many merge
+workers. Keep small buckets unsplit to avoid GAP startup overhead dominating
+the work; the current implementation uses a default split threshold of 256
+candidates.
 
 The intended steady state is therefore:
 
@@ -218,19 +225,8 @@ The intended steady state is therefore:
 5. update job weights from observed runtime/RSS;
 6. repeat.
 
-This plan should keep the 28 cores busy whenever the frontier has enough jobs
-while still protecting the run from a single uncontrolled GAP process consuming
-the whole RAM budget.
-
-The scheduler should refuse to start if any of these preflight checks fail:
-
-- fewer than 28 logical CPUs are visible, unless the worker counts are reduced;
-- less than 50 GiB RAM is visible for the full run, unless `RAM_WORK_GB` and
-  concurrency are reduced;
-- `/home/valbert/gap-4.15.1/gap` does not support `-K`;
-- `/usr/bin/time`, `timeout`, and `flock` are unavailable;
-- the work directory has less than 50 GB free disk space;
-- a stale lock indicates another coordinator is already committing a snapshot.
+The preflight check list is under the `preflight` subcommand in the Script
+outline below.
 
 ## Persistent run state and learned data
 
@@ -244,12 +240,11 @@ Use an append-friendly work directory such as
 
 ```text
 manifest.json
-group_model.g
 snapshots/
+  progress_000000.json
   reps_000000.jsonl
-  reps_000001.jsonl
-  frontier_000001.jsonl
-  incidence_000001.jsonl
+  frontier_000000.jsonl
+  incidence_000000.jsonl
 reps/
   rep_<id>.g
   rep_<id>.json
@@ -259,15 +254,22 @@ jobs/
   completed.jsonl
   failed.jsonl
 raw_children/
-  job_<job_id>.children.g
-  job_<job_id>.children.jsonl
+  job_<job_id>/
+    children.jsonl
+    child_<N>.g
+    SUCCESS
+    summary.json
 merge/
-  bucket_<order>_<hash>.proposals.jsonl
-  bucket_<order>_<hash>.log
+  bucket_<order>_<timestamp>_<merge_key_label>_<detail_key_label>_<count>/
+    input.g
+    proposals.jsonl
+    conjugacy_cache.jsonl
+    stdout.log
+    stderr.log
+    time.log
+    SUCCESS
 caches/
   conjugacy_tests.jsonl
-  fingerprints.jsonl
-  normalizers.jsonl
 detail_backfill/
   batch_<timestamp>_<index>/
     input.g
@@ -275,7 +277,6 @@ detail_backfill/
     SUCCESS
   runs.jsonl
 logs/
-  scheduler.jsonl
   worker_<job_id>.time
   worker_<job_id>.stdout
   worker_<job_id>.stderr
@@ -329,10 +330,8 @@ The metadata should include:
 - timestamps for first seen, queued, processing start, processing finish;
 - last failure reason, timeout, peak RSS, and workspace cap if any.
 
-Use stable ids derived from a canonical fingerprint plus a sequence number
-assigned by the coordinator. The id does not have to decide conjugacy; it only
-has to make records refer to one another safely. Mathematical equality is
-still decided by the merge step with `IsConjugate(P, -, -)`.
+Use stable sequence-number ids assigned by the coordinator. Conjugacy is
+decided by the merge step, not by the id.
 
 ### Job records
 
@@ -386,9 +385,10 @@ The merge step should persist every final top-level conjugacy decision:
 - optional conjugating element if GAP returns or can cheaply compute one;
 - timestamp and merge job id.
 
-The cache is not a substitute for correctness, but it prevents repeated
-`IsConjugate` calls after a crash or during an audit merge. On restart, the
-merge worker should load only the relevant order/fingerprint cache entries.
+The cache is not a substitute for correctness. It is currently accumulated for
+audit and replay purposes. Pre-querying the cache to avoid repeated
+`IsConjugate` calls after a crash is a planned future optimisation that is not
+yet implemented by merge workers.
 
 Every merge bucket should produce a proposal file with:
 
@@ -419,8 +419,8 @@ At the end of each scheduler round, write a complete progress snapshot:
 - latest committed snapshot id.
 
 This snapshot should be enough to answer "how far did it get?" without
-examining stdout logs. It should also be enough for `sp8_recover.g` to rebuild
-the frontier.
+examining stdout logs. It should also be enough for the `recover` subcommand
+to rebuild the frontier.
 
 ### Atomicity and recovery rules
 
@@ -436,7 +436,7 @@ The coordinator is the only process allowed to mutate committed snapshots.
 Workers and merge buckets write proposals and raw data only. Use `flock` around
 snapshot commits so that a second coordinator cannot interleave writes.
 
-On restart, `sp8_recover.g` should:
+On restart, the `recover` subcommand should:
 
 1. read the latest complete snapshot;
 2. discard `*.tmp` files and outputs without success sentinels;
@@ -486,10 +486,17 @@ The maximal-descent plan still uses GAP's subgroup-classification machinery,
 but it confines each hard calculation to one subgroup at a time and makes the
 outer search restartable.
 
-## GAP script outline
+## Script outline
 
 Do not put the full algorithm in one monolithic script. Use small scripts with
 explicit data files.
+
+The mathematical scripts (`sp8_common.g`, `sp8_init.g`, `sp8_worker_maximals.g`,
+`sp8_merge_bucket.g`, `sp8_detail_batch.g`, `sp8_validate.g`, `sp8_export.g`)
+are GAP files invoked as subprocesses. All coordination — preflight, scheduling,
+merge orchestration, snapshot commits, recovery, status queries, and
+backfill — is implemented as subcommands of the Python orchestrator
+`sp8_orchestrator.py`.
 
 ### `sp8_common.g`
 
@@ -515,7 +522,7 @@ Responsibilities:
 - build `P` and assert `Order(P) = Order(Sp(8,2))`;
 - assert the kernel of the composed map from `Sp(8,2)` to `P` is trivial;
 - create a new work directory, for example `scripts/sp_subgroups/work_sp8/`;
-- write `manifest.json` and `group_model.g`;
+- write `manifest.json`;
 - write the initial representative record for `P`;
 - compute and write the 11 top-level maximal subgroup representatives;
 - write snapshot `000000` containing the top group, top maximals, initial
@@ -523,8 +530,8 @@ Responsibilities:
 
 ### `sp8_worker_maximals.g`
 
-Input: one subgroup record id in the prototype; a batch of subgroup ids in the
-production scheduler.
+Input: one subgroup record id per invocation. (Batch processing of multiple ids
+per invocation is not yet implemented.)
 
 Responsibilities:
 
@@ -546,32 +553,32 @@ The worker should not decide global uniqueness on its own. That should be done
 by a merge script so that all `IsConjugate(P, -, -)` calls are centralized and
 repeatable.
 
-### `sp8_merge_frontier.g`
+### `sp8_merge_bucket.g`
+
+One invocation handles one `(order, merge_key, detail_key)` bucket.
 
 Responsibilities:
 
-- read all raw child records not yet merged;
-- skip raw child files that do not have a success sentinel and matching
-  checksum;
-- bucket candidates by order and safe fingerprints;
-- consult `caches/conjugacy_tests.jsonl` before running an `IsConjugate` test
-  already completed in a previous merge attempt;
-- run final top-level `IsConjugate(P, H, R)` tests against existing
-  representatives;
-- add genuinely new classes to the representative database and frontier queue;
-- record parent-child incidence after replacing each child by its global
-  representative id;
-- write merge proposals and conjugacy-cache additions before coordinator
-  commit.
+- read the `EXISTING` and `CANDIDATES` lists provided by the Python
+  coordinator via `input.g`;
+- skip candidates that do not have a success sentinel in their source raw
+  child directory;
+- filter candidates against existing representatives using `merge_key` and
+  `detail_key` before calling `IsConjugate`;
+- run final top-level `IsConjugate(P, H, R)` tests only on pairs that pass
+  all cheap filters;
+- accumulate each `IsConjugate` result in `conjugacy_cache.jsonl` for audit
+  and replay purposes (pre-query of a global cache to avoid repeated calls is
+  a planned future optimisation, not yet implemented);
+- write merge proposals and a `SUCCESS` sentinel when all candidates are
+  processed;
+- leave all database mutation to the Python coordinator.
 
-For the first full run, keep an audit mode that ignores fingerprints except for
-order. Once this matches the fingerprinted merge on several rounds, enable the
-faster filtering by default.
-
-For production, split this into order-bucket merge jobs. A merge worker should
-only compare candidates of one order, write proposed additions to a temporary
-file, and leave the final database mutation to a single coordinator. That keeps
-parallel merges deterministic.
+The Python coordinator splits the full candidate set by `(order, merge_key)`
+before launch, then optionally further by `detail_key` for large buckets, and
+runs multiple `sp8_merge_bucket.g` jobs in parallel. Each job writes proposed
+additions to its own `proposals.jsonl`; the coordinator commits them after all
+jobs for a merge round complete.
 
 ### `sp8_detail_batch.g`
 
@@ -588,9 +595,9 @@ legacy runs. It must refuse to write while the master orchestrator is live
 unless explicitly forced, split work into bounded GAP batches, apply completed
 batch output atomically, and be safely rerunnable. On restart, it first applies
 any prior successful `detail_backfill/batch_*/details.jsonl` output, then skips
-records that already have `detail_key`.
+only records that already have a current `detail_v2` `detail_key`.
 
-### `sp8_run_round.g` or shell wrapper
+### `run-round` and `run` (Python subcommands of `sp8_orchestrator.py`)
 
 Responsibilities:
 
@@ -608,11 +615,10 @@ Responsibilities:
 - write a scheduler log with CPU slots used, RAM budget, worker exits, and
   queue sizes.
 
-This can be a GAP script using `Exec`, a short shell script, or GNU `parallel`.
-The mathematical algorithm should remain in GAP; the wrapper only schedules
-jobs.
+These are the `run-round` (single round) and `run` (N rounds loop) subcommands
+of `sp8_orchestrator.py`.
 
-### `sp8_preflight.sh`
+### `preflight` (Python subcommand of `sp8_orchestrator.py`)
 
 Responsibilities:
 
@@ -627,22 +633,13 @@ Responsibilities:
 - refuse to start a new run in an existing work directory unless recovery has
   verified the latest committed snapshot.
 
-### `sp8_recover.g`
+### `recover` (Python subcommand of `sp8_orchestrator.py`)
 
-Responsibilities:
+Implements the restart procedure from the Atomicity and recovery rules section:
+discard partial outputs, rebuild the frontier, preserve all completed artifacts,
+and verify snapshot consistency.
 
-- scan the work directory after an interrupted run;
-- discard incomplete temporary files;
-- rebuild the frontier from representatives whose status is not `processed`;
-- preserve failed/heavy jobs with their last exit reason and resource log;
-- preserve completed worker outputs and raw children so their GAP subprocesses
-  are not rerun;
-- preserve completed merge proposals and conjugacy-cache entries so merge
-  buckets are not recomputed unnecessarily;
-- verify that the latest committed representative snapshot has no duplicate
-  ids and no dangling parent-child incidence records.
-
-### `sp8_status.g`
+### `status` (Python subcommand of `sp8_orchestrator.py`)
 
 Responsibilities:
 
@@ -656,8 +653,8 @@ Responsibilities:
 - report maximum observed runtime and peak RSS by job class;
 - report the latest completed snapshot id and whether recovery is required.
 
-This script is how a user should answer "how far did the algorithm get?" after
-a long run or failure. It must not recompute subgroup data.
+Use this subcommand to query progress after a long run or failure without
+triggering any subgroup computation.
 
 ### `sp8_validate.g`
 
@@ -713,24 +710,9 @@ while Length(queue) > 0 do
 od;
 ```
 
-The production implementation differs from this sketch in two ways: it writes
-after each step, and it distributes `MaximalSubgroupClassReps(H)` calls across
-worker processes.
-
-The production scheduler should instead look like:
-
-```text
-frontier := [ top_group_record ]
-while frontier is nonempty:
-    jobs := select a RAM-safe batch from frontier
-    run ordinary and heavy GAP workers in parallel
-    collect raw child records and resource logs
-    merge raw children in parallel by subgroup order
-    coordinator commits new representatives and next frontier
-    update job weights from observed runtime and RSS
-```
-
-This is the version intended to use the 28 cores.
+The production implementation persists after each step and distributes
+`MaximalSubgroupClassReps(H)` calls across worker processes; the steady-state
+loop is described in the Resource utilization plan above.
 
 ## Test results on this machine
 
@@ -774,9 +756,6 @@ A pullback test also succeeded:
 sample image subgroup order=2 pullback order=2 image-back order=2
 image-back equals H=true
 ```
-
-This verifies that internal permutation representatives can be converted back
-to matrix subgroups of `Sp(8,2)`.
 
 ### Top-level maximal subgroup classes
 
@@ -864,10 +843,6 @@ Two ordinary-pool concurrency probes were run:
   all exit 0, 145-161 MB RSS each, 2.63-4.28 s wall time
 ```
 
-These tests support using a 24-worker ordinary pool for light jobs. They do
-not remove the need for `-K`, wall limits, and admission control on deeper
-branches.
-
 ### Complete small-case verification
 
 A temporary in-memory prototype of the recursive maximal-descent algorithm was
@@ -930,17 +905,16 @@ Recommended handling:
    top-level `P`-conjugacy against any representatives already discovered by
    other branches.
 
-This keeps the main algorithm unchanged while giving the two largest
-orthogonal branches a representation-specific escape hatch. These two branches
-are the main remaining risk in the plan; the quick probes verify recognition
-and library support, not completion of their full subgroup classification.
+These two branches are the main remaining risk in the plan; the quick probes
+verify recognition and library support, not completion of their full subgroup
+classification.
 
 ## Implementation readiness gates
 
 Do not start a full unbounded run immediately after writing the scripts. Use
 these gates:
 
-1. `sp8_preflight.sh` must pass and write a run manifest with
+1. The `preflight` subcommand must pass and write a run manifest with
    `RAM_WORK_GB = 48`, ordinary workers `<= 24`, heavy workers `<= 1`, and all
    GAP worker invocations using `-K`.
 2. The `Sp(6,2)` validation run must reproduce 1369 classes through the same

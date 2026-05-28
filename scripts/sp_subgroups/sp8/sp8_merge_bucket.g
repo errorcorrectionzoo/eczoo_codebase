@@ -15,23 +15,42 @@ SP8_MergeKeyKnown := function(entry)
     return IsBound(entry.merge_key) and entry.merge_key <> "";
 end;
 
+SP8_CurrentDetailKey := function(key)
+    if key <> "" and PositionSublist(key, "detail_v2;") = 1 then
+        return key;
+    fi;
+    return "";
+end;
+
 SP8_MergeKeyCompatible := function(left, right)
+    local left_detail, right_detail;
     if not SP8_MergeKeyKnown(left) or not SP8_MergeKeyKnown(right) then
         return true;
     fi;
     if left.merge_key <> right.merge_key then
         return false;
     fi;
-    if IsBound(left.detail_key) and IsBound(right.detail_key) and
-       left.detail_key <> "" and right.detail_key <> "" then
-        return left.detail_key = right.detail_key;
+    left_detail := "";;
+    right_detail := "";;
+    if IsBound(left.detail_key) then
+        left_detail := SP8_CurrentDetailKey(left.detail_key);;
+    fi;
+    if IsBound(right.detail_key) then
+        right_detail := SP8_CurrentDetailKey(right.detail_key);;
+    fi;
+    if left_detail <> "" and right_detail <> "" then
+        return left_detail = right_detail;
     fi;
     return true;
 end;
 
 SP8_GetDetailKey := function(entry, H, pair_points)
-    if IsBound(entry.detail_key) and entry.detail_key <> "" then
-        return entry.detail_key;
+    local key;
+    if IsBound(entry.detail_key) then
+        key := SP8_CurrentDetailKey(entry.detail_key);;
+        if key <> "" then
+            return key;
+        fi;
     fi;
     return SP8_DetailKeyString(H, pair_points);
 end;
@@ -47,11 +66,15 @@ SP8_FindDetailBucket := function(buckets, key)
 end;
 
 SP8_AddDetailBucketEntry := function(buckets, entry)
-    local bucket;
-    if IsBound(entry.detail_key) and entry.detail_key <> "" then
-        bucket := SP8_FindDetailBucket(buckets, entry.detail_key);;
+    local bucket, detail_key;
+    detail_key := "";;
+    if IsBound(entry.detail_key) then
+        detail_key := SP8_CurrentDetailKey(entry.detail_key);;
+    fi;
+    if detail_key <> "" then
+        bucket := SP8_FindDetailBucket(buckets, detail_key);;
         if bucket = fail then
-            bucket := rec(key := entry.detail_key, entries := []);;
+            bucket := rec(key := detail_key, entries := []);;
             Add(buckets.known, bucket);
         fi;
         Add(bucket.entries, entry);
@@ -62,6 +85,7 @@ end;
 
 SP8_DetailBucketEntries := function(buckets, key, all_entries)
     local bucket, entries;
+    key := SP8_CurrentDetailKey(key);;
     if key = "" then
         return all_entries;
     fi;
