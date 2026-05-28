@@ -16,7 +16,7 @@ SP8_MergeKeyKnown := function(entry)
 end;
 
 SP8_CurrentDetailKey := function(key)
-    if key <> "" and PositionSublist(key, "detail_v2;") = 1 then
+    if key <> "" and PositionSublist(key, "detail_v3;") = 1 then
         return key;
     fi;
     return "";

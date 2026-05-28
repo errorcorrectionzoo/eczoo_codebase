@@ -190,19 +190,20 @@ sub-buckets independent and parallelisable.
 
 The cheap filters should include both the coarse fingerprint and a cached
 `detail_key` for all subgroups of order at most 4096. The current detail key is
-`detail_v2`, consisting of center size, derived-subgroup size, the collected
-orbit-length spectrum on unordered pairs of degree-120 points, and the
-collected element-order spectrum. There should be no lower order cutoff: the
-small buckets such as 64, 96, 128, 192, 256, and 384 are precisely where a
-missing detail key causes millions of avoidable `IsConjugate` calls. For these
-orders, enumerating elements and pair orbits is cheap compared with conjugacy
-testing. The upper cutoff at 4096 can stay until a class-based element-order
-spectrum is implemented for larger groups.
+`detail_v3`, consisting of center size, derived-subgroup size, the collected
+orbit-length spectrum on unordered pairs of degree-120 points, the collected
+element-order spectrum, and the collected fixed-point spectrum
+`[element order, fixed points on [1..120]]`. There should be no lower order
+cutoff: the small buckets such as 64, 96, 128, 192, 256, and 384 are precisely
+where a missing detail key causes millions of avoidable `IsConjugate` calls.
+For these orders, enumerating elements and pair orbits is cheap compared with
+conjugacy testing. The upper cutoff at 4096 can stay until a class-based
+element-order and fixed-point spectrum is implemented for larger groups.
 
 Store `detail_key` in both representative JSON files and raw child records.
 Python should use it before launching GAP: when all candidates in a bucket have
 nonempty detail keys, pass only existing representatives with matching
-`detail_key` or unknown legacy keys. Only the current `detail_v2` schema counts
+`detail_key` or unknown legacy keys. Only the current `detail_v3` schema counts
 as a known detail key; stale versions such as `detail_v1` must be treated as
 missing, recomputed, and rewritten by the backfill path. GAP merge workers must
 still recompute missing or stale keys for legacy records and bucket both
@@ -585,7 +586,7 @@ jobs for a merge round complete.
 Responsibilities:
 
 - read a batch of representative or raw-child group files;
-- compute `SP8_DetailKeyString` with the same `detail_v2` helper used by
+- compute `SP8_DetailKeyString` with the same `detail_v3` helper used by
   workers and merges;
 - write one JSONL result per input record plus a success sentinel;
 - leave all JSON metadata mutation to the Python coordinator.
@@ -595,7 +596,7 @@ legacy runs. It must refuse to write while the master orchestrator is live
 unless explicitly forced, split work into bounded GAP batches, apply completed
 batch output atomically, and be safely rerunnable. On restart, it first applies
 any prior successful `detail_backfill/batch_*/details.jsonl` output, then skips
-only records that already have a current `detail_v2` `detail_key`.
+only records that already have a current `detail_v3` `detail_key`.
 
 ### `run-round` and `run` (Python subcommands of `sp8_orchestrator.py`)
 

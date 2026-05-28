@@ -48,21 +48,28 @@ SP8_FingerprintString := function(H, degree)
 end;
 
 SP8_DetailKeyString := function(H, pair_points)
-    local pair_orbits, pair_orbit_counts, element_orders, center_size, derived_size;
+    local degree, pair_orbits, pair_orbit_counts, elements, element_orders,
+          fixed_point_spectrum, center_size, derived_size;
     if Order(H) > 4096 then
         return "";
     fi;
+    degree := Maximum(Concatenation(pair_points));;
     center_size := Size(Center(H));;
     derived_size := Size(DerivedSubgroup(H));;
     pair_orbits := SortedList(List(Orbits(H, pair_points, OnSets), Length));;
     pair_orbit_counts := Collected(pair_orbits);;
-    element_orders := Collected(List(Elements(H), Order));;
+    elements := Elements(H);;
+    element_orders := Collected(List(elements, Order));;
+    fixed_point_spectrum := Collected(
+        List(elements, g -> [Order(g), degree - Length(MovedPoints(g))])
+    );;
     return Concatenation(
-        "detail_v2",
+        "detail_v3",
         ";center=", String(center_size),
         ";derived=", String(derived_size),
         ";pair_orbits=", String(pair_orbit_counts),
-        ";element_orders=", String(element_orders)
+        ";element_orders=", String(element_orders),
+        ";fixed_points=", String(fixed_point_spectrum)
     );
 end;
 

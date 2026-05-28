@@ -146,3 +146,4 @@ docs/stubs/*
 .venv_csslo/bin/python3.10
 results/alg6/eczoo_codebase.code-workspace
 scripts/sp_subgroups/sp8/work_sp8/
+scripts/sp_subgroups/sp8/sp8z2_kantor_liebler_shortcuts.md

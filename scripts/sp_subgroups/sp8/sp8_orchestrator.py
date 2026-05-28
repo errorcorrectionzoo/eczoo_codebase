@@ -23,7 +23,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_GAP = Path("/home/valbert/gap-4.15.1/gap")
 SCHEMA_VERSION = 1
-CURRENT_DETAIL_PREFIX = "detail_v2;"
+CURRENT_DETAIL_PREFIX = "detail_v3;"
 SEQUENCE_LOCK = threading.Lock()
 
 
