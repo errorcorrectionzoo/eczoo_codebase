@@ -145,3 +145,4 @@ docs/stubs/*
 .venv_csslo/bin/python3
 .venv_csslo/bin/python3.10
 results/alg6/eczoo_codebase.code-workspace
+scripts/sp_subgroups/sp8/work_sp8/
