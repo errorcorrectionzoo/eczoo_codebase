@@ -48,19 +48,20 @@ SP8_FingerprintString := function(H, degree)
 end;
 
 SP8_DetailKeyString := function(H, pair_points)
-    local pair_orbits, element_orders, center_size, derived_size;
-    if Order(H) < 512 or Order(H) > 4096 then
+    local pair_orbits, pair_orbit_counts, element_orders, center_size, derived_size;
+    if Order(H) > 4096 then
         return "";
     fi;
     center_size := Size(Center(H));;
     derived_size := Size(DerivedSubgroup(H));;
     pair_orbits := SortedList(List(Orbits(H, pair_points, OnSets), Length));;
+    pair_orbit_counts := Collected(pair_orbits);;
     element_orders := Collected(List(Elements(H), Order));;
     return Concatenation(
-        "detail_v1",
+        "detail_v2",
         ";center=", String(center_size),
         ";derived=", String(derived_size),
-        ";pair_orbits=", String(pair_orbits),
+        ";pair_orbits=", String(pair_orbit_counts),
         ";element_orders=", String(element_orders)
     );
 end;
@@ -106,7 +107,8 @@ SP8_ReadRep := function(path, P)
 end;
 
 SP8_WriteRepJSON := function(path, id, order, rep_path, status, job_class,
-                             top_class, maximal_count, parent_id, fingerprint)
+                             top_class, maximal_count, parent_id, fingerprint,
+                             detail_key)
     local parent_json, top_json, max_json;
     if parent_id = fail then
         parent_json := "[]";
@@ -125,7 +127,8 @@ SP8_WriteRepJSON := function(path, id, order, rep_path, status, job_class,
         "\"top_class\":", top_json, ",",
         "\"maximal_count\":", max_json, ",",
         "\"parent_ids\":", parent_json, ",",
-        "\"fingerprint\":", SP8_Quote(fingerprint),
+        "\"fingerprint\":", SP8_Quote(fingerprint), ",",
+        "\"detail_key\":", SP8_Quote(detail_key),
         "}\n"
     );
 end;
@@ -140,7 +143,7 @@ SP8_AppendIncidence := function(path, parent_id, child_id, source)
 end;
 
 SP8_AppendRawChild := function(path, raw_id, parent_id, child_index, order,
-                               rep_path, fingerprint, job_id)
+                               rep_path, fingerprint, detail_key, job_id)
     AppendTo(path,
         "{\"raw_id\":", SP8_Quote(raw_id),
         ",\"parent_id\":", String(parent_id),
@@ -148,6 +151,7 @@ SP8_AppendRawChild := function(path, raw_id, parent_id, child_index, order,
         ",\"order\":", String(order),
         ",\"rep_path\":", SP8_Quote(rep_path),
         ",\"fingerprint\":", SP8_Quote(fingerprint),
+        ",\"detail_key\":", SP8_Quote(detail_key),
         ",\"job_id\":", SP8_Quote(job_id),
         "}\n"
     );

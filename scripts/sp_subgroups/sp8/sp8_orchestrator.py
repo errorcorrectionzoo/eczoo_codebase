@@ -505,6 +505,289 @@ def bounded_merge_workers(
     return max(1, min(requested, bucket_count, memory_slots, cpu_slots))
 
 
+def process_alive(pid: int) -> bool:
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True
+    stat = Path(f"/proc/{pid}/stat")
+    if stat.exists():
+        try:
+            state = stat.read_text().rsplit(")", 1)[1].split()[0]
+        except Exception:
+            return True
+        return state != "Z"
+    return True
+
+
+def live_master_pid(run_dir: Path) -> int | None:
+    path = run_dir / "master.pid"
+    if not path.exists():
+        return None
+    try:
+        pid = int(path.read_text().strip())
+    except ValueError:
+        return None
+    if process_alive(pid):
+        return pid
+    return None
+
+
+def parse_order_filter(value: str | None) -> set[int] | None:
+    if not value:
+        return None
+    return {int(part) for part in value.split(",") if part.strip()}
+
+
+def wanted_detail_order(order: int, max_order: int, orders: set[int] | None) -> bool:
+    if order > max_order:
+        return False
+    if orders is not None and order not in orders:
+        return False
+    return True
+
+
+def iter_detail_backfill_items(
+    run_dir: Path,
+    include_raw: bool,
+    include_merged_raw: bool,
+    max_order: int,
+    orders: set[int] | None,
+):
+    for path in sorted((run_dir / "reps").glob("rep_*.json")):
+        meta = read_json(path)
+        order = int(meta["order"])
+        if meta.get("detail_key") or not wanted_detail_order(order, max_order, orders):
+            continue
+        yield {
+            "kind": "rep",
+            "id": int(meta["id"]),
+            "order": order,
+            "rep_path": meta["rep_path"],
+            "json_path": str(path),
+        }
+    if not include_raw:
+        return
+    for raw_dir in sorted((run_dir / "raw_children").glob("job_*")):
+        if not (raw_dir / "SUCCESS").exists():
+            continue
+        if (raw_dir / "MERGED").exists() and not include_merged_raw:
+            continue
+        children_path = raw_dir / "children.jsonl"
+        for child in read_jsonl(children_path):
+            order = int(child["order"])
+            if child.get("detail_key") or not wanted_detail_order(order, max_order, orders):
+                continue
+            yield {
+                "kind": "raw",
+                "raw_id": child["raw_id"],
+                "order": order,
+                "rep_path": child["rep_path"],
+                "children_path": str(children_path),
+            }
+
+
+def write_detail_batch_input(path: Path, items: list[dict], output_path: Path, sentinel_path: Path) -> None:
+    def rec_item(item: dict) -> str:
+        if item["kind"] == "rep":
+            return (
+                "rec("
+                "kind:=\"rep\", "
+                f"id:={item['id']}, "
+                f"order:={item['order']}, "
+                f"rep_path:={gap_string(item['rep_path'])}, "
+                f"json_path:={gap_string(item['json_path'])}"
+                ")"
+            )
+        return (
+            "rec("
+            "kind:=\"raw\", "
+            f"raw_id:={gap_string(item['raw_id'])}, "
+            f"order:={item['order']}, "
+            f"rep_path:={gap_string(item['rep_path'])}, "
+            f"children_path:={gap_string(item['children_path'])}"
+            ")"
+        )
+
+    text = [
+        "ITEMS := [",
+        ",\n".join("  " + rec_item(item) for item in items),
+        "];;",
+        f"OUTPUT_PATH := {gap_string(output_path)};;",
+        f"SENTINEL_PATH := {gap_string(sentinel_path)};;",
+    ]
+    atomic_write(path, "\n".join(text) + "\n")
+
+
+def run_detail_batch(
+    run_dir: Path,
+    manifest: dict,
+    batch_index: int,
+    items: list[dict],
+    cap: str,
+    seconds: int,
+) -> dict:
+    batch_dir = run_dir / "detail_backfill" / f"batch_{time.time_ns()}_{batch_index:06d}"
+    batch_dir.mkdir(parents=True, exist_ok=True)
+    input_path = batch_dir / "input.g"
+    output_path = batch_dir / "details.jsonl"
+    sentinel_path = batch_dir / "SUCCESS"
+    time_path = batch_dir / "time.log"
+    stdout_path = batch_dir / "stdout.log"
+    stderr_path = batch_dir / "stderr.log"
+    write_detail_batch_input(input_path, items, output_path, sentinel_path)
+    expr = (
+        f"SCRIPT_DIR:={gap_string(SCRIPT_DIR)};;"
+        f"DETAIL_INPUT:={gap_string(input_path)};;"
+        f"DIM:={manifest['dim']};;"
+    )
+    cmd = [
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        str(time_path),
+        "timeout",
+        f"{seconds}s",
+        manifest["gap"],
+        "-q",
+        "--quitonbreak",
+        "-K",
+        cap,
+        "-c",
+        expr,
+        str(SCRIPT_DIR / "sp8_detail_batch.g"),
+    ]
+    started = utc_now()
+    with stdout_path.open("w") as stdout, stderr_path.open("w") as stderr:
+        proc = subprocess.run(cmd, stdout=stdout, stderr=stderr)
+    return {
+        "type": "detail_backfill",
+        "batch_index": batch_index,
+        "item_count": len(items),
+        "returncode": proc.returncode,
+        "sentinel": sentinel_path.exists(),
+        "details_path": str(output_path),
+        "batch_dir": str(batch_dir),
+        "started_at": started,
+        "finished_at": utc_now(),
+        **parse_time_file(time_path),
+    }
+
+
+def apply_detail_records(records: list[dict]) -> dict:
+    rep_updates = 0
+    raw_updates = 0
+    raw_by_file: dict[Path, dict[str, str]] = defaultdict(dict)
+    for rec in records:
+        detail_key = rec.get("detail_key", "")
+        if not detail_key:
+            continue
+        if rec.get("kind") == "rep":
+            path = Path(rec["json_path"])
+            if not path.exists():
+                continue
+            meta = read_json(path)
+            if meta.get("detail_key"):
+                continue
+            meta["detail_key"] = detail_key
+            atomic_write_json(path, meta)
+            rep_updates += 1
+        elif rec.get("kind") == "raw":
+            raw_by_file[Path(rec["children_path"])][rec["raw_id"]] = detail_key
+    for path, detail_by_raw_id in raw_by_file.items():
+        if not path.exists():
+            continue
+        changed = 0
+        records_out = []
+        for child in read_jsonl(path):
+            raw_id = child.get("raw_id")
+            if raw_id in detail_by_raw_id and not child.get("detail_key"):
+                child["detail_key"] = detail_by_raw_id[raw_id]
+                changed += 1
+            records_out.append(child)
+        if changed:
+            atomic_write(path, "".join(json.dumps(item, sort_keys=True) + "\n" for item in records_out))
+            raw_updates += changed
+    return {"rep_updates": rep_updates, "raw_updates": raw_updates}
+
+
+def apply_existing_detail_backfill(run_dir: Path) -> dict:
+    records = []
+    backfill_dir = run_dir / "detail_backfill"
+    for path in sorted(backfill_dir.glob("batch_*/details.jsonl")):
+        if (path.parent / "SUCCESS").exists():
+            records.extend(read_jsonl(path))
+    if not records:
+        return {"rep_updates": 0, "raw_updates": 0}
+    return apply_detail_records(records)
+
+
+def cmd_backfill_details(args: argparse.Namespace) -> None:
+    run_dir = Path(args.run_dir).resolve()
+    manifest = load_manifest(run_dir)
+    live_pid = live_master_pid(run_dir)
+    if live_pid is not None and not args.force_live:
+        raise SystemExit(
+            f"orchestrator appears to be running as PID {live_pid}; "
+            "stop it before writing detail keys, or pass --force-live if you are sure"
+        )
+    (run_dir / "detail_backfill").mkdir(parents=True, exist_ok=True)
+    applied_existing = apply_existing_detail_backfill(run_dir)
+    orders = parse_order_filter(args.orders)
+    items = list(
+        iter_detail_backfill_items(
+            run_dir,
+            include_raw=not args.skip_raw,
+            include_merged_raw=args.include_merged_raw,
+            max_order=args.max_order,
+            orders=orders,
+        )
+    )
+    if args.limit:
+        items = items[: args.limit]
+    chunks = [items[i:i + args.chunk_size] for i in range(0, len(items), args.chunk_size)]
+    if not chunks:
+        print(json.dumps({"pending": 0, "applied_existing": applied_existing}, sort_keys=True))
+        return
+    workers = bounded_merge_workers(args.workers, len(chunks), args.reservation_gb, args.reserve_ram_gb)
+    summary = {
+        "pending": len(items),
+        "chunks": len(chunks),
+        "workers": workers,
+        "chunk_size": args.chunk_size,
+        "applied_existing": applied_existing,
+    }
+    print(json.dumps(summary, sort_keys=True))
+    results_path = run_dir / "detail_backfill" / "runs.jsonl"
+    totals = Counter()
+    failures = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+        future_to_index = {
+            pool.submit(run_detail_batch, run_dir, manifest, i, chunk, args.cap, args.seconds): i
+            for i, chunk in enumerate(chunks, start=1)
+        }
+        for future in concurrent.futures.as_completed(future_to_index):
+            result = future.result()
+            if result["returncode"] == 0 and result["sentinel"]:
+                applied = apply_detail_records(read_jsonl(Path(result["details_path"])))
+                result["applied"] = applied
+                totals.update(applied)
+            else:
+                failures += 1
+            append_jsonl(results_path, result)
+            print(json.dumps(result, sort_keys=True))
+    final = {
+        "finished_at": utc_now(),
+        "failures": failures,
+        "rep_updates": totals["rep_updates"],
+        "raw_updates": totals["raw_updates"],
+    }
+    atomic_write_json(run_dir / "detail_backfill" / f"summary_{int(time.time())}.json", final)
+    print(json.dumps(final, sort_keys=True))
+
+
 def prepare_merge_task(
     run_dir: Path,
     manifest: dict,
@@ -520,6 +803,13 @@ def prepare_merge_task(
             item for item in existing
             if merge_key_from_fingerprint(item.get("fingerprint", "")) in candidate_keys
             or merge_key_from_fingerprint(item.get("fingerprint", "")) == ""
+        ]
+    candidate_detail_keys = {str(item.get("detail_key", "")) for item in candidates}
+    if candidate_detail_keys and "" not in candidate_detail_keys:
+        existing = [
+            item for item in existing
+            if item.get("detail_key", "") in candidate_detail_keys
+            or item.get("detail_key", "") == ""
         ]
     key_label = merge_key_label(merge_key)
     merge_id = f"{time.time_ns()}_{order}_{key_label}_{len(candidates)}"
@@ -979,6 +1269,22 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("run_dir")
     p.add_argument("--output")
     p.set_defaults(func=cmd_export)
+
+    p = sub.add_parser("backfill-details")
+    p.add_argument("run_dir")
+    p.add_argument("--workers", type=int, default=24)
+    p.add_argument("--chunk-size", type=int, default=200)
+    p.add_argument("--cap", default="2g")
+    p.add_argument("--seconds", type=int, default=60 * 60)
+    p.add_argument("--reservation-gb", type=float, default=1.0)
+    p.add_argument("--reserve-ram-gb", type=float, default=8.0)
+    p.add_argument("--max-order", type=int, default=4096)
+    p.add_argument("--orders", help="comma-separated order filter, e.g. 1024,256")
+    p.add_argument("--skip-raw", action="store_true")
+    p.add_argument("--include-merged-raw", action="store_true")
+    p.add_argument("--force-live", action="store_true")
+    p.add_argument("--limit", type=int)
+    p.set_defaults(func=cmd_backfill_details)
     return parser
 
 

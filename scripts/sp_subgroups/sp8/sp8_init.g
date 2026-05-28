@@ -15,6 +15,7 @@ Read(Concatenation(SCRIPT_DIR, "/sp8_common.g"));
 ctx := SP8_BuildContext(DIM);;
 P := ctx.P;;
 degree := LargestMovedPoint(P);;
+pair_points := Combinations([1..degree], 2);;
 
 if Order(P) <> Order(Sp(DIM, 2)) then
     Error("permutation image has wrong order");
@@ -36,7 +37,8 @@ SP8_WriteGroupFile(top_rep_path, 1, P);
 maximals := MaximalSubgroupClassReps(P);;
 SP8_WriteRepJSON(
     top_meta_path, 1, Order(P), top_rep_path, "processed", "root",
-    0, Length(maximals), fail, SP8_FingerprintString(P, degree)
+    0, Length(maximals), fail, SP8_FingerprintString(P, degree),
+    SP8_DetailKeyString(P, pair_points)
 );
 
 for i in [1..Length(maximals)] do
@@ -51,7 +53,8 @@ for i in [1..Length(maximals)] do
     SP8_WriteGroupFile(rep_path, id, maximals[i]);
     SP8_WriteRepJSON(
         meta_path, id, Order(maximals[i]), rep_path, "queued", job_class,
-        i, fail, 1, SP8_FingerprintString(maximals[i], degree)
+        i, fail, 1, SP8_FingerprintString(maximals[i], degree),
+        SP8_DetailKeyString(maximals[i], pair_points)
     );
     SP8_AppendIncidence(incidence_path, 1, id, "top_maximal");
 od;

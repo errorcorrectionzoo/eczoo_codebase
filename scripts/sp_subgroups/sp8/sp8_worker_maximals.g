@@ -19,6 +19,7 @@ fi;
 ctx := SP8_BuildContext(DIM);;
 P := ctx.P;;
 degree := LargestMovedPoint(P);;
+pair_points := Combinations([1..degree], 2);;
 H := SP8_ReadRep(REP_PATH, P);;
 
 maximals := MaximalSubgroupClassReps(H);;
@@ -28,10 +29,11 @@ for i in [1..Length(maximals)] do
     raw_id := Concatenation(String(JOB_ID), "_", String(i));;
     child_path := Concatenation(RAW_DIR, "/child_", String(i), ".g");;
     fingerprint := SP8_FingerprintString(maximals[i], degree);;
+    detail_key := SP8_DetailKeyString(maximals[i], pair_points);;
     SP8_WriteGroupFile(child_path, raw_id, maximals[i]);
     SP8_AppendRawChild(
         CHILDREN_JSONL, raw_id, REP_ID, i, Order(maximals[i]),
-        child_path, fingerprint, String(JOB_ID)
+        child_path, fingerprint, detail_key, String(JOB_ID)
     );
 od;
 

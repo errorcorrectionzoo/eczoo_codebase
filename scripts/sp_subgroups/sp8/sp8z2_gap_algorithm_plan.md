@@ -104,7 +104,7 @@ Suggested initial caps:
 | class | GAP `-K` cap | wall limit | scheduler memory reservation |
 |---|---:|---:|---:|
 | light | 1g | 30 min | 1 GB |
-| medium | 4g | 2 h | 4 GB |
+| medium | 4g | 3 h | 4 GB |
 | heavy | 16g | 12 h | 16 GB |
 | orthogonal fallback | 24g | 24 h | 24 GB |
 
@@ -190,6 +190,25 @@ large, split it by fingerprint hash and run several merge jobs. The final
 conjugacy check still uses `IsConjugate(P, H, R)`, but it should only be
 called on candidates that pass the cheap invariant filters.
 
+The cheap filters should include both the coarse fingerprint and a cached
+`detail_key` for all subgroups of order at most 4096. The current detail key is
+`detail_v2`, consisting of center size, derived-subgroup size, the collected
+orbit-length spectrum on unordered pairs of degree-120 points, and the
+collected element-order spectrum. There should be no lower order cutoff: the
+small buckets such as 64, 96, 128, 192, 256, and 384 are precisely where a
+missing detail key causes millions of avoidable `IsConjugate` calls. For these
+orders, enumerating elements and pair orbits is cheap compared with conjugacy
+testing. The upper cutoff at 4096 can stay until a class-based element-order
+spectrum is implemented for larger groups.
+
+Store `detail_key` in both representative JSON files and raw child records.
+Python should use it before launching GAP: when all candidates in a bucket have
+nonempty detail keys, pass only existing representatives with matching
+`detail_key` or unknown legacy keys. GAP merge workers must still recompute
+missing keys for legacy records and bucket both existing and newly accepted
+groups by detail key so the accepted-list scan does not grow quadratically
+inside one large merge job.
+
 The intended steady state is therefore:
 
 1. launch worker batches until either CPU slots or RAM budget is exhausted;
@@ -249,6 +268,12 @@ caches/
   conjugacy_tests.jsonl
   fingerprints.jsonl
   normalizers.jsonl
+detail_backfill/
+  batch_<timestamp>_<index>/
+    input.g
+    details.jsonl
+    SUCCESS
+  runs.jsonl
 logs/
   scheduler.jsonl
   worker_<job_id>.time
@@ -511,7 +536,7 @@ Responsibilities:
 - read the subgroup representative `H`;
 - compute `MaximalSubgroupClassReps(H)`;
 - for each maximal subgroup `M`, write a raw child record containing parent id,
-  order, generators, and fingerprint;
+  order, generators, fingerprint, and `detail_key`;
 - write the complete raw child file, maximal-subgroup count, and checksum;
 - write a success sentinel only after all raw child data is flushed;
 - write a worker log recording runtime, peak RSS, success/failure, and whether
@@ -547,6 +572,23 @@ For production, split this into order-bucket merge jobs. A merge worker should
 only compare candidates of one order, write proposed additions to a temporary
 file, and leave the final database mutation to a single coordinator. That keeps
 parallel merges deterministic.
+
+### `sp8_detail_batch.g`
+
+Responsibilities:
+
+- read a batch of representative or raw-child group files;
+- compute `SP8_DetailKeyString` with the same `detail_v2` helper used by
+  workers and merges;
+- write one JSONL result per input record plus a success sentinel;
+- leave all JSON metadata mutation to the Python coordinator.
+
+The coordinator command `backfill-details` should use this script to migrate
+legacy runs. It must refuse to write while the master orchestrator is live
+unless explicitly forced, split work into bounded GAP batches, apply completed
+batch output atomically, and be safely rerunnable. On restart, it first applies
+any prior successful `detail_backfill/batch_*/details.jsonl` output, then skips
+records that already have `detail_key`.
 
 ### `sp8_run_round.g` or shell wrapper
 
