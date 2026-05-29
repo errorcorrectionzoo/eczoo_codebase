@@ -27,6 +27,17 @@ CURRENT_DETAIL_PREFIX = "detail_v3;"
 SEQUENCE_LOCK = threading.Lock()
 
 
+def env_int(name: str, default: int, minimum: int = 1) -> int:
+    try:
+        return max(minimum, int(os.environ.get(name, default)))
+    except (TypeError, ValueError):
+        return default
+
+
+SNAPSHOT_FULL_INTERVAL = env_int("SP8_FULL_SNAPSHOT_INTERVAL", 25)
+SNAPSHOT_FULL_KEEP = env_int("SP8_FULL_SNAPSHOT_KEEP", 3)
+
+
 CLASS_LIMITS = {
     "light": {"cap": "1g", "seconds": 30 * 60, "reservation_gb": 1},
     "medium": {"cap": "4g", "seconds": 3 * 60 * 60, "reservation_gb": 4},
@@ -249,11 +260,48 @@ def next_sequence(run_dir: Path, name: str) -> int:
         return value
 
 
+def snapshot_id_from_name(path: Path) -> int | None:
+    try:
+        return int(path.stem.rsplit("_", 1)[1])
+    except (IndexError, ValueError):
+        return None
+
+
+def complete_full_snapshot_ids(snap_dir: Path) -> list[int]:
+    ids = []
+    for progress in snap_dir.glob("progress_*.json"):
+        snap_id = snapshot_id_from_name(progress)
+        if snap_id is None:
+            continue
+        required = [
+            snap_dir / f"reps_{snap_id:06d}.jsonl",
+            snap_dir / f"incidence_{snap_id:06d}.jsonl",
+            snap_dir / f"frontier_{snap_id:06d}.jsonl",
+        ]
+        if all(path.exists() and path.stat().st_size > 0 for path in required):
+            ids.append(snap_id)
+    return sorted(ids)
+
+
+def prune_full_snapshot_payloads(snap_dir: Path, keep_count: int) -> None:
+    keep_count = max(1, keep_count)
+    keep_ids = set(complete_full_snapshot_ids(snap_dir)[-keep_count:])
+    for pattern in ("reps_*.jsonl", "incidence_*.jsonl"):
+        for path in snap_dir.glob(pattern):
+            snap_id = snapshot_id_from_name(path)
+            if snap_id is not None and snap_id not in keep_ids:
+                path.unlink(missing_ok=True)
+
+
 def snapshot(run_dir: Path, reason: str) -> Path:
     reps = load_reps(run_dir)
     snap_dir = run_dir / "snapshots"
     existing = sorted(snap_dir.glob("progress_*.json"))
     snap_id = len(existing)
+    existing_full_ids = complete_full_snapshot_ids(snap_dir)
+    write_full_payload = (not existing_full_ids) or (snap_id % SNAPSHOT_FULL_INTERVAL == 0)
+    if write_full_payload:
+        prune_full_snapshot_payloads(snap_dir, max(1, SNAPSHOT_FULL_KEEP - 1))
     counts = Counter(meta.get("status", "unknown") for meta in reps.values())
     classes = Counter(meta.get("job_class", "unknown") for meta in reps.values())
     frontier = sorted(rid for rid, meta in reps.items() if meta.get("status") in {"queued", "new"})
@@ -268,19 +316,25 @@ def snapshot(run_dir: Path, reason: str) -> Path:
         "job_class_counts": dict(classes),
         "frontier_ids": frontier,
         "raw_child_backlog": raw_backlog,
+        "full_payload": write_full_payload,
+        "latest_full_snapshot_id": existing_full_ids[-1] if existing_full_ids else None,
     }
     progress_path = snap_dir / f"progress_{snap_id:06d}.json"
     atomic_write_json(progress_path, progress)
-    atomic_write(snap_dir / "latest", progress_path.name + "\n")
-    with (snap_dir / f"reps_{snap_id:06d}.jsonl").open("w") as f:
-        for rid in sorted(reps):
-            f.write(json.dumps(reps[rid], sort_keys=True) + "\n")
-    incidence = run_dir / "incidence.jsonl"
-    if incidence.exists():
-        shutil.copy2(incidence, snap_dir / f"incidence_{snap_id:06d}.jsonl")
+    if write_full_payload:
+        with (snap_dir / f"reps_{snap_id:06d}.jsonl").open("w") as f:
+            for rid in sorted(reps):
+                f.write(json.dumps(reps[rid], sort_keys=True) + "\n")
+        incidence = run_dir / "incidence.jsonl"
+        if incidence.exists():
+            shutil.copy2(incidence, snap_dir / f"incidence_{snap_id:06d}.jsonl")
+        progress["latest_full_snapshot_id"] = snap_id
+        atomic_write_json(progress_path, progress)
+        prune_full_snapshot_payloads(snap_dir, SNAPSHOT_FULL_KEEP)
     with (snap_dir / f"frontier_{snap_id:06d}.jsonl").open("w") as f:
         for rid in frontier:
             f.write(json.dumps({"id": rid}, sort_keys=True) + "\n")
+    atomic_write(snap_dir / "latest", progress_path.name + "\n")
     return progress_path
 
 
@@ -502,6 +556,7 @@ def bounded_merge_workers(
     bucket_count: int,
     reservation_gb: float,
     reserve_ram_gb: float,
+    cpu_slots_override: int = 0,
 ) -> int:
     if bucket_count <= 0:
         return 0
@@ -520,7 +575,7 @@ def bounded_merge_workers(
         # Keep enough space for the OS, the orchestrator, filesystem cache, and
         # a few GAP processes that momentarily exceed their typical working set.
         memory_slots = max(1, int((available_gib - reserve_ram_gb) // reservation_gb))
-    cpu_slots = max(1, nproc)
+    cpu_slots = max(1, cpu_slots_override if cpu_slots_override > 0 else nproc)
     return max(1, min(requested, bucket_count, memory_slots, cpu_slots))
 
 
@@ -923,6 +978,7 @@ def merge_unmerged(
     merge_reservation_gb: float = 4.0,
     reserve_ram_gb: float = 8.0,
     detail_split_min: int = 256,
+    merge_cpu_slots: int = 0,
 ) -> int:
     raw_jobs = unmerged_raw_jobs(run_dir)
     if not raw_jobs:
@@ -984,7 +1040,13 @@ def merge_unmerged(
         )
         for (order, merge_key, detail_key), candidates in sorted(candidates_by_bucket.items())
     ]
-    workers = bounded_merge_workers(merge_workers, len(tasks), merge_reservation_gb, reserve_ram_gb)
+    workers = bounded_merge_workers(
+        merge_workers,
+        len(tasks),
+        merge_reservation_gb,
+        reserve_ram_gb,
+        merge_cpu_slots,
+    )
     print(f"merging {len(tasks)} order/key/detail buckets with concurrency {workers}")
     for task in tasks:
         append_jsonl(
@@ -1133,6 +1195,7 @@ def cmd_run_round(args: argparse.Namespace) -> None:
             args.merge_reservation_gb,
             args.reserve_ram_gb,
             args.detail_split_min,
+            args.merge_cpu_slots,
         )
         snapshot(run_dir, f"run_round_backlog_merge_new_{merge_count}")
         return
@@ -1146,6 +1209,7 @@ def cmd_run_round(args: argparse.Namespace) -> None:
             args.merge_reservation_gb,
             args.reserve_ram_gb,
             args.detail_split_min,
+            args.merge_cpu_slots,
         )
         snapshot(run_dir, f"run_round_merge_only_new_{merge_count}")
         return
@@ -1163,6 +1227,7 @@ def cmd_run_round(args: argparse.Namespace) -> None:
         args.merge_reservation_gb,
         args.reserve_ram_gb,
         args.detail_split_min,
+        args.merge_cpu_slots,
     )
     snap = snapshot(run_dir, f"run_round_new_{new_count}")
     print(f"committed {new_count} new representatives; snapshot {snap.name}")
@@ -1292,6 +1357,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--workers", type=int, default=24)
     p.add_argument("--max-jobs", type=int, default=24)
     p.add_argument("--merge-workers", type=int, default=8)
+    p.add_argument("--merge-cpu-slots", type=int, default=0)
     p.add_argument("--merge-reservation-gb", type=float, default=4.0)
     p.add_argument("--reserve-ram-gb", type=float, default=8.0)
     p.add_argument("--detail-split-min", type=int, default=256)
@@ -1304,6 +1370,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--workers", type=int, default=24)
     p.add_argument("--max-jobs", type=int, default=24)
     p.add_argument("--merge-workers", type=int, default=8)
+    p.add_argument("--merge-cpu-slots", type=int, default=0)
     p.add_argument("--merge-reservation-gb", type=float, default=4.0)
     p.add_argument("--reserve-ram-gb", type=float, default=8.0)
     p.add_argument("--detail-split-min", type=int, default=256)
