@@ -36,6 +36,7 @@ def env_int(name: str, default: int, minimum: int = 1) -> int:
 
 SNAPSHOT_FULL_INTERVAL = env_int("SP8_FULL_SNAPSHOT_INTERVAL", 25)
 SNAPSHOT_FULL_KEEP = env_int("SP8_FULL_SNAPSHOT_KEEP", 3)
+DETAIL_BUNDLE_TARGET = env_int("SP8_DETAIL_BUNDLE_TARGET", 128)
 
 
 CLASS_LIMITS = {
@@ -94,6 +95,14 @@ def detail_key_label(detail_key: str) -> str:
     if not detail_key:
         return "mixed"
     return hashlib.sha1(detail_key.encode()).hexdigest()[:12]
+
+
+def candidate_merge_keys(candidates: list[dict]) -> set[str]:
+    return {merge_key_from_fingerprint(item.get("fingerprint", "")) for item in candidates}
+
+
+def candidate_detail_keys(candidates: list[dict]) -> set[str]:
+    return {current_detail_key(item.get("detail_key", "")) for item in candidates}
 
 
 def atomic_write(path: Path, data: str) -> None:
@@ -862,6 +871,107 @@ def cmd_backfill_details(args: argparse.Namespace) -> None:
     print(json.dumps(final, sort_keys=True))
 
 
+def raw_dirs_for_candidates(candidates: list[dict]) -> set[Path]:
+    return {Path(child["_raw_dir"]) for child in candidates}
+
+
+def build_candidate_batches(
+    candidates_by_key_bucket: dict[tuple[int, str], list[dict]],
+    detail_split_min: int,
+    detail_bundle_target: int,
+) -> list[dict]:
+    batches: list[dict] = []
+    bundle_target = max(1, detail_bundle_target)
+
+    def add_batch(order: int, merge_key: str, detail_key: str, candidates: list[dict]) -> None:
+        batches.append(
+            {
+                "order": order,
+                "merge_key": merge_key,
+                "detail_key": detail_key,
+                "candidates": candidates,
+                "raw_dirs": raw_dirs_for_candidates(candidates),
+            }
+        )
+
+    for (order, merge_key), candidates in candidates_by_key_bucket.items():
+        detail_keys = candidate_detail_keys(candidates)
+        if len(candidates) < detail_split_min or "" in detail_keys or len(detail_keys) <= 1:
+            add_batch(order, merge_key, "", candidates)
+            continue
+
+        detail_groups: dict[str, list[dict]] = defaultdict(list)
+        for child in candidates:
+            detail_groups[current_detail_key(child.get("detail_key", ""))].append(child)
+
+        pending: list[tuple[str, list[dict]]] = []
+        pending_count = 0
+
+        def flush_pending() -> None:
+            nonlocal pending, pending_count
+            if not pending:
+                return
+            detail_key = pending[0][0] if len(pending) == 1 else ""
+            combined: list[dict] = []
+            for _, group in pending:
+                combined.extend(group)
+            add_batch(order, merge_key, detail_key, combined)
+            pending = []
+            pending_count = 0
+
+        for detail_key, group in sorted(detail_groups.items()):
+            if pending and pending_count + len(group) > bundle_target:
+                flush_pending()
+            pending.append((detail_key, group))
+            pending_count += len(group)
+            if pending_count >= bundle_target:
+                flush_pending()
+        flush_pending()
+
+    return batches
+
+
+def build_existing_indices(reps: dict[int, dict]) -> tuple[dict[int, list[dict]], dict[tuple[int, str], list[dict]]]:
+    existing_by_order: dict[int, list[dict]] = defaultdict(list)
+    existing_by_order_merge_key: dict[tuple[int, str], list[dict]] = defaultdict(list)
+    for meta in reps.values():
+        order = int(meta["order"])
+        merge_key = merge_key_from_fingerprint(meta.get("fingerprint", ""))
+        existing_by_order[order].append(meta)
+        existing_by_order_merge_key[(order, merge_key)].append(meta)
+    return existing_by_order, existing_by_order_merge_key
+
+
+def select_existing_for_candidates(
+    existing_by_order: dict[int, list[dict]],
+    existing_by_order_merge_key: dict[tuple[int, str], list[dict]],
+    order: int,
+    candidates: list[dict],
+) -> list[dict]:
+    keys = candidate_merge_keys(candidates)
+    if keys and "" not in keys:
+        selected = []
+        seen: set[int] = set()
+        for merge_key in sorted(keys | {""}):
+            for item in existing_by_order_merge_key.get((order, merge_key), []):
+                item_id = int(item["id"])
+                if item_id not in seen:
+                    selected.append(item)
+                    seen.add(item_id)
+    else:
+        selected = list(existing_by_order.get(order, []))
+
+    detail_keys = candidate_detail_keys(candidates)
+    if detail_keys and "" not in detail_keys:
+        filtered = []
+        for item in selected:
+            detail_key = current_detail_key(item.get("detail_key", ""))
+            if detail_key == "" or detail_key in detail_keys:
+                filtered.append(item)
+        selected = filtered
+    return selected
+
+
 def prepare_merge_task(
     run_dir: Path,
     manifest: dict,
@@ -872,20 +982,6 @@ def prepare_merge_task(
     candidates: list[dict],
     raw_dirs: set[Path],
 ) -> dict:
-    candidate_keys = {merge_key_from_fingerprint(item.get("fingerprint", "")) for item in candidates}
-    if "" not in candidate_keys:
-        existing = [
-            item for item in existing
-            if merge_key_from_fingerprint(item.get("fingerprint", "")) in candidate_keys
-            or merge_key_from_fingerprint(item.get("fingerprint", "")) == ""
-        ]
-    candidate_detail_keys = {current_detail_key(item.get("detail_key", "")) for item in candidates}
-    if candidate_detail_keys and "" not in candidate_detail_keys:
-        existing = [
-            item for item in existing
-            if current_detail_key(item.get("detail_key", "")) in candidate_detail_keys
-            or current_detail_key(item.get("detail_key", "")) == ""
-        ]
     key_label = merge_key_label(merge_key)
     detail_label = detail_key_label(detail_key)
     merge_id = f"{time.time_ns()}_{order}_{key_label}_{detail_label}_{len(candidates)}"
@@ -978,68 +1074,77 @@ def merge_unmerged(
     merge_reservation_gb: float = 4.0,
     reserve_ram_gb: float = 8.0,
     detail_split_min: int = 256,
+    detail_bundle_target: int = DETAIL_BUNDLE_TARGET,
     merge_cpu_slots: int = 0,
 ) -> int:
+    started = time.time()
     raw_jobs = unmerged_raw_jobs(run_dir)
     if not raw_jobs:
         return 0
     candidates_by_order: dict[int, list[dict]] = defaultdict(list)
-    raw_dirs_by_order: dict[int, set[Path]] = defaultdict(set)
     candidates_by_key_bucket: dict[tuple[int, str], list[dict]] = defaultdict(list)
-    raw_dirs_by_key_bucket: dict[tuple[int, str], set[Path]] = defaultdict(set)
-    candidates_by_bucket: dict[tuple[int, str, str], list[dict]] = defaultdict(list)
-    raw_dirs_by_bucket: dict[tuple[int, str, str], set[Path]] = defaultdict(set)
     failed_raw_dirs: set[Path] = set()
     for raw_dir in raw_jobs:
         for child in read_jsonl(raw_dir / "children.jsonl"):
             order = int(child["order"])
             child["_raw_dir"] = str(raw_dir)
             candidates_by_order[order].append(child)
-            raw_dirs_by_order[order].add(raw_dir)
 
     for order, candidates in candidates_by_order.items():
         keys = {merge_key_from_fingerprint(child.get("fingerprint", "")) for child in candidates}
         if "" in keys:
             bucket = (order, "")
             candidates_by_key_bucket[bucket].extend(candidates)
-            raw_dirs_by_key_bucket[bucket].update(raw_dirs_by_order[order])
             continue
         for child in candidates:
             merge_key = merge_key_from_fingerprint(child.get("fingerprint", ""))
             bucket = (order, merge_key)
             candidates_by_key_bucket[bucket].append(child)
-            raw_dirs_by_key_bucket[bucket].add(Path(child["_raw_dir"]))
 
-    for (order, merge_key), candidates in candidates_by_key_bucket.items():
-        detail_keys = {current_detail_key(child.get("detail_key", "")) for child in candidates}
-        if len(candidates) >= detail_split_min and "" not in detail_keys and len(detail_keys) > 1:
-            for child in candidates:
-                bucket = (order, merge_key, current_detail_key(child.get("detail_key", "")))
-                candidates_by_bucket[bucket].append(child)
-                raw_dirs_by_bucket[bucket].add(Path(child["_raw_dir"]))
-        else:
-            bucket = (order, merge_key, "")
-            candidates_by_bucket[bucket].extend(candidates)
-            raw_dirs_by_bucket[bucket].update(raw_dirs_by_key_bucket[(order, merge_key)])
+    candidate_count = sum(len(candidates) for candidates in candidates_by_order.values())
+    batches = build_candidate_batches(candidates_by_key_bucket, detail_split_min, detail_bundle_target)
+    print(
+        "planning merge: "
+        f"raw_jobs={len(raw_jobs)} candidates={candidate_count} "
+        f"merge_key_buckets={len(candidates_by_key_bucket)} task_batches={len(batches)} "
+        f"detail_split_min={detail_split_min} detail_bundle_target={detail_bundle_target} "
+        f"scan_seconds={time.time() - started:.1f}"
+    )
 
     reps = load_reps(run_dir)
-    existing_by_order: dict[int, list[dict]] = defaultdict(list)
-    for meta in reps.values():
-        existing_by_order[int(meta["order"])].append(meta)
+    existing_by_order, existing_by_order_merge_key = build_existing_indices(reps)
 
-    tasks = [
-        prepare_merge_task(
-            run_dir,
-            manifest,
-            order,
-            merge_key,
-            detail_key,
-            existing_by_order.get(order, []),
-            candidates,
-            raw_dirs_by_bucket[(order, merge_key, detail_key)],
+    prep_started = time.time()
+    tasks = []
+    for batch in sorted(
+        batches,
+        key=lambda item: (
+            item["order"],
+            merge_key_label(item["merge_key"]),
+            detail_key_label(item["detail_key"]),
+            len(item["candidates"]),
+        ),
+    ):
+        existing = select_existing_for_candidates(
+            existing_by_order,
+            existing_by_order_merge_key,
+            batch["order"],
+            batch["candidates"],
         )
-        for (order, merge_key, detail_key), candidates in sorted(candidates_by_bucket.items())
-    ]
+        tasks.append(
+            prepare_merge_task(
+                run_dir,
+                manifest,
+                batch["order"],
+                batch["merge_key"],
+                batch["detail_key"],
+                existing,
+                batch["candidates"],
+                batch["raw_dirs"],
+            )
+        )
+    print(f"prepared {len(tasks)} merge inputs in {time.time() - prep_started:.1f}s")
+
     workers = bounded_merge_workers(
         merge_workers,
         len(tasks),
@@ -1181,10 +1286,11 @@ def select_frontier(run_dir: Path, include_heavy: bool, max_jobs: int, only_top_
     return selected
 
 
-def cmd_run_round(args: argparse.Namespace) -> None:
+def cmd_run_round(args: argparse.Namespace, recover_before: bool = True) -> bool:
     run_dir = Path(args.run_dir).resolve()
     manifest = load_manifest(run_dir)
-    recover(run_dir)
+    if recover_before:
+        recover(run_dir)
     raw_backlog = unmerged_raw_jobs(run_dir)
     if raw_backlog:
         print(f"merging existing raw backlog before launching workers: {len(raw_backlog)} raw jobs")
@@ -1195,10 +1301,11 @@ def cmd_run_round(args: argparse.Namespace) -> None:
             args.merge_reservation_gb,
             args.reserve_ram_gb,
             args.detail_split_min,
+            args.detail_bundle_target,
             args.merge_cpu_slots,
         )
         snapshot(run_dir, f"run_round_backlog_merge_new_{merge_count}")
-        return
+        return True
     jobs = select_frontier(run_dir, args.include_heavy, args.max_jobs, args.only_top_light)
     if not jobs:
         print("no eligible queued representatives")
@@ -1209,10 +1316,11 @@ def cmd_run_round(args: argparse.Namespace) -> None:
             args.merge_reservation_gb,
             args.reserve_ram_gb,
             args.detail_split_min,
+            args.detail_bundle_target,
             args.merge_cpu_slots,
         )
         snapshot(run_dir, f"run_round_merge_only_new_{merge_count}")
-        return
+        return merge_count > 0
     workers = min(args.workers, len(jobs))
     print(f"launching {len(jobs)} worker jobs with concurrency {workers}")
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
@@ -1227,15 +1335,34 @@ def cmd_run_round(args: argparse.Namespace) -> None:
         args.merge_reservation_gb,
         args.reserve_ram_gb,
         args.detail_split_min,
+        args.detail_bundle_target,
         args.merge_cpu_slots,
     )
     snap = snapshot(run_dir, f"run_round_new_{new_count}")
     print(f"committed {new_count} new representatives; snapshot {snap.name}")
+    return True
+
+
+def cleanup_tmp_files(run_dir: Path) -> None:
+    for root in [
+        run_dir,
+        run_dir / "reps",
+        run_dir / "snapshots",
+        run_dir / "jobs",
+        run_dir / "caches",
+        run_dir / "logs",
+        run_dir / "validation",
+        run_dir / "export",
+        run_dir / "detail_backfill",
+    ]:
+        if not root.exists():
+            continue
+        for tmp in root.glob("*.tmp"):
+            tmp.unlink()
 
 
 def recover(run_dir: Path) -> None:
-    for tmp in run_dir.rglob("*.tmp"):
-        tmp.unlink()
+    cleanup_tmp_files(run_dir)
     reps = load_reps(run_dir)
     changed = False
     for meta in reps.values():
@@ -1323,12 +1450,13 @@ def cmd_export(args: argparse.Namespace) -> None:
 
 
 def cmd_run(args: argparse.Namespace) -> None:
+    run_dir = Path(args.run_dir).resolve()
+    recover(run_dir)
     for i in range(args.rounds):
         print(f"round {i + 1}/{args.rounds}")
         args.max_jobs = args.max_jobs
-        cmd_run_round(args)
-        data = status_data(Path(args.run_dir).resolve())
-        if data["status_counts"].get("queued", 0) == 0 and data["unmerged_raw_jobs"] == 0:
+        keep_going = cmd_run_round(args, recover_before=False)
+        if not keep_going:
             print("frontier exhausted")
             break
 
@@ -1361,6 +1489,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--merge-reservation-gb", type=float, default=4.0)
     p.add_argument("--reserve-ram-gb", type=float, default=8.0)
     p.add_argument("--detail-split-min", type=int, default=256)
+    p.add_argument("--detail-bundle-target", type=int, default=DETAIL_BUNDLE_TARGET)
     p.add_argument("--include-heavy", action="store_true")
     p.add_argument("--only-top-light", action="store_true")
     p.set_defaults(func=cmd_run_round)
@@ -1374,6 +1503,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--merge-reservation-gb", type=float, default=4.0)
     p.add_argument("--reserve-ram-gb", type=float, default=8.0)
     p.add_argument("--detail-split-min", type=int, default=256)
+    p.add_argument("--detail-bundle-target", type=int, default=DETAIL_BUNDLE_TARGET)
     p.add_argument("--rounds", type=int, default=1)
     p.add_argument("--include-heavy", action="store_true")
     p.add_argument("--only-top-light", action="store_true")
